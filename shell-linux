@@ -1,0 +1,4 @@
+ZSH_THEME="sammy"
+plugins=(extract git)
+
+alias sai="sudo apt-get install"

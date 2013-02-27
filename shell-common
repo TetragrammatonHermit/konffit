@@ -3,3 +3,5 @@
 # Symlink this to home and source from .zshrc .bash_profile or whatever
 
 alias pi="pip install"
+alias jala="jatasalt@jalava.cc.jyu.fi"
+alias rc="vim ~/.zshrc"

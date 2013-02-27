@@ -1,0 +1,5 @@
+# Aliases and other stuff for both osx and linux
+# 
+# Symlink this to home and source from .zshrc .bash_profile or whatever
+
+alias pi="pip install"

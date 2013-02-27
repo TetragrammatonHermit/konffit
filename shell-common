@@ -3,6 +3,7 @@
 # Symlink this to home and source from .zshrc .bash_profile or whatever
 
 alias rc="vim ~/.zshrc"
+alias rcc="vim ~/.shell-common"
 alias reload_profile="source ~/.zshrc"
 
 alias back='cd $OLDPWD'

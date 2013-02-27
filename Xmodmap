@@ -16,11 +16,18 @@ clear mod1
 clear lock
 clear mod4
 
+
 ! Set new bindings
+
+! Left Ctrl -> Super
 keycode 37 = Super_L
+! Caps Lock -> Ctrl
 keycode 66 = Control_R
+! Left Alt -> Ctrl
 keycode 64 = Control_L
+! Left Super -> Alt
 keycode 133 = Alt_L Meta_L
+
 
 ! Apply new bindings (or something)
 add control = Control_L Control_R

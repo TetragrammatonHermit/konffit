@@ -1,5 +1,4 @@
 ZSH_THEME="sammy"
-plugins=(extract git)
 
 alias sai="sudo apt-get install"
-alias o="pcmanfm ." # For lubuntu
+alias o="pcmanfm `pwd`" # Open current folder in file manager (lubuntu)

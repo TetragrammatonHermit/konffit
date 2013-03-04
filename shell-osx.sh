@@ -1,9 +1,3 @@
-alias src="st -n ~/.zshrc"
-alias srcc="st -n ~/konffit/shell-common.sh"
-alias srco="st ~/konffit/shell-osx.sh"
-
-alias src="st -n ~/.zshrc"
-
 alias slp="pmset sleepnow"
 
 alias manp="man-preview"
@@ -13,8 +7,6 @@ alias rt="trash"
 
 alias cdbrew="cd /usr/local/lib"
 alias bi="brew install"
-
-alias todo="st -n /Users/jasalt/Dropbox/md/todo.md"
 
 alias o="open ." # Open current folder in Finder
 

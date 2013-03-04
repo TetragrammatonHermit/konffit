@@ -2,12 +2,14 @@
 #
 # Symlink this to home and source from .zshrc .bash_profile or whatever
 
-alias rc="vim ~/.zshrc"
-alias rcc="vim ~/.shell-common"
-alias reload_profile="source ~/.zshrc"
+alias rc="vim ~/konffit/zshrc"
+alias rcc="vim ~/konffit/shell-common"
+
+alias rp="source ~/.zshrc"
 
 alias back='cd $OLDPWD'
 alias myip="ifconfig en1"
+alias cl="clear"
 
 alias pi="pip install"
 

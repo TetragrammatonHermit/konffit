@@ -10,8 +10,8 @@ Installation instructions:
     chsh -s /bin/zsh
     cd
     git clone git@github.com:jasalt/konffit.git
-    sh ./konffit/linkfiles.sh
+    echo "source ~/konffit/shell-common\necho ~/konffit/shell-linux" >> .zshrc
 
 ## TODO
-- zshrc + ohmyzsh plugins
+- ohmyzsh plugins
 - st2 config + plugins

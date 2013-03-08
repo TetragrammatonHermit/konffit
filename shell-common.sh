@@ -5,6 +5,8 @@
 alias rc="vim ~/konffit/zshrc"
 alias rcc="vim ~/konffit/shell-common"
 
+alias s="st -n"
+
 alias src="st -n ~/.zshrc"
 alias srcc="st -n ~/konffit/shell-common"
 

@@ -2,13 +2,13 @@
 #
 # Symlink this to home and source from .zshrc .bash_profile or whatever
 
-alias rc="vim ~/konffit/zshrc"
-alias rcc="vim ~/konffit/shell-common"
+alias rc="vim ~/.zshrc"
+alias rcc="vim ~/konffit/shell-common.sh"
 
 alias s="st -n"
 
 alias src="st -n ~/.zshrc"
-alias srcc="st -n ~/konffit/shell-common"
+alias srcc="st -n ~/konffit/shell-common.sh"
 
 alias rp="source ~/.zshrc"
 

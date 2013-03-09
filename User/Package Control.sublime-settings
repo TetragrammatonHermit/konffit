@@ -1,0 +1,25 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"DetectSyntax",
+		"Format SQL",
+		"Gist",
+		"Git",
+		"InsertDate",
+		"LiveReload",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"Origami",
+		"Package Control",
+		"Pandoc",
+		"SideBarEnhancements",
+		"SmartMarkdown",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeREPL",
+		"WordHighlight",
+		"Wrap Plus"
+	]
+}

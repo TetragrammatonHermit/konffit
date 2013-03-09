@@ -1,0 +1,28 @@
+// Sublimetext keymap file
+// Create symlink from this folder with
+// > ln -s ./Default (OSX).sublime-keymap ~/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap
+
+[
+  // Change theme between light and dark
+  {
+      "keys": ["f10"], "command": "toggle_color_scheme",
+      "args":
+      {
+          "color_scheme_1": "Packages/Color Scheme - Default/Solarized (Light).tmTheme" ,
+          "color_scheme_2": "Packages/Color Scheme - Default/Monokai.tmTheme"
+      }
+  },
+
+  { "keys": ["f11"], "command": "toggle_minimap" },
+
+  // Open this file
+  { "keys": ["shift+super+,"], "command": "open_file", "args": {"file": "${packages}/User/Default (OSX).sublime-keymap"} },
+
+
+  { "keys": ["super+k", "super+s"], "command": "swap_case" },
+  { "keys": ["super+k", "super+t"], "command": "title_case" },
+
+
+  // jk exit to Vintage insert mode
+  {"keys": ["j", "k"], "command": "exit_insert_mode", "context": [{ "key": "setting.command_mode", "operand": false },{ "key": "setting.is_widget", "operand": false }]}
+]

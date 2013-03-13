@@ -1,0 +1,13 @@
+{
+    // Less intrusive error indicator
+    "sublimelinter_mark_style": "none",
+    "sublimelinter_gutter_marks": true,
+
+    // Ignore warning for
+    // E501 - Long lines
+    // E231 - No space after seperator
+    "pep8_ignore":
+    [
+        "E501","E231"
+    ]
+}

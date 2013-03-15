@@ -34,5 +34,28 @@
   { "keys": ["super+k", "super+t"], "command": "title_case" },
 
   // jk exit to Vintage insert mode
-  {"keys": ["j", "k"], "command": "exit_insert_mode", "context": [{ "key": "setting.command_mode", "operand": false },{ "key": "setting.is_widget", "operand": false }]}
+  {"keys": ["j", "k"], "command": "exit_insert_mode", "context": [{ "key": "setting.command_mode", "operand": false },{ "key": "setting.is_widget", "operand": false }]},
+
+  // Append line with ;\n
+  {
+    "keys": ["alt+super+,"],
+    "command": "run_macro_file",
+    "args": {"file": "Packages/User/macro/Line terminator and semi.sublime-macro"}
+  },
+  {
+    "keys": ["alt+super+."],
+    "command": "run_macro_file",
+    "args": {"file": "Packages/User/macro/Line terminator and dots.sublime-macro"}
+  },
+  {
+    "keys": ["alt+super+enter"],
+    "command": "run_macro_file",
+    "args": {"file": "Packages/User/macro/Line terminator and newline.sublime-macro"}
+  },
+  {
+    "keys": ["alt+super+-"],
+    "command": "run_macro_file",
+    "args": {"file": "Packages/User/macro/Line terminator and semi-curly.sublime-macro"}
+  }
+
 ]

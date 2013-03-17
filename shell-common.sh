@@ -28,3 +28,11 @@ alias hala="ssh jatasalt@halava.cc.jyu.fi"
 alias jalai="ssh jatasalt@jalava.cc.jyu.fi -t 'screen -rd'"
 alias raspi="ssh jasalt@jasalt.dy.fi"
 alias raspih="ssh pi@192.168.1.39"
+
+# Paste last output
+zmodload -i zsh/parameter
+insert-last-command-output() {
+  LBUFFER+="$(eval $history[$((HISTCMD-1))])"
+}
+zle -N insert-last-command-output
+bindkey "^V" insert-last-command-output

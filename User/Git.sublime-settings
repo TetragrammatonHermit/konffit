@@ -1,4 +1,7 @@
 {
+    // Hide branch and status from bottom statusbar
+    "statusbar_branch": false,
+    "statusbar_status": false
 
     // use the panel for diff output, rather than a new scratch window (new tab)
     // "diff_panel": true

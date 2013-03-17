@@ -20,6 +20,7 @@ alias pi="pip install"
 
 #CD's
 alias cdd="cd ~/Desktop/"
+alias cddo="cd ~/Documents/"
 
 #SSH
 alias jala="ssh jatasalt@jalava.cc.jyu.fi"

@@ -29,6 +29,8 @@ alias jalai="ssh jatasalt@jalava.cc.jyu.fi -t 'screen -rd'"
 alias raspi="ssh jasalt@jasalt.dy.fi"
 alias raspih="ssh pi@192.168.1.39"
 
+alias ip="ipython"
+
 # Paste last output
 zmodload -i zsh/parameter
 insert-last-command-output() {

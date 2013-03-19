@@ -20,5 +20,6 @@ alias o="open ." # Open current folder in Finder
 
 alias mark="markdown --html4tags"
 alias sano="say -v Mikko" # Say something in Finnish
+alias k="date \"+Kello on %H %M\" | sano"
 
 alias cheatsheet="open https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet"

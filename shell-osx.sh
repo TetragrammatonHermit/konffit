@@ -14,6 +14,12 @@ alias rt="trash"
 alias cdbrew="cd /usr/local/lib"
 alias bi="brew install"
 
+# For windows in parallels
+alias cdwc="cd /Volumes/C"
+alias cdw="cd /Volumes/C cd /Volumes/C/Users/jasalt" #  Windows "home"
+alias cdwdo="cd /Volumes/C/Users/jasalt/Documents"
+alias cdwd="cd /Volumes/C/Users/jasalt/Desktop"
+
 alias todo="st -n /Users/jasalt/Dropbox/md/todo.md"
 
 alias o="open ." # Open current folder in Finder

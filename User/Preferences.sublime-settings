@@ -22,11 +22,10 @@
 		"site"
 	],
 	"font_face": "Inconsolata",
-	"font_size": 15.0,
+	"font_size": 17.0,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage"
 	],
 	"rulers":
 	[

@@ -22,13 +22,6 @@ alias pi="pip install"
 alias cdd="cd ~/Desktop/"
 alias cddo="cd ~/Documents/"
 
-#SSH
-alias jala="ssh jatasalt@jalava.cc.jyu.fi"
-alias hala="ssh jatasalt@halava.cc.jyu.fi"
-alias jalai="ssh jatasalt@jalava.cc.jyu.fi -t 'screen -rd'"
-alias raspi="ssh jasalt@jasalt.dy.fi"
-alias raspih="ssh pi@192.168.1.39"
-
 alias ip="ipython"
 
 # Paste last output

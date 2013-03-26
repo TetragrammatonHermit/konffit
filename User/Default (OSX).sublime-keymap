@@ -44,6 +44,35 @@
   { "keys": ["alt+shift+<"], "command": "prev_bookmark" },
   { "keys": ["alt+ctrl+super+<"], "command": "clear_bookmarks" },
 
+
+  // Ending lines
+  {
+    "keys": ["super+enter"],
+    "command": "run_macro_file",
+    "args": {"file": "Packages/User/macro/Line terminator and semi.sublime-macro"}
+  },
+  {
+    "keys": ["alt+super+."],
+    "command": "run_macro_file",
+    "args": {"file": "Packages/User/macro/Line terminator and dots.sublime-macro"}
+  },
+  {
+    "keys": ["alt+enter"],
+    "command": "run_macro_file",
+    "args": {"file": "Packages/User/macro/Line terminator and newline.sublime-macro"}
+  },
+  {
+    "keys": ["alt+super+-"],
+    "command": "run_macro_file",
+    "args": {"file": "Packages/User/macro/Line terminator and semi-curly.sublime-macro"}
+  },
+  {
+    "keys": ["alt+super+enter"],
+    "command": "run_macro_file",
+    "args": {"file": "Packages/User/macro/Line terminator and dots.sublime-macro"}
+  },
+
+
   //                         Vintage mode
 
   // jk exit to Vintage insert mode
@@ -84,32 +113,6 @@
         ]
       },
 
-  // Append line with ;\n
-  {
-    "keys": ["super+enter"],
-    "command": "run_macro_file",
-    "args": {"file": "Packages/User/macro/Line terminator and semi.sublime-macro"}
-  },
-  {
-    "keys": ["alt+super+."],
-    "command": "run_macro_file",
-    "args": {"file": "Packages/User/macro/Line terminator and dots.sublime-macro"}
-  },
-  {
-    "keys": ["alt+enter"],
-    "command": "run_macro_file",
-    "args": {"file": "Packages/User/macro/Line terminator and newline.sublime-macro"}
-  },
-  {
-    "keys": ["alt+super+-"],
-    "command": "run_macro_file",
-    "args": {"file": "Packages/User/macro/Line terminator and semi-curly.sublime-macro"}
-  },
-  {
-    "keys": ["alt+super+enter"],
-    "command": "run_macro_file",
-    "args": {"file": "Packages/User/macro/Line terminator and dots.sublime-macro"}
-  },
 
 //For Origami (https://github.com/garyc40/Vintage-Origami)
 

@@ -5,7 +5,7 @@
 	},
 	"bold_folder_labels": true,
 	"caret_style": "wide",
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"color_scheme": "Packages/Theme - Aqua/Color Schemes/Espresso Aqua.tmTheme",
 	"command": "open_file",
 	"draw_white_space": "all",
 	"fade_fold_buttons": false,
@@ -22,15 +22,14 @@
 		"site"
 	],
 	"font_face": "Inconsolata",
-	"font_size": 17.0,
+	"font_size": 13.0,
 	"highlight_line": true,
 	"ignored_packages":
 	[
 	],
 	"rulers":
 	[
-		80,
-		120
+		80
 	],
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,

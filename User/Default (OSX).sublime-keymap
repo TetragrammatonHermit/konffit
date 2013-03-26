@@ -22,8 +22,8 @@
       "keys": ["f11"], "command": "toggle_color_scheme",
       "args":
       {
-          "color_scheme_1": "Packages/Color Scheme - Default/Solarized (Light).tmTheme" ,
-          "color_scheme_2": "Packages/Color Scheme - Default/Monokai.tmTheme"
+          "color_scheme_1": "Packages/Theme - Aqua/Color Schemes/Espresso Aqua.tmTheme" ,
+          "color_scheme_2": "Packages/Theme - Aqua/Color Schemes/Monokai Aqua.tmTheme"
       }
   },
 
@@ -35,6 +35,9 @@
 
   // jk exit to Vintage insert mode
   {"keys": ["j", "k"], "command": "exit_insert_mode", "context": [{ "key": "setting.command_mode", "operand": false },{ "key": "setting.is_widget", "operand": false }]},
+
+  // toggle modes with double escape (without breaking exiting multi-cursor -mode)
+  {"keys": ["escape", "escape"], "command": "enter_insert_mode", "context": [{ "key": "setting.command_mode", "operand": true },{ "key": "setting.is_widget", "operand": false }]},
 
   // Append line with ;\n
   {

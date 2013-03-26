@@ -4,22 +4,25 @@
 // http://www.macdrifter.com/2012/08/sublime-text-shortcuts-for-writing.html
 
 [
-
-  { "keys": ["f8"], "command": "toggle_tabs" },
+  // Toggle GUI elements with function keys
+  { "keys": ["f6"], "command": "toggle_side_bar" },
 
   {
-      "keys": ["f9"], "command": "toggle_setting",
+      "keys": ["f7"], "command": "toggle_setting",
       "args":
       {
         "setting": "line_numbers"
       }
   },
 
-  { "keys": ["f10"], "command": "toggle_minimap" },
+  { "keys": ["f8"], "command": "toggle_tabs" },
+
+
+  { "keys": ["f9"], "command": "toggle_minimap" },
 
   // Change theme between light and dark
   {
-      "keys": ["f11"], "command": "toggle_color_scheme",
+      "keys": ["f10"], "command": "toggle_color_scheme",
       "args":
       {
           "color_scheme_1": "Packages/Theme - Aqua/Color Schemes/Espresso Aqua.tmTheme" ,
@@ -27,17 +30,59 @@
       }
   },
 
+  { "keys": ["f11"], "command": "toggle_distraction_free" },
+
   // Open this file
   { "keys": ["shift+super+,"], "command": "open_file", "args": {"file": "${packages}/User/Default (OSX).sublime-keymap"} },
 
   { "keys": ["super+k", "super+s"], "command": "swap_case" },
   { "keys": ["super+k", "super+t"], "command": "title_case" },
 
+  // Bookmark hotkeys
+  { "keys": ["super+<"], "command": "toggle_bookmark" },
+  { "keys": ["alt+<"], "command": "next_bookmark" },
+  { "keys": ["alt+shift+<"], "command": "prev_bookmark" },
+  { "keys": ["alt+ctrl+super+<"], "command": "clear_bookmarks" },
+
+  //                         Vintage mode
+
   // jk exit to Vintage insert mode
   {"keys": ["j", "k"], "command": "exit_insert_mode", "context": [{ "key": "setting.command_mode", "operand": false },{ "key": "setting.is_widget", "operand": false }]},
 
   // toggle modes with double escape (without breaking exiting multi-cursor -mode)
   {"keys": ["escape", "escape"], "command": "enter_insert_mode", "context": [{ "key": "setting.command_mode", "operand": true },{ "key": "setting.is_widget", "operand": false }]},
+
+        { "keys": ["escape"], "command": "single_selection", "context":
+        [
+          { "key": "num_selections", "operator": "not_equal", "operand": 1 }
+        ]
+      },
+      { "keys": ["escape"], "command": "clear_fields", "context":
+        [
+          { "key": "has_next_field", "operator": "equal", "operand": true }
+        ]
+      },
+      { "keys": ["escape"], "command": "clear_fields", "context":
+        [
+          { "key": "has_prev_field", "operator": "equal", "operand": true }
+        ]
+      },
+      { "keys": ["escape"], "command": "hide_panel", "args": {"cancel": true},
+        "context":
+        [
+          { "key": "panel_visible", "operator": "equal", "operand": true }
+        ]
+      },
+      { "keys": ["escape"], "command": "hide_overlay", "context":
+        [
+          { "key": "overlay_visible", "operator": "equal", "operand": true }
+        ]
+      },
+      { "keys": ["escape"], "command": "hide_auto_complete", "context":
+        [
+          { "key": "auto_complete_visible", "operator": "equal", "operand": true }
+        ]
+      },
 
   // Append line with ;\n
   {

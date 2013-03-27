@@ -35,6 +35,8 @@
   // Open this file
   { "keys": ["shift+super+,"], "command": "open_file", "args": {"file": "${packages}/User/Default (OSX).sublime-keymap"} },
 
+  { "keys": ["alt+super+0"], "command": "reindent"},
+
   { "keys": ["super+k", "super+s"], "command": "swap_case" },
   { "keys": ["super+k", "super+t"], "command": "title_case" },
 
@@ -42,6 +44,7 @@
   { "keys": ["super+<"], "command": "toggle_bookmark" },
   { "keys": ["alt+<"], "command": "next_bookmark" },
   { "keys": ["alt+shift+<"], "command": "prev_bookmark" },
+  { "keys": ["alt+ctrl+<"], "command": "select_all_bookmarks" },
   { "keys": ["alt+ctrl+super+<"], "command": "clear_bookmarks" },
 
 

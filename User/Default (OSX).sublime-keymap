@@ -25,14 +25,16 @@
       "keys": ["f10"], "command": "toggle_color_scheme",
       "args":
       {
-          "color_scheme_1": "Packages/Theme - Aqua/Color Schemes/Espresso Aqua.tmTheme" ,
-          "color_scheme_2": "Packages/Theme - Aqua/Color Schemes/Monokai Aqua.tmTheme"
+          "color_scheme_1": "Packages/User/colour-schemes/Monokai Soda.tmTheme" ,
+          "theme_1": "Soda Dark.sublime-theme" ,
+          "color_scheme_2": "Packages/User/colour-schemes/Espresso Soda.tmTheme" ,
+          "theme_2": "Soda Light.sublime-theme"
       }
   },
 
   { "keys": ["f11"], "command": "toggle_distraction_free" },
 
-  // Open this file
+  // Op en this file
   { "keys": ["shift+super+,"], "command": "open_file", "args": {"file": "${packages}/User/Default (OSX).sublime-keymap"} },
 
   { "keys": ["alt+super+0"], "command": "reindent"},
@@ -74,6 +76,11 @@
     "command": "run_macro_file",
     "args": {"file": "Packages/User/macro/Line terminator and dots.sublime-macro"}
   },
+
+
+  // Navigation history
+  { "keys": ["super+ctrl+alt+left"], "command": "navigation_history_back"},
+  { "keys": ["super+ctrl+alt+right"], "command": "navigation_history_forward"},
 
 
   //                         Vintage mode
@@ -119,16 +126,16 @@
 
 //For Origami (https://github.com/garyc40/Vintage-Origami)
 
-  { "keys": ["super+j", "k"], "command": "travel_to_pane",
+  { "keys": ["alt+k"], "command": "travel_to_pane",
     "args": {"direction": "up"}
   },
-  { "keys": ["super+j", "l"], "command": "travel_to_pane",
+  { "keys": ["alt+l"], "command": "travel_to_pane",
     "args": {"direction": "right"}
   },
-  { "keys": ["super+j", "j"], "command": "travel_to_pane",
+  { "keys": ["alt+j"], "command": "travel_to_pane",
     "args": {"direction": "down"}
   },
-  { "keys": ["super+j", "h"], "command": "travel_to_pane",
+  { "keys": ["alt+h"], "command": "travel_to_pane",
     "args": {"direction": "left"}
   }
 

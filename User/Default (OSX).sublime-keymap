@@ -149,6 +149,19 @@
   },
   { "keys": ["ctrl+super+alt+left"], "command": "travel_to_pane",
     "args": {"direction": "left"}
+  },
+
+  { "keys": ["alt+k","alt+k"], "command": "travel_to_pane",
+    "args": {"direction": "up"}
+  },
+  { "keys": ["alt+l","alt+l"], "command": "travel_to_pane",
+    "args": {"direction": "right"}
+  },
+  { "keys": ["alt+j","alt+j"], "command": "travel_to_pane",
+    "args": {"direction": "down"}
+  },
+  { "keys": ["alt+h","alt+h"], "command": "travel_to_pane",
+    "args": {"direction": "left"}
   }
 
 

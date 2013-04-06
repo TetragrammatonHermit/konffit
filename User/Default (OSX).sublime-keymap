@@ -79,8 +79,20 @@
 
 
   // Navigation history
-  { "keys": ["super+ctrl+alt+left"], "command": "navigation_history_back"},
-  { "keys": ["super+ctrl+alt+right"], "command": "navigation_history_forward"},
+  { "keys": ["shift+super+ctrl+alt+left"], "command": "navigation_history_back"},
+  { "keys": ["shift+super+ctrl+alt+right"], "command": "navigation_history_forward"},
+
+  // Navigation hotkeys
+  {"keys": ["alt+super+j"], "command": "move_caret_forward", "args": { "nlines": 10} },
+  {"keys": ["alt+super+k"], "command": "move_caret_back", "args": { "nlines": 10} },
+  {"keys": ["alt+down"], "command": "move_caret_forward", "args": { "nlines": 10} },
+  {"keys": ["alt+up"], "command": "move_caret_back", "args": { "nlines": 10} },
+  {"keys": ["alt+super+down"], "command": "scroll_lines", "args": {"amount": -10.0}},
+  {"keys": ["alt+super+up"], "command": "scroll_lines", "args": {"amount": 10.0}},
+
+  {"keys": ["alt+super+h"], "command": "prev_view"},
+  {"keys": ["alt+super+l"], "command": "next_view"},
+
 
 
   //                         Vintage mode
@@ -126,17 +138,18 @@
 
 //For Origami (https://github.com/garyc40/Vintage-Origami)
 
-  { "keys": ["alt+k"], "command": "travel_to_pane",
+  { "keys": ["ctrl+super+alt+up"], "command": "travel_to_pane",
     "args": {"direction": "up"}
   },
-  { "keys": ["alt+l"], "command": "travel_to_pane",
+  { "keys": ["ctrl+super+alt+right"], "command": "travel_to_pane",
     "args": {"direction": "right"}
   },
-  { "keys": ["alt+j"], "command": "travel_to_pane",
+  { "keys": ["ctrl+super+alt+down"], "command": "travel_to_pane",
     "args": {"direction": "down"}
   },
-  { "keys": ["alt+h"], "command": "travel_to_pane",
+  { "keys": ["ctrl+super+alt+left"], "command": "travel_to_pane",
     "args": {"direction": "left"}
   }
+
 
 ]

@@ -3,37 +3,13 @@
 	{
 		"file": "${packages}/User/Preferences.sublime-settings"
 	},
-
-	// Appearance specific
-	"theme": "Soda Light.sublime-theme",
-	"color_scheme": "Packages/User/colour-schemes/Espresso Soda.tmTheme",
-	"soda_classic_tabs": true,
-
-	"font_face": "Inconsolata",
-	"font_size": 17.0,
-
-	"caret_style": "wide",
-	"highlight_line": true,
 	"bold_folder_labels": true,
-	"fade_fold_buttons": false,
-	"draw_white_space": "all",
-
-	// Other
-	"translate_tabs_to_spaces": true,
-	"find_selected_text": true,
-	"trim_trailing_white_space_on_save": true,
+	"caret_style": "wide",
+	"color_scheme": "Packages/User/colour-schemes/Espresso Soda.tmTheme",
 	"command": "open_file",
-
-	"vintage_ctrl_keys": true,
-	"ignored_packages":
-	[
-	// "Vintage"
-	],
-	"rulers":
-	[
-		80
-	],
-
+	"draw_white_space": "all",
+	"fade_fold_buttons": false,
+	"find_selected_text": true,
 	"folder_exclude_patterns":
 	[
 		".svn",
@@ -44,5 +20,20 @@
 		"dist",
 		"build",
 		"site"
-	]
+	],
+	"font_face": "Menlo",
+	"font_size": 15.0,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+	],
+	"rulers":
+	[
+		80
+	],
+	"scroll_speed": 5,
+	"theme": "Soda Light.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"vintage_ctrl_keys": true
 }

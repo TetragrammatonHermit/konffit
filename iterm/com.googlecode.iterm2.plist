@@ -642,7 +642,7 @@
 	<key>NSFontPanelPreviewHeight</key>
 	<real>0.0</real>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/konffit/iterm</string>
+	<string>~/Documents</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -682,7 +682,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1169 77 445 203 0 0 1680 1028 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>135 292 924 485 0 0 1680 1028 </string>
+	<string>735 451 924 485 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>656 53 730 501 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -1200,7 +1200,7 @@
 				<key>editor</key>
 				<string>com.sublimetext.2</string>
 				<key>text</key>
-				<string></string>
+				<string>s \1</string>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>

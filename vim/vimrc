@@ -1,0 +1,24 @@
+set nocompatible
+
+" === Vundle ===
+filetype off            " required by vundle
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" == Bundles ==
+Bundle 'gmarik/vundle'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'git://git.wincent.com/command-t.git'
+
+" === General Config ===
+
+syntax on               " syntax highlighting
+filetype plugin indent on     " activates indenting for files
+set autoindent          " auto indenting
+set number              " line numbers
+set nobackup            " get rid of anoying ~file
+set showmatch
+
+"Exit insert mode with jk
+inoremap jk <esc>

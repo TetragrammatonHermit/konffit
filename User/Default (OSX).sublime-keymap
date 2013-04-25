@@ -90,6 +90,9 @@
   {"keys": ["alt+super+down"], "command": "scroll_lines", "args": {"amount": -10.0}},
   {"keys": ["alt+super+up"], "command": "scroll_lines", "args": {"amount": 10.0}},
 
+  {"keys": ["alt+j"], "command": "scroll_lines", "args": {"amount": -10.0}},
+  {"keys": ["alt+k"], "command": "scroll_lines", "args": {"amount": 10.0}},
+
   {"keys": ["alt+super+h"], "command": "prev_view"},
   {"keys": ["alt+super+l"], "command": "next_view"},
 
@@ -148,19 +151,6 @@
     "args": {"direction": "down"}
   },
   { "keys": ["ctrl+super+alt+left"], "command": "travel_to_pane",
-    "args": {"direction": "left"}
-  },
-
-  { "keys": ["alt+k","alt+k"], "command": "travel_to_pane",
-    "args": {"direction": "up"}
-  },
-  { "keys": ["alt+l","alt+l"], "command": "travel_to_pane",
-    "args": {"direction": "right"}
-  },
-  { "keys": ["alt+j","alt+j"], "command": "travel_to_pane",
-    "args": {"direction": "down"}
-  },
-  { "keys": ["alt+h","alt+h"], "command": "travel_to_pane",
     "args": {"direction": "left"}
   }
 

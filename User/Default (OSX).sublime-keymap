@@ -97,6 +97,20 @@
   {"keys": ["alt+super+l"], "command": "next_view"},
 
 
+  // Select text between brackets
+  {
+      "keys": ["super+shift+a"],
+      "command": "bh_key",
+      "args":
+      {
+          "lines" : true,
+          "plugin":
+          {
+              "type": ["__all__"],
+              "command": "bh_modules.bracketselect"
+          }
+      }
+  },
 
   //                         Vintage mode
 

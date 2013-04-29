@@ -21,8 +21,8 @@
 		"build",
 		"site"
 	],
-	"font_face": "Menlo",
-	"font_size": 14.0,
+	"font_face": "Envy Code R",
+	"font_size": 13.0,
 	"highlight_line": true,
 	"ignored_packages":
 	[

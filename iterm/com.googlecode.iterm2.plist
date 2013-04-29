@@ -903,6 +903,13 @@
 			<key>Text</key>
 			<string>5C362EB0-8A45-4D93-97F2-CCB23BBAFD2A</string>
 		</dict>
+		<key>0x62-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>12</integer>
+			<key>Text</key>
+			<string>:Pyrun</string>
+		</dict>
 		<key>0x68-0x140000</key>
 		<dict>
 			<key>Action</key>
@@ -1100,11 +1107,11 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>242 375 201 309 0 0 1680 1028 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1169 77 445 203 0 0 1680 1028 </string>
+	<string>1175 77 439 201 0 0 1680 1028 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>366 122 924 485 0 0 1680 1028 </string>
+	<string>359 109 924 485 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1120 12 559 504 0 0 1680 1028 </string>
+	<string>208 119 730 523 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 15 838 501 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1466,6 +1473,20 @@
 					<key>Text</key>
 					<string>b</string>
 				</dict>
+				<key>0xf702-0x380000</key>
+				<dict>
+					<key>Action</key>
+					<integer>2</integer>
+					<key>Text</key>
+					<string></string>
+				</dict>
+				<key>0xf702-0x3c0000</key>
+				<dict>
+					<key>Action</key>
+					<integer>3</integer>
+					<key>Text</key>
+					<string></string>
+				</dict>
 				<key>0xf703-0x220000</key>
 				<dict>
 					<key>Action</key>
@@ -1493,6 +1514,20 @@
 					<integer>10</integer>
 					<key>Text</key>
 					<string>f</string>
+				</dict>
+				<key>0xf703-0x380000</key>
+				<dict>
+					<key>Action</key>
+					<integer>0</integer>
+					<key>Text</key>
+					<string></string>
+				</dict>
+				<key>0xf703-0x3c0000</key>
+				<dict>
+					<key>Action</key>
+					<integer>1</integer>
+					<key>Text</key>
+					<string></string>
 				</dict>
 				<key>0xf708-0x20000</key>
 				<dict>
@@ -1574,11 +1609,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>Inconsolata 12</string>
+			<string>Inconsolata 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Inconsolata 18</string>
+			<string>Inconsolata 16</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2428,8 +2463,10 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-04-14T20:34:29Z</date>
+	<date>2013-04-28T05:44:57Z</date>
 	<key>SavePasteHistory</key>
+	<false/>
+	<key>Show Toolbelt</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>

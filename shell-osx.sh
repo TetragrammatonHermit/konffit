@@ -1,3 +1,4 @@
+alias st="subl"
 alias src="st -n ~/.zshrc"
 alias srcc="st -n ~/konffit/shell-common.sh"
 alias srco="st ~/konffit/shell-osx.sh"
@@ -13,6 +14,7 @@ alias rt="trash"
 
 alias cdbrew="cd /usr/local/lib"
 alias bi="brew install"
+alias bci="brew cask install"
 
 # For windows in parallels
 alias cdwc="cd /Volumes/C"

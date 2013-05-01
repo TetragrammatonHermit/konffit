@@ -100,6 +100,25 @@
   {"keys": ["alt+super+l"], "command": "next_view"},
 
 
+  // Custom window-layout
+
+{ "keys": ["alt+super+4"],
+   "caption": "2 cols (full - 2)",
+   "command": "set_layout",
+   "args": { "cols": [0.0, 0.5, 1.0],
+       "rows": [0.0, 0.5, 1.0],
+       "cells": [ [0, 0, 1, 2], [1, 0, 2, 1], [1, 1, 2, 2] ]
+  }
+},
+{ "keys": ["alt+super+3"],
+  "caption": "2 cols (full - 2)",
+   "command": "set_layout",
+   "args": { "cols": [0.0, 0.5, 1.0],
+       "rows": [0.0, 0.5, 1.0],
+       "cells":[[0,0,1,1],[1,0,2,1],[0,1,2,2]]
+  }
+},
+
   // Select text between brackets
   {
       "keys": ["super+shift+a"],

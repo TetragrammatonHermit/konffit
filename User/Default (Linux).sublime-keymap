@@ -1,7 +1,9 @@
 [
 
 // Op en this file
-{ "keys": ["shift+super+,"], "command": "open_file", "args": {"file": "${packages}/User/Default (OSX).sublime-keymap"} },
+{ "keys": ["shift+super+,"], "command": "open_file", "args": {"file": "${packages}/User/Default (Linux).sublime-keymap"} },
+{ "keys": ["super+,"], "command": "open_file", "args": {"file": "${packages}/User/Prefecences.sublime-settings"} },
+
 
 { "keys": ["alt+super+0"], "command": "reindent"},
 
@@ -30,7 +32,7 @@
 
 // Custom window-layout
 
-{ "keys": ["alt+super+4"],
+{ "keys": ["alt+shift+4"],
 "caption": "2 cols (full - 2)",
 "command": "set_layout",
 "args": { "cols": [0.0, 0.5, 1.0],
@@ -38,7 +40,7 @@
 "cells": [ [0, 0, 1, 2], [1, 0, 2, 1], [1, 1, 2, 2] ]
 }
 },
-{ "keys": ["alt+super+3"],
+{ "keys": ["alt+shift+3"],
 "caption": "2 cols (full - 2)",
 "command": "set_layout",
 "args": { "cols": [0.0, 0.5, 1.0],
@@ -100,6 +102,22 @@
   [
   { "key": "auto_complete_visible", "operator": "equal", "operand": true }
   ]
-}
+},
+
+//For Origami (https://github.com/garyc40/Vintage-Origami)
+
+  { "keys": ["ctrl+super+alt+up"], "command": "travel_to_pane",
+    "args": {"direction": "up"}
+  },
+  { "keys": ["ctrl+super+alt+right"], "command": "travel_to_pane",
+    "args": {"direction": "right"}
+  },
+  { "keys": ["ctrl+super+alt+down"], "command": "travel_to_pane",
+    "args": {"direction": "down"}
+  },
+  { "keys": ["ctrl+super+alt+left"], "command": "travel_to_pane",
+    "args": {"direction": "left"}
+  }
+
 
 ]

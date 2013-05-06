@@ -1075,9 +1075,9 @@
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
 	<key>NSWindow Frame Preferences</key>
-	<string>723 141 924 485 0 0 1680 1028 </string>
+	<string>521 402 924 485 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>689 383 570 451 0 0 1680 1028 </string>
+	<string>208 119 570 448 0 0 1680 1028 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1561,7 +1561,7 @@
 			<key>Log Directory</key>
 			<string></string>
 			<key>Minimum Contrast</key>
-			<real>0.0</real>
+			<real>0.43453124165534973</real>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
@@ -2375,6 +2375,8 @@
 			<string>/Users/jasalt</string>
 		</dict>
 	</array>
+	<key>NoSyncNeverRemindPrefsChangesLost</key>
+	<true/>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -2419,7 +2421,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-04-29T14:39:29Z</date>
+	<date>2013-05-01T07:22:36Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>

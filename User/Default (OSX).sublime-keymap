@@ -38,6 +38,10 @@
   { "keys": ["super+shift+3"], "command": "toggle_comment", "args": { "block": false } },
   { "keys": ["super+shift+ctrl+3"], "command": "toggle_comment", "args": { "block": false } },
 
+  { "keys": ["super+shift+1"], "command": "unindent", "args": { "block": false } },
+  { "keys": ["super+shift+2"], "command": "indent", "args": { "block": false } },
+  { "keys": ["super+shift+ctrl+1"], "command": "reindent", "args": { "block": false } },
+
   // Swap these 2 together
   { "keys": ["super+shift+v"], "command": "paste" },
   { "keys": ["super+v"], "command": "paste_and_indent" },
@@ -46,7 +50,6 @@
   // Op en this file
   { "keys": ["shift+super+,"], "command": "open_file", "args": {"file": "${packages}/User/Default (OSX).sublime-keymap"} },
 
-  { "keys": ["alt+super+0"], "command": "reindent"},
 
   { "keys": ["super+k", "super+s"], "command": "swap_case" },
   { "keys": ["super+k", "super+t"], "command": "title_case" },
@@ -76,7 +79,7 @@
 
   // Custom window-layout
 
-{ "keys": ["alt+super+3"],
+{ "keys": ["alt+super+4"],
    "caption": "2 cols (full - 2)",
    "command": "set_layout",
    "args": { "cols": [0.0, 0.5, 1.0],
@@ -85,7 +88,7 @@
   }
 },
 
-{ "keys": ["alt+super+4"],
+{ "keys": ["alt+super+ctrl+4"],
   "caption": "2 cols (full - 2)",
    "command": "set_layout",
    "args": { "cols": [0.0, 0.5, 1.0],

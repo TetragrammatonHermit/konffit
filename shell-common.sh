@@ -24,6 +24,18 @@ alias cddo="cd ~/Documents/"
 
 alias ip="ipython"
 
+#Yeoman / grunt
+alias g="grunt"
+alias gs="grunt server"
+alias gt="grunt test"
+
+alias yac="yo angular"
+alias yav="yo angular:view"
+alias yar="yo angular:route"
+alias yas="yo angular:service"
+alias yaf="yo angular:filter"
+alias yad="yo angular:directive"
+
 # Paste last output
 zmodload -i zsh/parameter
 insert-last-command-output() {

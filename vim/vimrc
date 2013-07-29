@@ -1,51 +1,12 @@
-set nocompatible
+" makes jk leave insert mode (like Esc)
+inoremap jk <Esc>
+inoremap kj <Esc>
+nnoremap + %
 
-" === Vundle ===
-filetype off            " required by vundle
+set number
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" == Plugins ==
-Bundle 'gmarik/vundle'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'git://git.wincent.com/command-t.git'
-Bundle 'git://github.com/altercation/vim-colors-solarized.git'
-Bundle 'git@github.com:tpope/vim-surround.git'
-Bundle 'git@github.com:tpope/vim-repeat.git'
-Bundle 'git@github.com:msanders/snipmate.vim.git'  
-Bundle 'git@github.com:scrooloose/syntastic.git'
-Bundle 'git@github.com:klen/python-mode.git'
-let g:pymode_folding = 0 
-Bundle 'AutoClose'
-Bundle 'git@github.com:scrooloose/nerdtree.git' 
-Bundle 'QuickBuf'
-let g:qb_hotkey = "<leader>w" 
-" === General Config ===
-
-syntax on               " syntax highlighting
-filetype plugin indent on     " activates indenting for files
-set autoindent          " auto indenting
-set number              " line numbers
-set nobackup            " get rid of anoying ~file
-set showmatch
-set cursorline          " highlight current line
-
-set background=dark
-colorscheme solarized
-
-set wildmode=longest,list,full
-set wildmenu
-
-" === Keys ===
-let mapleader = "," 
-
-" Exit insert mode with jk
-inoremap jk <esc>
-
-" + is easier to reach than $ on Finnish keyboard
-nmap + $
-vmap + $
-"nmap <leader>w 
-nnoremap Q :q<CR>
-nnoremap <leader>T :NERDTree
+"Do smart autoindenting when starting a new line.
+set smartindent
+set shiftwidth=4
+set tabstop=4
+set expandtab

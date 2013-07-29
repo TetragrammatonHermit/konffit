@@ -5,9 +5,13 @@
 	},
 	"bold_folder_labels": true,
 	"caret_style": "wide",
-	"color_scheme": "Packages/User/colour-schemes/Espresso Soda.tmTheme",
+	"color_scheme": "Packages/User/Espresso Soda.tmTheme",
 	"command": "open_file",
 	"draw_white_space": "all",
+	"env":
+	{
+		"PYTHONPATH": "/usr/local/lib/python:/usr/local/Cellar/python/2.7.2/lib/python2.7/site-packages"
+	},
 	"fade_fold_buttons": false,
 	"find_selected_text": true,
 	"folder_exclude_patterns":
@@ -21,17 +25,20 @@
 		"build",
 		"site"
 	],
-	"font_face": "Envy Code R",
-	"font_size": 13.0,
+	"font_face": "Inconsolata-g",
+	"font_size": 16.0,
 	"highlight_line": true,
+	"hot_exit": false,
 	"ignored_packages":
 	[
 	],
+	"remember_open_files": false,
 	"rulers":
 	[
 		80
 	],
 	"scroll_speed": 5,
+	"spell_check": false,
 	"theme": "Soda Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,

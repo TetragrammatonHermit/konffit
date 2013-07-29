@@ -14,7 +14,8 @@ alias rt="trash"
 
 alias cdbrew="cd /usr/local/lib"
 alias bi="brew install"
-alias bci="brew cask install"
+alias cask="brew cask"
+
 
 # For windows in parallels
 alias cdwc="cd /Volumes/C"

@@ -1,5 +1,0 @@
-" makes jk leave insert mode (like Esc)
-inoremap jk <Esc>
-inoremap kj <Esc>
-
-set number

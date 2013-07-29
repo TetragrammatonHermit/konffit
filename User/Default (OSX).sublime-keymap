@@ -20,18 +20,6 @@
 
   { "keys": ["f9"], "command": "toggle_minimap" },
 
-  // Change theme between light and dark
-  {
-      "keys": ["f10"], "command": "toggle_color_scheme",
-      "args":
-      {
-          "color_scheme_1": "Packages/User/colour-schemes/Monokai Soda.tmTheme" ,
-          "theme_1": "Soda Dark.sublime-theme" ,
-          "color_scheme_2": "Packages/User/colour-schemes/Espresso Soda.tmTheme" ,
-          "theme_2": "Soda Light.sublime-theme"
-      }
-  },
-
   { "keys": ["f11"], "command": "toggle_distraction_free" },
 
   // Toggle comment with cmd+shift+# and one hand

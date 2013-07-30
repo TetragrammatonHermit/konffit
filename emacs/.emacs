@@ -5,7 +5,7 @@
 (tool-bar-mode -1)
 
 ; Auto follow symlinks
-'(vc-follow-symlinks t))
+'(vc-follow-symlinks t)
 
 ;; Hide splash-screen and startup-message
 (setq inhibit-splash-screen t)
@@ -42,9 +42,43 @@
 
 (load-theme 'adwaita t)
 
+; Enable yasnippets
+(require 'yasnippet)
+(yas-global-mode 1)
+(global-set-key (kbd "C-c s") 'yas/insert-snippet)
+
+; Enable helm for autocomplete
+(require 'helm-config)
+(global-set-key (kbd "C-c h") 'helm-mini)
+(helm-mode 1)
+
+; Add yasnippet prompt for helm
+(defun shk-yas/helm-prompt (prompt choices &optional display-fn)
+    "Use helm to select a snippet. Put this into `yas/prompt-functions.'"
+    (interactive)
+    (setq display-fn (or display-fn 'identity))
+    (if (require 'helm-config)
+        (let (tmpsource cands result rmap)
+          (setq cands (mapcar (lambda (x) (funcall display-fn x)) choices))
+          (setq rmap (mapcar (lambda (x) (cons (funcall display-fn x) x)) choices))
+          (setq tmpsource
+                (list
+                 (cons 'name prompt)
+                 (cons 'candidates cands)
+                 '(action . (("Expand" . (lambda (selection) selection))))
+                 ))
+          (setq result (helm-other-buffer '(tmpsource) "*helm-select-yasnippet"))
+          (if (null result)
+              (signal 'quit "user quit!")
+            (cdr (assoc result rmap))))
+      nil))
+
+; Set yasnippet to use helm as prompt
+(setq yas-prompt-functions '(shk-yas/helm-prompt yas-ido-prompt yas-no-prompt))
+ 
 ; Enable ido-mode for autocompletitions
-(require 'ido)
-(ido-mode t)
+;(require 'ido)
+;(ido-mode t)
 
 ; Orgmode code syntax highlight
 (setq org-src-fontify-natively t)
@@ -62,14 +96,11 @@
 (require 'autopair)
 (autopair-global-mode) ;; enable autopair in all buffers
 
+;;;; Language/filetype specific
+
+
 ; Python
 (elpy-enable)
-
-; Javascript
-(add-to-list 'load-path "~/site-elisp/js2-mode/")
-(autoload 'js2-mode "js2" nil t)
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
-
 
 ; Arduino
 (add-to-list 'load-path "~/site-elisp/arduino-mode/")
@@ -77,15 +108,21 @@
 (setq auto-mode-alist (cons '("\\.\\(pde\\|ino\\)$" . arduino-mode) auto-mode-alist))
 (autoload 'arduino-mode "arduino-mode" "Arduino editing mode." t)
 
+; Javascript
+(add-to-list 'load-path "~/site-elisp/js2-mode/")
+(autoload 'js2-mode "js2" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
+; AngularJS Snippets
+(require 'angular-snippets)
+(eval-after-load "sgml-mode"
+  '(define-key html-mode-map (kbd "C-c C-d") 'ng-snip-show-docs-at-point))
+
 ; HTML 
 (require 'emmet-mode)
 (add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
 (add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
 (add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 2))) ;indent 2 spaces.
-
-; Egg for Git
-;(add-to-list 'load-path "~/site-elisp/egg/")
-;(require 'egg)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -105,3 +142,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+

@@ -42,6 +42,11 @@
 
 (load-theme 'adwaita t)
 
+(require 'ace-jump-mode)
+(define-key global-map (kbd "C-c C-d") 'ace-jump-mode)
+
+;;;; Autocomplete and snippets
+
 ; Enable yasnippets
 (require 'yasnippet)
 (yas-global-mode 1)
@@ -75,8 +80,26 @@
 
 ; Set yasnippet to use helm as prompt
 (setq yas-prompt-functions '(shk-yas/helm-prompt yas-ido-prompt yas-no-prompt))
- 
-; Enable ido-mode for autocompletitions
+
+
+; Autocompletemode for javascript
+(add-to-list 'load-path "~/site-elisp/auto-complete")
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/site-elisp/auto-complete/dict")
+(setq-default ac-sources (add-to-list 'ac-sources 'ac-source-dictionary))
+(global-auto-complete-mode t)
+; Start auto-completion after 2 characters of a word
+(setq ac-auto-start 2)
+; case sensitivity is important when finding matches
+(setq ac-ignore-case nil)
+;Use yasnippet
+(add-to-list 'ac-sources 'ac-source-yasnippet)
+(define-key ac-mode-map (kbd "C-TAB") 'auto-complete)
+
+(ac-set-trigger-key "TAB")
+
+
+; Enable ido-mode for auocompletitions
 ;(require 'ido)
 ;(ido-mode t)
 

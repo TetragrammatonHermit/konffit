@@ -43,7 +43,7 @@
 (load-theme 'adwaita t)
 
 (require 'ace-jump-mode)
-(define-key global-map (kbd "C-c C-d") 'ace-jump-mode)
+(define-key global-map (kbd "C-c C-SPC") 'ace-jump-mode)
 
 ;;;; Autocomplete and snippets
 

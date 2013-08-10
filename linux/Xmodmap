@@ -1,0 +1,35 @@
+! Change linux modifier keys to behave like in osx
+! I'm using Lubuntu with EeePC 901 with FI/SWE keyboard layout
+
+! Apply these by symlinking this file to ~/.Xmodmap
+! and then $ xmodmap ~/.Xmodmap
+
+! Sources: 
+! - http://www.paganini.net/index.cgi/linux/nocaps.html
+! - http://earthviaradio.wordpress.com/2012/02/06/swapping-the-left-alt-and-ctrl-keys-in-ubuntu-11-10/#tldr
+! - http://cs.gmu.edu/~sean/stuff/n800/keyboard/old.html
+! - man xmodmap
+
+! First clear keys 
+clear control
+clear mod1
+clear lock
+clear mod4
+
+
+! Set new bindings
+
+! Left Ctrl -> Super
+keycode 37 = Super_L
+! Caps Lock -> Ctrl
+keycode 66 = Control_R
+! Left Alt -> Ctrl
+keycode 64 = Control_L
+! Left Super -> Alt
+keycode 133 = Alt_L Meta_L
+
+
+! Apply new bindings (or something)
+add control = Control_L Control_R
+add mod4 = Super_L
+add mod1 = Alt_L Meta_L

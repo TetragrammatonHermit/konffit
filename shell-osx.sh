@@ -1,3 +1,5 @@
+alias e="/opt/homebrew-cask/Caskroom/emacs/24.3/Emacs.app/Contents/MacOS/Emacs"
+
 alias st="subl"
 alias src="st -n ~/.zshrc"
 alias srcc="st -n ~/konffit/shell-common.sh"

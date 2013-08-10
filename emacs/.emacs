@@ -1,24 +1,57 @@
 (add-to-list 'load-path "~/site-elisp/")
 
-;Editor behaviour
+; ***Base config
+; Setup EL-GET package manager
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+(unless (require 'el-get nil 'noerror)
+  (with-current-buffer
+      (url-retrieve-synchronously
+       "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
+    (goto-char (point-max))
+    (eval-print-last-sexp)))
+(add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
+(el-get 'sync)
+
+; Set lisp-package sources
+(require 'package)
+(package-initialize)
+(setq package-archives '(
+    ("gnu" . "http://elpa.gnu.org/packages/")
+    ("marmalade" . "http://marmalade-repo.org/packages/")
+    ("melpa" . "http://melpa.milkbox.net/packages/"))
+)
+
+; Add path (to make pyflakes etc work)
+(add-to-list 'exec-path "/usr/local/bin/")
+
+; *** Editor behaviour
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
-
-; Auto follow symlinks
-'(vc-follow-symlinks t)
 
 ;; Hide splash-screen and startup-message
 (setq inhibit-splash-screen t)
 (setq inhibit-startup-message t)
 
-;Transparency
+; Default window width and height
+(defun custom-set-frame-size ()
+  (add-to-list 'default-frame-alist '(height . 65))
+  (add-to-list 'default-frame-alist '(width . 99)))
+(custom-set-frame-size)
+(add-hook 'before-make-frame-hook 'custom-set-frame-size)
+
+; Auto follow symlinks
+'(vc-follow-symlinks t)
+
+(load-theme 'adwaita t)
+
+; Transparency
 (defun transparent(alpha-level no-focus-alpha-level)
  "Let's you make the window transparent"
  (interactive "nAlpha level (0-100): \nnNo focus alpha level (0-100): ")
  (set-frame-parameter (selected-frame) 'alpha (list alpha-level no-focus-alpha-level))
  (add-to-list 'default-frame-alist `(alpha ,alpha-level)))
 
-; Auto save directory
+; Auto save directory (don't create autosave crap on project folders)
 (defvar user-temporary-file-directory
 (concat temporary-file-directory user-login-name "/"))
 (make-directory user-temporary-file-directory t)
@@ -31,33 +64,46 @@
 (setq auto-save-file-name-transforms
       `((".*" ,user-temporary-file-directory t)))
 
-; Set package sources
-(require 'package)
-(package-initialize)
-(setq package-archives '(
-    ("gnu" . "http://elpa.gnu.org/packages/")
-    ("marmalade" . "http://marmalade-repo.org/packages/")
-    ("melpa" . "http://melpa.milkbox.net/packages/"))
-)
 
-(load-theme 'adwaita t)
+; *** Keybindings
+; Mac keybindings for international kb
+(setq mac-option-modifier 'none)
+(setq mac-command-modifier 'meta)
 
+;*** Mode/Plugin specific
+
+; Acejump (quick movement)
 (require 'ace-jump-mode)
 (define-key global-map (kbd "C-c C-SPC") 'ace-jump-mode)
 
-;;;; Autocomplete and snippets
+; Multiple cursors
+(add-to-list 'load-path "~/site-elisp/multiple-cursors/")
+(require 'multiple-cursors)
+(global-set-key (kbd "C-<") 'mc/mark-next-like-this)
+(global-set-key (kbd "C->") 'mc/mark-previous-like-this)
+; Add cursor to every line in selection
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 
-; Enable yasnippets
+; Autopair
+(add-to-list 'load-path "~/site-elisp/autopair/")
+(require 'autopair)
+(autopair-global-mode) ;; enable autopair in all buffers
+
+; Yasnippet (snippets) (TODO: optimize load time)
 (require 'yasnippet)
 (yas-global-mode 1)
 (global-set-key (kbd "C-c s") 'yas/insert-snippet)
 
-; Enable helm for autocomplete
+; Stock ido-mode for autocompletition
+;(require 'ido)
+;(ido-mode t)
+
+; Helm (good autocomplete framework or whatever)
 (require 'helm-config)
 (global-set-key (kbd "C-c h") 'helm-mini)
 (helm-mode 1)
 
-; Add yasnippet prompt for helm
+; Connect Yasnippet with Helm
 (defun shk-yas/helm-prompt (prompt choices &optional display-fn)
     "Use helm to select a snippet. Put this into `yas/prompt-functions.'"
     (interactive)
@@ -78,10 +124,26 @@
             (cdr (assoc result rmap))))
       nil))
 
-; Set yasnippet to use helm as prompt
+; Set Yasnippet to use Helm as prompt
 (setq yas-prompt-functions '(shk-yas/helm-prompt yas-ido-prompt yas-no-prompt))
 
+; Orgmode code region syntax highlight
+(setq org-src-fontify-natively t)
 
+; ELPY Python IDE mode
+; Set PYTHONPATH, because we don't load .bashrc. (TODO: needed?)
+(setenv "PYTHONPATH" "/usr/local/lib/python2.7/site-packages:/usr/local/bin/:")
+(elpy-enable)
+
+; Arduino
+(add-to-list 'load-path "~/site-elisp/arduino-mode/")
+(setq auto-mode-alist (cons '("\\.\\(pde\\|ino\\)$" . arduino-mode) auto-mode-alist))
+(autoload 'arduino-mode "arduino-mode" "Arduino editing mode." t)
+
+; Javascript
+(add-to-list 'load-path "~/site-elisp/js2-mode/")
+(autoload 'js2-mode "js2" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 ; Autocompletemode for javascript
 (add-to-list 'load-path "~/site-elisp/auto-complete")
 (require 'auto-complete-config)
@@ -95,57 +157,19 @@
 ;Use yasnippet
 (add-to-list 'ac-sources 'ac-source-yasnippet)
 (define-key ac-mode-map (kbd "C-TAB") 'auto-complete)
-
 (ac-set-trigger-key "TAB")
-
-
-; Enable ido-mode for auocompletitions
-;(require 'ido)
-;(ido-mode t)
-
-; Orgmode code syntax highlight
-(setq org-src-fontify-natively t)
-
-; Multiple cursors
-(add-to-list 'load-path "~/site-elisp/multiple-cursors/")
-(require 'multiple-cursors)
-(global-set-key (kbd "C-<") 'mc/mark-next-like-this)
-(global-set-key (kbd "C->") 'mc/mark-previous-like-this)
-; Add cursor to every line in selection
-(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines) 
-
-; Autopair
-(add-to-list 'load-path "~/site-elisp/autopair/")
-(require 'autopair)
-(autopair-global-mode) ;; enable autopair in all buffers
-
-;;;; Language/filetype specific
-
-
-; Python
-(elpy-enable)
-
-; Arduino
-(add-to-list 'load-path "~/site-elisp/arduino-mode/")
-
-(setq auto-mode-alist (cons '("\\.\\(pde\\|ino\\)$" . arduino-mode) auto-mode-alist))
-(autoload 'arduino-mode "arduino-mode" "Arduino editing mode." t)
-
-; Javascript
-(add-to-list 'load-path "~/site-elisp/js2-mode/")
-(autoload 'js2-mode "js2" nil t)
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
 ; AngularJS Snippets
 (require 'angular-snippets)
 (eval-after-load "sgml-mode"
   '(define-key html-mode-map (kbd "C-c C-d") 'ng-snip-show-docs-at-point))
 
-; HTML 
+; HTML
 (require 'emmet-mode)
 (add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
 (add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
 (add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 2))) ;indent 2 spaces.
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

@@ -4,8 +4,9 @@
 
 
 ;;;### (autoloads (virtualenv-minor-mode virtualenv-deactivate virtualenv-workon)
-;;;;;;  "virtualenv" "virtualenv.el" (20971 42338 0 0))
-;;; Generated autoloads from virtualenv.el
+;;;;;;  "virtualenv" "../../../../../.emacs.d/elpa/virtualenv-20120930.1034/virtualenv.el"
+;;;;;;  "61bce1b5b422e5b0648df9510889129d")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/virtualenv-20120930.1034/virtualenv.el
 
 (autoload 'virtualenv-workon "virtualenv" "\
 Activate a virtual environment for python.
@@ -30,8 +31,9 @@ the mode if ARG is omitted or nil, and toggle it if ARG is `toggle'.
 
 ;;;***
 
-;;;### (autoloads nil nil ("virtualenv-pkg.el") (20971 42338 980000
-;;;;;;  0))
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/virtualenv-20120930.1034/virtualenv-pkg.el"
+;;;;;;  "../../../../../.emacs.d/elpa/virtualenv-20120930.1034/virtualenv.el")
+;;;;;;  (20999 7571 245011 0))
 
 ;;;***
 

@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil nil ("nose-pkg.el" "nose.el") (20971 42333
-;;;;;;  383000 0))
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/nose-20110804.819/nose-pkg.el"
+;;;;;;  "../../../../../.emacs.d/elpa/nose-20110804.819/nose.el")
+;;;;;;  (20999 7566 639992 0))
 
 ;;;***
 

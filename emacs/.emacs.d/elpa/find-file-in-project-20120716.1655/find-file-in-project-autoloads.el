@@ -3,9 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (find-file-in-project) "find-file-in-project" "find-file-in-project.el"
-;;;;;;  (20971 42335 0 0))
-;;; Generated autoloads from find-file-in-project.el
+;;;### (autoloads (find-file-in-project) "find-file-in-project" "../../../../../.emacs.d/elpa/find-file-in-project-20120716.1655/find-file-in-project.el"
+;;;;;;  "bffc7b9c1a5d7cdb3d2f68968721b806")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/find-file-in-project-20120716.1655/find-file-in-project.el
 
 (autoload 'find-file-in-project "find-file-in-project" "\
 Prompt with a completing list of all files in the project to find one.
@@ -32,8 +32,9 @@ setting the variable `ffip-project-root'.
 
 ;;;***
 
-;;;### (autoloads nil nil ("find-file-in-project-pkg.el") (20971
-;;;;;;  42335 851000 0))
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/find-file-in-project-20120716.1655/find-file-in-project-pkg.el"
+;;;;;;  "../../../../../.emacs.d/elpa/find-file-in-project-20120716.1655/find-file-in-project.el")
+;;;;;;  (20999 7568 833388 0))
 
 ;;;***
 

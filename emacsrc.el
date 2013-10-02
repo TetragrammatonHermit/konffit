@@ -2,7 +2,6 @@
 ;;; Commentary:
 ;; all customizations happen here
 
-
 ;m;;; General 
 (x-focus-frame nil)
 ; Disable scroll bars
@@ -34,6 +33,8 @@
 (prelude-require-packages '(multiple-cursors
                             elpy
                             ecb
+                            auto-complete
+                            js2-mode
                             emmet-mode))
 
 ;(prelude-install-packages)
@@ -66,7 +67,10 @@
 (setq emmet-move-cursor-between-quotes t)
 
 ;; Javascript
+; Default to js2-mode
+(add-to-list 'auto-mode-alist (cons (rx ".js" eos) 'js2-mode))
 (setq js-indent-level 2)
+(setq-default js2-basic-offset 2)
 
 ; Latex
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)

@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;; all customizations happen here
 
-;m;;; General 
+;;;; General 
 (x-focus-frame nil)
 ; Disable scroll bars
 (scroll-bar-mode -1)
@@ -13,18 +13,20 @@
 ; Hack to whitespace mode tolerance
 (setq whitespace-line-column 250)
 
+
 ;;; Keybindings
 ; Prelude stole some default keybindings
 (key-chord-define-global "uu" nil)
 (key-chord-define-global "jv" 'undo-tree-visualize)
+
+; Ace-jump
 (key-chord-define-global "hh" 'ace-jump-mode-pop-mark)
 (key-chord-define-global "jk" 'ace-jump-word-mode)
 (key-chord-define-global "jj" 'ace-jump-char-mode)
 
-;(define-key org-mode-map (kbd "C-M-c <down>") 'org-move-subtree-down)
-;(define-key org-mode-map (kbd "C-M-c <up>") 'org-move-subtree-up)
 
-;m;;; Package setup
+
+;;;; Package setup
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" .
@@ -37,25 +39,21 @@
                             js2-mode
                             emmet-mode))
 
-;(prelude-install-packages)
 
 ; Multiple cursors
 (global-set-key (kbd "C-<") 'mc/mark-next-like-this)
 (global-set-key (kbd "C->") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-M-g") 'mc/mark-all-dwim)
+(key-chord-define-global "jc" 'mc/mark-more-like-this-extended)
 (global-unset-key (kbd "M-<down-mouse-1>"))
 (global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)
-
-; Disable whitespace-mode TODO: disable just the long line highlight
-;(setq prelude-whitespace nil)
 
 
 ;;;; Language specific major stuff
 
 ;;; Python
-; Elpy
+; Elpy 
 (elpy-enable)
-
 
 ;;; Web Front End
 ;; HTML
@@ -72,6 +70,7 @@
 (setq js-indent-level 2)
 (setq-default js2-basic-offset 2)
 
+;;; Other
 ; Latex
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
 (setq reftex-plug-into-AUCTeX t)

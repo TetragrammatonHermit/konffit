@@ -13,6 +13,8 @@
 ; Hack to whitespace mode tolerance
 (setq whitespace-line-column 250)
 
+;(electric-pair-mode +1) ; this is older mode
+(smartparens-global-mode +1) ; This should be enabled by prelude, but isn't..
 
 ;;; Keybindings
 ; Prelude stole some default keybindings
@@ -35,8 +37,8 @@
 (prelude-require-packages '(multiple-cursors
                             elpy
                             ecb
+                            scad-mode
                             auto-complete
-                            multi-web-mode
                             js2-mode
                             emmet-mode))
 
@@ -77,8 +79,8 @@
 ;; Javascript
 ; Default to js2-mode
 (add-to-list 'auto-mode-alist (cons (rx ".js" eos) 'js2-mode))
-(setq js-indent-level 2)
-(setq-default js2-basic-offset 2)
+(setq js-indent-level 4)
+(setq-default js2-basic-offset 4)
 
 ;;; Other
 ; Latex

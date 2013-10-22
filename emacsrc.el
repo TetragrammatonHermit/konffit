@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;; all customizations happen here
 
-;;;; General 
+;;;; General
 (x-focus-frame nil)
 ; Disable scroll bars
 (scroll-bar-mode -1)
@@ -13,20 +13,28 @@
 ; Hack to whitespace mode tolerance
 (setq whitespace-line-column 250)
 
+;; Set transparency of emacs
+(defun transparency (value)
+  "Sets the transparency of the frame window. 0=transparent/100=opaque"
+  (interactive "nTransparency Value 0 - 100 opaque:")
+  (set-frame-parameter (selected-frame) 'alpha value))
+(transparency 96)
+
 ;(electric-pair-mode +1) ; this is older mode
 (smartparens-global-mode +1) ; This should be enabled by prelude, but isn't..
+(setq prelude-flyspell nil) ; Disable spell checking
 
 ;;; Keybindings
 ; Prelude stole some default keybindings
 (key-chord-define-global "uu" nil)
 (key-chord-define-global "jv" 'undo-tree-visualize)
 
+(global-set-key (kbd "C-c c") 'comment-or-uncomment-region)
+
 ; Ace-jump
 (key-chord-define-global "hh" 'ace-jump-mode-pop-mark)
 (key-chord-define-global "jk" 'ace-jump-word-mode)
 (key-chord-define-global "jj" 'ace-jump-char-mode)
-
-
 
 ;;;; Package setup
 (require 'package)
@@ -42,6 +50,10 @@
                             js2-mode
                             emmet-mode))
 
+; Autocomplete
+;(global-auto-complete-mode t)
+(setq ac-auto-start 2)
+(setq ac-ignore-case nil)
 
 ; Multiple cursors
 (global-set-key (kbd "C-<") 'mc/mark-next-like-this)
@@ -55,18 +67,18 @@
 ;;;; Language specific major stuff
 
 ;;; Python
-; Elpy 
+; Elpy
 (elpy-enable)
 
 ;;; Web Front End
-
-(require 'multi-web-mode)
-(setq mweb-default-major-mode 'html-mode)
-(setq mweb-tags '((php-mode "<\\?php\\|<\\? \\|<\\?=" "\\?>")
-                  (js2-mode "<script +\\(type=\"text/javascript\"\\|language=\"javascript\"\\)[^>]*>" "</script>")
-                  (css-mode "<style +type=\"text/css\"[^>]*>" "</style>")))
-(setq mweb-filename-extensions '("php" "htm" "html" "ctp" "phtml" "php4" "php5"))
-(multi-web-global-mode 1)
+; Multi web mode
+;; (require 'multi-web-mode) ;; Disable because of some problems
+;; (setq mweb-default-major-mode 'html-mode)
+;; (setq mweb-tags '((php-mode "<\\?php\\|<\\? \\|<\\?=" "\\?>")
+;;                   (js2-mode "<script +\\(type=\"text/javascript\"\\|language=\"javascript\"\\)[^>]*>" "</script>")
+;;                   (css-mode "<style +type=\"text/css\"[^>]*>" "</style>")))
+;; (setq mweb-filename-extensions '("php" "htm" "html" "ctp" "phtml" "php4" "php5"))
+;; (multi-web-global-mode 1)
 
 ;; HTML
 ; Emmet
@@ -91,3 +103,15 @@
 
 (provide 'custom-config)
 ;;; custom-config.el ends here
+
+;;;;; Custom functions
+(defun vi-open-line-above ()
+  "Insert a newline above the current line and put point at beginning."
+  (interactive)
+  (unless (bolp)
+    (beginning-of-line))
+  (newline)
+  (forward-line -1)
+  (indent-according-to-mode))
+
+(global-set-key (kbd "C-O") 'vi-open-line-above)

@@ -1088,11 +1088,11 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>417 216 201 309 0 0 1680 1028 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>141 335 924 485 0 0 1680 1028 </string>
+	<string>654 447 924 485 0 0 1680 1028 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>1202 873 384 129 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 632 570 426 0 0 1920 1058 </string>
+	<string>208 119 570 426 0 0 1680 1028 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1272,7 +1272,7 @@
 			<key>Blur</key>
 			<true/>
 			<key>Blur Radius</key>
-			<real>10.494251251220703</real>
+			<real>8.2188196182250977</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -1742,7 +1742,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.029518768191337585</real>
+			<real>0.15017335116863251</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -2444,7 +2444,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-10-07T09:22:18Z</date>
+	<date>2013-10-20T16:00:20Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -2493,5 +2493,51 @@
 	<false/>
 	<key>iTerm Version</key>
 	<string>1.0.0.20130624</string>
+	<key>mad_DefaultHotKeysApplied</key>
+	<true/>
+	<key>mad_ToggleFloatingWindowKeyCode</key>
+	<integer>3</integer>
+	<key>mad_ToggleFloatingWindowModifiers</key>
+	<integer>4096</integer>
+	<key>mad_hkCenterWindowKeyCode</key>
+	<integer>8</integer>
+	<key>mad_hkCenterWindowModifiers</key>
+	<integer>6400</integer>
+	<key>mad_hkRestoreFrameKeyCode</key>
+	<integer>36</integer>
+	<key>mad_hkRestoreFrameModifiers</key>
+	<integer>6400</integer>
+	<key>mad_hkSaveFrameKeyCode</key>
+	<integer>1</integer>
+	<key>mad_hkSaveFrameModifiers</key>
+	<integer>6400</integer>
+	<key>mad_hkSettingsKeyCode</key>
+	<integer>43</integer>
+	<key>mad_hkSettingsModifiers</key>
+	<integer>6400</integer>
+	<key>mad_hkToggle12LeftKeyCode</key>
+	<integer>37</integer>
+	<key>mad_hkToggle12LeftModifiers</key>
+	<integer>6400</integer>
+	<key>mad_hkToggle12RightKeyCode</key>
+	<integer>15</integer>
+	<key>mad_hkToggle12RightModifiers</key>
+	<integer>6400</integer>
+	<key>mad_hkToggleDockandMenuKeyCode</key>
+	<integer>46</integer>
+	<key>mad_hkToggleDockandMenuModifiers</key>
+	<integer>6400</integer>
+	<key>mad_hkToggleFloatingWindowKeyCode</key>
+	<integer>3</integer>
+	<key>mad_hkToggleFloatingWindowModifiers</key>
+	<integer>4096</integer>
+	<key>mad_hkToggleMADFullscreenKeyCode</key>
+	<integer>3</integer>
+	<key>mad_hkToggleMADFullscreenModifiers</key>
+	<integer>6144</integer>
+	<key>mad_hkToggleOSXFullscreenKeyCode</key>
+	<integer>3</integer>
+	<key>mad_hkToggleOSXFullscreenModifiers</key>
+	<integer>2048</integer>
 </dict>
 </plist>

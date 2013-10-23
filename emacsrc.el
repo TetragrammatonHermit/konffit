@@ -30,6 +30,7 @@
 (key-chord-define-global "jv" 'undo-tree-visualize)
 
 (global-set-key (kbd "C-c c") 'comment-or-uncomment-region)
+(global-set-key (kbd "M-§") 'other-frame)
 
 ; Ace-jump
 (key-chord-define-global "hh" 'ace-jump-mode-pop-mark)
@@ -42,10 +43,10 @@
              '("marmalade" .
                "http://marmalade-repo.org/packages/"))
 (package-initialize)
+; scad-mode
 (prelude-require-packages '(multiple-cursors
                             elpy
                             ecb
-                            scad-mode
                             auto-complete
                             js2-mode
                             emmet-mode))

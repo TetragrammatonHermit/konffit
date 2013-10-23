@@ -2,27 +2,17 @@
 #
 # Symlink this to home and source from .zshrc .bash_profile or whatever
 
-alias rc="vim ~/.zshrc"
-alias rcc="vim ~/konffit/shell-common.sh"
-
-alias s="st -n"
-
-alias src="st -n ~/.zshrc"
-alias srcc="st -n ~/konffit/shell-common.sh"
-
 alias rp="source ~/.zshrc"
-
 alias back='cd $OLDPWD'
 alias myip="ifconfig en1"
 alias cl="clear"
 
+# Package managers
 alias pi="pip install"
 
 #CD's
 alias cdd="cd ~/Desktop/"
 alias cddo="cd ~/Documents/"
-
-alias ip="ipython"
 
 #Yeoman / grunt
 alias g="grunt"

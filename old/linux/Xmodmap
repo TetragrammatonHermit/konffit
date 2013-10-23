@@ -1,8 +1,4 @@
-! Change linux modifier keys to behave like in osx
-! I'm using Lubuntu with EeePC 901 with FI/SWE keyboard layout
-
-! Apply these by symlinking this file to ~/.Xmodmap
-! and then $ xmodmap ~/.Xmodmap
+! xmodmap this file to apply
 
 ! Sources: 
 ! - http://www.paganini.net/index.cgi/linux/nocaps.html

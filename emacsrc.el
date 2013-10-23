@@ -56,8 +56,22 @@
 
 ; Autocomplete
 ;(global-auto-complete-mode t)
-(setq ac-auto-start 2)
+(setq ac-auto-starT 2)
 (setq ac-ignore-case nil)
+
+(add-hook 'dired-mode-hook
+  	  '(lambda ()
+	     (define-key dired-mode-map "o" 'dired-open-mac)))
+
+(defun dired-open-mac ()
+  (interactive)
+  (let ((file-name (dired-get-file-for-visit)))
+    (if (file-exists-p file-name)
+        (call-process "/usr/bin/open" nil 0 nil file-name))))
+
+; Openwith (open pdf's etc in default program)
+;(setq openwith-associations '(("\\.pdf\\'" "open" (file))))
+;(openwith-mode t)
 
 ; Multiple cursors
 (global-set-key (kbd "C-<") 'mc/mark-next-like-this)

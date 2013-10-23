@@ -1,3 +1,5 @@
 konffit
 =======
-Config-files for syncing across machines.
+rc files
+
+old and current

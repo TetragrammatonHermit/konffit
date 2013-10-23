@@ -13,6 +13,9 @@
 ; Hack to whitespace mode tolerance
 (setq whitespace-line-column 250)
 
+; Magit use current window (use emacsclient of current installation)
+(set-variable 'magit-emacsclient-executable "/usr/local/Cellar/emacs/HEAD/bin/emacsclient")
+
 ;; Set transparency of emacs
 (defun transparency (value)
   "Sets the transparency of the frame window. 0=transparent/100=opaque"

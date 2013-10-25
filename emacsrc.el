@@ -13,6 +13,10 @@
 ; Hack to whitespace mode tolerance
 (setq whitespace-line-column 250)
 
+; Nicer mousewheel scrolling
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
+(setq mouse-wheel-progressive-speed nil)
+
 ; Magit use current window (use emacsclient of current installation)
 (set-variable 'magit-emacsclient-executable "/usr/local/Cellar/emacs/HEAD/bin/emacsclient")
 

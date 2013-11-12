@@ -3,6 +3,11 @@
 ;; all customizations happen here
 
 ;;;; General
+
+; Start daemon
+(load "server")
+(unless (server-running-p) (server-start))
+
 (x-focus-frame nil)
 ; Disable scroll bars
 (scroll-bar-mode -1)
@@ -44,28 +49,33 @@
 (key-chord-define-global "jk" 'ace-jump-word-mode)
 (key-chord-define-global "jj" 'ace-jump-char-mode)
 
+; Disable whitespace-mode
+(setq prelude-whitespace nil)
+
 ;;;; Package setup
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" .
                "http://marmalade-repo.org/packages/"))
 (package-initialize)
-; scad-mode
-(prelude-require-packages '(multiple-cursors
+
+; currently disabled: scad-mode
+(prelude-require-packages '(
                             elpy
                             ecb
+                            applescript-mode
                             auto-complete
                             js2-mode
                             emmet-mode))
 
 ; Autocomplete
 ;(global-auto-complete-mode t)
-(setq ac-auto-starT 2)
+(setq ac-auto-start 2)
 (setq ac-ignore-case nil)
 
 (add-hook 'dired-mode-hook
-  	  '(lambda ()
-	     (define-key dired-mode-map "o" 'dired-open-mac)))
+          '(lambda ()
+             (define-key dired-mode-map "o" 'dired-open-mac)))
 
 (defun dired-open-mac ()
   (interactive)
@@ -73,9 +83,11 @@
     (if (file-exists-p file-name)
         (call-process "/usr/bin/open" nil 0 nil file-name))))
 
+
 ; Openwith (open pdf's etc in default program)
 ;(setq openwith-associations '(("\\.pdf\\'" "open" (file))))
 ;(openwith-mode t)
+
 
 ; Multiple cursors
 (global-set-key (kbd "C-<") 'mc/mark-next-like-this)
@@ -87,6 +99,12 @@
 
 
 ;;;; Language specific major stuff
+
+;;; Org-mode
+(add-hook 'org-mode-hook
+          (lambda ()
+            (org-indent-mode t))
+          t)
 
 ;;; Python
 ; Elpy

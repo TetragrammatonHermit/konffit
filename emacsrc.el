@@ -51,7 +51,12 @@
 ; Ace-jump
 (key-chord-define-global "hh" 'ace-jump-mode-pop-mark)
 (key-chord-define-global "jk" 'ace-jump-word-mode)
+
 (key-chord-define-global "jj" 'ace-jump-char-mode)
+
+(key-chord-define-global "lö" 'iy-go-to-char)
+(key-chord-define-global "lk" 'iy-go-to-char-backward)
+(global-set-key (kbd "C-å") 'iy-go-to-char-continue)
 
 (global-set-key (kbd "C-,") 'iedit-mode)
 (global-set-key (kbd "C-;") 'iedit-rectangle-mode)
@@ -64,14 +69,15 @@
 (package-initialize)
 
 ; currently disabled: scad-mode
-(prelude-require-packages '(
-                            elpy
+(prelude-require-packages '(elpy
                             ecb
                             applescript-mode
                             auto-complete
                             iedit
                             js2-mode
-                            emmet-mode))
+                            emmet-mode
+                            iy-go-to-char
+                            ))
 
 
 

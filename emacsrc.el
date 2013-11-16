@@ -1,6 +1,7 @@
 ;;; custom --- config
 ;;; Commentary:
 ;; all customizations happen here
+;;; Code:
 
 ;;;; General
 
@@ -12,11 +13,9 @@
 ; Disable scroll bars
 (scroll-bar-mode -1)
 ; Make OSX special characters work
-(setq mac-option-modifier nil
+(setq mac-option-modifier 'nil
       mac-command-modifier 'meta
       x-select-enable-clipboard t)
-; Hack to whitespace mode tolerance
-(setq whitespace-line-column 250)
 
 ; Nicer mousewheel scrolling
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
@@ -27,21 +26,26 @@
 
 ;; Set transparency of emacs
 (defun transparency (value)
-  "Sets the transparency of the frame window. 0=transparent/100=opaque"
+  "Set the transparency of the frame window.  VALUE = 0-100."
+  
   (interactive "nTransparency Value 0 - 100 opaque:")
   (set-frame-parameter (selected-frame) 'alpha value))
 (transparency 96)
 
-;(electric-pair-mode +1) ; this is older mode
-(smartparens-global-mode +1) ; This should be enabled by prelude, but isn't..
+;(smartparens-global-mode +1) ; This should be enabled by prelude, but isn't..
 (setq prelude-flyspell nil) ; Disable spell checking
+(setq prelude-guru nil)
+                                        ; Disable whitespace-mode
+(setq prelude-whitespace nil)
 
 ;;; Keybindings
+(key-chord-mode 1)
+
 ; Prelude stole some default keybindings
 (key-chord-define-global "uu" nil)
 (key-chord-define-global "jv" 'undo-tree-visualize)
-
 (global-set-key (kbd "C-c c") 'comment-or-uncomment-region)
+
 (global-set-key (kbd "M-§") 'other-frame)
 
 ; Ace-jump
@@ -49,8 +53,8 @@
 (key-chord-define-global "jk" 'ace-jump-word-mode)
 (key-chord-define-global "jj" 'ace-jump-char-mode)
 
-; Disable whitespace-mode
-(setq prelude-whitespace nil)
+(global-set-key (kbd "C-,") 'iedit-mode)
+(global-set-key (kbd "C-;") 'iedit-rectangle-mode)
 
 ;;;; Package setup
 (require 'package)
@@ -65,60 +69,51 @@
                             ecb
                             applescript-mode
                             auto-complete
+                            iedit
                             js2-mode
                             emmet-mode))
+
+
 
 ; Autocomplete
 ;(global-auto-complete-mode t)
 (setq ac-auto-start 2)
 (setq ac-ignore-case nil)
 
-(add-hook 'dired-mode-hook
-          '(lambda ()
-             (define-key dired-mode-map "o" 'dired-open-mac)))
 
 (defun dired-open-mac ()
+  "Open file from dired buffer with OSX default program."
   (interactive)
   (let ((file-name (dired-get-file-for-visit)))
     (if (file-exists-p file-name)
         (call-process "/usr/bin/open" nil 0 nil file-name))))
 
-
-; Openwith (open pdf's etc in default program)
-;(setq openwith-associations '(("\\.pdf\\'" "open" (file))))
-;(openwith-mode t)
-
+(add-hook 'dired-mode-hook
+          '(lambda ()
+             (define-key dired-mode-map "o" 'dired-open-mac)))
 
 ; Multiple cursors
-(global-set-key (kbd "C-<") 'mc/mark-next-like-this)
-(global-set-key (kbd "C->") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-M-g") 'mc/mark-all-dwim)
-(key-chord-define-global "jc" 'mc/mark-more-like-this-extended)
-(global-unset-key (kbd "M-<down-mouse-1>"))
-(global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)
+;; (global-set-key (kbd "C-<") 'mc/mark-next-like-this)
+;; (global-set-key (kbd "C->") 'mc/mark-previous-like-this)
+;; (global-set-key (kbd "C-M-g") 'mc/mark-all-dwim)
+;; (key-chord-define-global "jc" 'mc/mark-more-like-this-extended)
+;; (global-unset-key (kbd "M-<down-mouse-1>"))
+;; (global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)
 
-
-;;;; Language specific major stuff
 
 ;;; Org-mode
 (add-hook 'org-mode-hook
           (lambda ()
-            (org-indent-mode t))
+            (org-indent-mode t)
+            (local-set-key "C-M-<down>" 'org-move-subtree-down)
+            (local-set-key "C-M-<up>" 'org-move-subtree-up)
+            )
           t)
 
 ;;; Python
 ; Elpy
 (elpy-enable)
 
-;;; Web Front End
-; Multi web mode
-;; (require 'multi-web-mode) ;; Disable because of some problems
-;; (setq mweb-default-major-mode 'html-mode)
-;; (setq mweb-tags '((php-mode "<\\?php\\|<\\? \\|<\\?=" "\\?>")
-;;                   (js2-mode "<script +\\(type=\"text/javascript\"\\|language=\"javascript\"\\)[^>]*>" "</script>")
-;;                   (css-mode "<style +type=\"text/css\"[^>]*>" "</style>")))
-;; (setq mweb-filename-extensions '("php" "htm" "html" "ctp" "phtml" "php4" "php5"))
-;; (multi-web-global-mode 1)
 
 ;; HTML
 ; Emmet
@@ -129,8 +124,6 @@
 (setq emmet-move-cursor-between-quotes t)
 
 ;; Javascript
-; Default to js2-mode
-(add-to-list 'auto-mode-alist (cons (rx ".js" eos) 'js2-mode))
 (setq js-indent-level 4)
 (setq-default js2-basic-offset 4)
 
@@ -139,10 +132,6 @@
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
 (setq reftex-plug-into-AUCTeX t)
 (setq-default ispell-program-name "aspell")
-
-
-(provide 'custom-config)
-;;; custom-config.el ends here
 
 ;;;;; Custom functions
 (defun vi-open-line-above ()
@@ -155,3 +144,8 @@
   (indent-according-to-mode))
 
 (global-set-key (kbd "C-O") 'vi-open-line-above)
+
+
+(provide 'emacsrc)
+
+;;; emacsrc.el ends here

@@ -44,7 +44,7 @@
 ; Prelude stole some default keybindings
 (key-chord-define-global "uu" nil)
 (key-chord-define-global "jv" 'undo-tree-visualize)
-(global-set-key (kbd "C-c c") 'comment-or-uncomment-region)
+(global-set-key (kbd "\C-c c") 'comment-or-uncomment-region)
 
 (global-set-key (kbd "M-§") 'other-frame)
 
@@ -56,10 +56,10 @@
 
 (key-chord-define-global "lö" 'iy-go-to-char)
 (key-chord-define-global "lk" 'iy-go-to-char-backward)
-(global-set-key (kbd "C-å") 'iy-go-to-char-continue)
+(global-set-key (kbd "\C-å") 'iy-go-to-char-continue)
 
-(global-set-key (kbd "C-,") 'iedit-mode)
-(global-set-key (kbd "C-;") 'iedit-rectangle-mode)
+(global-set-key (kbd "\C-,") 'iedit-mode)
+(global-set-key (kbd "\C-;") 'iedit-rectangle-mode)
 
 ;;;; Package setup
 (require 'package)
@@ -73,10 +73,14 @@
                             ecb
                             applescript-mode
                             auto-complete
+                            ac-emmet
+                            ac-js2
+                            angular-snippets
                             iedit
                             js2-mode
                             emmet-mode
                             iy-go-to-char
+                            
                             ))
 
 
@@ -99,9 +103,9 @@
              (define-key dired-mode-map "o" 'dired-open-mac)))
 
 ; Multiple cursors
-;; (global-set-key (kbd "C-<") 'mc/mark-next-like-this)
-;; (global-set-key (kbd "C->") 'mc/mark-previous-like-this)
-;; (global-set-key (kbd "C-M-g") 'mc/mark-all-dwim)
+;; (global-set-key (kbd "\C-<") 'mc/mark-next-like-this)
+;; (global-set-key (kbd "\C->") 'mc/mark-previous-like-this)
+;; (global-set-key (kbd "\C-M-g") 'mc/mark-all-dwim)
 ;; (key-chord-define-global "jc" 'mc/mark-more-like-this-extended)
 ;; (global-unset-key (kbd "M-<down-mouse-1>"))
 ;; (global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)
@@ -111,8 +115,8 @@
 (add-hook 'org-mode-hook
           (lambda ()
             (org-indent-mode t)
-            (local-set-key "C-M-<down>" 'org-move-subtree-down)
-            (local-set-key "C-M-<up>" 'org-move-subtree-up)
+            (local-set-key "\C-M-<down>" 'org-move-subtree-down)
+            (local-set-key "\C-M-<up>" 'org-move-subtree-up)
             )
           t)
 
@@ -149,7 +153,7 @@
   (forward-line -1)
   (indent-according-to-mode))
 
-(global-set-key (kbd "C-O") 'vi-open-line-above)
+(global-set-key (kbd "\C-O") 'vi-open-line-above)
 
 
 (provide 'emacsrc)

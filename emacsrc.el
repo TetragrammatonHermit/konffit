@@ -58,32 +58,6 @@
 (key-chord-define-global "lk" 'iy-go-to-char-backward)
 (global-set-key (kbd "\C-å") 'iy-go-to-char-continue)
 
-(global-set-key (kbd "\C-,") 'iedit-mode)
-(global-set-key (kbd "\C-;") 'iedit-rectangle-mode)
-
-;;;; Package setup
-(require 'package)
-(add-to-list 'package-archives
-             '("marmalade" .
-               "http://marmalade-repo.org/packages/"))
-(package-initialize)
-
-; currently disabled: scad-mode
-(prelude-require-packages '(elpy
-                            ecb
-                            applescript-mode
-                            auto-complete
-                            ac-emmet
-                            ac-js2
-                            angular-snippets
-                            iedit
-                            js2-mode
-                            emmet-mode
-                            iy-go-to-char
-                            
-                            ))
-
-
 
 ; Autocomplete
 ;(global-auto-complete-mode t)
@@ -100,15 +74,14 @@
 
 (add-hook 'dired-mode-hook
           '(lambda ()
-             (define-key dired-mode-map "o" 'dired-open-mac)))
+             (define-key dired-mode-map "o" 'dired-open-makc)))
 
 ; Multiple cursors
-;; (global-set-key (kbd "\C-<") 'mc/mark-next-like-this)
-;; (global-set-key (kbd "\C->") 'mc/mark-previous-like-this)
-;; (global-set-key (kbd "\C-M-g") 'mc/mark-all-dwim)
-;; (key-chord-define-global "jc" 'mc/mark-more-like-this-extended)
-;; (global-unset-key (kbd "M-<down-mouse-1>"))
-;; (global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)
+(key-chord-define-global "jn" 'mc/mark-more-like-this-extended)
+(key-chord-define-global "jg" 'mc/mark-all-like-this)
+(global-unset-key (kbd "M-<down-mouse-1>"))
+(global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)
+(global-set-key (kbd "\C-c <") 'mc/mark-next-like-this)
 
 
 ;;; Org-mode

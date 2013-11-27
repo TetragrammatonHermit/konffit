@@ -16,7 +16,7 @@ alias sano="say -v Mikko" # Say something in Finnish
 alias kello="date \"+Kello on %H %M\" | sano"
 
 # Start emacs server
-alias emacs="open /Applications/Emacs"
+alias emacs="/usr/local/Cellar/emacs/24.3/bin/emacs"
 alias ecw="/usr/local/bin/emacsclient -c $*"
 alias ec="/usr/local/bin/emacsclient --no-wait $*"
 alias ect='/usr/local/bin/emacsclient -t -a \"\" $*'

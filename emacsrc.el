@@ -22,7 +22,7 @@
 (setq mouse-wheel-progressive-speed nil)
 
 ; Magit use current window (use emacsclient of current installation)
-(set-variable 'magit-emacsclient-executable "/usr/local/Cellar/emacs/HEAD/bin/emacsclient")
+(set-variable 'magit-emacsclient-executable "/usr/local/Cellar/emacs/24.3/bin/emacsclient")
 
 ;; Set transparency of emacs
 (defun transparency (value)

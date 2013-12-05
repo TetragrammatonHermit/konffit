@@ -32,7 +32,7 @@
   (set-frame-parameter (selected-frame) 'alpha value))
 (transparency 96)
 
-;(smartparens-global-mode +1) ; This should be enabled by prelude, but isn't..
+(smartparens-global-mode +1)
 (setq prelude-flyspell nil) ; Disable spell checking
 (setq prelude-guru nil)
                                         ; Disable whitespace-mode
@@ -54,8 +54,8 @@
 
 (key-chord-define-global "jj" 'ace-jump-char-mode)
 
-(key-chord-define-global "lö" 'iy-go-to-char)
-(key-chord-define-global "lk" 'iy-go-to-char-backward)
+(key-chord-define-global "kl" 'iy-go-to-char)
+(key-chord-define-global "km" 'iy-go-to-char-backward)
 (global-set-key (kbd "\C-å") 'iy-go-to-char-continue)
 
 
@@ -74,7 +74,7 @@
 
 (add-hook 'dired-mode-hook
           '(lambda ()
-             (define-key dired-mode-map "o" 'dired-open-makc)))
+             (define-key dired-mode-map "o" 'dired-open-mac)))
 
 ; Multiple cursors
 (key-chord-define-global "jn" 'mc/mark-more-like-this-extended)
@@ -83,11 +83,36 @@
 (global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)
 (global-set-key (kbd "\C-c <") 'mc/mark-next-like-this)
 
+; Copy current buffer path to clipboard
+(define-key prelude-mode-map (kbd "\C-c w") 'prelude-copy-file-name-to-clipboard)
+
+;;; Dired
+;; allow dired to be able to delete or copy a whole dir.
+(setq dired-recursive-copies (quote always)) ; “always” means no asking
+(setq dired-recursive-deletes (quote top)) ; “top” means ask once
+;; Use split window as default copy/rename target
+(setq dired-dwim-target t)
+
+;; {{ copy the file-name/full-path in dired buffer into clipboard
+;; `w` => copy file name
+;; `C-u 0 w` => copy full path
+(defadvice dired-copy-filename-as-kill (after dired-filename-to-clipboard activate)
+  (with-temp-buffer
+    (insert (current-kill 0))
+    (shell-command-on-region (point-min) (point-max)
+                             (cond
+                              ((eq system-type 'cygwin) "putclip")
+                              ((eq system-type 'darwin) "pbcopy")
+                              (t "xsel -ib")
+                              )))
+  (message "%s copied to clipboard" (current-kill 0))
+  )
 
 ;;; Org-mode
 (add-hook 'org-mode-hook
           (lambda ()
             (org-indent-mode t)
+            (visual-line-mode t)
             (local-set-key "\C-M-<down>" 'org-move-subtree-down)
             (local-set-key "\C-M-<up>" 'org-move-subtree-up)
             )
@@ -126,7 +151,15 @@
   (forward-line -1)
   (indent-according-to-mode))
 
-(global-set-key (kbd "\C-O") 'vi-open-line-above)
+(defun vi-open-line-below ()
+  "Insert a newline below the current line and put point at beginning."
+  (interactive)
+  (unless (eolp)
+    (end-of-line))
+  (newline-and-indent))
+
+(global-set-key (kbd "C-o") 'vi-open-line-below)
+(global-set-key (kbd "C-S-o") 'vi-open-line-above)
 
 
 (provide 'emacsrc)

@@ -8,6 +8,7 @@
                                         ; currently disabled: scad-mode
 (prelude-require-packages '(elpy
                             key-chord
+                            csharp-mode
                             ecb
                             applescript-mode
                             auto-complete
@@ -18,5 +19,5 @@
                             js2-mode
                             emmet-mode
                             iy-go-to-char
-                            
+                            qml-mode
                             ))

@@ -1,3 +1,5 @@
+alias nwk="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
+
 alias cdc="cd /Volumes/C/"
 
 alias slp="pmset sleepnow"
@@ -17,6 +19,9 @@ alias kello="date \"+Kello on %H %M\" | sano"
 
 # Start emacs server
 alias emacs="/usr/local/Cellar/emacs/24.3/bin/emacs"
-alias ecw="/usr/local/bin/emacsclient -c $*"
-alias ec="/usr/local/bin/emacsclient --no-wait $*"
-alias ect='/usr/local/bin/emacsclient -t -a \"\" $*'
+# Wait for close
+alias ecw="/usr/local/Cellar/emacs/24.3/bin/emacsclient -c $*"
+# Don't wait
+alias  ec="/usr/local/Cellar/emacs/24.3/bin/emacsclient --no-wait $*"
+# Emacs in terminal
+alias ect='/usr/local/Cellar/emacs/24.3/bin/emacsclient -t -a \"\" $*'

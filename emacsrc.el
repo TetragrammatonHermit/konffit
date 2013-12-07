@@ -65,6 +65,9 @@
 (setq ac-ignore-case nil)
 
 
+(dired-details-install)
+(setq-default dired-details-hidden-string "-- ")
+
 (defun dired-open-mac ()
   "Open file from dired buffer with OSX default program."
   (interactive)
@@ -134,6 +137,9 @@
 ;; Javascript
 (setq js-indent-level 4)
 (setq-default js2-basic-offset 4)
+
+;; Lisp
+(setq inferior-lisp-program "/usr/local/bin/clisp")
 
 ;;; Other
 ; Latex

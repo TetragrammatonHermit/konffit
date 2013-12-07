@@ -7,17 +7,26 @@
 
                                         ; currently disabled: scad-mode
 (prelude-require-packages '(elpy
+                                        ;general
                             key-chord
-                            csharp-mode
                             ecb
-                            applescript-mode
                             auto-complete
-                            ac-emmet
-                            ac-js2
-                            angular-snippets
+                            dired-details+
+                            yasnippet
                             multiple-cursors
-                            js2-mode
-                            emmet-mode
                             iy-go-to-char
-                            qml-mode
+                            slime
+                            ac-slime
+                                        ; languages
+                            csharp-mode
+                            applescript-mode
+                                        ;web
+                            angular-snippets
+                            emmet-mode
+                            ac-emmet
+                            js2-mode
+                            ac-js2
+                            js2-refactor
+                            web-beautify
+                            skewer-mode
                             ))

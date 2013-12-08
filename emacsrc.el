@@ -84,7 +84,7 @@
 (key-chord-define-global "jg" 'mc/mark-all-like-this)
 (global-unset-key (kbd "M-<down-mouse-1>"))
 (global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)
-(global-set-key (kbd "\C-c <") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/edit-beginnings-of-lines)
 
 ; Copy current buffer path to clipboard
 (define-key prelude-mode-map (kbd "\C-c w") 'prelude-copy-file-name-to-clipboard)
@@ -166,6 +166,17 @@
 
 (global-set-key (kbd "C-o") 'vi-open-line-below)
 (global-set-key (kbd "C-S-o") 'vi-open-line-above)
+
+;; http://demonastery.org/2013/04/emacs-narrow-to-region-indirect/
+(defun narrow-to-region-indirect (start end)
+  "Restrict editing in this buffer to the current region, indirectly."
+  (interactive "r")
+  (deactivate-mark)
+  (let ((buf (clone-indirect-buffer nil nil)))
+    (with-current-buffer buf
+      (narrow-to-region start end))
+    (switch-to-buffer buf)))
+(global-set-key (kbd "\C-c b") 'narrow-to-region-indirect)
 
 
 (provide 'emacsrc)

@@ -65,7 +65,7 @@
 (setq ac-ignore-case nil)
 
 
-(dired-details-install)
+;;(dired-details-install)
 (setq-default dired-details-hidden-string "-- ")
 
 (defun dired-open-mac ()
@@ -81,6 +81,7 @@
 
 ; Multiple cursors
 (key-chord-define-global "jn" 'mc/mark-more-like-this-extended)
+(key-chord-define-global "jt" 'mc/mark-sgml-tag-pair)
 (key-chord-define-global "jg" 'mc/mark-all-like-this)
 (global-unset-key (kbd "M-<down-mouse-1>"))
 (global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)

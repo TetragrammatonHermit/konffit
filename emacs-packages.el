@@ -11,7 +11,7 @@
                             key-chord
                             ecb
                             auto-complete
-                            dired-details+
+                            dired-details
                             yasnippet
                             multiple-cursors
                             iy-go-to-char

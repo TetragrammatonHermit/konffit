@@ -7,8 +7,7 @@ alias back='cd $OLDPWD'
 alias myip="ifconfig en1"
 alias cl="clear"
 
-# Package managers
-alias pi="pip install"
+alias bitch,=sudo
 
 #CD's
 alias cdd="cd ~/Desktop/"

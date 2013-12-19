@@ -30,7 +30,7 @@
   
   (interactive "nTransparency Value 0 - 100 opaque:")
   (set-frame-parameter (selected-frame) 'alpha value))
-(transparency 96)
+;(transparency 100)
 
 (smartparens-global-mode +1)
 (setq prelude-flyspell nil) ; Disable spell checking
@@ -46,7 +46,7 @@
 (key-chord-define-global "jv" 'undo-tree-visualize)
 (global-set-key (kbd "\C-c c") 'comment-or-uncomment-region)
 
-(global-set-key (kbd "M-§") 'other-frame)
+(global-set-key (kbd "M-`") 'other-frame)
 
 ; Ace-jump
 (key-chord-define-global "hh" 'ace-jump-mode-pop-mark)
@@ -61,11 +61,24 @@
 
 ; Autocomplete
 ;(global-auto-complete-mode t)
+;(add-to-list 'ac-dictionary-directories "~/notes/ac-dict")
+(require 'auto-complete-config)
+(ac-config-default)
+(setq ac-menu-height 9)
+(setq ac-source-yasnippet nil)
+
 (setq ac-auto-start 2)
 (setq ac-ignore-case nil)
 
+; Change yasnippet binding
+(yas-global-mode t)
+(define-key yas-minor-mode-map (kbd "<tab>") nil)
+(define-key yas-minor-mode-map (kbd "TAB") nil)
+(define-key yas-minor-mode-map (kbd "C-<tab>") 'yas-expand)
+(setq yas-prompt-functions '(yas-ido-prompt))
 
-;;(dired-details-install)
+(require 'dired-details)
+(dired-details-install)
 (setq-default dired-details-hidden-string "-- ")
 
 (defun dired-open-mac ()
@@ -138,6 +151,7 @@
 ;; Javascript
 (setq js-indent-level 4)
 (setq-default js2-basic-offset 4)
+(add-to-list 'auto-mode-alist (cons (rx ".js" eos) 'js2-mode))
 
 ;; Lisp
 (setq inferior-lisp-program "/usr/local/bin/clisp")

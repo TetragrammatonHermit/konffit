@@ -10,22 +10,24 @@
                                         ;general
                             key-chord
                             ecb
-                            auto-complete
                             dired-details
-                            yasnippet
                             multiple-cursors
                             iy-go-to-char
                             slime
+                                        ;autocomplete-mode
+                            auto-complete
                             ac-slime
-                                        ; languages
+                            ac-emmet
+                            ac-js2
+                                        ; yasnippet
+                            yasnippet
+                            angular-snippets
+                                        ; language modes
                             csharp-mode
                             applescript-mode
                                         ;web
-                            angular-snippets
                             emmet-mode
-                            ac-emmet
                             js2-mode
-                            ac-js2
                             js2-refactor
                             web-beautify
                             skewer-mode

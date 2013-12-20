@@ -1,4 +1,27 @@
-;;;; Package setup
+;;; custom --- packages
+;;; Commentary:
+;; Load packages
+;;; Code:
+
+;; Prelude modules
+(require 'prelude-helm)
+(require 'prelude-c)
+(require 'prelude-common-lisp)
+(require 'prelude-css)
+(require 'prelude-emacs-lisp)
+(require 'prelude-erc)
+(require 'prelude-haskell)
+(require 'prelude-js)
+(require 'prelude-key-chord)
+(require 'prelude-latex)
+(require 'prelude-lisp)
+(require 'prelude-org)
+(require 'prelude-perl)
+(require 'prelude-python)
+(require 'prelude-scheme)
+(require 'prelude-xml)
+
+;; Elpa packages
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" .
@@ -13,7 +36,11 @@
                             dired-details
                             multiple-cursors
                             iy-go-to-char
+                            ido-better-flex
                             slime
+                            org
+                                        ;icicles ;(flexible buffer autocomplete)
+                            smex
                                         ;autocomplete-mode
                             auto-complete
                             ac-slime
@@ -26,9 +53,12 @@
                             csharp-mode
                             applescript-mode
                                         ;web
+                            js-comint
                             emmet-mode
                             js2-mode
                             js2-refactor
                             web-beautify
                             skewer-mode
                             ))
+
+;;; emacs-packages.el ends here

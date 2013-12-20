@@ -27,7 +27,6 @@
 ;; Set transparency of emacs
 (defun transparency (value)
   "Set the transparency of the frame window.  VALUE = 0-100."
-  
   (interactive "nTransparency Value 0 - 100 opaque:")
   (set-frame-parameter (selected-frame) 'alpha value))
 ;(transparency 100)
@@ -38,12 +37,23 @@
                                         ; Disable whitespace-mode
 (setq prelude-whitespace nil)
 
+;; Minibuffer autocompletition with ido-mode and sme
+;; http://www.masteringemacs.org/articles/2010/10/10/introduction-to-ido-mode/
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(setq ido-use-filename-at-point 'guess)
+(ido-mode t)
+(global-set-key (kbd "M-x") nil)
+(global-set-key (kbd "M-x") 'smex)
+
 ;;; Keybindings
-(key-chord-mode 1)
+;;(key-chord-mode 1)
 
 ; Prelude stole some default keybindings
 (key-chord-define-global "uu" nil)
-(key-chord-define-global "jv" 'undo-tree-visualize)
+(key-chord-define-global "zz" 'undo-tree-visualize)
+(key-chord-define-global "yy" nil)
+(key-chord-define-global "vv" 'browse-kill-ring)
 (global-set-key (kbd "\C-c c") 'comment-or-uncomment-region)
 
 (global-set-key (kbd "M-`") 'other-frame)
@@ -128,10 +138,12 @@
 ;;; Org-mode
 (add-hook 'org-mode-hook
           (lambda ()
-            (org-indent-mode t)
+            ;(org-indent-mode t)
             (visual-line-mode t)
-            (local-set-key "\C-M-<down>" 'org-move-subtree-down)
-            (local-set-key "\C-M-<up>" 'org-move-subtree-up)
+            (local-unset-key "<C-M-down>")
+            (local-set-key "<C-M-down>" 'org-move-subtree-down)
+            (local-unset-key "<C-M-up>")
+            (local-set-key "<C-M-up>" 'org-move-subtree-up)
             )
           t)
 
@@ -144,14 +156,31 @@
 ; Emmet
 (add-hook 'sgml-mode-hook 'emmet-mode)
 (add-hook 'css-mode-hook  'emmet-mode)
+(eval-after-load "emmet-mode"
+  '(define-key emmet-mode-keymap (kbd "C-j") nil))
 ; Indent 2 spaces.
-(add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 2)))
+(add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 4)))
 (setq emmet-move-cursor-between-quotes t)
 
 ;; Javascript
 (setq js-indent-level 4)
 (setq-default js2-basic-offset 4)
 (add-to-list 'auto-mode-alist (cons (rx ".js" eos) 'js2-mode))
+
+(setq inferior-js-program-command "node")
+(add-hook 'js2-mode-hook '(lambda () 
+                            (local-set-key "\C-x\C-e" 
+                                           'js-send-last-sexp)
+                            (local-set-key "\C-\M-x" 
+                                           'js-send-last-sexp)
+                            ;(local-unset-key "\C-c e")
+                            (local-set-key "\C-c\C-b" 
+                                          'js-send-buffer)
+                            ;(local-set-key "\C-c\C-b" 
+                            ;               'js-send-buffer-and-go)
+                            (local-set-key "\C-cl" 
+                                           'js-load-file-and-go)
+                            ))
 
 ;; Lisp
 (setq inferior-lisp-program "/usr/local/bin/clisp")

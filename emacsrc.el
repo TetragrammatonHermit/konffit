@@ -17,6 +17,9 @@
       mac-command-modifier 'meta
       x-select-enable-clipboard t)
 
+(disable-theme 'zenburn)
+(load-theme 'solarized-light t)
+
 ; Nicer mousewheel scrolling
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
 (setq mouse-wheel-progressive-speed nil)
@@ -146,6 +149,15 @@
             (local-set-key "<C-M-up>" 'org-move-subtree-up)
             )
           t)
+
+;; Add nice colours to src blocks
+
+;; fontify code in code blocks
+(setq org-src-fontify-natively t)
+
+(defface org-block-background
+  '((t (:background "#B6B1A0")))
+  "Face used for the source block background.")
 
 ;;; Python
 ; Elpy

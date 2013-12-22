@@ -38,8 +38,9 @@
                             iy-go-to-char
                             ido-better-flex
                             slime
-                            org
+                            htmlize
                                         ;icicles ;(flexible buffer autocomplete)
+                            color-theme-solarized
                             smex
                                         ;autocomplete-mode
                             auto-complete

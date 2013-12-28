@@ -35,7 +35,7 @@
 ;(transparency 100)
 
 (smartparens-global-mode +1)
-(setq prelude-flyspell nil) ; Disable spell checking
+(setq prelude-flyspell nil)             ; Disable spell checking
 (setq prelude-guru nil)
                                         ; Disable whitespace-mode
 (setq prelude-whitespace nil)
@@ -139,6 +139,21 @@
   )
 
 ;;; Org-mode
+(global-set-key "\C-x\C-o" 'org-capture)
+(global-set-key "\C-x\C-a" 'org-agenda)
+;(global-set-key "\C-c\C-cl" 'org-store-link)
+;(global-set-key "\C-c\C-cb " 'org-iswitchb)
+(setq org-default-notes-file  "~/notes/notetoself.org")
+
+
+(add-to-list 'org-modules 'habits)
+(add-to-list 'org-modules 'org-timer)
+
+(setq org-timer-default-timer 25)
+(add-hook 'org-clock-in-hook '(lambda () 
+                                (if (not org-timer-current-timer) 
+                                    (org-timer-set-timer '(16)))))
+
 (add-hook 'org-mode-hook
           (lambda ()
             ;(org-indent-mode t)

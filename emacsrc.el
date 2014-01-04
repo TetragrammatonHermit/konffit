@@ -32,7 +32,7 @@
   "Set the transparency of the frame window.  VALUE = 0-100."
   (interactive "nTransparency Value 0 - 100 opaque:")
   (set-frame-parameter (selected-frame) 'alpha value))
-;(transparency 100)
+(transparency 94)
 
 (smartparens-global-mode +1)
 (setq prelude-flyspell nil)             ; Disable spell checking
@@ -56,10 +56,15 @@
 (key-chord-define-global "uu" nil)
 (key-chord-define-global "zz" 'undo-tree-visualize)
 (key-chord-define-global "yy" nil)
+(key-chord-define-global "jl" nil)
 (key-chord-define-global "vv" 'browse-kill-ring)
 (global-set-key (kbd "\C-c c") 'comment-or-uncomment-region)
 
-(global-set-key (kbd "M-`") 'other-frame)
+                                        ; to transpose words backwards without having to type the negative argument
+(global-set-key (kbd "M-T") "\C-u\ -1\ \M-t")
+
+
+(global-set-key (kbd "M-§") 'other-frame)
 
 ; Ace-jump
 (key-chord-define-global "hh" 'ace-jump-mode-pop-mark)
@@ -84,15 +89,21 @@
 (setq ac-ignore-case nil)
 
 ; Change yasnippet binding
+(require 'yasnippet)
 (yas-global-mode t)
 (define-key yas-minor-mode-map (kbd "<tab>") nil)
 (define-key yas-minor-mode-map (kbd "TAB") nil)
 (define-key yas-minor-mode-map (kbd "C-<tab>") 'yas-expand)
 (setq yas-prompt-functions '(yas-ido-prompt))
+;; Add custom snippets
+
+(setq yas-snippet-dirs (append yas-snippet-dirs
+                               '("~/konffit/yasnippets")))
+
 
 (require 'dired-details)
 (dired-details-install)
-(setq-default dired-details-hidden-string "-- ")
+(setq-default dired-details-hidden-string "")
 
 (defun dired-open-mac ()
   "Open file from dired buffer with OSX default program."
@@ -145,23 +156,15 @@
 ;(global-set-key "\C-c\C-cb " 'org-iswitchb)
 (setq org-default-notes-file  "~/notes/notetoself.org")
 
-
-(add-to-list 'org-modules 'habits)
-(add-to-list 'org-modules 'org-timer)
-
-(setq org-timer-default-timer 25)
-(add-hook 'org-clock-in-hook '(lambda () 
-                                (if (not org-timer-current-timer) 
-                                    (org-timer-set-timer '(16)))))
-
 (add-hook 'org-mode-hook
           (lambda ()
-            ;(org-indent-mode t)
+            (org-indent-mode t)
             (visual-line-mode t)
             (local-unset-key "<C-M-down>")
             (local-set-key "<C-M-down>" 'org-move-subtree-down)
             (local-unset-key "<C-M-up>")
             (local-set-key "<C-M-up>" 'org-move-subtree-up)
+            (add-to-list 'org-modules 'habits)
             )
           t)
 
@@ -171,7 +174,7 @@
 (setq org-src-fontify-natively t)
 
 (defface org-block-background
-  '((t (:background "#B6B1A0")))
+  '((t (:background "#EBEBEB")))
   "Face used for the source block background.")
 
 ;;; Python
@@ -182,11 +185,21 @@
 ;; HTML
 ; Emmet
 (add-hook 'sgml-mode-hook 'emmet-mode)
+(add-hook 'sgml-mode-hook
+          (lambda ()
+            (progn
+              (emmet-mode)
+              )))
 (add-hook 'css-mode-hook  'emmet-mode)
 (eval-after-load "emmet-mode"
   '(define-key emmet-mode-keymap (kbd "C-j") nil))
 ; Indent 2 spaces.
-(add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 4)))
+
+(add-hook 'emmet-mode-hook (lambda () 
+                             (setq emmet-indentation 4)
+                             (local-set-key (kbd "<backtab>") 'emmet-expand-line)))
+
+
 (setq emmet-move-cursor-between-quotes t)
 
 ;; Javascript

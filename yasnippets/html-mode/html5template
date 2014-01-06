@@ -1,0 +1,30 @@
+# -*- mode: snippet -*-
+# name :  HTML5 Template
+# key : boil
+# --
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>${1:title}"</title>
+
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"> -->
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script> -->
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.5/angular.min.js"></script> -->
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/kineticjs/4.7.2/kinetic.min.js"></script> -->
+</head>
+
+<body>
+  $0
+  <script src="scripts.js"></script>
+</body>
+</html>

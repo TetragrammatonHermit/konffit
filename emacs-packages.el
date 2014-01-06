@@ -39,6 +39,7 @@
                             ido-better-flex
                             slime
                             htmlize
+                            google-translate
                                         ;icicles ;(flexible buffer autocomplete)
                             color-theme-solarized
                             smex

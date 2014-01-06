@@ -40,6 +40,15 @@
                                         ; Disable whitespace-mode
 (setq prelude-whitespace nil)
 
+(require 'google-translate)
+(global-set-key "\C-xt" 'google-translate-at-point)
+(global-set-key "\C-xT" 'google-translate-at-point-reverse)
+(setq google-translate-enable-ido-completition t)
+(setq google-translate-default-target-language '"en")
+(setq google-translate-default-source-language '"fi")
+(set-face-attribute 'google-translate-translation-face nil :height 2)
+
+
 ;; Minibuffer autocompletition with ido-mode and sme
 ;; http://www.masteringemacs.org/articles/2010/10/10/introduction-to-ido-mode/
 (setq ido-enable-flex-matching t)
@@ -48,6 +57,7 @@
 (ido-mode t)
 (global-set-key (kbd "M-x") nil)
 (global-set-key (kbd "M-x") 'smex)
+
 
 ;;; Keybindings
 ;;(key-chord-mode 1)
@@ -160,14 +170,14 @@
           (lambda ()
             (org-indent-mode t)
             (visual-line-mode t)
-            (local-unset-key "<C-M-down>")
-            (local-set-key "<C-M-down>" 'org-move-subtree-down)
-            (local-unset-key "<C-M-up>")
-            (local-set-key "<C-M-up>" 'org-move-subtree-up)
+            
             (add-to-list 'org-modules 'habits)
             )
           t)
-
+;            (local-unset-key "<C-M-down>")
+;            (local-set-key "<C-M-down>" 'org-move-subtree-down)
+;            (local-unset-key "<C-M-up>")
+;            (local-set-key "<C-M-up>" 'org-move-subtree-up)
 ;; Add nice colours to src blocks
 
 ;; fontify code in code blocks

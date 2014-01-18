@@ -61,6 +61,7 @@
                             js2-refactor
                             web-beautify
                             skewer-mode
+                            impatient-mode
                             ))
 
 ;;; emacs-packages.el ends here

@@ -9,7 +9,7 @@
 			<key>background</key>
 			<data>
 			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
-			ZWN0AIWEAWMChARmZmZmg6GgoD6DoaCgPoOhoKA+AYY=
+			ZWN0AIWEAWMChARmZmZmAIOtrCw+g9LQUD4Bhg==
 			</data>
 			<key>border</key>
 			<data>
@@ -29,7 +29,7 @@
 			<key>resultSelectedBackgroundColor</key>
 			<data>
 			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
-			ZWN0AIWEAWMChARmZmZmg+bkZD6D5uRkPoPm5GQ+AYY=
+			ZWN0AIWEAWMChARmZmZmAIPS0FA+g4GAgD4Bhg==
 			</data>
 			<key>resultSelectedSubtextColor</key>
 			<data>
@@ -67,7 +67,7 @@
 			<key>searchBackgroundColor</key>
 			<data>
 			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
-			ZWN0AIWEAWMChARmZmZmg5GQkD6DkZCQPoORkJA+AYY=
+			ZWN0AIWEAWMChARmZmZmAIPS0FA+g4GAgD4Bhg==
 			</data>
 			<key>searchFont</key>
 			<string>Menlo</string>
@@ -95,12 +95,12 @@
 			<key>separatorColor</key>
 			<data>
 			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
-			ZWN0AIWEAWMChARmZmZmg4/CVT+Dj8JVP4OPwlU/AYY=
+			ZWN0AIWEAWMChARmZmZmAIPS0FA+g4GAgD4Bhg==
 			</data>
 			<key>shortcutColor</key>
 			<data>
 			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
-			ZWN0AIWEAWMBhARmZmZmg4TkmT6Dp7fvPoPuWLE+AYY=
+			ZWN0AIWEAWMChARmZmZmg9LQUD6D1tRUPoOBgIA+AYY=
 			</data>
 			<key>shortcutFont</key>
 			<string>Menlo</string>
@@ -109,7 +109,7 @@
 			<key>shortcutSelectedColor</key>
 			<data>
 			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
-			ZWN0AIWEAWMChARmZmZmg+zq6j6DkI8PP4Pq6Og+AYY=
+			ZWN0AIWEAWMChARmZmZmAIPS0FA+g4GAgD4Bhg==
 			</data>
 			<key>uid</key>
 			<string>alfred.theme.custom.D1A4E1B8-7099-4268-B2CD-866E3557813C</string>

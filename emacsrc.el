@@ -18,7 +18,8 @@
       x-select-enable-clipboard t)
 
 (disable-theme 'zenburn)
-(load-theme 'solarized-light t)
+;(load-theme 'solarized-light t)
+(load-theme 'solarized-dark t)
 
 ; Nicer mousewheel scrolling
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
@@ -194,6 +195,7 @@
 
 ;; HTML
 ; Emmet
+(setq sgml-basic-offset 4)
 (add-hook 'sgml-mode-hook 'emmet-mode)
 (add-hook 'sgml-mode-hook
           (lambda ()
@@ -203,7 +205,7 @@
 (add-hook 'css-mode-hook  'emmet-mode)
 (eval-after-load "emmet-mode"
   '(define-key emmet-mode-keymap (kbd "C-j") nil))
-; Indent 2 spaces.
+                                        ; Indent spaces.
 
 (add-hook 'emmet-mode-hook (lambda () 
                              (setq emmet-indentation 4)
@@ -242,6 +244,12 @@
 (setq-default ispell-program-name "aspell")
 
 ;;;;; Custom functions
+(defun save-and-reload () "Save and reload browser." (interactive)
+  (save-buffer)
+  (shell-command "chrome-reload")
+  )
+(define-key global-map "\C-xr" 'save-and-reload)
+
 (defun vi-open-line-above ()
   "Insert a newline above the current line and put point at beginning."
   (interactive)

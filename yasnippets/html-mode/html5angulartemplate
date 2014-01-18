@@ -1,0 +1,57 @@
+# -*- mode: snippet -*-
+# name : AngularJS HTML5 Template
+# key : ngboil
+# --
+<!doctype html>
+
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>${1:title}</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"> -->
+
+    <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+</head>
+
+<body ng-controller="MyController">
+
+    <h1>AngularJS template</h1>
+
+    <input type="text" name="" ng-model="foo" />
+    <button ng-click="shout()">Shout it</button>
+
+
+    <!-- Load libs -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.5/angular.min.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script> -->
+
+    
+    <!-- Load own modules and controllers -->
+
+    <!-- Create module "myApp" here and declare "MyController" etc -->
+    <!-- <script src="app.js$0"></script> -->
+
+    <!-- Load module and controller inline here for quick testing -->
+    <script>
+angular.module("myApp", [])
+
+.controller('MyController', function ($scope) {
+    
+    $scope.foo = "helloworld";
+
+    $scope.shout = function() {
+        alert($scope.foo);
+    }
+    console.log("MyController loaded");
+});                   
+    </script>
+</body>
+
+</html>

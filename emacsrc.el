@@ -20,13 +20,15 @@
 (disable-theme 'zenburn)
 ;(load-theme 'solarized-light t)
 (load-theme 'solarized-dark t)
+(set-face-attribute 'default nil :font "DejaVu Sans Mono-9")
+
 
 ; Nicer mousewheel scrolling
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
 (setq mouse-wheel-progressive-speed nil)
 
 ; Magit use current window (use emacsclient of current installation)
-(set-variable 'magit-emacsclient-executable "/usr/local/Cellar/emacs/24.3/bin/emacsclient")
+(set-variable 'magit-emacsclient-executable "/usr/bin/emacs24/bin/emacsclient")
 
 ;; Set transparency of emacs
 (defun transparency (value)
@@ -36,6 +38,7 @@
 (transparency 94)
 
 (smartparens-global-mode +1)
+(key-chord-mode 1)
 (setq prelude-flyspell nil)             ; Disable spell checking
 (setq prelude-guru nil)
                                         ; Disable whitespace-mode
@@ -121,7 +124,7 @@
   (interactive)
   (let ((file-name (dired-get-file-for-visit)))
     (if (file-exists-p file-name)
-        (call-process "/usr/bin/open" nil 0 nil file-name))))
+        (call-process "/usr/bin/thunar" nil 0 nil file-name)))) ;TODO: check that this works
 
 (add-hook 'dired-mode-hook
           '(lambda ()

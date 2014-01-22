@@ -36,7 +36,7 @@
                             dired-details
                             multiple-cursors
                             iy-go-to-char
-                            ido-better-flex
+                            ;ido-better-flex
                             slime
                             htmlize
                             google-translate

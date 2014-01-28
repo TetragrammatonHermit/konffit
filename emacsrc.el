@@ -5,8 +5,9 @@
 
 ;;;; General
 
-; Start daemon
+;; Start daemon
 (load "server")
+
 (unless (server-running-p) (server-start))
 
 (x-focus-frame nil)
@@ -18,10 +19,12 @@
       x-select-enable-clipboard t)
 
 (disable-theme 'zenburn)
-;(load-theme 'solarized-light t)
-(load-theme 'solarized-dark t)
+;(load-theme 'solarized-dark t)
+(load-theme 'solarized-light t)
+;(load-theme 'zenburn t)
 (set-face-attribute 'default nil :font "DejaVu Sans Mono-9")
-
+; Disable bleep at fail
+(setq ring-bell-function 'ignore)
 
 ; Nicer mousewheel scrolling
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
@@ -61,7 +64,6 @@
 (ido-mode t)
 (global-set-key (kbd "M-x") nil)
 (global-set-key (kbd "M-x") 'smex)
-
 
 ;;; Keybindings
 ;;(key-chord-mode 1)

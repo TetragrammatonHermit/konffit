@@ -1,0 +1,31 @@
+h1, h2, h3, h4 {
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+
+    small {
+        font-size: 15px;
+        margin: 0 10px;
+        color: #53637D;
+    }
+}
+
+h1 {
+    // color: #5C6166;
+    // font-size: 18px;
+
+    a {
+        color: #5C6166;
+    }
+}
+
+h3 {
+    color: black;
+    font-size: 1.2em;
+    margin-bottom: 0.9em;
+}
+
+h4 {
+    font-size: 1em;
+    margin-bottom: 5px;
+}

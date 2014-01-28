@@ -1,0 +1,147 @@
+#main {
+  padding: 18px;
+  width: 254px;
+}
+
+.header {
+  float: left;
+  font-family: "GothamBold", Helvetica, Arial, sans-serif;
+  margin-right: 5px;
+}
+.subheader {
+  display: block;
+  font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#subject {
+  background-image: url(../../images/email.png);
+  background-size: 16px 10px;
+  line-height: 11px;
+  margin-bottom: 14px;
+  padding-left: 23px;
+}
+
+#sender {
+  line-height: 11px;
+  margin-bottom: 14px;
+}
+
+#recipients, #message {
+  background-color: transparent;
+  border: 1px solid #C0C7CC;
+  border-radius: 3px;
+  font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+  outline: none;
+  padding: 5px;
+  width: 100%;
+}
+
+#to {
+  margin-bottom: 14px;
+  position: relative;
+}
+
+#recipientsHeader {
+  line-height: 24px;
+  padding-right: 6px;
+}
+
+#recipientsContainer {
+  overflow: hidden;
+}
+#recipients {
+  height: 24px;
+}
+
+#contacts {
+  background-color: #FAFAFA;
+  border: 1px solid #C0C7CC;
+  border-radius: 3px;
+  box-shadow: 0 3px 3px 0 rgba(25, 31, 36, 0.3);
+  font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+  position: absolute;
+  padding: 5px 0;
+  right: 0;
+  top: 32px;
+  width: 100%;
+}
+#contacts:empty {
+  display: none;
+}
+#contacts:before {
+  background-image: url(../../images/contact_autocomplete_arrow.png);
+  background-repeat: no-repeat;
+  background-size: 12px 6px;
+  height: 6px;
+  left: 14px;
+  position: absolute;
+  top: -6px;
+  width: 12px;
+}
+#contacts:not(:empty):before {
+  content: "";
+}
+.contact {
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  height: 22px;
+  line-height: 22px;
+  margin: 0 5px;
+  overflow: hidden;
+  padding: 0 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.contact.hover {
+  background-color: #E7EDF1;
+  border: 1px solid #B7C3CB;
+}
+
+#message {
+  height: 134px;
+  margin-bottom: 22px;
+}
+
+#actions .button {
+  background-color: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "GothamBold", Helvetica, Arial, sans-serif;
+  line-height: 24px;
+  outline: none;
+  padding: 0 10px;
+}
+#send {
+  border: 1px solid #26B064;
+  color: #26B064;
+  float: right;
+}
+#send:not(.disabled):hover, #send:not(.disabled):focus {
+  background-color: #26B064;
+  color: white;
+}
+#send.disabled {
+  cursor: default;
+}
+#cancel, #send.disabled {
+  border: 1px solid #6D7880;
+  color: #6D7880;
+}
+#cancel:hover, #cancel:focus {
+  background-color: #6D7880;
+  color: white;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) {
+  #subject {
+    background-image: url(../../images/email@2x.png);
+  }
+  #contacts:before {
+    background-image: url(../../images/contact_autocomplete_arrow@2x.png);
+  }
+}

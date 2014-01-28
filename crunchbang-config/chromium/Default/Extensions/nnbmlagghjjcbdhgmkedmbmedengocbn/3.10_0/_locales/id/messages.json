@@ -1,0 +1,26 @@
+{
+   "ext_description": {
+      "message": "Pratinjau pdf, presentasi powerpoint, dan dokumen lainnya di Penampil Google Documents secara otomatis."
+   },
+   "ext_name": {
+      "message": "Penyaji PDF/PowerPoint Documents (oleh Google)"
+   },
+   "google_docs_viewer": {
+      "message": "Penampil Google Documents"
+   },
+   "locale": {
+      "message": "id"
+   },
+   "open_in_incognito_window": {
+      "message": "Lihat File di Jendela Samaran"
+   },
+   "open_in_new_tab": {
+      "message": "Lihat File di Tab Baru"
+   },
+   "open_in_new_window": {
+      "message": "Lihat File di Jendela Baru"
+   },
+   "save_in_docs": {
+      "message": "Simpan di Google Documents"
+   }
+}

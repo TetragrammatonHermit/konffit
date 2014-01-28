@@ -1,0 +1,1723 @@
+{
+   "1006787209796778126": {
+      "message": "O meu disco"
+   },
+   "1017907757187630742": {
+      "message": "Os meus tipos de letra"
+   },
+   "1029072043275376320": {
+      "message": "N\u00E3o foram encontrados calend\u00E1rios."
+   },
+   "103870949919613488": {
+      "message": "Nota arquivada"
+   },
+   "1093196373615461508": {
+      "message": "Lamentamos, mas neste momento n\u00E3o podemos apresentar a imagem."
+   },
+   "1098726677907695030": {
+      "message": "Grava\u00E7\u00E3o de Voz: "
+   },
+   "1160186203475556062": {
+      "message": "$2\u200BRemover imagem$1\u200B"
+   },
+   "1185164838496022543": {
+      "message": "Clique aqui para atualizar a p\u00E1gina."
+   },
+   "1263557413037343589": {
+      "message": "Organizar fotografias"
+   },
+   "1263685395252160366": {
+      "message": "LaTeX"
+   },
+   "1301927361761800260": {
+      "message": "Ficheiros PDF"
+   },
+   "1311350045083871503": {
+      "message": "Cancelar"
+   },
+   "1311729747516144362": {
+      "message": "Vermelho"
+   },
+   "1315844696796851207": {
+      "message": "Sans Serif"
+   },
+   "133192954417440569": {
+      "message": "N\u00E3o foram encontrados resultados."
+   },
+   "1376126796144976437": {
+      "message": "Todos os tipos de letra"
+   },
+   "1398025099726122129": {
+      "message": "Erro ao apresentar $1\u200B. A tentar novamente."
+   },
+   "139942704574044780": {
+      "message": "Aceitar"
+   },
+   "141491180325662484": {
+      "message": "O Google Drive \u00E9 um \u00FAnico local onde pode guardar todos os seus ficheiros para que possa aceder aos mesmos em qualquer lugar e em qualquer dispositivo. Quando tiver fotografias no Google Drive, poder\u00E1 partilh\u00E1-las instantaneamente com c\u00EDrculos aqui."
+   },
+   "1418114637490664392": {
+      "message": "Arquivo de fotografias da LIFE"
+   },
+   "1419896259743862406": {
+      "message": "Abrir com"
+   },
+   "1435613501685026676": {
+      "message": "Fechar"
+   },
+   "1446829548948002072": {
+      "message": "v\u00EDrgula"
+   },
+   "1448351640164641222": {
+      "message": "Desativar som"
+   },
+   "1454684154234137497": {
+      "message": "pausa"
+   },
+   "1459765068821943106": {
+      "message": "{VIEWER_GENDER,select, female{Cole um URL do YouTube aqui:}male{Cole um URL do YouTube aqui:}other{Cole um URL do YouTube aqui:}}"
+   },
+   "1463079206290378085": {
+      "message": "Fotografias do orkut"
+   },
+   "1484121429181423440": {
+      "message": "N\u00E3o iniciou a sess\u00E3o. Atualize."
+   },
+   "1492360016907725281": {
+      "message": "{VIEWER_GENDER,select, female{Cole o URL de um v\u00EDdeo aqui:}male{Cole o URL de um v\u00EDdeo aqui:}other{Cole o URL de um v\u00EDdeo aqui:}}"
+   },
+   "1493384967280942491": {
+      "message": "Cor-de-rosa"
+   },
+   "1499433769420882987": {
+      "message": "A apresentar $1\u200B"
+   },
+   "1521707405717823409": {
+      "message": "Roxo"
+   },
+   "1527836113392558206": {
+      "message": "A carregar..."
+   },
+   "153439508598626384": {
+      "message": "As suas fotografias"
+   },
+   "1536051766421561160": {
+      "message": "igual"
+   },
+   "156992719062713230": {
+      "message": "Cinza"
+   },
+   "1603139897109307706": {
+      "message": "Ocorreu um erro. Tente novamente"
+   },
+   "1604359562654146902": {
+      "message": "Fotografias"
+   },
+   "1633370388224271051": {
+      "message": "N\u00E3o foram encontradas pessoas."
+   },
+   "1700522311470719738": {
+      "message": "Lembrar-me"
+   },
+   "1709410429018687341": {
+      "message": "Manh\u00E3 ($1\u200B)"
+   },
+   "1715552550526864429": {
+      "message": "Pesquisar blogues"
+   },
+   "1756171223417807431": {
+      "message": "Certifique-se de que a imagem \u00E9 p\u00FAblica. Se a sua imagem estiver protegida por palavra-passe ou estiver numa rede interna, n\u00E3o ser\u00E1 poss\u00EDvel l\u00EA-la."
+   },
+   "1791115075948268631": {
+      "message": "Abrir ajuda dos atalhos de teclado"
+   },
+   "1808245543551507519": {
+      "message": "\u00C1udio"
+   },
+   "1815108332424147305": {
+      "message": "Tamb\u00E9m pode experimentar uma aplica\u00E7\u00E3o sugerida"
+   },
+   "1816851800848432562": {
+      "message": "Remover"
+   },
+   "1823222042913714987": {
+      "message": "Enviar palavra-passe"
+   },
+   "1847413775362184342": {
+      "message": "Abrir"
+   },
+   "185012928288875755": {
+      "message": "Nenhum item correspondeu aos seus crit\u00E9rios."
+   },
+   "1856444915090632305": {
+      "message": "O documento est\u00E1 encriptado. Introduza uma palavra-passe."
+   },
+   "1866863108233180413": {
+      "message": "Pastas"
+   },
+   "187077078156858455": {
+      "message": "Nota de \u00E1udio"
+   },
+   "1888984138189822209": {
+      "message": "Pesquisar no Google Keep"
+   },
+   "1900571668686750716": {
+      "message": "vCard"
+   },
+   "1901351411358749070": {
+      "message": "Partilhado comigo"
+   },
+   "1918176455405610789": {
+      "message": "Conclu\u00EDdo"
+   },
+   "1920189655549476211": {
+      "message": "dura\u00E7\u00E3o desconhecida"
+   },
+   "1929603188252533075": {
+      "message": "N\u00E3o foi poss\u00EDvel eliminar o seu v\u00EDdeo. Tente novamente."
+   },
+   "1935425718037933511": {
+      "message": "Introduzir novo nome do documento:"
+   },
+   "1951810091681076784": {
+      "message": "{COUNT_1,plural, =1{1 nota correspondente}other{{COUNT_2} notas correspondentes}}"
+   },
+   "1965626377712226216": {
+      "message": "Keynote"
+   },
+   "1972766939056855370": {
+      "message": "Todos os documentos"
+   },
+   "1974063091619095703": {
+      "message": "Pessoas"
+   },
+   "1993674829873313178": {
+      "message": "Problemas com o carregamento? Estamos em manuten\u00E7\u00E3o, mas tudo voltar\u00E1 ao normal brevemente."
+   },
+   "2048322072989992494": {
+      "message": "Ainda ningu\u00E9m partilhou ficheiros consigo!"
+   },
+   "2055388154421214950": {
+      "message": "Associar mais aplica\u00E7\u00F5es"
+   },
+   "2061440050632248160": {
+      "message": "Arquivar"
+   },
+   "2068023589621557589": {
+      "message": "Tipo de letra TrueType"
+   },
+   "210610357717331623": {
+      "message": "Mais"
+   },
+   "2109272338124379867": {
+      "message": "\u00DAltima modifica\u00E7\u00E3o"
+   },
+   "2116013171202209313": {
+      "message": "Selecionar"
+   },
+   "2122256657192674586": {
+      "message": "Pesquisar v\u00EDdeos"
+   },
+   "2125135092719715773": {
+      "message": "Carregar"
+   },
+   "212796670323571824": {
+      "message": "OK"
+   },
+   "213665695896111861": {
+      "message": "Notas"
+   },
+   "2138593281154109183": {
+      "message": "Arquivar"
+   },
+   "2154372123324862271": {
+      "message": "barra"
+   },
+   "2185270915942408270": {
+      "message": "Aplicar zoom at\u00E9 ajustar"
+   },
+   "2187239650627580457": {
+      "message": "Enviar"
+   },
+   "2189236824843182677": {
+      "message": "{audienceCount,plural, =0{unused plural form}=1{As fotografias ser\u00E3o partilhadas com {startTag}uma pessoa{endTag}.}other{As fotografias ser\u00E3o partilhadas com {startTag}{audienceCount} pessoas{endTag}.}}"
+   },
+   "2198096971937872560": {
+      "message": "Lembrete"
+   },
+   "221715292685577880": {
+      "message": "Sim"
+   },
+   "2220005860896049129": {
+      "message": "Demorou demasiado tempo a localizar o documento na fonte original."
+   },
+   "2228413078211839077": {
+      "message": "Ocorreu um problema tempor\u00E1rio ao gerar uma vista do documento."
+   },
+   "2235097878790803849": {
+      "message": "Diga adeus aos anexos. D\u00EA as boas-vindas ao Google Drive."
+   },
+   "2257303402199718039": {
+      "message": "N\u00E3o foi poss\u00EDvel localizar o documento na fonte original. Confirme se o documento ainda existe."
+   },
+   "2289812403593835836": {
+      "message": "Pages"
+   },
+   "229177484946387188": {
+      "message": "Google Earth"
+   },
+   "2304293593067358316": {
+      "message": "Clip art"
+   },
+   "2329167963662998826": {
+      "message": "O Google Keep pretende utilizar a sua localiza\u00E7\u00E3o para melhorar as sugest\u00F5es de locais para lembretes de localiza\u00E7\u00E3o."
+   },
+   "234046557601727809": {
+      "message": "N\u00E3o existem imagens nem v\u00EDdeos."
+   },
+   "2349912757088764940": {
+      "message": "Vis\u00EDvel para:"
+   },
+   "2359614137862708172": {
+      "message": "Shift"
+   },
+   "2370656573843123707": {
+      "message": "par\u00EAntese reto direito"
+   },
+   "2393487423640708285": {
+      "message": "O URL n\u00E3o \u00E9 v\u00E1lido. Certifique-se de que come\u00E7a por http:// ou https://."
+   },
+   "2412314804333167252": {
+      "message": "A folha de c\u00E1lculo \u00E9 demasiado grande. Clique em $3\u200Btransferir$1\u200B ou $4\u200Beditar no Google Folhas$1\u200B."
+   },
+   "2415274561162670983": {
+      "message": "De momento n\u00E3o \u00E9 poss\u00EDvel apresentar o v\u00EDdeo."
+   },
+   "2418104318933043113": {
+      "message": "Pesquisa de Imagens do Google"
+   },
+   "2422385608245044498": {
+      "message": "Escolher uma imagem"
+   },
+   "2449254824382583885": {
+      "message": "Abrir numa nova janela"
+   },
+   "2450327925369898841": {
+      "message": "Lamentamos, mas ocorreu um erro ao adicionar este item ao Google Drive. Tente novamente."
+   },
+   "2455753442347598108": {
+      "message": "Saiu do visualizador"
+   },
+   "2475181823688399272": {
+      "message": "Seguinte"
+   },
+   "2484568559152875936": {
+      "message": "N\u00E3o existem \u00E1lbuns de fotografias."
+   },
+   "2492036279909332649": {
+      "message": "Item da lista eliminado"
+   },
+   "2510929871271209216": {
+      "message": "A folha de c\u00E1lculo \u00E9 demasiado grande. Clique $2\u200Baqui$1\u200B para a transferir."
+   },
+   "2513437337377210144": {
+      "message": "fim"
+   },
+   "2538080331309772448": {
+      "message": "Ordenar: $1\u200B"
+   },
+   "2558480112329900136": {
+      "message": "Cinzento"
+   },
+   "257317112834806705": {
+      "message": "Alternar entre a vista de lista e de grelha"
+   },
+   "2587566920590457715": {
+      "message": "Maps Engine Lite"
+   },
+   "2609409316752026806": {
+      "message": "PDF"
+   },
+   "2609750184896485102": {
+      "message": "V\u00EDdeos do telem\u00F3vel"
+   },
+   "2611879390264566852": {
+      "message": "Folha de c\u00E1lculo do OpenOffice"
+   },
+   "2615188670181508661": {
+      "message": "N\u00E3o escolheu nada recentemente!"
+   },
+   "2628268670001557269": {
+      "message": "Quota"
+   },
+   "2643241712502664984": {
+      "message": "Os seus v\u00EDdeos do YouTube"
+   },
+   "2644069582812747285": {
+      "message": "Item de lista"
+   },
+   "2646734195256984201": {
+      "message": "$1\u200B de $2\u200B"
+   },
+   "2687303256387847763": {
+      "message": "Popularidade"
+   },
+   "2705842902318123127": {
+      "message": "Navegar para a nota/lista seguinte/anterior"
+   },
+   "2742719907061406418": {
+      "message": "XML"
+   },
+   "2752123004911547510": {
+      "message": "Mais populares"
+   },
+   "2786560864906393383": {
+      "message": "Fotografias do telem\u00F3vel"
+   },
+   "2789687492331041935": {
+      "message": "Escolher uma hora"
+   },
+   "2814668529404267263": {
+      "message": "Iniciar sess\u00E3o"
+   },
+   "2817277146396981386": {
+      "message": "da tarde"
+   },
+   "2818135503416309545": {
+      "message": "Gravar um v\u00EDdeo"
+   },
+   "2827039933590757722": {
+      "message": "Atalho do Windows"
+   },
+   "2833524492098518257": {
+      "message": "Aplica\u00E7\u00F5es associadas"
+   },
+   "2842885468107862276": {
+      "message": "Adicionar ao Google Drive e abrir com"
+   },
+   "2860188519781080944": {
+      "message": "Cor de laranja"
+   },
+   "2861568351294148466": {
+      "message": "Scripts"
+   },
+   "2864281852037732729": {
+      "message": "Menos"
+   },
+   "2878874627361086801": {
+      "message": "pr\u00E9-visualiza\u00E7\u00E3o"
+   },
+   "289798573180023043": {
+      "message": "OK"
+   },
+   "2917498437550635075": {
+      "message": "\u00CDcone"
+   },
+   "2979466412944870220": {
+      "message": "A carregar pr\u00E9-visualiza\u00E7\u00E3o..."
+   },
+   "2981433463625966877": {
+      "message": "Termos de Utiliza\u00E7\u00E3o"
+   },
+   "2982511431742033448": {
+      "message": "N\u00E3o existem apresenta\u00E7\u00F5es."
+   },
+   "3000689173481666334": {
+      "message": "Editar o c\u00EDrculo"
+   },
+   "3029395493413607486": {
+      "message": "N\u00E3o foi poss\u00EDvel carregar o leitor de v\u00EDdeo. Experimente atualizar a p\u00E1gina.$1\u200BSe o problema continuar, $3\u200Bconsulte o Centro de Ajuda$2\u200B."
+   },
+   "306516303501625305": {
+      "message": "A autentica\u00E7\u00E3o falhou."
+   },
+   "3073005748126521632": {
+      "message": "Lembrado em $1\u200B"
+   },
+   "3074184819310272351": {
+      "message": "Fotografias carregadas"
+   },
+   "3084372889071691504": {
+      "message": "{VIEWER_GENDER,select, female{Cole um URL aqui:}male{Cole um URL aqui:}other{Cole um URL aqui:}}"
+   },
+   "3099378427807388994": {
+      "message": "Colocar em pausa"
+   },
+   "3109321241584918345": {
+      "message": "Associar mais aplica\u00E7\u00F5es..."
+   },
+   "3121560585545725724": {
+      "message": "$1\u200B, $2\u200B"
+   },
+   "3207670492626476064": {
+      "message": "Tabelas"
+   },
+   "3222929029344613957": {
+      "message": "Ocorreu um erro ao abrir este ficheiro. Tente novamente."
+   },
+   "3243829462528324248": {
+      "message": "Castanho"
+   },
+   "3250489229749307913": {
+      "message": "Publica\u00E7\u00E3o Eletr\u00F3nica"
+   },
+   "3265524298292280681": {
+      "message": "esc"
+   },
+   "3267563602179728277": {
+      "message": "eliminar"
+   },
+   "3275029321588462173": {
+      "message": "Nenhuma"
+   },
+   "3278237562147211998": {
+      "message": "Banco de imagens"
+   },
+   "330603631583186798": {
+      "message": "Word"
+   },
+   "3306487262690341751": {
+      "message": "Data e hora"
+   },
+   "3312545971976531405": {
+      "message": "Mensagem"
+   },
+   "3328129883064940351": {
+      "message": "Tipos de letra"
+   },
+   "3354260708176476985": {
+      "message": "A carregar&hellip;"
+   },
+   "3368639944474272225": {
+      "message": "N\u00E3o foi poss\u00EDvel obter o documento para visualiza\u00E7\u00E3o ou n\u00E3o tem autoriza\u00E7\u00E3o para o visualizar."
+   },
+   "3381619429606029445": {
+      "message": "Visio"
+   },
+   "3408219901032480508": {
+      "message": "$2\u200B; $1\u200B"
+   },
+   "3421685394169412932": {
+      "message": "Todas as altera\u00E7\u00F5es efetuadas s\u00E3o guardadas automaticamente"
+   },
+   "3422389100099960864": {
+      "message": "N\u00E3o existem imagens."
+   },
+   "3430885603500576146": {
+      "message": "Selecione apenas imagens para as quais tenha uma licen\u00E7a de utiliza\u00E7\u00E3o confirmada."
+   },
+   "3446158485617778228": {
+      "message": "Anular"
+   },
+   "3448684788258660606": {
+      "message": "As suas fotografias"
+   },
+   "3449760465250232736": {
+      "message": "Ver todos"
+   },
+   "3450585781337676327": {
+      "message": "A carregar..."
+   },
+   "3457279184692206825": {
+      "message": "As fotografias ficar\u00E3o vis\u00EDveis para todas as pessoas (p\u00FAblicas na Web)."
+   },
+   "3468441711253011521": {
+      "message": "Google Folhas"
+   },
+   "3468557655011162775": {
+      "message": "Lamentamos, mas n\u00E3o \u00E9 poss\u00EDvel reproduzir este ficheiro de \u00E1udio neste navegador."
+   },
+   "3518073392823563581": {
+      "message": "Atalhos de teclado"
+   },
+   "3547194749488601916": {
+      "message": "A atualizar..."
+   },
+   "3578537640378068716": {
+      "message": "Enviar palavra-passe"
+   },
+   "3586705906700410505": {
+      "message": "Desenhos a l\u00E1pis"
+   },
+   "3587798318180902863": {
+      "message": "{NUM_SELECTED,plural, =1{ selecionado \u00BB}other{ selecionados \u00BB}}"
+   },
+   "3595000514985906359": {
+      "message": "Excel"
+   },
+   "3602920441714068008": {
+      "message": "Lembrado no dia $1\u200B, \u00E0s $2\u200B"
+   },
+   "361202495024972887": {
+      "message": "Carregar v\u00EDdeos"
+   },
+   "3616146071554077404": {
+      "message": "Aumentar"
+   },
+   "3643146117250542609": {
+      "message": "N\u00E3o existem PDFs."
+   },
+   "3645728163953189422": {
+      "message": "N\u00E3o foi poss\u00EDvel obter o documento para visualiza\u00E7\u00E3o porque este \u00E9 demasiado grande."
+   },
+   "3657386785336906042": {
+      "message": "barra invertida"
+   },
+   "3664842788764635265": {
+      "message": "Nenhum"
+   },
+   "3666123569747918021": {
+      "message": "Este documento tem altera\u00E7\u00F5es n\u00E3o guardadas. Pretende sair da p\u00E1gina e rejeitar as altera\u00E7\u00F5es?"
+   },
+   "3673346558112798837": {
+      "message": "Sem imagem de fundo"
+   },
+   "3674811252904549204": {
+      "message": "Fotografias de capa"
+   },
+   "3678477908297567934": {
+      "message": "sublinhado"
+   },
+   "3701351750654338878": {
+      "message": "Reduzir"
+   },
+   "3703773505386523126": {
+      "message": "Fechar"
+   },
+   "3717138719704492547": {
+      "message": "Verifique se o endere\u00E7o cont\u00E9m erros."
+   },
+   "3737694307963051081": {
+      "message": "Ficheiros PDF"
+   },
+   "3748461364828242354": {
+      "message": "Selecionar cor"
+   },
+   "3770795578481676514": {
+      "message": "Amarelo"
+   },
+   "3771958676925493302": {
+      "message": "Remover o filtro: $1\u200B"
+   },
+   "3779945546806941187": {
+      "message": "Monocrom\u00E1tico"
+   },
+   "381100310424863459": {
+      "message": "Illustrator"
+   },
+   "3842411126100113634": {
+      "message": "p\u00E1gina para cima"
+   },
+   "3844047145949375230": {
+      "message": "Documentos"
+   },
+   "3866373087987934712": {
+      "message": "Falha no carregamento: $1\u200B"
+   },
+   "3869166581651870488": {
+      "message": "Terminar a edi\u00E7\u00E3o"
+   },
+   "3873467440437675460": {
+      "message": "N\u00E3o foi poss\u00EDvel encontrar os tipos de letra selecionados anteriormente."
+   },
+   "3936153839186254186": {
+      "message": "Mostrar: $1\u200B"
+   },
+   "3955760658925284765": {
+      "message": "Tentar novamente"
+   },
+   "3988418762222300024": {
+      "message": "ponto final"
+   },
+   "3989552504822984034": {
+      "message": "Desenhos Google"
+   },
+   "3996667949418308290": {
+      "message": "T\u00EDtulo\u2026"
+   },
+   "400095519884819353": {
+      "message": "Abrir num novo separador"
+   },
+   "4014287326684608407": {
+      "message": "Azul esverdeado"
+   },
+   "4048275292053012394": {
+      "message": "Contactos"
+   },
+   "4059387791040010947": {
+      "message": "Meta"
+   },
+   "4078179869358383373": {
+      "message": "N\u00E3o foram encontrados resultados."
+   },
+   "4097007735221462946": {
+      "message": "Desenhos"
+   },
+   "4097921967754832323": {
+      "message": "h\u00EDfen"
+   },
+   "4119294114251628099": {
+      "message": "N\u00E3o foi poss\u00EDvel obter o URL de imagem indicado. Pode ser um URL privado a que os nossos servidores n\u00E3o podem aceder. Experimente outro URL."
+   },
+   "4134385041569168669": {
+      "message": "A carregar..."
+   },
+   "4148564423510181521": {
+      "message": "Limpar pesquisa"
+   },
+   "4165433071549564698": {
+      "message": "A apresentar $1\u200B"
+   },
+   "4168280976997555951": {
+      "message": "N\u00E3o existem documentos."
+   },
+   "4174786386751618325": {
+      "message": "Nota da fotografia"
+   },
+   "4182427157920112948": {
+      "message": "til"
+   },
+   "4200911267543705377": {
+      "message": "Escreva a pesquisa na caixa acima para encontrar resultados de blogues atrav\u00E9s da Pesquisa de blogues do Google."
+   },
+   "4205329094859140439": {
+      "message": "da manh\u00E3"
+   },
+   "4230101516585408149": {
+      "message": "Escrever uma nova nota"
+   },
+   "4253741616909644861": {
+      "message": "Termos de pesquisa"
+   },
+   "429840734875582508": {
+      "message": "..."
+   },
+   "4299690446455033653": {
+      "message": "Works"
+   },
+   "4314643310615423802": {
+      "message": "A sua sess\u00E3o foi terminada."
+   },
+   "4318861667254318892": {
+      "message": "Google Video"
+   },
+   "4319229296464464147": {
+      "message": "Data de inclus\u00E3o"
+   },
+   "4320831042030778": {
+      "message": "Cancelar"
+   },
+   "4338991104991831337": {
+      "message": "Imagens"
+   },
+   "4339705658383891586": {
+      "message": "A cores"
+   },
+   "4372755508519489521": {
+      "message": "Vista de Grelha"
+   },
+   "4395845663892873002": {
+      "message": "in\u00EDcio"
+   },
+   "4400961442969960519": {
+      "message": "Ocorreu um erro ao guardar o anexo no Google Drive."
+   },
+   "4439812492856303238": {
+      "message": "Ocorreu um erro inesperado ao processar a sua sele\u00E7\u00E3o. Tente novamente mais tarde."
+   },
+   "4473912481270012588": {
+      "message": "Guardado no Google Drive \u2013 Mover para:"
+   },
+   "4552045407215325033": {
+      "message": "N\u00E3o \u00E9 poss\u00EDvel carregar o URL do v\u00EDdeo que introduziu acima. Certifique-se de que est\u00E1 correto e de que \u00E9 de um Website suportado."
+   },
+   "4564682305303579317": {
+      "message": "Continuar"
+   },
+   "456498742882714639": {
+      "message": "Mover para:"
+   },
+   "4588500131398315347": {
+      "message": "Criar c\u00EDrculo"
+   },
+   "4604402426271704651": {
+      "message": "Nenhuma fotografia"
+   },
+   "4630690108252818511": {
+      "message": "N\u00E3o foram encontradas imagens."
+   },
+   "4695897771458936174": {
+      "message": "Partilhar fotografias do Google Drive no Google+"
+   },
+   "4748046231232264180": {
+      "message": "Formul\u00E1rios Google"
+   },
+   "4767722428137216885": {
+      "message": "Cancelar"
+   },
+   "477328789314249432": {
+      "message": "Pesquisar notas"
+   },
+   "4785794631061168971": {
+      "message": "Associar"
+   },
+   "4798897505978458661": {
+      "message": "N\u00E3o foram encontrados v\u00EDdeos."
+   },
+   "4806763987633034948": {
+      "message": "Assinatura PKCS7"
+   },
+   "4888104357342241891": {
+      "message": "Lembretes"
+   },
+   "4889853674709731963": {
+      "message": "Todas as notas foram guardadas offline"
+   },
+   "4901386320110714275": {
+      "message": "Palavra-passe incorreta. Tente novamente."
+   },
+   "490372259452655427": {
+      "message": "O documento ainda n\u00E3o se encontra dispon\u00EDvel para visualiza\u00E7\u00E3o."
+   },
+   "4926020998477695737": {
+      "message": "Mudar para a pasta $1\u200B"
+   },
+   "4943176738805484221": {
+      "message": "editar"
+   },
+   "4956678140555659175": {
+      "message": "retrocesso"
+   },
+   "4957674814179289955": {
+      "message": "Navegar para o item da lista seguinte/anterior"
+   },
+   "4998023803364239731": {
+      "message": "Falha ao selecionar a pasta do Google Drive."
+   },
+   "4998757387516632837": {
+      "message": "Os resultados apresentados incluem uma licen\u00E7a para reutiliza\u00E7\u00E3o com modifica\u00E7\u00E3o."
+   },
+   "5023525794410110078": {
+      "message": "Adicionar texto \u00E0 fotografia"
+   },
+   "5055418092354683641": {
+      "message": "Serif"
+   },
+   "5096751700090310607": {
+      "message": "N\u00E3o existem fotografias."
+   },
+   "509815948423424872": {
+      "message": "Navega\u00E7\u00E3o"
+   },
+   "5099245668405591445": {
+      "message": "Pesquisar"
+   },
+   "5124522868502261563": {
+      "message": "Folhas de c\u00E1lculo"
+   },
+   "5129218019779162494": {
+      "message": "Documentos do Google"
+   },
+   "5180989337128758117": {
+      "message": "par\u00EAntese reto esquerdo"
+   },
+   "5197718200713913936": {
+      "message": "C++"
+   },
+   "5204391636475413312": {
+      "message": "Guardar"
+   },
+   "5213974294317036409": {
+      "message": "{numPages,plural, =0{}=1{1 p\u00E1gina}other{# p\u00E1ginas}}"
+   },
+   "5217641707432141671": {
+      "message": "Ups! Ocorreu um erro."
+   },
+   "5226470917948786938": {
+      "message": "Por ordem alfab\u00E9tica"
+   },
+   "5238003680997310998": {
+      "message": "Mais"
+   },
+   "5275493935807628890": {
+      "message": "N\u00E3o \u00E9 poss\u00EDvel encontrar a imagem no URL indicado."
+   },
+   "5288037028604092288": {
+      "message": "XPS"
+   },
+   "5299648222246616124": {
+      "message": "acento grave"
+   },
+   "5304869088141363028": {
+      "message": "Fotografias em destaque"
+   },
+   "5316658541831864803": {
+      "message": "A visualiza\u00E7\u00E3o deste tipo de documento n\u00E3o \u00E9 suportada."
+   },
+   "5336801339221383042": {
+      "message": "Javascript"
+   },
+   "5353129315502554762": {
+      "message": "Folha de Estilos"
+   },
+   "5372160981898991853": {
+      "message": "Publisher"
+   },
+   "5394142149034044812": {
+      "message": "Associada"
+   },
+   "5403830377590414208": {
+      "message": "Branco"
+   },
+   "5408091115193390231": {
+      "message": "AutoCAD"
+   },
+   "5438481737351808090": {
+      "message": "Tarde ($1\u200B)"
+   },
+   "5438584181753813038": {
+      "message": "Abrir com a aplica\u00E7\u00E3o predefinida"
+   },
+   "5465323999933375616": {
+      "message": "Atingiu o limite de largura de banda para ver ou transferir ficheiros que n\u00E3o t\u00EAm o formato do Google Docs."
+   },
+   "5482872484546230111": {
+      "message": "Pesquisar livros"
+   },
+   "5500117709595533163": {
+      "message": "Escreva a pesquisa na caixa acima para encontrar resultados de livros eletr\u00F3nicos atrav\u00E9s do Google Livros."
+   },
+   "5506081914878474195": {
+      "message": "Guardado no Drive"
+   },
+   "5514516347328112388": {
+      "message": "Pode ainda tentar transferir o documento original, ao clicar $2\u200Baqui$1\u200B."
+   },
+   "5555182241047709329": {
+      "message": "Escolha uma localiza\u00E7\u00E3o"
+   },
+   "5571842632470308750": {
+      "message": "Qualquer tipo"
+   },
+   "5581253128331595228": {
+      "message": "T\u00EDtulo"
+   },
+   "5598649706113950710": {
+      "message": "Editor"
+   },
+   "5598877389451818095": {
+      "message": "Abrir com"
+   },
+   "5631086126416409232": {
+      "message": "Azul"
+   },
+   "564165666160590723": {
+      "message": "Windows Media Player"
+   },
+   "5660422479531064559": {
+      "message": "N\u00E3o existem formul\u00E1rios."
+   },
+   "5672358806532843305": {
+      "message": "A apresentar $1\u200B."
+   },
+   "5675154446465700699": {
+      "message": "PDFs"
+   },
+   "568072913338360182": {
+      "message": "HTML"
+   },
+   "5706242163161626046": {
+      "message": "Os tipos de ficheiros suportados s\u00E3o: $1\u200B"
+   },
+   "5714240424645614611": {
+      "message": "Android Package"
+   },
+   "5728640851616538925": {
+      "message": "Verde"
+   },
+   "5744491383087191878": {
+      "message": "O URL da imagem inserido acima est\u00E1 incorreto ou n\u00E3o \u00E9 poss\u00EDvel carreg\u00E1-lo."
+   },
+   "5747728324987383020": {
+      "message": "Rostos"
+   },
+   "5753428288354311204": {
+      "message": "Carregar mais ficheiros"
+   },
+   "575497620414830649": {
+      "message": " \u2013 Mover para:"
+   },
+   "5774680835260150889": {
+      "message": "T\u00EDtulo"
+   },
+   "5785010887521443923": {
+      "message": "Remover"
+   },
+   "5842536098490298653": {
+      "message": "N\u00E3o foram encontrados tipos de letra."
+   },
+   "5877526626743756786": {
+      "message": "Coment\u00E1rios"
+   },
+   "5879988349590045594": {
+      "message": "\u00C9 necess\u00E1ria uma palavra-passe para aceder a $1\u200B. Introduza a palavra-passe"
+   },
+   "5971400924847413790": {
+      "message": "Em alternativa, pode ainda ver em $2\u200BHTML simples$1\u200B (redirecionamento autom\u00E1tico)."
+   },
+   "5975031149676029214": {
+      "message": "Toda a gente"
+   },
+   "5976369213680241300": {
+      "message": "Pesquisar imagens"
+   },
+   "5980081664136280513": {
+      "message": "Verde"
+   },
+   "5984398071085567332": {
+      "message": "Google Fusion Tables"
+   },
+   "60305871484579258": {
+      "message": "Alt"
+   },
+   "6043068172993241858": {
+      "message": "N\u00E3o existe ningu\u00E9m neste c\u00EDrculo."
+   },
+   "6044366909115009874": {
+      "message": "N\u00E3o foi poss\u00EDvel mudar o nome. Tente novamente mais tarde."
+   },
+   "604883455412617728": {
+      "message": "Nenhum contacto correspondeu \u00E0 sua pesquisa."
+   },
+   "6064654062949366878": {
+      "message": "Reproduzir"
+   },
+   "6070475007374165567": {
+      "message": "A guardar..."
+   },
+   "6083907478347891151": {
+      "message": "Tipo"
+   },
+   "6105333058393639868": {
+      "message": "Ocorreu um erro ao mover o anexo para a pasta selecionada no Google Drive."
+   },
+   "6112815042442423467": {
+      "message": "A sua pesquisa - $3\u200B$2\u200B$1\u200B - n\u00E3o corresponde a nenhuma nota."
+   },
+   "6113237889871930608": {
+      "message": "Nota em branco"
+   },
+   "6122643025527543706": {
+      "message": "Ctrl"
+   },
+   "6125026684392468184": {
+      "message": "Imprimir"
+   },
+   "6131822680770571276": {
+      "message": "PowerPoint"
+   },
+   "6148792237718135476": {
+      "message": "Permitir"
+   },
+   "6175043905327075444": {
+      "message": "Selecionados anteriormente"
+   },
+   "6186290899408627510": {
+      "message": "enter"
+   },
+   "6189891414154673003": {
+      "message": "Os Meus Mapas"
+   },
+   "6203260615455347677": {
+      "message": "Numbers"
+   },
+   "6223207695466118454": {
+      "message": "YouTube"
+   },
+   "623118860067088424": {
+      "message": "V\u00EDdeos"
+   },
+   "6231401379881217113": {
+      "message": "inserir"
+   },
+   "6236247353949345852": {
+      "message": "Reativar som"
+   },
+   "6244042389101116716": {
+      "message": "Pr\u00E9-visualiza\u00E7\u00E3o n\u00E3o dispon\u00EDvel. Aplica\u00E7\u00F5es dispon\u00EDveis."
+   },
+   "6252254957484336670": {
+      "message": "Anterior"
+   },
+   "6253076263700695984": {
+      "message": "Erro de autentica\u00E7\u00E3o. Atualize."
+   },
+   "6267063643272327592": {
+      "message": "Tente novamente mais tarde."
+   },
+   "6290462446987396446": {
+      "message": "Documentos de texto"
+   },
+   "6324768448533022780": {
+      "message": "$1\u200B $2\u200B"
+   },
+   "6333496730738019575": {
+      "message": "A carregar..."
+   },
+   "634900089121611600": {
+      "message": "N\u00E3o existem v\u00EDdeos."
+   },
+   "6362170008350775214": {
+      "message": "Lembrete em $1\u200B"
+   },
+   "6373188185119337610": {
+      "message": "T\u00EDtulo"
+   },
+   "6376739025584042564": {
+      "message": "Recortar fotografia"
+   },
+   "6386587519843563719": {
+      "message": "Ficheiro Bin\u00E1rio"
+   },
+   "6436479735235889890": {
+      "message": "Lembrete para as $2\u200B de $1\u200B"
+   },
+   "6459405233858728718": {
+      "message": "Apresenta\u00E7\u00F5es Google"
+   },
+   "6466736813846482957": {
+      "message": "Anterior"
+   },
+   "6479216014938929613": {
+      "message": "Noite ($1\u200B)"
+   },
+   "6488225756782357866": {
+      "message": "A imagem real\u00E7ada foi encontrada pela Pesquisa de Imagens do Google na seguinte p\u00E1gina:"
+   },
+   "6499224007473661191": {
+      "message": "A guardar no Google Drive..."
+   },
+   "6516256764288947999": {
+      "message": "Etiquetar pessoas"
+   },
+   "6522917155620379865": {
+      "message": "Transferir"
+   },
+   "6524849072392100692": {
+      "message": "Pasta do Google Drive"
+   },
+   "6570921376519753466": {
+      "message": "T\u00EDtulos"
+   },
+   "6582388186847564929": {
+      "message": "Eliminar nota/lista"
+   },
+   "6588176324871799870": {
+      "message": "Script do Google Apps"
+   },
+   "6602430002978098812": {
+      "message": "Escrita manual"
+   },
+   "6614046405230762587": {
+      "message": "N\u00E3o foram encontrados contactos."
+   },
+   "6622304228074863427": {
+      "message": "Aplica\u00E7\u00E3o"
+   },
+   "6644861766016503644": {
+      "message": "Palavra-passe obrigat\u00F3ria"
+   },
+   "6650837823238391202": {
+      "message": "Seguinte"
+   },
+   "6656998321236273120": {
+      "message": "Documentos de texto"
+   },
+   "666311703374681171": {
+      "message": "Imagens e v\u00EDdeos"
+   },
+   "6666820082708870349": {
+      "message": "Remover"
+   },
+   "6707173584987026005": {
+      "message": "Hoje"
+   },
+   "6709984792949009238": {
+      "message": "Abertos pela \u00FAltima vez por mim"
+   },
+   "6741759391888465238": {
+      "message": "A guardar no Google Drive \u2013 Mover para:"
+   },
+   "6757218172402086688": {
+      "message": "Pesquisar Notas..."
+   },
+   "6780628488957834429": {
+      "message": "Laranja"
+   },
+   "6784073265197389491": {
+      "message": "Saiba mais"
+   },
+   "6818286476757207074": {
+      "message": "Selecione apenas imagens para as quais tenha uma licen\u00E7a de utiliza\u00E7\u00E3o confirmada."
+   },
+   "682070933835616121": {
+      "message": "N\u00E3o existem tabelas."
+   },
+   "6822338149422461362": {
+      "message": "Google Drive"
+   },
+   "6893687445500687349": {
+      "message": "Google Sites"
+   },
+   "6905021988981026920": {
+      "message": "Pesquisa de v\u00EDdeos"
+   },
+   "6926055840246960182": {
+      "message": "Ver todos os itens"
+   },
+   "6929958461954697067": {
+      "message": "Fotografias de si"
+   },
+   "6940998537415516791": {
+      "message": "\u00E0s"
+   },
+   "6962388230676571914": {
+      "message": "Nenhuma pr\u00E9-visualiza\u00E7\u00E3o dispon\u00EDvel."
+   },
+   "6966117577694636785": {
+      "message": "Tamanho m\u00E1ximo do ficheiro: $1\u200B MB."
+   },
+   "6970167488058122005": {
+      "message": "autor desconhecido"
+   },
+   "6976414863987386971": {
+      "message": "Formul\u00E1rios"
+   },
+   "7004919150329996187": {
+      "message": "N\u00E3o foram encontradas pessoas correspondentes neste c\u00EDrculo."
+   },
+   "7054631817922169541": {
+      "message": "O Google Keep tem altera\u00E7\u00F5es n\u00E3o guardadas. Pretende sair da p\u00E1gina e rejeitar as altera\u00E7\u00F5es?"
+   },
+   "705833829394544221": {
+      "message": "Mostrar no Google Drive"
+   },
+   "7084991134824194740": {
+      "message": "Lembrar-me"
+   },
+   "7092062731478679314": {
+      "message": "N\u00E3o foram encontrados c\u00EDrculos."
+   },
+   "7116394962547236971": {
+      "message": "Permitir que o Google Keep apresente as notifica\u00E7\u00F5es?"
+   },
+   "7117183622067702162": {
+      "message": "Com o Google Drive, nunca mais ter\u00E1 de enviar anexos nos emails. Basta partilhar um link para qualquer ficheiro que armazene no Google Drive e todas as pessoas ter\u00E3o acesso ao mesmo ficheiro e \u00E0 mesma vers\u00E3o... automaticamente."
+   },
+   "713754035716193665": {
+      "message": "Nova lista"
+   },
+   "7146242673022399081": {
+      "message": "Texto"
+   },
+   "7151987668860086450": {
+      "message": "Pesquisa na Web"
+   },
+   "7161134329606048317": {
+      "message": "Fechar"
+   },
+   "7177591028189992523": {
+      "message": "Mover"
+   },
+   "7188024175807042621": {
+      "message": "Item de lista..."
+   },
+   "7188754206068648188": {
+      "message": "Dados Separados por V\u00EDrgulas"
+   },
+   "7206429144039020706": {
+      "message": "Falha ao carregar mais p\u00E1ginas."
+   },
+   "7225837680381806920": {
+      "message": "Final da tarde ($1\u200B)"
+   },
+   "722702934847795304": {
+      "message": "Project"
+   },
+   "7236199858216720905": {
+      "message": "Google Maps"
+   },
+   "7257381023528410292": {
+      "message": "Eliminar"
+   },
+   "7259352906118493156": {
+      "message": "N\u00E3o existem Websites."
+   },
+   "7310311230493556740": {
+      "message": "URL"
+   },
+   "7326565093670055435": {
+      "message": "Aplica\u00E7\u00F5es sugeridas"
+   },
+   "7330303214598808380": {
+      "message": "Sem notas arquivadas"
+   },
+   "7339696241980105410": {
+      "message": "O v\u00EDdeo selecionado j\u00E1 n\u00E3o existe. O propriet\u00E1rio pode t\u00EA-lo removido."
+   },
+   "734478884582426793": {
+      "message": "Arquivo Comprimido"
+   },
+   "7357017164339332230": {
+      "message": "Estas imagens tamb\u00E9m est\u00E3o dispon\u00EDveis para visualizar e partilhar nos $2\u200B\u00C1lbuns Web Picasa$1\u200B, o servi\u00E7o de alojamento de fotografias gratuito da Google."
+   },
+   "7364571366369083618": {
+      "message": "V\u00EDdeo"
+   },
+   "7367958022583310325": {
+      "message": "Apresenta\u00E7\u00E3o do OpenOffice"
+   },
+   "7377239345926788722": {
+      "message": "A\u00E7\u00F5es"
+   },
+   "7380785991026002613": {
+      "message": "Os resultados apresentados incluem uma licen\u00E7a para reutiliza\u00E7\u00E3o."
+   },
+   "7383706174467122149": {
+      "message": "Nota eliminada"
+   },
+   "7393771571081973549": {
+      "message": "C"
+   },
+   "740507516967994591": {
+      "message": "Abrir"
+   },
+   "7422452809590461532": {
+      "message": "Vermelho"
+   },
+   "7426603384368095928": {
+      "message": "Atualize a p\u00E1gina para iniciar a sess\u00E3o novamente e continuar a trabalhar."
+   },
+   "7428490253130883654": {
+      "message": "Localizar no documento"
+   },
+   "7429084719905985261": {
+      "message": "Objective C"
+   },
+   "7432956605646331928": {
+      "message": "SQL"
+   },
+   "7451573821837395189": {
+      "message": "O item foi adicionado ao seu $2\u200BGoogle Drive$1\u200B."
+   },
+   "7488945223835574498": {
+      "message": "Postscript"
+   },
+   "7491217001453921549": {
+      "message": "Todos os documentos"
+   },
+   "7492710087472140422": {
+      "message": "Saiba mais"
+   },
+   "7493919863870655172": {
+      "message": "C\u00E2mara Web"
+   },
+   "7500786109708143683": {
+      "message": "\u00C1udio eliminado"
+   },
+   "7501027876827009022": {
+      "message": "Os resultados apresentados incluem uma licen\u00E7a para reutiliza\u00E7\u00E3o comercial."
+   },
+   "754562894809764325": {
+      "message": "Abrir com"
+   },
+   "7546994163355383999": {
+      "message": "Todas as notas foram guardadas"
+   },
+   "7559208209275370228": {
+      "message": "\u00DAltima edi\u00E7\u00E3o por mim"
+   },
+   "7561401550697263017": {
+      "message": "A carregar $1\u200B."
+   },
+   "7561835096421626440": {
+      "message": "Fechar a barra Localizar"
+   },
+   "7602870977118971161": {
+      "message": "Atualizar"
+   },
+   "7614241747607201251": {
+      "message": "Erro ao apresentar $1\u200B."
+   },
+   "7616903319374696418": {
+      "message": "Guardar no Google Drive"
+   },
+   "761925792744044896": {
+      "message": "Definir como fotografia do perfil"
+   },
+   "7621335927565458184": {
+      "message": "Nota..."
+   },
+   "7621429484880737652": {
+      "message": "Ignorar"
+   },
+   "7664490637734113846": {
+      "message": "Associar mais aplica\u00E7\u00F5es"
+   },
+   "7692525489619342577": {
+      "message": "Ignorar"
+   },
+   "7715735412192018288": {
+      "message": "Ajuda"
+   },
+   "7734578122414851725": {
+      "message": "PHP"
+   },
+   "7745005220197261896": {
+      "message": "Pesquisa de livros do Google"
+   },
+   "776065748745885880": {
+      "message": "barra de espa\u00E7o"
+   },
+   "7770982082843341533": {
+      "message": "N\u00E3o existem itens nesta pasta."
+   },
+   "779472474101127362": {
+      "message": "Tirar um instant\u00E2neo"
+   },
+   "7820417126206702946": {
+      "message": "Os resultados apresentados est\u00E3o dispon\u00EDveis unicamente para utiliza\u00E7\u00E3o pessoal ou comercial no Google Drive e n\u00E3o poder\u00E3o ser vendidos ou redistribu\u00EDdos de forma independente."
+   },
+   "7822364282298323175": {
+      "message": "Lista eliminada"
+   },
+   "7830513726270865588": {
+      "message": "Calend\u00E1rio Google"
+   },
+   "7841219948388691455": {
+      "message": "Seguinte"
+   },
+   "7852396628465259068": {
+      "message": "Fotografia do perfil"
+   },
+   "7889351669453500220": {
+      "message": "N\u00E3o foi poss\u00EDvel carregar mais p\u00E1ginas. A tentar novamente."
+   },
+   "7895643887742936844": {
+      "message": "ponto e v\u00EDrgula"
+   },
+   "7899833760457194273": {
+      "message": "Pesquisa de imagens"
+   },
+   "7899913952063063825": {
+      "message": "Imagem eliminada"
+   },
+   "7910518224461588465": {
+      "message": "Amarelo"
+   },
+   "7914160041381019861": {
+      "message": "N\u00E3o existe nenhuma pr\u00E9-visualiza\u00E7\u00E3o dispon\u00EDvel."
+   },
+   "794202635102531782": {
+      "message": "Estas aplica\u00E7\u00F5es podem abrir ou editar este ficheiro"
+   },
+   "7945839336462142841": {
+      "message": "$1\u200B $2\u200B"
+   },
+   "7948723884189309228": {
+      "message": "N\u00E3o \u00E9 poss\u00EDvel carregar esse ficheiro!"
+   },
+   "7953603850004320936": {
+      "message": "Pr\u00E9-visualiza\u00E7\u00E3o indispon\u00EDvel."
+   },
+   "7960528690514646841": {
+      "message": "{moreCount,plural, =0{unused plural form}=1{+ 1 pessoa}other{+ {moreCount} pessoas}}"
+   },
+   "7962728344554282160": {
+      "message": "Aumentar"
+   },
+   "7973635145070803181": {
+      "message": "Carregar fotografias"
+   },
+   "7987180255015869513": {
+      "message": "Ou cole um endere\u00E7o Web aqui:"
+   },
+   "8016231262233952856": {
+      "message": "Azul esverdeado"
+   },
+   "8023466614826324314": {
+      "message": "As fotografias ser\u00E3o partilhadas com um p\u00FAblico alargado."
+   },
+   "8043514121228710092": {
+      "message": "Adicionar imagem"
+   },
+   "8081927474846706026": {
+      "message": "N\u00E3o existem desenhos."
+   },
+   "8087751641867346064": {
+      "message": "Documento do OpenOffice"
+   },
+   "809927418535001543": {
+      "message": "Adicionar nota"
+   },
+   "8100558294600077150": {
+      "message": "Pesquisa de blogues do Google"
+   },
+   "8106780183458743723": {
+      "message": "\u00C1lbuns de fotografias"
+   },
+   "8112699352770418817": {
+      "message": "N\u00E3o foram encontrados livros."
+   },
+   "8126700207146858047": {
+      "message": "Mudar o nome do documento"
+   },
+   "8172945196588870035": {
+      "message": "Eventos"
+   },
+   "8192378456655629049": {
+      "message": "A processar v\u00EDdeo..."
+   },
+   "8193991135666622583": {
+      "message": "Google Keep"
+   },
+   "821942580510564685": {
+      "message": "Introduza a palavra-passe deste documento para visualiz\u00E1-lo"
+   },
+   "8265105267499407070": {
+      "message": "Reproduzir"
+   },
+   "8267458240960831780": {
+      "message": "A autenticar..."
+   },
+   "8281141013543828574": {
+      "message": "Imagem Raw"
+   },
+   "8281678863271800533": {
+      "message": "Filtro de imagem"
+   },
+   "8283103456188558313": {
+      "message": "Apresenta\u00E7\u00F5es"
+   },
+   "829373983432978641": {
+      "message": "N\u00E3o foi poss\u00EDvel carregar esta p\u00E1gina."
+   },
+   "8299047746309466797": {
+      "message": "Acedeu ao visualizador"
+   },
+   "8324195080917648153": {
+      "message": "N\u00E3o \u00E9 poss\u00EDvel colocar o v\u00EDdeo nesta janela. Aumente ligeiramente a janela do navegador para poder colocar o v\u00EDdeo."
+   },
+   "8337582740675387693": {
+      "message": "Java"
+   },
+   "8342684858400436871": {
+      "message": "tabula\u00E7\u00E3o"
+   },
+   "834835979652266872": {
+      "message": "$1\u200B de $2\u200B"
+   },
+   "8379952094517631162": {
+      "message": "N\u00E3o"
+   },
+   "838638321086949683": {
+      "message": "Banco de imagens"
+   },
+   "8402951605166442545": {
+      "message": "Nenhuma pr\u00E9-visualiza\u00E7\u00E3o dispon\u00EDvel."
+   },
+   "8408756681779291666": {
+      "message": "Pesquisar notas"
+   },
+   "8412684147928483084": {
+      "message": "Preto"
+   },
+   "8435544675017330861": {
+      "message": "Nenhum item corresponde \u00E0 sua pesquisa."
+   },
+   "8436817383042650304": {
+      "message": "caps lock"
+   },
+   "8451184312655705174": {
+      "message": "Se o seu URL estiver correto, ver\u00E1 uma pr\u00E9-visualiza\u00E7\u00E3o aqui. As imagens grandes poder\u00E3o demorar alguns minutos a surgir."
+   },
+   "8467894483369467251": {
+      "message": "Flash"
+   },
+   "8506198918368329269": {
+      "message": "Os resultados apresentados incluem uma licen\u00E7a para reutiliza\u00E7\u00E3o comercial com modifica\u00E7\u00E3o."
+   },
+   "8571315158566081191": {
+      "message": "N\u00E3o existem folhas de c\u00E1lculo."
+   },
+   "8586521576836841032": {
+      "message": "Lamentamos, mas ocorreu um erro. A tentar novamente."
+   },
+   "8596257056433048992": {
+      "message": "Bem-vindo ao"
+   },
+   "8621067185485606452": {
+      "message": "ECMAScript"
+   },
+   "863955692838281739": {
+      "message": "Fechar"
+   },
+   "8660016472468563221": {
+      "message": "dois pontos"
+   },
+   "8663507590720636709": {
+      "message": "$1\u200B +$2\u200B mais"
+   },
+   "8666643061920113075": {
+      "message": "{VIEWER_GENDER,select, female{Cole o URL de uma imagem aqui:}male{Cole o URL de uma imagem aqui:}other{Cole o URL de uma imagem aqui:}}"
+   },
+   "8674222789100049233": {
+      "message": "Fechar"
+   },
+   "8677820266582418177": {
+      "message": "Lamentamos, mas ocorreu um erro."
+   },
+   "8709611758728645225": {
+      "message": "p\u00E1gina para baixo"
+   },
+   "873811949056724870": {
+      "message": "Foi criada uma nota."
+   },
+   "8759520888087120926": {
+      "message": "N\u00E3o existem scripts."
+   },
+   "8775097441636640256": {
+      "message": "$2\u200B \u2013 $1\u200B"
+   },
+   "8780212274435014958": {
+      "message": "C\u00EDrculos"
+   },
+   "8781837301864053001": {
+      "message": "RTF"
+   },
+   "8798805450232120940": {
+      "message": "Outras aplica\u00E7\u00F5es associadas"
+   },
+   "8813101408630252335": {
+      "message": "$1\u200B seg."
+   },
+   "8820281478062782578": {
+      "message": "Pesquisar"
+   },
+   "8822326207328431952": {
+      "message": "Os carregamentos de imagens n\u00E3o est\u00E3o dispon\u00EDveis"
+   },
+   "8850238112725591771": {
+      "message": "atalho $1\u200B"
+   },
+   "8884900765322249670": {
+      "message": "Vista de Lista"
+   },
+   "8889019648958415451": {
+      "message": "Ficheiro Desconhecido"
+   },
+   "8916237870980173557": {
+      "message": "A ligar..."
+   },
+   "8919660666733306860": {
+      "message": "Imagem"
+   },
+   "8979615310931291676": {
+      "message": "Editado $1\u200B"
+   },
+   "8986044948621891903": {
+      "message": "Escreva a sua pesquisa na caixa acima para encontrar resultados atrav\u00E9s da Pesquisa Web do Google."
+   },
+   "8989303741319824749": {
+      "message": "Anterior"
+   },
+   "901615442107785480": {
+      "message": "Arquivar nota/lista"
+   },
+   "9028041601596584772": {
+      "message": "Localiza\u00E7\u00E3o"
+   },
+   "9058308423774656474": {
+      "message": "Hangul Word Processor"
+   },
+   "9083935734710258396": {
+      "message": "Recusar"
+   },
+   "911586799466052745": {
+      "message": "OpenOffice Draw"
+   },
+   "9130962320402467249": {
+      "message": "Banco de imagens"
+   },
+   "9146716987301178362": {
+      "message": "Encontrou um erro. Atualize."
+   },
+   "916773043895242978": {
+      "message": "O URL da imagem que introduziu acima est\u00E1 incorreto ou n\u00E3o \u00E9 poss\u00EDvel carreg\u00E1-lo. Introduza um URL da imagem correto."
+   },
+   "9173629944963872598": {
+      "message": "N\u00E3o foram encontrados eventos."
+   },
+   "9182500445937900938": {
+      "message": "Fechar"
+   },
+   "9195941533351099011": {
+      "message": "A carregar $1\u200B de $2\u200B"
+   },
+   "9210545340040914022": {
+      "message": "$2\u200BFalha no carregamento da imagem.$1\u200B"
+   },
+   "9222674328467536367": {
+      "message": "$2\u200B \u2013 $1\u200B itens"
+   },
+   "940276535015195877": {
+      "message": "N\u00E3o existem pastas."
+   },
+   "947120104987708134": {
+      "message": "Pol\u00EDtica de Privacidade"
+   },
+   "951963820437151566": {
+      "message": "Google Sites"
+   },
+   "963611681085757795": {
+      "message": "Neste momento, n\u00E3o \u00E9 poss\u00EDvel gerar uma vista do documento."
+   },
+   "964957642315661588": {
+      "message": "Falha ao carregar esta p\u00E1gina. A tentar novamente..."
+   },
+   "96556988207614774": {
+      "message": "Calend\u00E1rios"
+   },
+   "973644925431533602": {
+      "message": "Eliminar"
+   },
+   "974042541427403929": {
+      "message": "Azul"
+   },
+   "975416671454410602": {
+      "message": "$2\u200BTentar novamente$1\u200B"
+   },
+   "980395722421409371": {
+      "message": "N\u00E3o foram encontrados mapas."
+   },
+   "982187142411651629": {
+      "message": "Ignorar"
+   },
+   "985197728509875956": {
+      "message": "Chemical Model"
+   },
+   "996381410993745580": {
+      "message": "Photoshop"
+   },
+   "998727788921602971": {
+      "message": "V\u00EDdeos"
+   },
+   "appDesc": {
+      "description": "App description",
+      "message": "Capture rapidamente as suas ideias e lembre-se das mesmas no local ou na altura certos."
+   },
+   "appName": {
+      "description": "App name.",
+      "message": "Google Keep"
+   }
+}

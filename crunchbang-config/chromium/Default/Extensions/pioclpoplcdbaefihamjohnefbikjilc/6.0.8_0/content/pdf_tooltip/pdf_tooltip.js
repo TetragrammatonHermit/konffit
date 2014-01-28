@@ -1,0 +1,3 @@
+function msgHandlerGetConfig(a,b,c){a&&a.bootstrapInfo&&a.bootstrapInfo.name&&/china/i.test(a.bootstrapInfo.name)&&(document.querySelector("#logo").className="china")}Browser.addMessageHandlers({config:msgHandlerGetConfig});
+window.addEventListener("DOMContentLoaded",function(){GlobalUtils.localize(document.body);document.querySelector("#tryItOut").addEventListener("click",function(){window.parent.postMessage({name:"clipPdf"},"*")});document.querySelector("#closeBtn").addEventListener("click",function(){window.parent.postMessage({name:"closePdfTooltip"},"*")});/gmailTooltip/.test(document.location.hash)&&(document.body.className+=" gmail")});
+Browser.sendToExtension({name:"main_getConfig",bootstrapInfo:{serviceHost:null,name:null}});

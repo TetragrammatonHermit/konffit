@@ -1,0 +1,1723 @@
+{
+   "1006787209796778126": {
+      "message": "Saj\u00E1t meghajt\u00F3"
+   },
+   "1017907757187630742": {
+      "message": "Saj\u00E1t bet\u0171t\u00EDpusok"
+   },
+   "1029072043275376320": {
+      "message": "Nem tal\u00E1lhat\u00F3k napt\u00E1rak."
+   },
+   "103870949919613488": {
+      "message": "Jegyzet archiv\u00E1lva"
+   },
+   "1093196373615461508": {
+      "message": "Sajn\u00E1ljuk, jelenleg nem tudjuk megjelen\u00EDteni ezt a k\u00E9pet."
+   },
+   "1098726677907695030": {
+      "message": "Hangfelv\u00E9tel: "
+   },
+   "1160186203475556062": {
+      "message": "$2\u200BK\u00E9p elt\u00E1vol\u00EDt\u00E1sa$1\u200B"
+   },
+   "1185164838496022543": {
+      "message": "Az oldal \u00FAjrat\u00F6lt\u00E9s\u00E9hez kattintson ide."
+   },
+   "1263557413037343589": {
+      "message": "Fot\u00F3k rendez\u00E9se"
+   },
+   "1263685395252160366": {
+      "message": "LaTeX"
+   },
+   "1301927361761800260": {
+      "message": "PDF-f\u00E1jlok"
+   },
+   "1311350045083871503": {
+      "message": "M\u00E9gse"
+   },
+   "1311729747516144362": {
+      "message": "Piros"
+   },
+   "1315844696796851207": {
+      "message": "Sans Serif"
+   },
+   "133192954417440569": {
+      "message": "Nincs tal\u00E1lat."
+   },
+   "1376126796144976437": {
+      "message": "\u00D6sszes bet\u0171t\u00EDpus"
+   },
+   "1398025099726122129": {
+      "message": "Hiba t\u00F6rt\u00E9nt $1\u200B megjelen\u00EDt\u00E9sekor, \u00FAjra pr\u00F3b\u00E1lkozunk."
+   },
+   "139942704574044780": {
+      "message": "Enged\u00E9lyez\u00E9s"
+   },
+   "141491180325662484": {
+      "message": "A Google Drive szolg\u00E1ltat\u00E1sban egy helyen t\u00E1rolhatja \u00F6sszes f\u00E1jlj\u00E1t; ezeket b\u00E1rhonnan, b\u00E1rmilyen eszk\u00F6zr\u0151l el\u00E9rheti. Ha vannak fot\u00F3i a Google Drive-ban, k\u00F6zvetlen\u00FCl innen megoszthatja \u0151ket a k\u00F6reivel."
+   },
+   "1418114637490664392": {
+      "message": "LIFE-fot\u00F3arch\u00EDvum"
+   },
+   "1419896259743862406": {
+      "message": "T\u00E1rs\u00EDt\u00E1s"
+   },
+   "1435613501685026676": {
+      "message": "Bez\u00E1r\u00E1s"
+   },
+   "1446829548948002072": {
+      "message": "vessz\u0151"
+   },
+   "1448351640164641222": {
+      "message": "N\u00E9m\u00EDt\u00E1s"
+   },
+   "1454684154234137497": {
+      "message": "pause"
+   },
+   "1459765068821943106": {
+      "message": "{VIEWER_GENDER,select, female{M\u00E1soljon be egy YouTube URL-t ide:}male{M\u00E1soljon be egy YouTube URL-t ide:}other{M\u00E1soljon be egy YouTube URL-t ide:}}"
+   },
+   "1463079206290378085": {
+      "message": "Fot\u00F3k az orkutb\u00F3l"
+   },
+   "1484121429181423440": {
+      "message": "Nem jelentkezett be. T\u00F6ltse be \u00FAjra!"
+   },
+   "1492360016907725281": {
+      "message": "{VIEWER_GENDER,select, female{M\u00E1solja be egy vide\u00F3 URL-j\u00E9t ide:}male{M\u00E1solja be egy vide\u00F3 URL-j\u00E9t ide:}other{M\u00E1solja be egy vide\u00F3 URL-j\u00E9t ide:}}"
+   },
+   "1493384967280942491": {
+      "message": "R\u00F3zsasz\u00EDn"
+   },
+   "1499433769420882987": {
+      "message": "A(z) $1\u200B megjelen\u00EDt\u00E9se"
+   },
+   "1521707405717823409": {
+      "message": "Lila"
+   },
+   "1527836113392558206": {
+      "message": "Bet\u00F6lt\u00E9s\u2026"
+   },
+   "153439508598626384": {
+      "message": "Saj\u00E1t fot\u00F3k"
+   },
+   "1536051766421561160": {
+      "message": "egyenl\u0151s\u00E9gjel"
+   },
+   "156992719062713230": {
+      "message": "Sz\u00FCrke"
+   },
+   "1603139897109307706": {
+      "message": "Hiba t\u00F6rt\u00E9nt, pr\u00F3b\u00E1lja meg \u00FAjra."
+   },
+   "1604359562654146902": {
+      "message": "Fot\u00F3"
+   },
+   "1633370388224271051": {
+      "message": "Nem tal\u00E1lhat\u00F3k szem\u00E9lyek."
+   },
+   "1700522311470719738": {
+      "message": "Eml\u00E9keztet\u0151t k\u00E9rek"
+   },
+   "1709410429018687341": {
+      "message": "Reggel ($1\u200B)"
+   },
+   "1715552550526864429": {
+      "message": "Blogok keres\u00E9se"
+   },
+   "1756171223417807431": {
+      "message": "Gy\u0151z\u0151dj\u00F6n meg arr\u00F3l, hogy a k\u00E9p nyilv\u00E1nos. Ha a k\u00E9p jelsz\u00F3val v\u00E9dett, vagy egy bels\u0151 h\u00E1l\u00F3zaton tal\u00E1lhat\u00F3, akkor nem fogjuk tudni olvasni azt."
+   },
+   "1791115075948268631": {
+      "message": "A billenty\u0171k\u00F3dokat ismertet\u0151 s\u00FAg\u00F3 megnyit\u00E1sa"
+   },
+   "1808245543551507519": {
+      "message": "Hang"
+   },
+   "1815108332424147305": {
+      "message": "Vagy pr\u00F3b\u00E1ljon ki egy javasolt alkalmaz\u00E1st"
+   },
+   "1816851800848432562": {
+      "message": "Elt\u00E1vol\u00EDt\u00E1s"
+   },
+   "1823222042913714987": {
+      "message": "Jelsz\u00F3 elk\u00FCld\u00E9se"
+   },
+   "1847413775362184342": {
+      "message": "Megnyit\u00E1s"
+   },
+   "185012928288875755": {
+      "message": "Egyetlen elem sem felelt meg a felt\u00E9teleknek."
+   },
+   "1856444915090632305": {
+      "message": "Ez a dokumentum titkos\u00EDtott. \u00CDrja be a jelsz\u00F3t."
+   },
+   "1866863108233180413": {
+      "message": "Mapp\u00E1k"
+   },
+   "187077078156858455": {
+      "message": "Hangjegyzet"
+   },
+   "1888984138189822209": {
+      "message": "Keres\u00E9s a Google Keepen"
+   },
+   "1900571668686750716": {
+      "message": "vCard"
+   },
+   "1901351411358749070": {
+      "message": "Velem megosztott"
+   },
+   "1918176455405610789": {
+      "message": "K\u00E9sz"
+   },
+   "1920189655549476211": {
+      "message": "ismeretlen hossz"
+   },
+   "1929603188252533075": {
+      "message": "Nem siker\u00FClt t\u00F6r\u00F6lni vide\u00F3j\u00E1t. Pr\u00F3b\u00E1lja \u00FAjra."
+   },
+   "1935425718037933511": {
+      "message": "Adja meg a dokumentum \u00FAj nev\u00E9t:"
+   },
+   "1951810091681076784": {
+      "message": "{COUNT_1,plural, =1{1 egyez\u0151 jegyzet}other{{COUNT_2} egyez\u0151 jegyzet}}"
+   },
+   "1965626377712226216": {
+      "message": "Keynote"
+   },
+   "1972766939056855370": {
+      "message": "Minden dokumentum"
+   },
+   "1974063091619095703": {
+      "message": "Szem\u00E9lyek"
+   },
+   "1993674829873313178": {
+      "message": "Probl\u00E9m\u00E1i vannak a felt\u00F6lt\u00E9ssel? Jelenleg karbantart\u00E1s folyik, de nemsok\u00E1ra visszat\u00E9r\u00FCnk a norm\u00E1l \u00FCzemm\u00F3dba."
+   },
+   "2048322072989992494": {
+      "message": "M\u00E9g senki nem osztott meg \u00D6nnel f\u00E1jlokat."
+   },
+   "2055388154421214950": {
+      "message": "Tov\u00E1bbi alkalmaz\u00E1sok t\u00E1rs\u00EDt\u00E1sa"
+   },
+   "2061440050632248160": {
+      "message": "Arch\u00EDvum"
+   },
+   "2068023589621557589": {
+      "message": "TrueType bet\u0171t\u00EDpus"
+   },
+   "210610357717331623": {
+      "message": "Tov\u00E1bbi lehet\u0151s\u00E9gek"
+   },
+   "2109272338124379867": {
+      "message": "Utols\u00F3 m\u00F3dos\u00EDt\u00E1s"
+   },
+   "2116013171202209313": {
+      "message": "Kiv\u00E1laszt"
+   },
+   "2122256657192674586": {
+      "message": "Vide\u00F3k keres\u00E9se"
+   },
+   "2125135092719715773": {
+      "message": "Felt\u00F6lt\u00E9s"
+   },
+   "212796670323571824": {
+      "message": "OK"
+   },
+   "213665695896111861": {
+      "message": "Jegyzetek"
+   },
+   "2138593281154109183": {
+      "message": "Arch\u00EDvum"
+   },
+   "2154372123324862271": {
+      "message": "t\u00F6rtvonal"
+   },
+   "2185270915942408270": {
+      "message": "M\u00E9retre igaz\u00EDt\u00E1s"
+   },
+   "2187239650627580457": {
+      "message": "K\u00FCld\u00E9s"
+   },
+   "2189236824843182677": {
+      "message": "{audienceCount,plural, =0{nem haszn\u00E1lt t\u00F6bbes sz\u00E1m}=1{A fot\u00F3kat {startTag}egy szem\u00E9llyel{endTag} osztja meg.}other{A fot\u00F3kat {startTag}{audienceCount} szem\u00E9llyel{endTag} osztja meg.}}"
+   },
+   "2198096971937872560": {
+      "message": "Eml\u00E9keztet\u0151:"
+   },
+   "221715292685577880": {
+      "message": "Igen"
+   },
+   "2220005860896049129": {
+      "message": "T\u00FAl sok id\u0151t vett ig\u00E9nybe a dokumentum keres\u00E9se az eredeti forr\u00E1sban."
+   },
+   "2228413078211839077": {
+      "message": "Sajnos a dokumentum n\u00E9zet\u00E9nek l\u00E9trehoz\u00E1sakor \u00E1tmeneti probl\u00E9ma l\u00E9pett fel."
+   },
+   "2235097878790803849": {
+      "message": "Viszl\u00E1t, mell\u00E9kletek. \u00DCdv, Google Drive!"
+   },
+   "2257303402199718039": {
+      "message": "Az eredeti forr\u00E1s hely\u00E9n nem tal\u00E1ltuk meg a dokumentumot. Ellen\u0151rizze, hogy m\u00E9g mindig l\u00E9tezik-e."
+   },
+   "2289812403593835836": {
+      "message": "Pages"
+   },
+   "229177484946387188": {
+      "message": "Google Earth"
+   },
+   "2304293593067358316": {
+      "message": "ClipArt-k\u00E9p"
+   },
+   "2329167963662998826": {
+      "message": "A Google Keep szeretn\u00E9 haszn\u00E1lni a helyadatokat a helyalap\u00FA eml\u00E9keztet\u0151k pontosabb javaslatai \u00E9rdek\u00E9ben."
+   },
+   "234046557601727809": {
+      "message": "Nincsenek k\u00E9pek vagy vide\u00F3k."
+   },
+   "2349912757088764940": {
+      "message": "A k\u00F6vetkez\u0151k l\u00E1thatj\u00E1k:"
+   },
+   "2359614137862708172": {
+      "message": "Shift"
+   },
+   "2370656573843123707": {
+      "message": "sz\u00F6gletes berekeszt\u0151 z\u00E1r\u00F3jel"
+   },
+   "2393487423640708285": {
+      "message": "\u00C9rv\u00E9nytelen az URL-c\u00EDm. A c\u00EDm a http:// vagy a https:// karakterekkel kell, hogy kezd\u0151dj\u00F6n."
+   },
+   "2412314804333167252": {
+      "message": "A t\u00E1bl\u00E1zat t\u00FAl nagy. $3\u200BT\u00F6ltse le$1\u200B a t\u00E1bl\u00E1zatot, vagy $4\u200Bszerkessze a Google T\u00E1bl\u00E1zatokban$1\u200B."
+   },
+   "2415274561162670983": {
+      "message": "Sajnos jelenleg nem tudjuk megjelen\u00EDteni ezt a vide\u00F3t."
+   },
+   "2418104318933043113": {
+      "message": "Google K\u00E9pkeres\u0151"
+   },
+   "2422385608245044498": {
+      "message": "V\u00E1lasszon egy k\u00E9pet"
+   },
+   "2449254824382583885": {
+      "message": "\u00DAj ablakba"
+   },
+   "2450327925369898841": {
+      "message": "Sajn\u00E1ljuk, hiba t\u00F6rt\u00E9nt az elemnek a Google Drive-hoz val\u00F3 hozz\u00E1ad\u00E1sa k\u00F6zben. Pr\u00F3b\u00E1lja \u00FAjra!"
+   },
+   "2455753442347598108": {
+      "message": "Kil\u00E9pett az olvas\u00F3alkalmaz\u00E1sb\u00F3l"
+   },
+   "2475181823688399272": {
+      "message": "K\u00F6vetkez\u0151"
+   },
+   "2484568559152875936": {
+      "message": "Nincsenek fot\u00F3albumok."
+   },
+   "2492036279909332649": {
+      "message": "Listaelem t\u00F6r\u00F6lve"
+   },
+   "2510929871271209216": {
+      "message": "A t\u00E1bl\u00E1zat t\u00FAl nagy. $2\u200BIde$1\u200B kattintva let\u00F6ltheti azt."
+   },
+   "2513437337377210144": {
+      "message": "end"
+   },
+   "2538080331309772448": {
+      "message": "Rendez\u00E9s: $1\u200B"
+   },
+   "2558480112329900136": {
+      "message": "Sz\u00FCrke"
+   },
+   "257317112834806705": {
+      "message": "V\u00E1lt\u00E1s a lista- \u00E9s r\u00E1csn\u00E9zet k\u00F6z\u00F6tt"
+   },
+   "2587566920590457715": {
+      "message": "Maps Engine Lite"
+   },
+   "2609409316752026806": {
+      "message": "PDF"
+   },
+   "2609750184896485102": {
+      "message": "Vide\u00F3k a telefonr\u00F3l"
+   },
+   "2611879390264566852": {
+      "message": "OpenOffice-t\u00E1bl\u00E1zat"
+   },
+   "2615188670181508661": {
+      "message": "Mostan\u00E1ban nem jel\u00F6lt ki semmit."
+   },
+   "2628268670001557269": {
+      "message": "Kv\u00F3ta"
+   },
+   "2643241712502664984": {
+      "message": "Az \u00D6n YouTube-vide\u00F3i"
+   },
+   "2644069582812747285": {
+      "message": "Listaelem"
+   },
+   "2646734195256984201": {
+      "message": "$2\u200B/$1\u200B"
+   },
+   "2687303256387847763": {
+      "message": "N\u00E9pszer\u0171s\u00E9g"
+   },
+   "2705842902318123127": {
+      "message": "Ugr\u00E1s a k\u00F6vetkez\u0151 vagy el\u0151z\u0151 jegyzetre vagy list\u00E1ra"
+   },
+   "2742719907061406418": {
+      "message": "XML"
+   },
+   "2752123004911547510": {
+      "message": "Felkapott"
+   },
+   "2786560864906393383": {
+      "message": "Fot\u00F3k a telefonr\u00F3l"
+   },
+   "2789687492331041935": {
+      "message": "Id\u0151pont kiv\u00E1laszt\u00E1sa"
+   },
+   "2814668529404267263": {
+      "message": "Bejelentkez\u00E9s"
+   },
+   "2817277146396981386": {
+      "message": "du."
+   },
+   "2818135503416309545": {
+      "message": "Vide\u00F3 r\u00F6gz\u00EDt\u00E9se"
+   },
+   "2827039933590757722": {
+      "message": "Windows-parancsikon"
+   },
+   "2833524492098518257": {
+      "message": "T\u00E1rs\u00EDtott alkalmaz\u00E1sok"
+   },
+   "2842885468107862276": {
+      "message": "Hozz\u00E1ad\u00E1s a Drive-hoz \u00E9s t\u00E1rs\u00EDt\u00E1s"
+   },
+   "2860188519781080944": {
+      "message": "Narancs"
+   },
+   "2861568351294148466": {
+      "message": "Szkriptek"
+   },
+   "2864281852037732729": {
+      "message": "Kevesebb"
+   },
+   "2878874627361086801": {
+      "message": "el\u0151n\u00E9zet"
+   },
+   "289798573180023043": {
+      "message": "OK"
+   },
+   "2917498437550635075": {
+      "message": "Ikon"
+   },
+   "2979466412944870220": {
+      "message": "El\u0151n\u00E9zet bet\u00F6lt\u00E9se\u2026"
+   },
+   "2981433463625966877": {
+      "message": "\u00C1ltal\u00E1nos Szerz\u0151d\u00E9si Felt\u00E9telek"
+   },
+   "2982511431742033448": {
+      "message": "Nincsenek prezent\u00E1ci\u00F3k."
+   },
+   "3000689173481666334": {
+      "message": "K\u00F6r szerkeszt\u00E9se"
+   },
+   "3029395493413607486": {
+      "message": "Nem siker\u00FClt bet\u00F6lteni a videolej\u00E1tsz\u00F3t. Pr\u00F3b\u00E1lja meg friss\u00EDteni az oldalt.$1\u200BHa a probl\u00E9ma tov\u00E1bbra is fenn\u00E1ll, $3\u200Bnyissa meg a S\u00FAg\u00F3t$2\u200B."
+   },
+   "306516303501625305": {
+      "message": "Nem siker\u00FClt hiteles\u00EDteni."
+   },
+   "3073005748126521632": {
+      "message": "Az eml\u00E9keztet\u0151 megjelent a k\u00F6vetkez\u0151 helyen: $1\u200B"
+   },
+   "3074184819310272351": {
+      "message": "Felt\u00F6lt\u00F6tt fot\u00F3k"
+   },
+   "3084372889071691504": {
+      "message": "{VIEWER_GENDER,select, female{M\u00E1soljon be egy URL-t ide:}male{M\u00E1soljon be egy URL-t ide:}other{M\u00E1soljon be egy URL-t ide:}}"
+   },
+   "3099378427807388994": {
+      "message": "Sz\u00FCnet"
+   },
+   "3109321241584918345": {
+      "message": "Tov\u00E1bbi alkalmaz\u00E1sok t\u00E1rs\u00EDt\u00E1sa\u2026"
+   },
+   "3121560585545725724": {
+      "message": "$1\u200B, $2\u200B"
+   },
+   "3207670492626476064": {
+      "message": "T\u00E1bl\u00E1zatok"
+   },
+   "3222929029344613957": {
+      "message": "Hiba t\u00F6rt\u00E9nt a f\u00E1jl megnyit\u00E1sakor. Pr\u00F3b\u00E1lja \u00FAjra!"
+   },
+   "3243829462528324248": {
+      "message": "Barna"
+   },
+   "3250489229749307913": {
+      "message": "Elektronikus kiadv\u00E1ny"
+   },
+   "3265524298292280681": {
+      "message": "esc"
+   },
+   "3267563602179728277": {
+      "message": "delete"
+   },
+   "3275029321588462173": {
+      "message": "Egyik sem"
+   },
+   "3278237562147211998": {
+      "message": "Fot\u00F3t\u00E1rfot\u00F3k"
+   },
+   "330603631583186798": {
+      "message": "Word"
+   },
+   "3306487262690341751": {
+      "message": "D\u00E1tum \u00E9s id\u0151"
+   },
+   "3312545971976531405": {
+      "message": "\u00DCzenet"
+   },
+   "3328129883064940351": {
+      "message": "Bet\u0171t\u00EDpusok"
+   },
+   "3354260708176476985": {
+      "message": "Bet\u00F6lt\u00E9s&hellip;"
+   },
+   "3368639944474272225": {
+      "message": "Sajn\u00E1ljuk, nem tudjuk lek\u00E9rni a dokumentumot megtekint\u00E9sre, vagy \u00D6nnek nincs enged\u00E9lye a dokumentum megtekint\u00E9s\u00E9re."
+   },
+   "3381619429606029445": {
+      "message": "Visio"
+   },
+   "3408219901032480508": {
+      "message": "$2\u200B, $1\u200B"
+   },
+   "3421685394169412932": {
+      "message": "A program az \u00F6sszes m\u00F3dos\u00EDt\u00E1st automatikusan menti."
+   },
+   "3422389100099960864": {
+      "message": "Nincsenek k\u00E9pek."
+   },
+   "3430885603500576146": {
+      "message": "Csak olyan k\u00E9peket v\u00E1lasszon ki, amelyek haszn\u00E1lat\u00E1ra enged\u00E9llyel rendelkezik."
+   },
+   "3446158485617778228": {
+      "message": "Visszavon\u00E1s"
+   },
+   "3448684788258660606": {
+      "message": "Saj\u00E1t fot\u00F3k"
+   },
+   "3449760465250232736": {
+      "message": "\u00D6sszes megtekint\u00E9se"
+   },
+   "3450585781337676327": {
+      "message": "Bet\u00F6lt\u00E9s\u2026"
+   },
+   "3457279184692206825": {
+      "message": "A fot\u00F3kat b\u00E1rki l\u00E1thatja (nyilv\u00E1nos az interneten)."
+   },
+   "3468441711253011521": {
+      "message": "Google T\u00E1bl\u00E1zatok"
+   },
+   "3468557655011162775": {
+      "message": "Sajn\u00E1ljuk, ez a hangf\u00E1jl nem j\u00E1tszhat\u00F3 le ebben a b\u00F6ng\u00E9sz\u0151ben."
+   },
+   "3518073392823563581": {
+      "message": "Billenty\u0171k\u00F3dok"
+   },
+   "3547194749488601916": {
+      "message": "Friss\u00EDt\u00E9s\u2026"
+   },
+   "3578537640378068716": {
+      "message": "Jelsz\u00F3 elk\u00FCld\u00E9se"
+   },
+   "3586705906700410505": {
+      "message": "Vonalrajz"
+   },
+   "3587798318180902863": {
+      "message": "{NUM_SELECTED,plural, =1{ kijel\u00F6lt elem \u00BB}other{ kijel\u00F6lt elemek \u00BB}}"
+   },
+   "3595000514985906359": {
+      "message": "Excel"
+   },
+   "3602920441714068008": {
+      "message": "Az eml\u00E9keztet\u0151 megjelent a k\u00F6vetkez\u0151 id\u0151pontban: $1\u200B, $2\u200B"
+   },
+   "361202495024972887": {
+      "message": "Vide\u00F3k felt\u00F6lt\u00E9se"
+   },
+   "3616146071554077404": {
+      "message": "Nagy\u00EDt\u00E1s"
+   },
+   "3643146117250542609": {
+      "message": "Nincsenek PDF-f\u00E1jlok."
+   },
+   "3645728163953189422": {
+      "message": "Nem tudjuk lek\u00E9rni a dokumentumot megtekint\u00E9sre, mivel t\u00FAl nagy."
+   },
+   "3657386785336906042": {
+      "message": "ford\u00EDtott t\u00F6rtvonal"
+   },
+   "3664842788764635265": {
+      "message": "Egyik sem"
+   },
+   "3666123569747918021": {
+      "message": "Ez a dokumentum nem mentett m\u00F3dos\u00EDt\u00E1sokat tartalmaz. Elhagyja az oldalt, \u00E9s elveti a m\u00F3dos\u00EDt\u00E1sokat?"
+   },
+   "3673346558112798837": {
+      "message": "Nincs h\u00E1tt\u00E9r"
+   },
+   "3674811252904549204": {
+      "message": "C\u00EDmlapk\u00E9pek"
+   },
+   "3678477908297567934": {
+      "message": "al\u00E1h\u00FAz\u00E1s"
+   },
+   "3701351750654338878": {
+      "message": "Kicsiny\u00EDt\u00E9s"
+   },
+   "3703773505386523126": {
+      "message": "Bez\u00E1r\u00E1s"
+   },
+   "3717138719704492547": {
+      "message": "Ellen\u0151rizze, hogy nincsenek-e a c\u00EDmben el\u00EDr\u00E1sok."
+   },
+   "3737694307963051081": {
+      "message": "PDF-f\u00E1jlok"
+   },
+   "3748461364828242354": {
+      "message": "Sz\u00EDn kiv\u00E1laszt\u00E1sa"
+   },
+   "3770795578481676514": {
+      "message": "S\u00E1rga"
+   },
+   "3771958676925493302": {
+      "message": "Sz\u0171r\u0151 elt\u00E1vol\u00EDt\u00E1sa: $1\u200B"
+   },
+   "3779945546806941187": {
+      "message": "Egysz\u00EDn\u0171"
+   },
+   "381100310424863459": {
+      "message": "Illustrator"
+   },
+   "3842411126100113634": {
+      "message": "pg up"
+   },
+   "3844047145949375230": {
+      "message": "Dokumentumok"
+   },
+   "3866373087987934712": {
+      "message": "Sikertelen felt\u00F6lt\u00E9s: $1\u200B"
+   },
+   "3869166581651870488": {
+      "message": "A szerkeszt\u00E9s befejez\u00E9se"
+   },
+   "3873467440437675460": {
+      "message": "Sajnos nem tal\u00E1lhat\u00F3k a kor\u00E1bban kiv\u00E1lasztott bet\u0171t\u00EDpusok."
+   },
+   "3936153839186254186": {
+      "message": "Megjelen\u00EDt\u00E9s: $1\u200B"
+   },
+   "3955760658925284765": {
+      "message": "\u00DAjra"
+   },
+   "3988418762222300024": {
+      "message": "pont"
+   },
+   "3989552504822984034": {
+      "message": "Google Rajzok"
+   },
+   "3996667949418308290": {
+      "message": "C\u00EDm\u2026"
+   },
+   "400095519884819353": {
+      "message": "\u00DAj ablakba"
+   },
+   "4014287326684608407": {
+      "message": "P\u00E1vak\u00E9k"
+   },
+   "4048275292053012394": {
+      "message": "N\u00E9vjegyek"
+   },
+   "4059387791040010947": {
+      "message": "Meta"
+   },
+   "4078179869358383373": {
+      "message": "Nincs tal\u00E1lat."
+   },
+   "4097007735221462946": {
+      "message": "Rajzok"
+   },
+   "4097921967754832323": {
+      "message": "k\u00F6t\u0151jel"
+   },
+   "4119294114251628099": {
+      "message": "A megadott, k\u00E9pre mutat\u00F3 URL nem olvashat\u00F3 be. Lehets\u00E9ges, hogy olyan priv\u00E1t URL, amelyhez szerver\u00FCnk nem f\u00E9r hozz\u00E1. Pr\u00F3b\u00E1lkozzon m\u00E1sik URL megad\u00E1s\u00E1val."
+   },
+   "4134385041569168669": {
+      "message": "Bet\u00F6lt\u00E9s\u2026"
+   },
+   "4148564423510181521": {
+      "message": "Keresett kifejez\u00E9s t\u00F6rl\u00E9se"
+   },
+   "4165433071549564698": {
+      "message": "A(z) $1\u200B megjelen\u00EDt\u00E9se"
+   },
+   "4168280976997555951": {
+      "message": "Nincsenek dokumentumok."
+   },
+   "4174786386751618325": {
+      "message": "Fot\u00F3jegyzet"
+   },
+   "4182427157920112948": {
+      "message": "hull\u00E1mvonal"
+   },
+   "4200911267543705377": {
+      "message": "Ha a Google\u00A0Blogkeres\u0151vel szeretne keresni valamit az interneten, \u00EDrja be a keres\u0151szavakat a fenti mez\u0151be."
+   },
+   "4205329094859140439": {
+      "message": "de."
+   },
+   "4230101516585408149": {
+      "message": "\u00DAj jegyzet \u00EDr\u00E1sa"
+   },
+   "4253741616909644861": {
+      "message": "Keres\u00E9si kifejez\u00E9sek"
+   },
+   "429840734875582508": {
+      "message": "..."
+   },
+   "4299690446455033653": {
+      "message": "Works"
+   },
+   "4314643310615423802": {
+      "message": "\u00D6n kijelentkezett."
+   },
+   "4318861667254318892": {
+      "message": "Google Vide\u00F3k"
+   },
+   "4319229296464464147": {
+      "message": "Hozz\u00E1ad\u00E1s d\u00E1tuma"
+   },
+   "4320831042030778": {
+      "message": "M\u00E9gse"
+   },
+   "4338991104991831337": {
+      "message": "K\u00E9pek"
+   },
+   "4339705658383891586": {
+      "message": "Sz\u00EDnes"
+   },
+   "4372755508519489521": {
+      "message": "R\u00E1csn\u00E9zet"
+   },
+   "4395845663892873002": {
+      "message": "home"
+   },
+   "4400961442969960519": {
+      "message": "Hiba t\u00F6rt\u00E9nt a mell\u00E9klet Google Drive-ra t\u00F6rt\u00E9n\u0151 ment\u00E9se k\u00F6zben."
+   },
+   "4439812492856303238": {
+      "message": "Sajnos v\u00E1ratlan hiba t\u00F6rt\u00E9nt a v\u00E1lasztott elemek feldolgoz\u00E1sa sor\u00E1n. Pr\u00F3b\u00E1lja \u00FAjra k\u00E9s\u0151bb."
+   },
+   "4473912481270012588": {
+      "message": "Mentve a Google Drive-ra \u2013 \u00C1thelyez\u00E9s ide:"
+   },
+   "4552045407215325033": {
+      "message": "A vide\u00F3 fent megadott URL-je nem t\u00F6lthet\u0151 be. Ellen\u0151rizze, hogy helyes-e c\u00EDm, \u00E9s hogy t\u00E1mogatott webhelyr\u0151l sz\u00E1rmazik-e."
+   },
+   "4564682305303579317": {
+      "message": "Folytat\u00E1s"
+   },
+   "456498742882714639": {
+      "message": "\u00C1thelyez\u00E9s ide:"
+   },
+   "4588500131398315347": {
+      "message": "K\u00F6r l\u00E9trehoz\u00E1sa"
+   },
+   "4604402426271704651": {
+      "message": "Nincs fot\u00F3"
+   },
+   "4630690108252818511": {
+      "message": "Nem tal\u00E1lhat\u00F3k k\u00E9pek."
+   },
+   "4695897771458936174": {
+      "message": "A Google Drive-ban t\u00E1rolt fot\u00F3k megoszt\u00E1sa a Google+-on"
+   },
+   "4748046231232264180": {
+      "message": "Google \u0170rlapok"
+   },
+   "4767722428137216885": {
+      "message": "M\u00E9gse"
+   },
+   "477328789314249432": {
+      "message": "Jegyzetek keres\u00E9se"
+   },
+   "4785794631061168971": {
+      "message": "T\u00E1rs\u00EDt\u00E1s"
+   },
+   "4798897505978458661": {
+      "message": "Nem tal\u00E1lhat\u00F3k vide\u00F3k."
+   },
+   "4806763987633034948": {
+      "message": "PKCS7-al\u00E1\u00EDr\u00E1sf\u00E1jl"
+   },
+   "4888104357342241891": {
+      "message": "Eml\u00E9keztet\u0151k"
+   },
+   "4889853674709731963": {
+      "message": "\u00D6sszes jegyzet mentve offline m\u00F3dban"
+   },
+   "4901386320110714275": {
+      "message": "A jelsz\u00F3 helytelen. K\u00E9rj\u00FCk, pr\u00F3b\u00E1lja \u00FAjra."
+   },
+   "490372259452655427": {
+      "message": "Sajnos a dokumentumot m\u00E9g nem lehet megtekinteni."
+   },
+   "4926020998477695737": {
+      "message": "V\u00E1lt\u00E1s a k\u00F6vetkez\u0151 mapp\u00E1ra: $1\u200B"
+   },
+   "4943176738805484221": {
+      "message": "szerkeszt\u00E9s"
+   },
+   "4956678140555659175": {
+      "message": "backspace"
+   },
+   "4957674814179289955": {
+      "message": "Ugr\u00E1s a k\u00F6vetkez\u0151 vagy el\u0151z\u0151 listaelemre"
+   },
+   "4998023803364239731": {
+      "message": "Nem siker\u00FClt kiv\u00E1lasztani a Drive-mapp\u00E1t."
+   },
+   "4998757387516632837": {
+      "message": "A megjelen\u00EDtett tal\u00E1latok m\u00F3dos\u00EDthat\u00F3k \u00E9s \u00FAjra felhaszn\u00E1lhat\u00F3k."
+   },
+   "5023525794410110078": {
+      "message": "K\u00E9pal\u00E1\u00EDr\u00E1s hozz\u00E1ad\u00E1sa a fot\u00F3hoz"
+   },
+   "5055418092354683641": {
+      "message": "Serif"
+   },
+   "5096751700090310607": {
+      "message": "Nincsenek fot\u00F3k."
+   },
+   "509815948423424872": {
+      "message": "Navig\u00E1l\u00E1s"
+   },
+   "5099245668405591445": {
+      "message": "Keres\u00E9s"
+   },
+   "5124522868502261563": {
+      "message": "T\u00E1bl\u00E1zatok"
+   },
+   "5129218019779162494": {
+      "message": "Google Dokumentumok"
+   },
+   "5180989337128758117": {
+      "message": "sz\u00F6gletes nyit\u00F3 z\u00E1r\u00F3jel"
+   },
+   "5197718200713913936": {
+      "message": "C++"
+   },
+   "5204391636475413312": {
+      "message": "Ment\u00E9s"
+   },
+   "5213974294317036409": {
+      "message": "{numPages,plural, =0{}=1{1 oldal}other{# oldal}}"
+   },
+   "5217641707432141671": {
+      "message": "Hopp\u00E1, hiba t\u00F6rt\u00E9nt!"
+   },
+   "5226470917948786938": {
+      "message": "Bet\u0171rend"
+   },
+   "5238003680997310998": {
+      "message": "T\u00F6bb"
+   },
+   "5275493935807628890": {
+      "message": "Ezen az URL-en nem tal\u00E1lhat\u00F3 a k\u00E9p."
+   },
+   "5288037028604092288": {
+      "message": "XPS"
+   },
+   "5299648222246616124": {
+      "message": "egyszeres nyit\u00F3 id\u00E9z\u0151jel"
+   },
+   "5304869088141363028": {
+      "message": "Kiemelt fot\u00F3k"
+   },
+   "5316658541831864803": {
+      "message": "A program nem t\u00E1mogatja ennek a dokumentumt\u00EDpusnak a megtekint\u00E9s\u00E9t."
+   },
+   "5336801339221383042": {
+      "message": "JavaScript"
+   },
+   "5353129315502554762": {
+      "message": "CSS"
+   },
+   "5372160981898991853": {
+      "message": "Publisher"
+   },
+   "5394142149034044812": {
+      "message": "T\u00E1rs\u00EDtva"
+   },
+   "5403830377590414208": {
+      "message": "Feh\u00E9r"
+   },
+   "5408091115193390231": {
+      "message": "AutoCAD"
+   },
+   "5438481737351808090": {
+      "message": "D\u00E9lut\u00E1n ($1\u200B)"
+   },
+   "5438584181753813038": {
+      "message": "Megnyit\u00E1s az alap\u00E9rtelmezett alkalmaz\u00E1sban"
+   },
+   "5465323999933375616": {
+      "message": "El\u00E9rte azt a s\u00E1vsz\u00E9less\u00E9gkorl\u00E1tot, amely a Google Dokumentumok form\u00E1tum\u00E1t\u00F3l elt\u00E9r\u0151 f\u00E1jlok megtekint\u00E9s\u00E9re \u00E9s let\u00F6lt\u00E9s\u00E9re vonatkozik."
+   },
+   "5482872484546230111": {
+      "message": "K\u00F6nyvek keres\u00E9se"
+   },
+   "5500117709595533163": {
+      "message": "Ha e-k\u00F6nyvek k\u00F6z\u00F6tt szeretne keresni a Google\u00A0K\u00F6nyvek seg\u00EDts\u00E9g\u00E9vel, \u00EDrja be a fenti mez\u0151be a keresett kifejez\u00E9st."
+   },
+   "5506081914878474195": {
+      "message": "Mentve a Google Drive-ra"
+   },
+   "5514516347328112388": {
+      "message": "$2\u200BIde$1\u200B kattintva az eredeti dokumentumot is let\u00F6ltheti."
+   },
+   "5555182241047709329": {
+      "message": "V\u00E1lasszon helyet"
+   },
+   "5571842632470308750": {
+      "message": "\u00D6sszes t\u00EDpus"
+   },
+   "5581253128331595228": {
+      "message": "C\u00EDm"
+   },
+   "5598649706113950710": {
+      "message": "Szerkeszt\u0151"
+   },
+   "5598877389451818095": {
+      "message": "T\u00E1rs\u00EDt\u00E1s"
+   },
+   "5631086126416409232": {
+      "message": "K\u00E9k"
+   },
+   "564165666160590723": {
+      "message": "Windows Media Player"
+   },
+   "5660422479531064559": {
+      "message": "Nincsenek \u0171rlapok."
+   },
+   "5672358806532843305": {
+      "message": "$1\u200B megjelen\u00EDt\u00E9se."
+   },
+   "5675154446465700699": {
+      "message": "PDF-f\u00E1jlok"
+   },
+   "568072913338360182": {
+      "message": "HTML"
+   },
+   "5706242163161626046": {
+      "message": "A t\u00E1mogatott f\u00E1jlt\u00EDpusok a k\u00F6vetkez\u0151k: $1\u200B"
+   },
+   "5714240424645614611": {
+      "message": "Android-csomag"
+   },
+   "5728640851616538925": {
+      "message": "Z\u00F6ld"
+   },
+   "5744491383087191878": {
+      "message": "A k\u00E9p fent megadott URL-je hib\u00E1s vagy nem t\u00F6lthet\u0151 be."
+   },
+   "5747728324987383020": {
+      "message": "Arc"
+   },
+   "5753428288354311204": {
+      "message": "Tov\u00E1bbiak felt\u00F6lt\u00E9se"
+   },
+   "575497620414830649": {
+      "message": " \u2013 \u00C1thelyez\u00E9s ide:"
+   },
+   "5774680835260150889": {
+      "message": "C\u00EDm"
+   },
+   "5785010887521443923": {
+      "message": "Elt\u00E1vol\u00EDt\u00E1s"
+   },
+   "5842536098490298653": {
+      "message": "Nincsenek bet\u0171t\u00EDpusok."
+   },
+   "5877526626743756786": {
+      "message": "Visszajelz\u00E9s"
+   },
+   "5879988349590045594": {
+      "message": "Az elem ($1\u200B) csak jelsz\u00F3val \u00E9rhet\u0151 el. K\u00E9rj\u00FCk, adja meg a jelsz\u00F3t."
+   },
+   "5971400924847413790": {
+      "message": "A dokumentumot $2\u200Balap HTML$1\u200B n\u00E9zetben is megtekintheti (automatikus \u00E1tir\u00E1ny\u00EDt\u00E1s)."
+   },
+   "5975031149676029214": {
+      "message": "Mindenki"
+   },
+   "5976369213680241300": {
+      "message": "K\u00E9pek keres\u00E9se"
+   },
+   "5980081664136280513": {
+      "message": "Z\u00F6ld"
+   },
+   "5984398071085567332": {
+      "message": "Google Fusion Tables"
+   },
+   "60305871484579258": {
+      "message": "Alt"
+   },
+   "6043068172993241858": {
+      "message": "Nincs senki ebben a k\u00F6rben."
+   },
+   "6044366909115009874": {
+      "message": "Az \u00E1tnevez\u00E9s nem siker\u00FClt. K\u00E9s\u0151bb pr\u00F3b\u00E1lkozzon \u00FAjra."
+   },
+   "604883455412617728": {
+      "message": "Egyetlen ismer\u0151se sem felelt meg a keres\u00E9snek."
+   },
+   "6064654062949366878": {
+      "message": "J\u00E1t\u00E9k"
+   },
+   "6070475007374165567": {
+      "message": "Ment\u00E9s\u2026"
+   },
+   "6083907478347891151": {
+      "message": "T\u00EDpus"
+   },
+   "6105333058393639868": {
+      "message": "Hiba t\u00F6rt\u00E9nt a mell\u00E9klet kiv\u00E1lasztott Google Drive-mapp\u00E1ba t\u00F6rt\u00E9n\u0151 \u00E1thelyez\u00E9sekor."
+   },
+   "6112815042442423467": {
+      "message": "A keres\u00E9s ($3\u200B$2\u200B$1\u200B) nem eredm\u00E9nyezett egy tal\u00E1latot sem."
+   },
+   "6113237889871930608": {
+      "message": "\u00DCres jegyzet"
+   },
+   "6122643025527543706": {
+      "message": "Ctrl"
+   },
+   "6125026684392468184": {
+      "message": "Nyomtat\u00E1s"
+   },
+   "6131822680770571276": {
+      "message": "PowerPoint"
+   },
+   "6148792237718135476": {
+      "message": "Enged\u00E9lyez\u00E9s"
+   },
+   "6175043905327075444": {
+      "message": "Kor\u00E1bban kiv\u00E1lasztott"
+   },
+   "6186290899408627510": {
+      "message": "enter"
+   },
+   "6189891414154673003": {
+      "message": "Saj\u00E1t t\u00E9rk\u00E9pek"
+   },
+   "6203260615455347677": {
+      "message": "Numbers"
+   },
+   "6223207695466118454": {
+      "message": "YouTube"
+   },
+   "623118860067088424": {
+      "message": "Vide\u00F3k"
+   },
+   "6231401379881217113": {
+      "message": "insert"
+   },
+   "6236247353949345852": {
+      "message": "N\u00E9m\u00EDt\u00E1s felold\u00E1sa"
+   },
+   "6244042389101116716": {
+      "message": "Nincs el\u0151n\u00E9zet. Alkalmaz\u00E1sok \u00E9rhet\u0151k el."
+   },
+   "6252254957484336670": {
+      "message": "El\u0151z\u0151"
+   },
+   "6253076263700695984": {
+      "message": "Hiteles\u00EDt\u00E9si hiba l\u00E9pett fel, t\u00F6ltse be \u00FAjra!"
+   },
+   "6267063643272327592": {
+      "message": "Pr\u00F3b\u00E1lkozzon \u00FAjra k\u00E9s\u0151bb."
+   },
+   "6290462446987396446": {
+      "message": "Sz\u00F6veges dokumentumok"
+   },
+   "6324768448533022780": {
+      "message": "$2\u200B. $1\u200B"
+   },
+   "6333496730738019575": {
+      "message": "Bet\u00F6lt\u00E9s\u2026"
+   },
+   "634900089121611600": {
+      "message": "Nincsenek vide\u00F3k."
+   },
+   "6362170008350775214": {
+      "message": "Eml\u00E9keztessen itt: $1\u200B"
+   },
+   "6373188185119337610": {
+      "message": "C\u00EDm"
+   },
+   "6376739025584042564": {
+      "message": "Fot\u00F3kiv\u00E1g\u00E1s"
+   },
+   "6386587519843563719": {
+      "message": "Bin\u00E1ris f\u00E1jl"
+   },
+   "6436479735235889890": {
+      "message": "Eml\u00E9keztessen ekkor: $2\u200B, $1\u200B"
+   },
+   "6459405233858728718": {
+      "message": "Google Di\u00E1k"
+   },
+   "6466736813846482957": {
+      "message": "El\u0151z\u0151"
+   },
+   "6479216014938929613": {
+      "message": "\u00C9jszaka ($1\u200B)"
+   },
+   "6488225756782357866": {
+      "message": "A kiemelt k\u00E9pet a Google K\u00E9pkeres\u0151 a k\u00F6vetkez\u0151 oldalon tal\u00E1lta meg:"
+   },
+   "6499224007473661191": {
+      "message": "Ment\u00E9s a Google Drive-ra"
+   },
+   "6516256764288947999": {
+      "message": "Szem\u00E9lyek megc\u00EDmk\u00E9z\u00E9se"
+   },
+   "6522917155620379865": {
+      "message": "Let\u00F6lt\u00E9s"
+   },
+   "6524849072392100692": {
+      "message": "Google Drive-mappa"
+   },
+   "6570921376519753466": {
+      "message": "Megjelen\u00EDt\u00E9s"
+   },
+   "6582388186847564929": {
+      "message": "Jegyzet vagy lista t\u00F6rl\u00E9se"
+   },
+   "6588176324871799870": {
+      "message": "Google Apps-szkript"
+   },
+   "6602430002978098812": {
+      "message": "K\u00E9z\u00EDr\u00E1s"
+   },
+   "6614046405230762587": {
+      "message": "Nem tal\u00E1lhat\u00F3k ismer\u0151s\u00F6k."
+   },
+   "6622304228074863427": {
+      "message": "Alkalmaz\u00E1s"
+   },
+   "6644861766016503644": {
+      "message": "Jelsz\u00F3 sz\u00FCks\u00E9ges"
+   },
+   "6650837823238391202": {
+      "message": "K\u00F6vetkez\u0151"
+   },
+   "6656998321236273120": {
+      "message": "Sz\u00F6veges dokumentumok"
+   },
+   "666311703374681171": {
+      "message": "K\u00E9pek \u00E9s vide\u00F3k"
+   },
+   "6666820082708870349": {
+      "message": "Elt\u00E1vol\u00EDt\u00E1s"
+   },
+   "6707173584987026005": {
+      "message": "Ma"
+   },
+   "6709984792949009238": {
+      "message": "\u00C1ltalam utolj\u00E1ra megnyitva"
+   },
+   "6741759391888465238": {
+      "message": "Ment\u00E9s a Google Drive-ra \u2013 \u00C1thelyez\u00E9s ide:"
+   },
+   "6757218172402086688": {
+      "message": "Jegyzetek keres\u00E9se\u2026"
+   },
+   "6780628488957834429": {
+      "message": "Narancss\u00E1rga"
+   },
+   "6784073265197389491": {
+      "message": "Tov\u00E1bbi inform\u00E1ci\u00F3"
+   },
+   "6818286476757207074": {
+      "message": "Csak olyan k\u00E9peket v\u00E1lasszon ki, amelyek haszn\u00E1lat\u00E1ra enged\u00E9llyel rendelkezik."
+   },
+   "682070933835616121": {
+      "message": "Nincsenek t\u00E1bl\u00E1zatok."
+   },
+   "6822338149422461362": {
+      "message": "Google Drive"
+   },
+   "6893687445500687349": {
+      "message": "Webhelyek"
+   },
+   "6905021988981026920": {
+      "message": "Vide\u00F3k keres\u00E9se"
+   },
+   "6926055840246960182": {
+      "message": "\u00D6sszes elem megtekint\u00E9se"
+   },
+   "6929958461954697067": {
+      "message": "Fot\u00F3k \u00D6nr\u0151l"
+   },
+   "6940998537415516791": {
+      "message": "|"
+   },
+   "6962388230676571914": {
+      "message": "Nincs el\u0151n\u00E9zet."
+   },
+   "6966117577694636785": {
+      "message": "Maxim\u00E1lis f\u00E1jlm\u00E9ret: $1\u200B MB."
+   },
+   "6970167488058122005": {
+      "message": "ismeretlen szerz\u0151"
+   },
+   "6976414863987386971": {
+      "message": "\u0170rlapok"
+   },
+   "7004919150329996187": {
+      "message": "Ebben a k\u00F6rben nincs olyan szem\u00E9ly, aki megfelelne a keres\u00E9snek."
+   },
+   "7054631817922169541": {
+      "message": "A Google Keepben nem mentett m\u00F3dos\u00EDt\u00E1sok vannak. Biztosan elhagyja az oldalt, \u00E9s elveti a m\u00F3dos\u00EDt\u00E1sokat?"
+   },
+   "705833829394544221": {
+      "message": "Megjelen\u00EDt\u00E9s a Drive-on"
+   },
+   "7084991134824194740": {
+      "message": "Eml\u00E9keztet\u0151t k\u00E9rek"
+   },
+   "7092062731478679314": {
+      "message": "Nem tal\u00E1lhat\u00F3k k\u00F6r\u00F6k."
+   },
+   "7116394962547236971": {
+      "message": "Enged\u00E9lyezi a Google Keepnek az \u00E9rtes\u00EDt\u00E9sek megjelen\u00EDt\u00E9s\u00E9t?"
+   },
+   "7117183622067702162": {
+      "message": "A Google Drive-nak k\u00F6sz\u00F6nhet\u0151en soha t\u00F6bb\u00E9 nem kell e-mail mell\u00E9kleteket k\u00FCldenie. Ehelyett elegend\u0151 a Google Drive szolg\u00E1ltat\u00E1sban t\u00E1rolt f\u00E1jlok b\u00E1rmelyik\u00E9re mutat\u00F3 link megoszt\u00E1sa. Ily m\u00F3don mindenki automatikusan ugyanannak a f\u00E1jlnak ugyanahhoz a verzi\u00F3j\u00E1hoz kap hozz\u00E1f\u00E9r\u00E9st."
+   },
+   "713754035716193665": {
+      "message": "\u00DAj lista"
+   },
+   "7146242673022399081": {
+      "message": "Sz\u00F6veg"
+   },
+   "7151987668860086450": {
+      "message": "Internetes keres\u00E9s"
+   },
+   "7161134329606048317": {
+      "message": "Bez\u00E1r\u00E1s"
+   },
+   "7177591028189992523": {
+      "message": "\u00C1thelyez\u00E9s"
+   },
+   "7188024175807042621": {
+      "message": "Listaelem\u2026"
+   },
+   "7188754206068648188": {
+      "message": "Vessz\u0151vel tagolt adatok"
+   },
+   "7206429144039020706": {
+      "message": "T\u00F6bb oldalt nem siker\u00FClt bet\u00F6lteni."
+   },
+   "7225837680381806920": {
+      "message": "Este ($1\u200B)"
+   },
+   "722702934847795304": {
+      "message": "Project"
+   },
+   "7236199858216720905": {
+      "message": "T\u00E9rk\u00E9p"
+   },
+   "7257381023528410292": {
+      "message": "T\u00F6rl\u00E9s"
+   },
+   "7259352906118493156": {
+      "message": "Nincsenek webhelyek."
+   },
+   "7310311230493556740": {
+      "message": "URL"
+   },
+   "7326565093670055435": {
+      "message": "Javasolt alkalmaz\u00E1sok"
+   },
+   "7330303214598808380": {
+      "message": "Nincsenek archiv\u00E1lt jegyzetek"
+   },
+   "7339696241980105410": {
+      "message": "A kiv\u00E1lasztott vide\u00F3 m\u00E1r nem l\u00E9tezik. Lehets\u00E9ges, hogy a tulajdonos elt\u00E1vol\u00EDtotta azt."
+   },
+   "734478884582426793": {
+      "message": "T\u00F6m\u00F6r\u00EDtett arch\u00EDvum"
+   },
+   "7357017164339332230": {
+      "message": "Ezek a k\u00E9pek a $2\u200BPicasa\u00A0Webalbumokban$1\u200B, a Google ingyenes fot\u00F3megoszt\u00E1si szolg\u00E1ltat\u00E1s\u00E1ban is megtekinthet\u0151k \u00E9s megoszthat\u00F3k."
+   },
+   "7364571366369083618": {
+      "message": "Vide\u00F3"
+   },
+   "7367958022583310325": {
+      "message": "OpenOffice-bemutat\u00F3"
+   },
+   "7377239345926788722": {
+      "message": "M\u0171veletek"
+   },
+   "7380785991026002613": {
+      "message": "A megjelen\u00EDtett tal\u00E1latok \u00FAjra felhaszn\u00E1lhat\u00F3k."
+   },
+   "7383706174467122149": {
+      "message": "Jegyzet t\u00F6r\u00F6lve"
+   },
+   "7393771571081973549": {
+      "message": "C"
+   },
+   "740507516967994591": {
+      "message": "Megnyit\u00E1s"
+   },
+   "7422452809590461532": {
+      "message": "Piros"
+   },
+   "7426603384368095928": {
+      "message": "A bejelentkez\u00E9shez \u00E9s munk\u00E1ja folytat\u00E1s\u00E1hoz t\u00F6ltse be \u00FAjra az oldalt."
+   },
+   "7428490253130883654": {
+      "message": "Keres\u00E9s a dokumentumban"
+   },
+   "7429084719905985261": {
+      "message": "Objective-C"
+   },
+   "7432956605646331928": {
+      "message": "SQL"
+   },
+   "7451573821837395189": {
+      "message": "Az elem beker\u00FClt $2\u200Baz \u00D6n Drive-fi\u00F3kj\u00E1ba$1\u200B."
+   },
+   "7488945223835574498": {
+      "message": "PostScript"
+   },
+   "7491217001453921549": {
+      "message": "Minden dokumentum"
+   },
+   "7492710087472140422": {
+      "message": "Tov\u00E1bbi inform\u00E1ci\u00F3"
+   },
+   "7493919863870655172": {
+      "message": "Webkamera"
+   },
+   "7500786109708143683": {
+      "message": "Hangfelv\u00E9tel t\u00F6r\u00F6lve"
+   },
+   "7501027876827009022": {
+      "message": "A megjelen\u00EDtett tal\u00E1latok kereskedelmi c\u00E9lra \u00FAjra felhaszn\u00E1lhat\u00F3k."
+   },
+   "754562894809764325": {
+      "message": "T\u00E1rs\u00EDt\u00E1s"
+   },
+   "7546994163355383999": {
+      "message": "\u00D6sszes jegyzet mentve"
+   },
+   "7559208209275370228": {
+      "message": "\u00C1ltalam utolj\u00E1ra szerkesztve"
+   },
+   "7561401550697263017": {
+      "message": "$1\u200B bet\u00F6lt\u00E9se."
+   },
+   "7561835096421626440": {
+      "message": "Keres\u0151s\u00E1v bez\u00E1r\u00E1sa"
+   },
+   "7602870977118971161": {
+      "message": "\u00DAjrat\u00F6lt\u00E9s"
+   },
+   "7614241747607201251": {
+      "message": "Hiba t\u00F6rt\u00E9nt $1\u200B megjelen\u00EDt\u00E9sekor."
+   },
+   "7616903319374696418": {
+      "message": "Ment\u00E9s a Google Drive-ra"
+   },
+   "761925792744044896": {
+      "message": "Be\u00E1ll\u00EDt\u00E1s profilfot\u00F3k\u00E9nt"
+   },
+   "7621335927565458184": {
+      "message": "Jegyzet\u2026"
+   },
+   "7621429484880737652": {
+      "message": "Elvet\u00E9s"
+   },
+   "7664490637734113846": {
+      "message": "Tov\u00E1bbi alkalmaz\u00E1sok t\u00E1rs\u00EDt\u00E1sa"
+   },
+   "7692525489619342577": {
+      "message": "Elvet\u00E9s"
+   },
+   "7715735412192018288": {
+      "message": "S\u00FAg\u00F3"
+   },
+   "7734578122414851725": {
+      "message": "PHP"
+   },
+   "7745005220197261896": {
+      "message": "K\u00F6nyvkeres\u0151"
+   },
+   "776065748745885880": {
+      "message": "sz\u00F3k\u00F6z"
+   },
+   "7770982082843341533": {
+      "message": "A mappa nem tartalmaz f\u00E1jlokat."
+   },
+   "779472474101127362": {
+      "message": "Pillanatk\u00E9p k\u00E9sz\u00EDt\u00E9se"
+   },
+   "7820417126206702946": {
+      "message": "A megjelen\u0151 tal\u00E1latok szem\u00E9lyes \u00E9s kereskedelmi c\u00E9lokra csak a Google Drive-ban haszn\u00E1lhat\u00F3k, f\u00FCggetlen\u00FCl nem \u00E9rt\u00E9kes\u00EDthet\u0151k \u00E9s nem terjeszthet\u0151k \u00FAjra."
+   },
+   "7822364282298323175": {
+      "message": "Lista t\u00F6r\u00F6lve"
+   },
+   "7830513726270865588": {
+      "message": "Napt\u00E1r"
+   },
+   "7841219948388691455": {
+      "message": "K\u00F6vetkez\u0151"
+   },
+   "7852396628465259068": {
+      "message": "Profilfot\u00F3"
+   },
+   "7889351669453500220": {
+      "message": "T\u00F6bb oldalt nem siker\u00FClt bet\u00F6lteni, \u00FAjra pr\u00F3b\u00E1lkozunk."
+   },
+   "7895643887742936844": {
+      "message": "pontosvessz\u0151"
+   },
+   "7899833760457194273": {
+      "message": "K\u00E9pek keres\u00E9se"
+   },
+   "7899913952063063825": {
+      "message": "K\u00E9p t\u00F6r\u00F6lve"
+   },
+   "7910518224461588465": {
+      "message": "S\u00E1rga"
+   },
+   "7914160041381019861": {
+      "message": "Sajn\u00E1ljuk, az el\u0151n\u00E9zet nem \u00E9rhet\u0151 el."
+   },
+   "794202635102531782": {
+      "message": "Ezek az alkalmaz\u00E1sok tudj\u00E1k megnyitni vagy szerkeszteni ezt a f\u00E1jlt"
+   },
+   "7945839336462142841": {
+      "message": "$1\u200B $2\u200B"
+   },
+   "7948723884189309228": {
+      "message": "Nem siker\u00FClt felt\u00F6lteni ezt a f\u00E1jlt."
+   },
+   "7953603850004320936": {
+      "message": "Nincs el\u0151n\u00E9zet."
+   },
+   "7960528690514646841": {
+      "message": "{moreCount,plural, =0{nem haszn\u00E1lt t\u00F6bbes sz\u00E1m}=1{+ 1 tov\u00E1bbi}other{+ {moreCount} tov\u00E1bbi}}"
+   },
+   "7962728344554282160": {
+      "message": "Nagy\u00EDt\u00E1s"
+   },
+   "7973635145070803181": {
+      "message": "Fot\u00F3k felt\u00F6lt\u00E9se"
+   },
+   "7987180255015869513": {
+      "message": "Vagy illessze be ide az internetc\u00EDmet:"
+   },
+   "8016231262233952856": {
+      "message": "P\u00E1vak\u00E9k"
+   },
+   "8023466614826324314": {
+      "message": "A fot\u00F3k sz\u00E9les k\u00F6z\u00F6ns\u00E9ggel lesznek megosztva."
+   },
+   "8043514121228710092": {
+      "message": "K\u00E9p hozz\u00E1ad\u00E1sa"
+   },
+   "8081927474846706026": {
+      "message": "Nincsenek rajzok."
+   },
+   "8087751641867346064": {
+      "message": "OpenOffice-dokumentum"
+   },
+   "809927418535001543": {
+      "message": "Jegyzet hozz\u00E1ad\u00E1sa"
+   },
+   "8100558294600077150": {
+      "message": "Blogkeres\u0151"
+   },
+   "8106780183458743723": {
+      "message": "Fot\u00F3albumok"
+   },
+   "8112699352770418817": {
+      "message": "Nem tal\u00E1lhat\u00F3k k\u00F6nyvek."
+   },
+   "8126700207146858047": {
+      "message": "Dokumentum \u00E1tnevez\u00E9se"
+   },
+   "8172945196588870035": {
+      "message": "Esem\u00E9nyek"
+   },
+   "8192378456655629049": {
+      "message": "Vide\u00F3 feldolgoz\u00E1sa\u2026"
+   },
+   "8193991135666622583": {
+      "message": "Keep"
+   },
+   "821942580510564685": {
+      "message": "A megtekint\u00E9shez adja meg a dokumentum jelszav\u00E1t!"
+   },
+   "8265105267499407070": {
+      "message": "Lej\u00E1tsz\u00E1s"
+   },
+   "8267458240960831780": {
+      "message": "Hiteles\u00EDt\u00E9s..."
+   },
+   "8281141013543828574": {
+      "message": "RAW-k\u00E9p"
+   },
+   "8281678863271800533": {
+      "message": "K\u00E9psz\u0171r\u0151"
+   },
+   "8283103456188558313": {
+      "message": "Prezent\u00E1ci\u00F3k"
+   },
+   "829373983432978641": {
+      "message": "Nem siker\u00FClt bet\u00F6lteni ezt az oldalt."
+   },
+   "8299047746309466797": {
+      "message": "Bel\u00E9pett az olvas\u00F3alkalmaz\u00E1sba"
+   },
+   "8324195080917648153": {
+      "message": "Nincs el\u00E9g hely a vide\u00F3 sz\u00E1m\u00E1ra. N\u00F6velje a b\u00F6ng\u00E9sz\u0151ablak m\u00E9ret\u00E9t."
+   },
+   "8337582740675387693": {
+      "message": "Java"
+   },
+   "8342684858400436871": {
+      "message": "tab"
+   },
+   "834835979652266872": {
+      "message": "$2\u200B/$1\u200B"
+   },
+   "8379952094517631162": {
+      "message": "Nem"
+   },
+   "838638321086949683": {
+      "message": "Fot\u00F3t\u00E1r"
+   },
+   "8402951605166442545": {
+      "message": "Nincs el\u0151n\u00E9zet."
+   },
+   "8408756681779291666": {
+      "message": "Jegyzetek keres\u00E9se"
+   },
+   "8412684147928483084": {
+      "message": "Fekete"
+   },
+   "8435544675017330861": {
+      "message": "Egyetlen elem sem felelt meg a keres\u00E9snek."
+   },
+   "8436817383042650304": {
+      "message": "caps lock"
+   },
+   "8451184312655705174": {
+      "message": "Ha helyes az URL, itt megjelenik az el\u0151n\u00E9zet. A nagym\u00E9ret\u0171 k\u00E9pek megjelen\u00E9se percekig is tarthat."
+   },
+   "8467894483369467251": {
+      "message": "Vaku"
+   },
+   "8506198918368329269": {
+      "message": "A megjelen\u00EDtett tal\u00E1latok m\u00F3dos\u00EDthat\u00F3k \u00E9s kereskedelmi c\u00E9lra felhaszn\u00E1lhat\u00F3k."
+   },
+   "8571315158566081191": {
+      "message": "Nincsenek t\u00E1bl\u00E1zatok."
+   },
+   "8586521576836841032": {
+      "message": "Sajnos hiba t\u00F6rt\u00E9nt, \u00FAjra pr\u00F3b\u00E1lkozunk."
+   },
+   "8596257056433048992": {
+      "message": "\u00DCdv\u00F6zli a(z)"
+   },
+   "8621067185485606452": {
+      "message": "ECMAScript"
+   },
+   "863955692838281739": {
+      "message": "Bez\u00E1r\u00E1s"
+   },
+   "8660016472468563221": {
+      "message": "kett\u0151spont"
+   },
+   "8663507590720636709": {
+      "message": "$1\u200B + $2\u200B egy\u00E9b"
+   },
+   "8666643061920113075": {
+      "message": "{VIEWER_GENDER,select, female{M\u00E1solja be egy k\u00E9p URL-j\u00E9t ide:}male{M\u00E1solja be egy k\u00E9p URL-j\u00E9t ide:}other{M\u00E1solja be egy k\u00E9p URL-j\u00E9t ide:}}"
+   },
+   "8674222789100049233": {
+      "message": "Bez\u00E1r\u00E1s"
+   },
+   "8677820266582418177": {
+      "message": "Sajnos hiba t\u00F6rt\u00E9nt."
+   },
+   "8709611758728645225": {
+      "message": "pg down"
+   },
+   "873811949056724870": {
+      "message": "Jegyzetet hozott l\u00E9tre."
+   },
+   "8759520888087120926": {
+      "message": "Nincsenek szkriptek."
+   },
+   "8775097441636640256": {
+      "message": "$2\u200B \u2013 $1\u200B"
+   },
+   "8780212274435014958": {
+      "message": "K\u00F6r\u00F6k"
+   },
+   "8781837301864053001": {
+      "message": "Rich Text"
+   },
+   "8798805450232120940": {
+      "message": "M\u00E1s t\u00E1rs\u00EDtott alkalmaz\u00E1sok"
+   },
+   "8813101408630252335": {
+      "message": "$1\u200B mp."
+   },
+   "8820281478062782578": {
+      "message": "Keres\u00E9s"
+   },
+   "8822326207328431952": {
+      "message": "A k\u00E9pfelt\u00F6lt\u00E9s jelenleg nem \u00E9rhet\u0151 el"
+   },
+   "8850238112725591771": {
+      "message": "$1\u200B billenty\u0171parancs"
+   },
+   "8884900765322249670": {
+      "message": "Listan\u00E9zet"
+   },
+   "8889019648958415451": {
+      "message": "Ismeretlen f\u00E1jl"
+   },
+   "8916237870980173557": {
+      "message": "Kapcsol\u00F3d\u00E1s..."
+   },
+   "8919660666733306860": {
+      "message": "K\u00E9p"
+   },
+   "8979615310931291676": {
+      "message": "Szerkesztve: $1\u200B"
+   },
+   "8986044948621891903": {
+      "message": "Ha a Google\u00A0Internetes\u00A0Keres\u0151vel szeretne keresni valamit az interneten, \u00EDrja be a keres\u0151szavakat a fenti mez\u0151be."
+   },
+   "8989303741319824749": {
+      "message": "El\u0151z\u0151"
+   },
+   "901615442107785480": {
+      "message": "Jegyzet vagy lista archiv\u00E1l\u00E1sa"
+   },
+   "9028041601596584772": {
+      "message": "Hely"
+   },
+   "9058308423774656474": {
+      "message": "Hangul Word Processor"
+   },
+   "9083935734710258396": {
+      "message": "Elutas\u00EDt\u00E1s"
+   },
+   "911586799466052745": {
+      "message": "OpenOffice-rajz"
+   },
+   "9130962320402467249": {
+      "message": "Fot\u00F3t\u00E1rfot\u00F3k"
+   },
+   "9146716987301178362": {
+      "message": "Hiba l\u00E9pett fel. T\u00F6ltse be \u00FAjra!"
+   },
+   "916773043895242978": {
+      "message": "A k\u00E9p fent megadott URL-je helytelen, vagy a k\u00E9p nem t\u00F6lthet\u0151 be. Adja meg a k\u00E9p helyes URL-j\u00E9t."
+   },
+   "9173629944963872598": {
+      "message": "Nincsenek esem\u00E9nyek."
+   },
+   "9182500445937900938": {
+      "message": "Bez\u00E1r\u00E1s"
+   },
+   "9195941533351099011": {
+      "message": "Felt\u00F6lt\u00E9s: $2\u200B/$1\u200B"
+   },
+   "9210545340040914022": {
+      "message": "$2\u200BNem siker\u00FClt felt\u00F6lteni a k\u00E9pet.$1\u200B"
+   },
+   "9222674328467536367": {
+      "message": "$2\u200B \u2013 $1\u200B elem"
+   },
+   "940276535015195877": {
+      "message": "Nincsenek mapp\u00E1k."
+   },
+   "947120104987708134": {
+      "message": "Adatv\u00E9delmi ir\u00E1nyelvek"
+   },
+   "951963820437151566": {
+      "message": "Google Webhelyek"
+   },
+   "963611681085757795": {
+      "message": "Sajnos a dokumentum n\u00E9zete jelenleg nem hozhat\u00F3 l\u00E9tre."
+   },
+   "964957642315661588": {
+      "message": "Nem siker\u00FClt bet\u00F6lteni ezt az oldalt, \u00FAjra pr\u00F3b\u00E1lkozik\u2026"
+   },
+   "96556988207614774": {
+      "message": "Napt\u00E1rak"
+   },
+   "973644925431533602": {
+      "message": "T\u00F6rl\u00E9s"
+   },
+   "974042541427403929": {
+      "message": "K\u00E9k"
+   },
+   "975416671454410602": {
+      "message": "$2\u200BPr\u00F3b\u00E1lja \u00FAjra$1\u200B"
+   },
+   "980395722421409371": {
+      "message": "Nem tal\u00E1lhat\u00F3k t\u00E9rk\u00E9pek."
+   },
+   "982187142411651629": {
+      "message": "Elvet\u00E9s"
+   },
+   "985197728509875956": {
+      "message": "K\u00E9miai modell"
+   },
+   "996381410993745580": {
+      "message": "Photoshop"
+   },
+   "998727788921602971": {
+      "message": "Vide\u00F3k"
+   },
+   "appDesc": {
+      "description": "App description",
+      "message": "Gyorsan r\u00F6gz\u00EDtheti \u00E9s b\u00E1rhol k\u00F6nnyed\u00E9n felid\u00E9zheti gondolatait."
+   },
+   "appName": {
+      "description": "App name.",
+      "message": "Google Keep"
+   }
+}

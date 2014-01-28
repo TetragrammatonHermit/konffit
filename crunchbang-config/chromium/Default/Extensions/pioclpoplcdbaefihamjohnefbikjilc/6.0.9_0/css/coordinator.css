@@ -1,0 +1,299 @@
+.skitch-surface, .skitch-layer, .skitch-tool-element-text-editor, .skitch-tool-element-text-hidden-text {
+  visibility: hidden;
+}
+body.skitchon *:not(#evernoteFilingTools):not(#evernoteGlobalTools):not(#evernoteUserTools):not(#evernoteShareTools):not(#evernoteEmailSharing):not(#evernoteOptionsPage):not(#evernoteFlePage):not(.skitch-surface):not(.skitch-layer):not(.skitch-tool-element-text-editor):not(.skitch-tool-element-text-hidden-text):not(.skitchVisible) {
+  visibility: hidden !important;
+}
+body.skitchon iframe:not(#evernoteFilingTools):not(#evernoteGlobalTools):not(#evernoteUserTools):not(#evernoteShareTools):not(#evernoteEmailSharing):not(#evernoteOptionsPage):not(#evernoteFlePage):not(.skitch-surface):not(.skitch-layer):not(.skitch-tool-element-text-editor):not(.skitch-tool-element-text-hidden-text):not(.skitchVisible) {
+  display: none !important;
+}
+
+body.skitchon .skitch-surface, body.skitchon .skitch-layer,
+body.skitchon .skitch-tool-element-text-editor,
+body.skitchon .skitch-tool-element-text-hidden-text {
+  visibility: visible !important;
+}
+
+body.skitchon {
+  min-width: 100% !important;
+  overflow: hidden;
+  position: fixed;
+}
+
+/* Multiple tools */
+#evernoteEmailSharing, #evernoteFeedbackForm,
+#evernoteFilingTools, #evernoteGlobalTools, #evernoteUserTools,
+#evernoteShareTools, #evernoteOptionsPage, #evernoteFlePage {
+  background: none !important;
+  box-sizing: content-box !important;
+  margin: 0 !important;
+  max-height: none !important;
+  min-height: 0 !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  opacity: 1 !important;
+  outline: invert none medium !important;
+  padding: 0 !important;
+  position: fixed !important;
+  resize: none !important;
+  vertical-align: baseline !important;
+  visibility: visible !important;
+  z-index: 2147483647 !important;
+  -webkit-animation-duration: 0 !important;
+  -webkit-user-select: none !important;
+}
+
+/* Feedback form */
+#evernoteFeedbackForm {
+  border: none !important;
+  bottom: auto !important;
+  box-shadow: none !important;
+  height: 468px !important;
+  left: -webkit-calc(50% - 168px) !important;
+  right: auto !important;
+  top: -webkit-calc(50% - 234px) !important;
+  -webkit-transition-duration: 0 !important;
+  width: 336px !important;
+}
+
+/* Filing tools */
+#evernoteFilingTools {
+  border: none !important;
+  bottom: auto !important;
+  box-shadow: none !important;
+  display: block !important;
+  left: auto !important;
+  right: -257px !important;
+  -webkit-transition: right .5s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  width: 257px !important;
+}
+#evernoteFilingTools.evernoteClipperVisible {
+  right: 152px !important;
+}
+
+/* Global tools */
+#evernoteGlobalTools {
+  border: none !important;
+  bottom: auto !important;
+  box-shadow: none !important;
+  display: block !important;
+  height: 100% !important;
+  left: auto !important;
+  right: -154px !important;
+  top: 0 !important;
+  -webkit-transition: right .5s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+}
+#evernoteGlobalTools.evernoteClipperVisible {
+  right: 0 !important;
+}
+#evernoteGlobalTools.evernoteClipperVisible.tempHidden {
+  right: -136px !important;
+}
+
+/* user menu */
+#evernoteUserTools {
+  border: 1px solid #6D7880 !important;
+  box-shadow: 0 4px 6px 0 rgba(47, 55, 61, 0.42) !important;
+  bottom: 0 !important;
+  display: block !important;
+  height: 197px !important;
+  left: auto !important;
+  right: -250px !important;
+  top: auto !important;
+  -webkit-transition: right .5s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  width: 206px !important;
+}
+#evernoteUserTools.evernoteClipperVisible {
+  right: 152px !important;
+}
+#evernoteUserTools.evernoteClipperPremium {
+  height: 151px !important;
+}
+
+/* sharing tools */
+#evernoteShareTools {
+  border: none !important;
+  bottom: 35px !important;
+  box-shadow: none !important;
+  display: block !important;
+  left: auto !important;
+  right: -297px !important;
+  top: auto !important;
+  -webkit-transition: right .5s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  width: 297px !important;
+}
+#evernoteShareTools.evernoteClipperVisible {
+  right: 152px !important;
+}
+
+/* Email Sharing */
+#evernoteEmailSharing {
+  border: none !important;
+  box-shadow: none !important;
+  display: block !important;
+  height: 318px !important;
+  left: auto !important;
+  right: -297px !important;
+  bottom: 35px !important;
+  top: auto !important;
+  -webkit-transition: right .5s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  width: 297px !important;
+}
+#evernoteEmailSharing.evernoteClipperVisible {
+  right: 152px !important;
+}
+
+/* Options page */
+#evernoteOptionsPage {
+  border: none !important;
+  bottom: auto !important;
+  box-shadow: none !important;
+  display: none !important;
+  left: -webkit-calc(50% - 315px) !important;
+  right: auto !important;
+  -webkit-transition-duration: 0 !important;
+  width: 620px !important;
+}
+#evernoteOptionsPage.evernoteClipperVisible {
+  display: inline !important;
+}
+
+#evernoteFlePage {
+  border: none !important;
+  box-shadow: none !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  right: 154px !important;
+  -webkit-transition-duration: 0 !important;
+  width: -webkit-calc(100% - 154px) !important;
+  height: 100% !important;
+}
+
+/* loading indicator */
+#evernoteLoading {
+  background-color: transparent !important;
+  background-image: url(chrome-extension://__MSG_@@extension_id__/clearly/images/loading--big.gif), url(chrome-extension://__MSG_@@extension_id__/clearly/images/loading--background.png) !important;
+  background-repeat: no-repeat;
+  background-size: 118px 117px !important;
+  bottom: auto !important;
+  height: 117px !important;
+  left: -webkit-calc(50% - 59px) !important;
+  position: fixed !important;
+  right: auto !important;
+  top: -webkit-calc(50% - 58px) !important;
+  width: 118px !important;
+  z-index: 2147483647 !important;
+}
+html.evernoteSafari #evernoteLoading {
+  background-image: url(../clearly/images/loading--big.gif), url(../clearly/images/loading--background.png) !important;
+}
+
+/* clearly */
+#evernoteClearlyArticle {
+  background: none !important;
+  border: none !important;
+  bottom: auto !important;
+  box-shadow: none !important;
+  box-sizing: content-box !important;
+  display: block !important;
+  margin: 0 !important;
+  max-height: none !important;
+  min-height: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  opacity: 1 !important;
+  outline: invert none medium !important;
+  padding: 0 !important;
+  position: absolute !important;
+  resize: none !important;
+  right: auto !important;
+  vertical-align: baseline !important;
+  visibility: visible !important;
+  -webkit-animation-duration: 0 !important;
+  -webkit-transition-duration: 0 !important;
+  width: 100% !important;
+  z-index: 2147483646 !important;     
+}
+
+html.clearlyBeforeVisible, html >  body.clearlyBeforeVisible,
+body.clearlyBeforeVisible {
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: static !important;
+}
+html.clearlyBeforeVisible object, html.clearlyBeforeVisible embed,
+html.clearlyBeforeVisible iframe:not(#evernoteFilingTools):not(#evernoteGlobalTools):not(#evernoteUserTools):not(#evernoteShareTools):not(#evernoteEmailSharing):not(#evernoteOptionsPage):not(#evernoteClearlyArticle):not(#evernoteFlePage),
+html > body.clearlyBeforeVisible object, html > body.clearlyBeforeVisible embed,
+html > body.clearlyBeforeVisible iframe:not(#evernoteFilingTools):not(#evernoteGlobalTools):not(#evernoteUserTools):not(#evernoteShareTools):not(#evernoteEmailSharing):not(#evernoteOptionsPage):not(#evernoteClearlyArticle):not(#evernoteFlePage),
+body.clearlyBeforeVisible object, body.clearlyBeforeVisible embed,
+body.clearlyBeforeVisible iframe:not(#evernoteFilingTools):not(#evernoteGlobalTools):not(#evernoteUserTools):not(#evernoteShareTools):not(#evernoteEmailSharing):not(#evernoteOptionsPage):not(#evernoteClearlyArticle):not(#evernoteFlePage) {
+  visibility: hidden !important;
+}
+html.clearlyBeforeVisible #evernoteClearlyArticle, html >  + body.clearlyBeforeVisible #evernoteClearlyArticle,
+body.clearlyBeforeVisible #evernoteClearlyArticle, #evernoteClearlyArticle {
+  display: block !important;
+  overflow: auto !important;
+  visibility: visible !important;
+}
+
+/* skitch */
+.skitchCropOptions {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: rgb(47,55,61);
+  height: 40px;
+  width: 100%;
+  border-bottom: 2px rgba(255,255,255,.38) solid;
+}
+
+.skitchCropOptions div {
+  float: right;
+}
+
+.skitchCropOptions div div {
+  float: none;
+  display: inline-block;
+  color: white;
+  font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  margin-top: 10px;
+}
+
+.skitchCropOptions div div:last-of-type {
+  text-shadow: 1px 1px 2px rgba(0,0,0,.32);
+  height: 22px;
+  width: 60px;
+  background-color: rgb(38,176,100);
+  border-radius: 2px;
+  border-top: 1px rgb(51,204,120) solid;
+  line-height: 20px;
+  margin: 0px 10px;
+  text-align: center;
+}
+.skitchCropOptions div div:first-of-type {
+  text-shadow: 1px 1px 2px rgba(0,0,0,.32);
+  padding-left: 22px;
+  height: 20px;
+  line-height: 20px;
+  margin-left: 10px;
+  padding-right: 22px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) {
+  #evernoteLoading {
+    background-image: url(chrome-extension://__MSG_@@extension_id__/clearly/images/loading--big@2x.gif), url(chrome-extension://__MSG_@@extension_id__/clearly/images/loading--background@2x.png) !important;
+  }
+  html.evernoteSafari #evernoteLoading {
+    background-image: url(../clearly/images/loading--big@2x.gif), url(../clearly/images/loading--background@2x.png) !important;
+  }
+}
+
+@media print {
+  #evernoteEmailSharing, #evernoteFilingTools, #evernoteGlobalTools,
+  #evernoteUserTools, #evernoteShareTools, #evernoteOptionsPage, #evernoteFlePage {
+    display: none !important;
+  }
+}

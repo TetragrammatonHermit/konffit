@@ -1,0 +1,26 @@
+{
+   "ext_description": {
+      "message": "Autom\u0101tiski tiek priek\u0161skat\u012Bti PDF dokumenti, PowerPoint prezent\u0101cijas un citi dokumenti Google dokumentu skat\u012Bt\u0101j\u0101."
+   },
+   "ext_name": {
+      "message": "Dokumentu PDF/PowerPoint skat\u012Bt\u0101js (nodro\u0161ina Google)"
+   },
+   "google_docs_viewer": {
+      "message": "Google dokumentu skat\u012Bt\u0101js"
+   },
+   "locale": {
+      "message": "lv"
+   },
+   "open_in_incognito_window": {
+      "message": "Skat\u012Bt failu inkognito re\u017E\u012Bma log\u0101"
+   },
+   "open_in_new_tab": {
+      "message": "Skat\u012Bt failu jaun\u0101 ciln\u0113"
+   },
+   "open_in_new_window": {
+      "message": "Skat\u012Bt failu jaun\u0101 log\u0101"
+   },
+   "save_in_docs": {
+      "message": "Saglab\u0101t Google dokumentos"
+   }
+}

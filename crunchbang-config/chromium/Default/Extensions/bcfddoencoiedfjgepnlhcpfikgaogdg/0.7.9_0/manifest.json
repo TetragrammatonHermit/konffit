@@ -1,0 +1,20 @@
+{
+   "background_page": "background.html",
+   "browser_action": {
+      "default_icon": "icon.png",
+      "popup": "popup.html"
+   },
+   "description": "Display a QR-Code tag for current URL in browser or any link, selected text or image on a web page. Size of QR-code is adjustable.",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png",
+      "48": "icon_48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCvhu1RbSM+z0HW0ij4j5aCzEjtFf1X5YMniyXLoxIqZOMR9Qs0XkBz+CUNWuB8llCXdQ+N1/Sfg5NYsPYA6g2kILUVTOB7loCg5u7vk5NszpTYiu+Je7v+Tj2AI0Srj6wkPyBpHPezGTOQ+LhDKwtqaHpDtZiNzLgvem33BOpNXQIDAQAB",
+   "minimum_chrome_version": "0.6",
+   "name": "QR-Code Tag Extension",
+   "options_page": "options.html",
+   "permissions": [ "tabs", "http://api.bit.ly/", "contextMenus" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "0.7.9"
+}

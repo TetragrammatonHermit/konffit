@@ -1,0 +1,26 @@
+{
+   "ext_description": {
+      "message": "Automaticky zobrazuje uk\u00E1\u017Eky s\u00FAborov PDF, prezent\u00E1ci\u00ED PowerPoint a in\u00FDch dokumentov v Prehliada\u010D\u00ED dokumentov Google."
+   },
+   "ext_name": {
+      "message": "Prehliada\u010D dokumentov PDF / PowerPoint (od spolo\u010Dnosti Google)"
+   },
+   "google_docs_viewer": {
+      "message": "Prehliada\u010D dokumentov Google"
+   },
+   "locale": {
+      "message": "sk"
+   },
+   "open_in_incognito_window": {
+      "message": "Zobrazi\u0165 s\u00FAbor v okne inkognito"
+   },
+   "open_in_new_tab": {
+      "message": "Zobrazi\u0165 s\u00FAbor na novej karte"
+   },
+   "open_in_new_window": {
+      "message": "Zobrazi\u0165 s\u00FAbor v novom okne"
+   },
+   "save_in_docs": {
+      "message": "Ulo\u017Ei\u0165 v Dokumentoch Google"
+   }
+}

@@ -1,0 +1,26 @@
+{
+   "ext_description": {
+      "message": "Samodejni predogled datotek PDF, PowerPointovih predstavitev in drugih dokumentov v pregledovalniku Google Dokumentov."
+   },
+   "ext_name": {
+      "message": "Pregledovalnik datotek PDF/Powerpoint v Google Dokumentih (od Googla)"
+   },
+   "google_docs_viewer": {
+      "message": "Pregledovalnik Google Dokumentov"
+   },
+   "locale": {
+      "message": "sl"
+   },
+   "open_in_incognito_window": {
+      "message": "Prika\u017Ei datoteko v oknu brez bele\u017Eenja zgodovine"
+   },
+   "open_in_new_tab": {
+      "message": "Prika\u017Ei datoteko v novem zavihku"
+   },
+   "open_in_new_window": {
+      "message": "Prika\u017Ei datoteko v novem oknu"
+   },
+   "save_in_docs": {
+      "message": "Shrani v Google Dokumente"
+   }
+}

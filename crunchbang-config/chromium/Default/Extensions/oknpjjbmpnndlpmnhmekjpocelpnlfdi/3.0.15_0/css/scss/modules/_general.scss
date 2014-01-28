@@ -1,0 +1,84 @@
+body {
+    background-color: darken(#fdfdfd, 2);
+    @include serif;
+    font-size: 0.85em;
+    -webkit-font-smoothing: antialiased;
+    @include transition-property("background-color");
+    @include transition-duration(0.1s);
+}
+
+// We need this extra containing element so we avoid styling the body element.
+// If we do that, things get a little odd when we're displaying the iframe we
+// need for actions that are taken outside the popup; shortcuts and context menus.
+.container {
+    @include box-sizing("border-box");
+    height: 148px;
+    opacity: 1;
+    width: 18.571em;
+
+    & > div:not(.loading-indicator) {
+        @include box-sizing("border-box");
+        opacity: 1;
+        pointer-events: auto;
+        position: absolute;
+        top: 0;
+        @include transition-property("opacity");
+        @include transition-duration(0.3s);
+        width: 100%;
+
+        &.hidden {
+            display: block;
+            opacity: 0;
+            pointer-events: none;
+            @include transition-duration(0.1s);
+        }
+    }
+}
+
+[data-view=tagging],
+[data-view=sendToKindle] {
+    body {
+        background-color: rgba(#000, 0.8);
+    }
+}
+
+html[data-is-iframe] {
+    body {
+        background-color: transparent;
+        overflow: hidden;
+    }
+
+    $tipSize: 6px;
+
+    .container {
+        background-color: #fcfbfd;
+        box-shadow: 0 1px 9px rgba(#000, 0.4);
+        border-radius: 5px;
+        margin: 7px auto 0 auto;
+        position: relative;
+
+        &.hidden {
+            display: block;
+            opacity: 0;
+        }
+    }
+
+    &[data-view=tagging],
+    &[data-view=sendToKindle] {
+        .container {
+            background-color: rgba(#000, 0.8);
+            box-shadow: 0 3px 10px rgba(#000, 0.3);
+
+            &::before {
+                border-right: $tipSize solid transparent;
+                border-bottom: $tipSize solid rgba(#000, 0.8);
+                border-left: $tipSize solid transparent;
+                content: "";
+                display: inline-block;
+                right: 10%;
+                top: -$tipSize;
+                position: absolute;
+            }
+        }
+    }
+}

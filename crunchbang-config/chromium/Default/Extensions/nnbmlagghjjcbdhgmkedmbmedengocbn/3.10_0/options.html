@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Options</title>
+    <style type="text/css">
+      body, html {
+        font-size: 13px;
+        font-family: Arial, Verdana, sans-serif;
+        text-align: center;
+      }
+
+      h1, h2, h3 {
+        font-size: 1em;
+        margin: 0;
+      }
+
+      h3 {
+        font-weight: normal;
+        color: #666;
+      }
+
+      ul, ol {
+        margin: 0 0 1em;
+        padding: 0;
+        list-style-type: none;
+      }
+
+      li {
+        margin: 5px;
+      }
+
+      button {
+        font-size: 1.5em;
+      }
+
+      .title {
+        font-size: 2em;
+        font-weight: bold;
+        font-family: Helvetica,Arial, Verdana, sans-serif;
+        margin-bottom: 1em;
+        padding-bottom: .5em;
+        border-bottom: 1px solid #ddd;
+      }
+
+      #options {
+        display: inline-block;
+        margin: 4em auto 0;
+        padding: 2em;
+        background: #efefef;
+        -webkit-border-radius: 1em 1em;
+        text-align: left;
+      }
+
+      #domains {
+        display: block;
+        margin: .5em 0 1em;
+        height: 200px;
+        width: 100%;
+      }
+    </style>
+    <script src="jquery.min.js"></script>
+    <script src="common.js"></script>
+    <script src="option_utils.js"></script>
+    <script src="options.js"></script>
+  </head>
+  <body>
+    <div id='options'>
+      <h1 class="title">Docs PDF/Powerpoint Viewer Options</h1>
+      <h2>Which file types should be handled?</h2>
+      <ul id="file-types"></ul>
+      <h2>Which domains should NOT be handled by this extension?</h2>
+      <h3>Specify one domain per line, eg: example.com</h3>
+      <textarea id="domains"></textarea>
+      <button id="submit-button">Save</button>
+      <span id="status" style="display:none">Options saved.</span>
+    </div>
+  </body>
+</html>

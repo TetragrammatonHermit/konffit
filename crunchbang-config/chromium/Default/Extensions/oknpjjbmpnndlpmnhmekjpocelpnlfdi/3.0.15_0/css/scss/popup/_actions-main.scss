@@ -1,0 +1,77 @@
+.actions-main {
+
+    &.disabled {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        opacity: 0.1;
+        pointer-events: none;
+    }
+
+    li {
+        border-bottom: 1px solid #e4e4e4;
+        border-top: 1px solid #fff;
+        position: relative;
+
+        &:first-child {
+            border-top: 0;
+        }
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    // While waiting for something to happen
+    li.working {
+        a {
+            background-color: darken(#fcfbfd, 1);
+            box-shadow: inset 0 1px 4px rgba(#696969, 0.1);
+            color: #000;
+            cursor: default;
+        }
+
+        .loading-indicator {
+            display: block;
+        }
+    }
+
+    .loading-indicator {
+        background-color: darken(#fcfbfd, 1);
+        display: none;
+        left: 8px;
+        position: absolute;
+        top: 9px;
+        z-index: 2;
+    }
+
+    a {
+        cursor: pointer;
+        display: block;
+        padding: 0.9em 0 0.8em 2.5em;
+        color: #262626;
+        position: relative;
+        text-decoration: none;
+        z-index: 1;
+
+        &:hover,
+        &:focus {
+            background-color: darken(#fcfbfd, 1);
+            box-shadow: inset 0 1px 4px rgba(#696969, 0.1);
+            color: #000;
+            outline: none;
+        }
+    }
+
+    .read-now a {
+        background-position: 0.75em 9px;
+        border-radius: 2px 2px 0 0;
+    }
+
+    .read-later a {
+        background-position: 0.7em -27px;
+    }
+
+    .send-to-kindle a {
+        background-position: 0.7em -62px;
+    }
+}

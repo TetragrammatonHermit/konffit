@@ -1,0 +1,168 @@
+{
+   "checksum": "161a264f6900e34aab397477f93f00e8",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13025437810249520",
+            "id": "4",
+            "name": "",
+            "type": "url",
+            "url": "http://dagobah.net/flash/ReDesigningBreakOut.swf"
+         }, {
+            "date_added": "13012479380944536",
+            "id": "5",
+            "name": "",
+            "type": "url",
+            "url": "https://news.ycombinator.com/news"
+         }, {
+            "date_added": "13029842021849906",
+            "id": "6",
+            "name": "",
+            "type": "url",
+            "url": "http://phoboslab.org/ztype/"
+         }, {
+            "date_added": "13030043557866611",
+            "id": "7",
+            "name": "",
+            "type": "url",
+            "url": "http://touchtyper.net/"
+         }, {
+            "date_added": "13022592273116860",
+            "id": "8",
+            "name": "K",
+            "type": "url",
+            "url": "https://korppi.jyu.fi/kotka/calendar/calendar.jsp?firstHour=8&interval=120&lastHour=20&source=personal&type=week&date=current"
+         }, {
+            "children": [ {
+               "date_added": "13018878074502075",
+               "id": "23",
+               "name": "U",
+               "type": "url",
+               "url": "https://docs.google.com/spreadsheet/ccc?key=0AodTW8pnBJN5dGVTdXZVbHliQjRTVWt5NTZfX09QblE#gid=6"
+            }, {
+               "date_added": "13034782250040849",
+               "id": "24",
+               "meta_info": "{\"sync\":{\"transaction_version\":\"8\"}}",
+               "name": "Koulu24 - Kirjaudu sis\u00E4\u00E4n",
+               "type": "url",
+               "url": "https://130.234.148.169:44301/"
+            } ],
+            "date_added": "13033565266215437",
+            "date_modified": "13034782250040849",
+            "id": "9",
+            "name": "U",
+            "type": "folder"
+         }, {
+            "date_added": "13030885065576805",
+            "id": "10",
+            "name": "skewer",
+            "type": "url",
+            "url": "javascript:(function(){var d=document;var s=d.createElement('script');s.src='http://localhost:8080/skewer';d.body.appendChild(s);})()"
+         }, {
+            "date_added": "13017997825501849",
+            "id": "11",
+            "name": "",
+            "type": "url",
+            "url": "http://evernote.com/"
+         }, {
+            "date_added": "13023001425630572",
+            "id": "12",
+            "name": "log",
+            "type": "url",
+            "url": "https://docs.google.com/spreadsheet/ccc?key=0AqWK3qzXcfR-dF8tRW13LVpEOVRTaHVmU0hDMEU5a0E&usp=drive_web"
+         }, {
+            "children": [ {
+               "date_added": "13025013493898973",
+               "id": "21",
+               "name": "FILY019 Tieteellisen toiminnan perusteet, 3 op - Luento - Korppi",
+               "type": "url",
+               "url": "https://korppi.jyu.fi/kotka/course/student/opry_ilmo.jsp?course=149925&type=4"
+            }, {
+               "date_added": "13026690723140312",
+               "id": "22",
+               "name": "~ dubbhism ~: The Tao of FM Synthesis #4 ~ Ockham's Razor",
+               "type": "url",
+               "url": "http://www.dubbhism.com/2010/09/tao-of-fm-synthesis-4-ockhams-razor.html"
+            } ],
+            "date_added": "13023792002092050",
+            "date_modified": "13034703890031172",
+            "id": "13",
+            "name": "crs",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13016657555148547",
+               "id": "18",
+               "name": "VICE",
+               "type": "url",
+               "url": "http://www.youtube.com/user/vice"
+            }, {
+               "date_added": "13016662086896071",
+               "id": "19",
+               "name": "",
+               "type": "url",
+               "url": "http://areena.yle.fi/tv"
+            }, {
+               "date_added": "13016657571047903",
+               "id": "20",
+               "name": "",
+               "type": "url",
+               "url": "http://movies.netflix.com/WiHome"
+            } ],
+            "date_added": "13018052052486524",
+            "date_modified": "13034714137570512",
+            "id": "14",
+            "name": "vid",
+            "type": "folder"
+         }, {
+            "date_added": "13019134304861433",
+            "id": "15",
+            "name": "jkl",
+            "type": "url",
+            "url": "http://ilmatieteenlaitos.fi/saa/jyv%C3%A4skyl%C3%A4"
+         }, {
+            "date_added": "13018275334663892",
+            "id": "16",
+            "name": "sade",
+            "type": "url",
+            "url": "http://ilmatieteenlaitos.fi/sade-ja-pilvialueet?doAsUserLanguageId=fi_FI"
+         }, {
+            "date_added": "13028640127384790",
+            "id": "17",
+            "name": "Residential Network Statistics",
+            "type": "url",
+            "url": "http://netinfo.jyu.fi/resnet/resnet-netquota.cgi"
+         }, {
+            "date_added": "13034807120818906",
+            "id": "26",
+            "meta_info": "{\"sync\":{\"transaction_version\":\"11\"}}",
+            "name": "Ajat ovat muuttuneet Yhdysvalloissa | Uutiset | Turun seudun kannabisyhdistys",
+            "type": "url",
+            "url": "http://www.tusky.fi/uutiset/587-ajat-ovat-muuttuneet-yhdysvalloissa"
+         } ],
+         "date_added": "13034703717677493",
+         "date_modified": "13035212650727328",
+         "id": "1",
+         "name": "Bookmarks Bar",
+         "type": "folder"
+      },
+      "meta_info": "{\"sync\":{\"transaction_version\":\"17\"}}",
+      "other": {
+         "children": [  ],
+         "date_added": "13034703717677499",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Other Bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13034703717677501",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile Bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

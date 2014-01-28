@@ -1,0 +1,19 @@
+{
+   "background_page": "background.html",
+   "content_scripts": [ {
+      "js": [ "zoom.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Right-click a column of text so zoom, or tap Shift and click, then press +/-/0 to adjust the font size. Esc unzooms.",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png",
+      "48": "icon_48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDLRgymJHPFte5h6uKa+Au5T6Ex68l7EJ2gStE5ebcHU6pcE5joZntZSOnBObkl38gzHHRTeBS8Gua/XtSuNDXO59wLh0OdmtwjgERUFplR7rEkNVQz0mznwPKpguRo78WLUsEfzAoN260TmVDPr7KPZyLPM5dLXCcHUylhTvWmfwIDAQAB",
+   "name": "Smart zoom",
+   "permissions": [ "contextMenus" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "0.1.7"
+}

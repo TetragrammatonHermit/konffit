@@ -1,0 +1,49 @@
+.container {
+    margin: 0 auto;
+    max-width: 880px;
+    padding: 2.4em 1.5em;
+
+    &::after {
+        clear: both;
+        content: "";
+        display: block;
+    }
+}
+
+[role=main] {
+    position: relative;
+    float: right;
+    width: 75%;
+
+    & > section {
+        border-radius: 3px;
+        display: block;
+        -webkit-transition: left 100ms, opacity 100ms;
+        left: -1em;
+        opacity: 0;
+        padding: 1em 1.2em;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    & > .selected {
+        left: 0;
+        opacity: 1;
+        pointer-events: auto;
+        z-index: 1;
+    }
+}
+
+.section-header {
+    @include serif;
+    font-size: 1.2em;
+    border-bottom: 1px solid desaturate(#e2ddd6, 20);
+    padding-bottom: 0.3em;
+}
+
+.content {
+    padding-top: 1.5em;
+}

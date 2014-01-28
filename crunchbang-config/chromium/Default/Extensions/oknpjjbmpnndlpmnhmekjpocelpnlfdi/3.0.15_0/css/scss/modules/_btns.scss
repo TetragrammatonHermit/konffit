@@ -1,0 +1,119 @@
+%button-base {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    box-shadow: rgba(#fff, 0.2) 0 1px 0 inset;
+    @include box-sizing("border-box");
+    cursor: pointer;
+    display: block;
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    padding: 0.6em 0 0.5em 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+
+    &.working {
+        cursor: default;
+    }
+}
+
+%grey-button {
+    @extend %button-base;
+    background-color: lighten(#dedede, 2);
+    @include background(linear-gradient(lighten(#f1f1f1, 2) 50%, lighten(#dbdbdb, 2)));
+    border-color: #c9c9c9;
+    box-shadow: rgba(#fff, 1) 0 1px 0 inset;
+    color: #353535;
+
+    &:hover,
+    &:focus {
+        background-color: darken(#dedede, 1);
+        @include background(linear-gradient(#f1f1f1 50%, #dbdbdb));
+        border-color: darken(#c9c9c9, 2);
+    }
+
+    &:focus {
+        box-shadow: 0 0 2px rgba(#00d1f8, 0.7);
+        outline: none;
+    }
+
+    &:active,
+    &.working {
+        background-color: darken(#dedede, 5);
+        @include background(
+            linear-gradient(#dbdbdb, darken(#f1f1f1, 1) 50%));
+    }
+}
+
+%green-button {
+    @extend %button-base;
+    background-color: adjust-hue(#588313, -5deg);
+    @include background(linear-gradient(adjust-hue(#588313, -15deg) 50%,
+        adjust-hue(#456d0c, -15deg)));
+    border-color: #41680a;
+    box-shadow: rgba(#fff, 0.2) 0 1px 0 inset;
+    color: #fbfbfa;
+
+    &:hover,
+    &:focus {
+        @include background(
+            linear-gradient(darken(adjust-hue(#588313, -15deg), 1%) 50%,
+                darken(adjust-hue(#456d0c, -15deg), 2%)));
+    }
+
+    &:active,
+    &.working {
+        @include background(
+            linear-gradient(adjust-hue(#456d0c, -15deg),
+                darken(adjust-hue(#588313, -15deg), 1%) 40%));
+    }
+}
+
+%disabled-button {
+    background-color: lighten(#ccc, 2);
+    background-image: none;
+    box-shadow: none;
+    cursor: default;
+}
+
+%facebook-connect-btn {
+    @extend %button-base;
+    background-color: #3b5998;
+    @include background(linear-gradient(#3b5998 50%, darken(#3b5998, 5)));
+    border-color: #36528c;
+    color: #fff;
+    padding: 0.7em 0 0.6em 0;
+    position: relative;
+    text-decoration: none;
+    text-indent: 1em;
+
+    &:hover,
+    &:focus {
+        background-color: darken(#3b5998, 5);
+        @include background(linear-gradient(darken(#3b5998, 2) 50%,
+            darken(#3b5998, 8)));
+        color: #fff;
+    }
+
+    &:active,
+    &.working {
+        background-color: darken(#3b5998, 7);
+        @include background(linear-gradient(darken(#3b5998, 5), #3b5998 40%));
+    }
+
+    &::before {
+        background: transparent image-url("facebook-f@2x.png") no-repeat left center;
+        @include background-size("90%");
+        bottom: 0;
+        content: "";
+        display: inline-block;
+        height: 28px;
+        left: 4px;
+        position: absolute;
+        width: 22px;
+    }
+}

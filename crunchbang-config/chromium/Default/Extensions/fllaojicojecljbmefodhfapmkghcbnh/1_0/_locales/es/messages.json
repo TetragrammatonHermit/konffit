@@ -1,0 +1,8 @@
+{
+   "gaoptout_description": {
+      "message": "Indica al c\u00F3digo JavaScript (ga.js) de Google Analytics que no env\u00EDe informaci\u00F3n a Google Analytics."
+   },
+   "gaoptout_name": {
+      "message": "Complemento inhabilitaci\u00F3n Google Analytics"
+   }
+}

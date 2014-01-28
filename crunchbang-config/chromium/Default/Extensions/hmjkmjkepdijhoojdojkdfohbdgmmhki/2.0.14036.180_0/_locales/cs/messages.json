@@ -1,0 +1,1723 @@
+{
+   "1006787209796778126": {
+      "message": "M\u016Fj disk"
+   },
+   "1017907757187630742": {
+      "message": "Moje p\u00EDsma"
+   },
+   "1029072043275376320": {
+      "message": "Nebyly nalezeny \u017E\u00E1dn\u00E9 kalend\u00E1\u0159e."
+   },
+   "103870949919613488": {
+      "message": "Pozn\u00E1mka archivov\u00E1na"
+   },
+   "1093196373615461508": {
+      "message": "Je n\u00E1m l\u00EDto, ale moment\u00E1ln\u011B nelze obr\u00E1zek zobrazit."
+   },
+   "1098726677907695030": {
+      "message": "Hlasov\u00E1 nahr\u00E1vka: "
+   },
+   "1160186203475556062": {
+      "message": "$2\u200BOdstranit obr\u00E1zek$1\u200B"
+   },
+   "1185164838496022543": {
+      "message": "Kliknut\u00EDm sem pros\u00EDm na\u010Dt\u011Bte str\u00E1nku znovu."
+   },
+   "1263557413037343589": {
+      "message": "Uspo\u0159\u00E1d\u00E1n\u00ED fotek"
+   },
+   "1263685395252160366": {
+      "message": "LaTeX"
+   },
+   "1301927361761800260": {
+      "message": "Soubory PDF"
+   },
+   "1311350045083871503": {
+      "message": "Zru\u0161it"
+   },
+   "1311729747516144362": {
+      "message": "\u010Cerven\u00E9"
+   },
+   "1315844696796851207": {
+      "message": "Bezpatkov\u00E1"
+   },
+   "133192954417440569": {
+      "message": "Nebyly nalezeny \u017E\u00E1dn\u00E9 v\u00FDsledky."
+   },
+   "1376126796144976437": {
+      "message": "V\u0161echna p\u00EDsma"
+   },
+   "1398025099726122129": {
+      "message": "P\u0159i zobrazov\u00E1n\u00ED polo\u017Eky $1\u200B do\u0161lo k chyb\u011B, prob\u00EDh\u00E1 nov\u00FD pokus."
+   },
+   "139942704574044780": {
+      "message": "Schv\u00E1lit"
+   },
+   "141491180325662484": {
+      "message": "Disk Google je m\u00EDsto, kde m\u016F\u017Eete m\u00EDt pohromad\u011B v\u0161echny soubory, ke kter\u00FDm tak budete m\u00EDt p\u0159\u00EDstup odkudkoli a z libovoln\u00E9ho za\u0159\u00EDzen\u00ED. Kdy\u017E m\u00E1te na Disku Google ulo\u017Een\u00E9 fotky, m\u016F\u017Eete je zde okam\u017Eit\u011B sd\u00EDlet se sv\u00FDmi kruhy."
+   },
+   "1418114637490664392": {
+      "message": "Archiv fotografi\u00ED LIFE"
+   },
+   "1419896259743862406": {
+      "message": "Otev\u0159\u00EDt pomoc\u00ED aplikace"
+   },
+   "1435613501685026676": {
+      "message": "Zav\u0159\u00EDt"
+   },
+   "1446829548948002072": {
+      "message": "\u010D\u00E1rka"
+   },
+   "1448351640164641222": {
+      "message": "Vypnout zvuk"
+   },
+   "1454684154234137497": {
+      "message": "Pause"
+   },
+   "1459765068821943106": {
+      "message": "{VIEWER_GENDER,select, female{Sem vlo\u017Ete adresu URL YouTube:}male{Sem vlo\u017Ete adresu URL YouTube:}other{Sem vlo\u017Ete adresu URL YouTube:}}"
+   },
+   "1463079206290378085": {
+      "message": "Fotky na orkutu"
+   },
+   "1484121429181423440": {
+      "message": "Nejste p\u0159ihl\u00E1\u0161eni. Opakujte pros\u00EDm na\u010Dten\u00ED."
+   },
+   "1492360016907725281": {
+      "message": "{VIEWER_GENDER,select, female{Sem vlo\u017Ete adresu URL videa:}male{Sem vlo\u017Ete adresu URL videa:}other{Sem vlo\u017Ete adresu URL videa:}}"
+   },
+   "1493384967280942491": {
+      "message": "R\u016F\u017Eov\u00E9"
+   },
+   "1499433769420882987": {
+      "message": "Zobrazuje se $1\u200B"
+   },
+   "1521707405717823409": {
+      "message": "Purpurov\u00E9"
+   },
+   "1527836113392558206": {
+      "message": "Na\u010D\u00EDt\u00E1n\u00ED..."
+   },
+   "153439508598626384": {
+      "message": "Va\u0161e fotky"
+   },
+   "1536051766421561160": {
+      "message": "rovn\u00EDtko"
+   },
+   "156992719062713230": {
+      "message": "\u0160ed\u00E1"
+   },
+   "1603139897109307706": {
+      "message": "Do\u0161lo k chyb\u011B, zkuste to pros\u00EDm znovu"
+   },
+   "1604359562654146902": {
+      "message": "Fotka"
+   },
+   "1633370388224271051": {
+      "message": "Nebyli nalezeni \u017E\u00E1dn\u00ED lid\u00E9."
+   },
+   "1700522311470719738": {
+      "message": "P\u0159ipomenout"
+   },
+   "1709410429018687341": {
+      "message": "R\u00E1no ($1\u200B)"
+   },
+   "1715552550526864429": {
+      "message": "Hledat blogy"
+   },
+   "1756171223417807431": {
+      "message": "Obr\u00E1zek mus\u00ED b\u00FDt ve\u0159ejn\u00FD. Pokud je obr\u00E1zek chr\u00E1n\u011Bn heslem nebo se nach\u00E1z\u00ED ve vnit\u0159n\u00ED s\u00EDti, nebudeme ho moci p\u0159e\u010D\u00EDst."
+   },
+   "1791115075948268631": {
+      "message": "Otev\u0159\u00EDt n\u00E1pov\u011Bdu pro kl\u00E1vesov\u00E9 zkratky"
+   },
+   "1808245543551507519": {
+      "message": "Audio"
+   },
+   "1815108332424147305": {
+      "message": "Nebo zkuste navrhovanou aplikaci"
+   },
+   "1816851800848432562": {
+      "message": "Odstranit"
+   },
+   "1823222042913714987": {
+      "message": "Odeslat heslo"
+   },
+   "1847413775362184342": {
+      "message": "Otev\u0159\u00EDt"
+   },
+   "185012928288875755": {
+      "message": "Zadan\u00FDm krit\u00E9ri\u00EDm neodpov\u00EDd\u00E1 \u017E\u00E1dn\u00E1 polo\u017Eka."
+   },
+   "1856444915090632305": {
+      "message": "Tento dokument je \u0161ifrovan\u00FD. Zadejte pros\u00EDm heslo."
+   },
+   "1866863108233180413": {
+      "message": "Slo\u017Eky"
+   },
+   "187077078156858455": {
+      "message": "Zvukov\u00E1 pozn\u00E1mka"
+   },
+   "1888984138189822209": {
+      "message": "Vyhledat ve slu\u017Eb\u011B Google Keep"
+   },
+   "1900571668686750716": {
+      "message": "vCard"
+   },
+   "1901351411358749070": {
+      "message": "Sd\u00EDleno se mnou"
+   },
+   "1918176455405610789": {
+      "message": "Hotovo"
+   },
+   "1920189655549476211": {
+      "message": "nezn\u00E1m\u00E1 d\u00E9lka"
+   },
+   "1929603188252533075": {
+      "message": "Va\u0161e video se nepoda\u0159ilo smazat. Zkuste to pros\u00EDm znovu."
+   },
+   "1935425718037933511": {
+      "message": "Zadejte nov\u00FD n\u00E1zev dokumentu:"
+   },
+   "1951810091681076784": {
+      "message": "{COUNT_1,plural, =1{1 odpov\u00EDdaj\u00EDc\u00ED pozn\u00E1mka}few{{COUNT_2} odpov\u00EDdaj\u00EDc\u00ED pozn\u00E1mky}other{{COUNT_2} odpov\u00EDdaj\u00EDc\u00EDch pozn\u00E1mek}}"
+   },
+   "1965626377712226216": {
+      "message": "Keynote"
+   },
+   "1972766939056855370": {
+      "message": "V\u0161echny dokumenty"
+   },
+   "1974063091619095703": {
+      "message": "Lid\u00E9"
+   },
+   "1993674829873313178": {
+      "message": "Pot\u00ED\u017Ee s nahr\u00E1v\u00E1n\u00EDm? Pr\u00E1v\u011B prov\u00E1d\u00EDme \u00FAdr\u017Ebu, ale brzy by m\u011Bl b\u00FDt obnoven norm\u00E1ln\u00ED provoz."
+   },
+   "2048322072989992494": {
+      "message": "Zat\u00EDm s v\u00E1mi nikdo soubory nesd\u00EDl\u00ED."
+   },
+   "2055388154421214950": {
+      "message": "P\u0159ipojit dal\u0161\u00ED aplikace"
+   },
+   "2061440050632248160": {
+      "message": "Archivovat"
+   },
+   "2068023589621557589": {
+      "message": "P\u00EDsmo TrueType"
+   },
+   "210610357717331623": {
+      "message": "Dal\u0161\u00ED"
+   },
+   "2109272338124379867": {
+      "message": "Naposledy upraveno"
+   },
+   "2116013171202209313": {
+      "message": "Vybrat"
+   },
+   "2122256657192674586": {
+      "message": "Hledat videa"
+   },
+   "2125135092719715773": {
+      "message": "Nahr\u00E1t"
+   },
+   "212796670323571824": {
+      "message": "OK"
+   },
+   "213665695896111861": {
+      "message": "Pozn\u00E1mky"
+   },
+   "2138593281154109183": {
+      "message": "Archiv"
+   },
+   "2154372123324862271": {
+      "message": "lom\u00EDtko"
+   },
+   "2185270915942408270": {
+      "message": "P\u0159izp\u016Fsobit obrazovce"
+   },
+   "2187239650627580457": {
+      "message": "Odeslat"
+   },
+   "2189236824843182677": {
+      "message": "{audienceCount,plural, =0{unused plural form}=1{Fotky budou sd\u00EDleny s {startTag}jedn\u00EDm \u010Dlov\u011Bkem{endTag}.}few{Fotky budou sd\u00EDleny se {startTag}{audienceCount} lidmi{endTag}.}other{Fotky budou sd\u00EDleny s {startTag}{audienceCount} lidmi{endTag}.}}"
+   },
+   "2198096971937872560": {
+      "message": "P\u0159ipomenut\u00ED:"
+   },
+   "221715292685577880": {
+      "message": "Ano"
+   },
+   "2220005860896049129": {
+      "message": "Je n\u00E1m l\u00EDto, ale vyhled\u00E1n\u00ED dokumentu v p\u016Fvodn\u00EDm zdroji trvalo p\u0159\u00EDli\u0161 dlouho."
+   },
+   "2228413078211839077": {
+      "message": "Je n\u00E1m l\u00EDto, ale p\u0159i vytv\u00E1\u0159en\u00ED zobrazen\u00ED dokumentu do\u0161lo k do\u010Dasn\u00E9mu probl\u00E9mu."
+   },
+   "2235097878790803849": {
+      "message": "P\u0159\u00EDlohy jsou mrtv\u00E9. A\u0165 \u017Eije Disk Google!"
+   },
+   "2257303402199718039": {
+      "message": "Je n\u00E1m l\u00EDto, ale dokument v p\u016Fvodn\u00EDm zdroji nem\u016F\u017Eeme naj\u00EDt. P\u0159esv\u011Bd\u010Dte se, zda dokument st\u00E1le existuje."
+   },
+   "2289812403593835836": {
+      "message": "Pages"
+   },
+   "229177484946387188": {
+      "message": "Google Earth"
+   },
+   "2304293593067358316": {
+      "message": "Klipart"
+   },
+   "2329167963662998826": {
+      "message": "Slu\u017Eba Google Keep \u017E\u00E1d\u00E1 o p\u0159\u00EDstup k \u00FAdaj\u016Fm o va\u0161\u00ED poloze, kter\u00E9 pomohou up\u0159esnit n\u00E1vrhy pro p\u0159ipomenut\u00ED m\u00EDst."
+   },
+   "234046557601727809": {
+      "message": "\u017D\u00E1dn\u00E9 obr\u00E1zky ani videa."
+   },
+   "2349912757088764940": {
+      "message": "Viditeln\u00E9 pro:"
+   },
+   "2359614137862708172": {
+      "message": "Shift"
+   },
+   "2370656573843123707": {
+      "message": "prav\u00E1 z\u00E1vorka"
+   },
+   "2393487423640708285": {
+      "message": "Adresa je neplatn\u00E1. Na za\u010D\u00E1tku adresy mus\u00ED b\u00FDt http:// nebo https://."
+   },
+   "2412314804333167252": {
+      "message": "Tato tabulka je p\u0159\u00EDli\u0161 velk\u00E1. Kliknut\u00EDm ji $3\u200Bst\u00E1hn\u011Bte$1\u200B nebo $4\u200Bupravte v Tabulk\u00E1ch Google$1\u200B."
+   },
+   "2415274561162670983": {
+      "message": "Je n\u00E1m l\u00EDto, ale moment\u00E1ln\u011B video nelze zobrazit."
+   },
+   "2418104318933043113": {
+      "message": "Vyhled\u00E1v\u00E1n\u00ED obr\u00E1zk\u016F Google"
+   },
+   "2422385608245044498": {
+      "message": "Vybrat obr\u00E1zek"
+   },
+   "2449254824382583885": {
+      "message": "Do nov\u00E9ho okna"
+   },
+   "2450327925369898841": {
+      "message": "Litujeme, ale p\u0159i p\u0159id\u00E1v\u00E1n\u00ED t\u00E9to polo\u017Eky na Disk do\u0161lo k chyb\u011B. Zkuste to pros\u00EDm znovu."
+   },
+   "2455753442347598108": {
+      "message": "Opustili jste prohl\u00ED\u017Ee\u010D"
+   },
+   "2475181823688399272": {
+      "message": "Dal\u0161\u00ED"
+   },
+   "2484568559152875936": {
+      "message": "\u017D\u00E1dn\u00E1 fotoalba."
+   },
+   "2492036279909332649": {
+      "message": "Polo\u017Eka seznamu byla smaz\u00E1na"
+   },
+   "2510929871271209216": {
+      "message": "Tato tabulka je p\u0159\u00EDli\u0161 velk\u00E1. Kliknut\u00EDm $2\u200Bsem$1\u200B ji st\u00E1hnete."
+   },
+   "2513437337377210144": {
+      "message": "End"
+   },
+   "2538080331309772448": {
+      "message": "\u0158adit: $1\u200B"
+   },
+   "2558480112329900136": {
+      "message": "\u0160ed\u00E9"
+   },
+   "257317112834806705": {
+      "message": "P\u0159epnout mezi zobrazen\u00EDm seznamu a m\u0159\u00ED\u017Eky"
+   },
+   "2587566920590457715": {
+      "message": "Maps Engine Lite"
+   },
+   "2609409316752026806": {
+      "message": "PDF"
+   },
+   "2609750184896485102": {
+      "message": "Videa z telefonu"
+   },
+   "2611879390264566852": {
+      "message": "Tabulka OpenOffice"
+   },
+   "2615188670181508661": {
+      "message": "V ned\u00E1vn\u00E9 dob\u011B jste nic nevybrali."
+   },
+   "2628268670001557269": {
+      "message": "Kv\u00F3ta"
+   },
+   "2643241712502664984": {
+      "message": "Va\u0161e videa na YouTube"
+   },
+   "2644069582812747285": {
+      "message": "Polo\u017Eka seznamu"
+   },
+   "2646734195256984201": {
+      "message": "$1\u200B z $2\u200B"
+   },
+   "2687303256387847763": {
+      "message": "Obl\u00EDbenost"
+   },
+   "2705842902318123127": {
+      "message": "P\u0159ej\u00EDt na dal\u0161\u00ED/p\u0159edchoz\u00ED pozn\u00E1mku \u010Di seznam"
+   },
+   "2742719907061406418": {
+      "message": "XML"
+   },
+   "2752123004911547510": {
+      "message": "Trendy"
+   },
+   "2786560864906393383": {
+      "message": "Fotky z telefonu"
+   },
+   "2789687492331041935": {
+      "message": "Vybrat \u010Das"
+   },
+   "2814668529404267263": {
+      "message": "P\u0159ihl\u00E1sit se"
+   },
+   "2817277146396981386": {
+      "message": "pm"
+   },
+   "2818135503416309545": {
+      "message": "Nato\u010Dit video"
+   },
+   "2827039933590757722": {
+      "message": "Z\u00E1stupce syst\u00E9mu Windows"
+   },
+   "2833524492098518257": {
+      "message": "P\u0159ipojen\u00E9 aplikace"
+   },
+   "2842885468107862276": {
+      "message": "P\u0159idat na Disk a otev\u0159\u00EDt pomoc\u00ED"
+   },
+   "2860188519781080944": {
+      "message": "Oran\u017Eov\u00E9"
+   },
+   "2861568351294148466": {
+      "message": "Skripty"
+   },
+   "2864281852037732729": {
+      "message": "M\u00E9n\u011B"
+   },
+   "2878874627361086801": {
+      "message": "uk\u00E1zka"
+   },
+   "289798573180023043": {
+      "message": "OK"
+   },
+   "2917498437550635075": {
+      "message": "Ikona"
+   },
+   "2979466412944870220": {
+      "message": "Na\u010D\u00EDt\u00E1n\u00ED n\u00E1hledu..."
+   },
+   "2981433463625966877": {
+      "message": "Smluvn\u00ED podm\u00EDnky"
+   },
+   "2982511431742033448": {
+      "message": "\u017D\u00E1dn\u00E9 prezentace."
+   },
+   "3000689173481666334": {
+      "message": "Upravit kruh"
+   },
+   "3029395493413607486": {
+      "message": "P\u0159ehr\u00E1va\u010D videa se nepoda\u0159ilo na\u010D\u00EDst. Zkuste str\u00E1nku obnovit.$1\u200BPokud probl\u00E9m p\u0159etrv\u00E1v\u00E1, $3\u200Bnav\u0161tivte centrum n\u00E1pov\u011Bdy$2\u200B."
+   },
+   "306516303501625305": {
+      "message": "Ov\u011B\u0159en\u00ED selhalo."
+   },
+   "3073005748126521632": {
+      "message": "P\u0159ipomenuto na m\u00EDst\u011B $1\u200B"
+   },
+   "3074184819310272351": {
+      "message": "Nahran\u00E9 fotky"
+   },
+   "3084372889071691504": {
+      "message": "{VIEWER_GENDER,select, female{Sem vlo\u017Ete adresu URL:}male{Sem vlo\u017Ete adresu URL:}other{Sem vlo\u017Ete adresu URL:}}"
+   },
+   "3099378427807388994": {
+      "message": "Pozastavit"
+   },
+   "3109321241584918345": {
+      "message": "P\u0159ipojit dal\u0161\u00ED aplikace..."
+   },
+   "3121560585545725724": {
+      "message": "$1\u200B, $2\u200B"
+   },
+   "3207670492626476064": {
+      "message": "Tabulky"
+   },
+   "3222929029344613957": {
+      "message": "Je n\u00E1m l\u00EDto, ale p\u0159i otev\u00EDr\u00E1n\u00ED tohoto souboru do\u0161lo k chyb\u011B. Zkuste to pros\u00EDm znovu."
+   },
+   "3243829462528324248": {
+      "message": "Hn\u011Bd\u00E9"
+   },
+   "3250489229749307913": {
+      "message": "Elektronick\u00E1 publikace"
+   },
+   "3265524298292280681": {
+      "message": "Esc"
+   },
+   "3267563602179728277": {
+      "message": "Delete"
+   },
+   "3275029321588462173": {
+      "message": "\u017D\u00E1dn\u00E9"
+   },
+   "3278237562147211998": {
+      "message": "Fotografie z fotobanky"
+   },
+   "330603631583186798": {
+      "message": "Word"
+   },
+   "3306487262690341751": {
+      "message": "Datum a \u010Das"
+   },
+   "3312545971976531405": {
+      "message": "Zpr\u00E1va"
+   },
+   "3328129883064940351": {
+      "message": "P\u00EDsma"
+   },
+   "3354260708176476985": {
+      "message": "Na\u010D\u00EDt\u00E1n\u00ED&hellip;"
+   },
+   "3368639944474272225": {
+      "message": "Je n\u00E1m l\u00EDto, ale dokument nelze na\u010D\u00EDst a zobrazit nebo k jeho zobrazen\u00ED nem\u00E1te opr\u00E1vn\u011Bn\u00ED."
+   },
+   "3381619429606029445": {
+      "message": "Visio"
+   },
+   "3408219901032480508": {
+      "message": "$2\u200B, $1\u200B"
+   },
+   "3421685394169412932": {
+      "message": "Ka\u017Ed\u00E1 proveden\u00E1 zm\u011Bna se automaticky ulo\u017E\u00ED."
+   },
+   "3422389100099960864": {
+      "message": "\u017D\u00E1dn\u00E9 obr\u00E1zky."
+   },
+   "3430885603500576146": {
+      "message": "Vyb\u00EDrejte pouze obr\u00E1zky, u kter\u00FDch jste si ov\u011B\u0159ili, \u017Ee jste opr\u00E1vn\u011Bni je pou\u017E\u00EDvat."
+   },
+   "3446158485617778228": {
+      "message": "Vr\u00E1tit zp\u011Bt"
+   },
+   "3448684788258660606": {
+      "message": "Va\u0161e fotky"
+   },
+   "3449760465250232736": {
+      "message": "Zobrazit v\u0161e"
+   },
+   "3450585781337676327": {
+      "message": "Na\u010D\u00EDt\u00E1n\u00ED..."
+   },
+   "3457279184692206825": {
+      "message": "Fotky budou viditeln\u00E9 pro v\u0161echny (ve\u0159ejn\u011B na webu)."
+   },
+   "3468441711253011521": {
+      "message": "Tabulky Google"
+   },
+   "3468557655011162775": {
+      "message": "Je n\u00E1m l\u00EDto, ale tento zvukov\u00FD soubor v tomto p\u0159ehr\u00E1va\u010Di p\u0159ehr\u00E1t nelze."
+   },
+   "3518073392823563581": {
+      "message": "Kl\u00E1vesov\u00E9 zkratky"
+   },
+   "3547194749488601916": {
+      "message": "Prob\u00EDh\u00E1 aktualizace..."
+   },
+   "3578537640378068716": {
+      "message": "Odeslat heslo"
+   },
+   "3586705906700410505": {
+      "message": "Kresba"
+   },
+   "3587798318180902863": {
+      "message": "{NUM_SELECTED,plural, =1{ vybran\u00E1 polo\u017Eka \u00BB}few{ vybran\u00E9 polo\u017Eky \u00BB}other{ vybran\u00FDch polo\u017Eek \u00BB}}"
+   },
+   "3595000514985906359": {
+      "message": "Excel"
+   },
+   "3602920441714068008": {
+      "message": "P\u0159ipomenuto $1\u200B v $2\u200B"
+   },
+   "361202495024972887": {
+      "message": "Nahr\u00E1n\u00ED videa"
+   },
+   "3616146071554077404": {
+      "message": "P\u0159ibl\u00ED\u017Eit"
+   },
+   "3643146117250542609": {
+      "message": "\u017D\u00E1dn\u00E9 soubory PDF."
+   },
+   "3645728163953189422": {
+      "message": "Je n\u00E1m l\u00EDto, ale dokument k zobrazen\u00ED nem\u016F\u017Eeme na\u010D\u00EDst, proto\u017Ee je p\u0159\u00EDli\u0161 velk\u00FD."
+   },
+   "3657386785336906042": {
+      "message": "zp\u011Btn\u00E9 lom\u00EDtko"
+   },
+   "3664842788764635265": {
+      "message": "\u017D\u00E1dn\u00E9"
+   },
+   "3666123569747918021": {
+      "message": "Tento dokument obsahuje neulo\u017Een\u00E9 zm\u011Bny. Chcete opustit str\u00E1nku a zm\u011Bny zahodit?"
+   },
+   "3673346558112798837": {
+      "message": "Bez pozad\u00ED"
+   },
+   "3674811252904549204": {
+      "message": "Tituln\u00ED fotky"
+   },
+   "3678477908297567934": {
+      "message": "podtr\u017E\u00EDtko"
+   },
+   "3701351750654338878": {
+      "message": "Odd\u00E1lit"
+   },
+   "3703773505386523126": {
+      "message": "Zav\u0159\u00EDt"
+   },
+   "3717138719704492547": {
+      "message": "Zkontrolujte, zda v adrese nejsou p\u0159eklepy."
+   },
+   "3737694307963051081": {
+      "message": "Soubory PDF"
+   },
+   "3748461364828242354": {
+      "message": "Vyberte barvu"
+   },
+   "3770795578481676514": {
+      "message": "\u017Dlut\u00E1"
+   },
+   "3771958676925493302": {
+      "message": "Odebrat filtr: $1\u200B"
+   },
+   "3779945546806941187": {
+      "message": "\u010Cernob\u00EDl\u00E9"
+   },
+   "381100310424863459": {
+      "message": "Illustrator"
+   },
+   "3842411126100113634": {
+      "message": "Pg-Up"
+   },
+   "3844047145949375230": {
+      "message": "Dokumenty"
+   },
+   "3866373087987934712": {
+      "message": "Nahr\u00E1v\u00E1n\u00ED se nezda\u0159ilo: $1\u200B"
+   },
+   "3869166581651870488": {
+      "message": "Dokon\u010Dit \u00FApravy"
+   },
+   "3873467440437675460": {
+      "message": "Omlouv\u00E1me se. Nepoda\u0159ilo se n\u00E1m naj\u00EDt p\u00EDsma, kter\u00E1 jste d\u0159\u00EDve vybrali."
+   },
+   "3936153839186254186": {
+      "message": "Zobrazit: $1\u200B"
+   },
+   "3955760658925284765": {
+      "message": "Znovu"
+   },
+   "3988418762222300024": {
+      "message": "te\u010Dka"
+   },
+   "3989552504822984034": {
+      "message": "N\u00E1kres Google"
+   },
+   "3996667949418308290": {
+      "message": "N\u00E1zev..."
+   },
+   "400095519884819353": {
+      "message": "Do nov\u00E9ho okna"
+   },
+   "4014287326684608407": {
+      "message": "\u0160edozelen\u00E1"
+   },
+   "4048275292053012394": {
+      "message": "Kontakty"
+   },
+   "4059387791040010947": {
+      "message": "Meta"
+   },
+   "4078179869358383373": {
+      "message": "Nebyly nalezeny \u017E\u00E1dn\u00E9 v\u00FDsledky."
+   },
+   "4097007735221462946": {
+      "message": "N\u00E1kresy"
+   },
+   "4097921967754832323": {
+      "message": "spojovn\u00EDk"
+   },
+   "4119294114251628099": {
+      "message": "Zadanou adresu obr\u00E1zku nelze na\u010D\u00EDst. M\u016F\u017Ee se jednat o soukromou adresu, k n\u00ED\u017E na\u0161e servery nemaj\u00ED p\u0159\u00EDstup. Zkuste zadat jinou adresu."
+   },
+   "4134385041569168669": {
+      "message": "Na\u010D\u00EDt\u00E1n\u00ED..."
+   },
+   "4148564423510181521": {
+      "message": "Vymazat vyhled\u00E1v\u00E1n\u00ED"
+   },
+   "4165433071549564698": {
+      "message": "Zobrazuje se $1\u200B"
+   },
+   "4168280976997555951": {
+      "message": "\u017D\u00E1dn\u00E9 dokumenty."
+   },
+   "4174786386751618325": {
+      "message": "Fotografick\u00E1 pozn\u00E1mka"
+   },
+   "4182427157920112948": {
+      "message": "tilda"
+   },
+   "4200911267543705377": {
+      "message": "Zadejte dotaz do pole v\u00FD\u0161e a vyhledejte v\u00FDsledky na bloz\u00EDch pomoc\u00ED Vyhled\u00E1v\u00E1n\u00ED blog\u016F Google."
+   },
+   "4205329094859140439": {
+      "message": "am"
+   },
+   "4230101516585408149": {
+      "message": "Vytvo\u0159it novou pozn\u00E1mku"
+   },
+   "4253741616909644861": {
+      "message": "Hledan\u00E9 v\u00FDrazy"
+   },
+   "429840734875582508": {
+      "message": "..."
+   },
+   "4299690446455033653": {
+      "message": "Works"
+   },
+   "4314643310615423802": {
+      "message": "Byli jste odhl\u00E1\u0161eni."
+   },
+   "4318861667254318892": {
+      "message": "Videa Google"
+   },
+   "4319229296464464147": {
+      "message": "Datum p\u0159id\u00E1n\u00ED"
+   },
+   "4320831042030778": {
+      "message": "Zru\u0161it"
+   },
+   "4338991104991831337": {
+      "message": "Obr\u00E1zky"
+   },
+   "4339705658383891586": {
+      "message": "Barevn\u00E9"
+   },
+   "4372755508519489521": {
+      "message": "M\u0159\u00ED\u017Ekov\u00E9 zobrazen\u00ED"
+   },
+   "4395845663892873002": {
+      "message": "Home"
+   },
+   "4400961442969960519": {
+      "message": "P\u0159i ukl\u00E1d\u00E1n\u00ED p\u0159\u00EDlohy na Disk Google do\u0161lo k chyb\u011B."
+   },
+   "4439812492856303238": {
+      "message": "Omlouv\u00E1me se. P\u0159i zpracov\u00E1n\u00ED va\u0161eho v\u00FDb\u011Bru do\u0161lo k neo\u010Dek\u00E1van\u00E9 chyb\u011B. Zkuste to pros\u00EDm pozd\u011Bji."
+   },
+   "4473912481270012588": {
+      "message": "Ulo\u017Eeno na Disk \u2013 p\u0159esunout do:"
+   },
+   "4552045407215325033": {
+      "message": "V\u00FD\u0161e zadanou adresu videa nelze na\u010D\u00EDst. Ov\u011B\u0159te, zda je adresa spr\u00E1vn\u00E1 a zda se nach\u00E1z\u00ED na podporovan\u00E9m webu."
+   },
+   "4564682305303579317": {
+      "message": "Pokra\u010Dovat"
+   },
+   "456498742882714639": {
+      "message": "P\u0159esunout do:"
+   },
+   "4588500131398315347": {
+      "message": "Vytvo\u0159it kruh"
+   },
+   "4604402426271704651": {
+      "message": "\u017D\u00E1dn\u00E1 fotka"
+   },
+   "4630690108252818511": {
+      "message": "Nebyly nalezeny \u017E\u00E1dn\u00E9 obr\u00E1zky."
+   },
+   "4695897771458936174": {
+      "message": "Sd\u00EDlen\u00ED fotek z Disku Google na Google+"
+   },
+   "4748046231232264180": {
+      "message": "Formul\u00E1\u0159e Google"
+   },
+   "4767722428137216885": {
+      "message": "Zru\u0161it"
+   },
+   "477328789314249432": {
+      "message": "Vyhledat pozn\u00E1mky"
+   },
+   "4785794631061168971": {
+      "message": "P\u0159ipojit"
+   },
+   "4798897505978458661": {
+      "message": "Nebyla nalezena \u017E\u00E1dn\u00E1 videa."
+   },
+   "4806763987633034948": {
+      "message": "Podpis PKCS7"
+   },
+   "4888104357342241891": {
+      "message": "P\u0159ipomenut\u00ED"
+   },
+   "4889853674709731963": {
+      "message": "V\u0161echny pozn\u00E1mky ulo\u017Eeny offline"
+   },
+   "4901386320110714275": {
+      "message": "Heslo nen\u00ED spr\u00E1vn\u00E9. Zkuste to znovu."
+   },
+   "490372259452655427": {
+      "message": "Omlouv\u00E1me se, dokument je\u0161t\u011B nen\u00ED dostupn\u00FD pro prohl\u00ED\u017Een\u00ED."
+   },
+   "4926020998477695737": {
+      "message": "P\u0159epnout na slo\u017Eku $1\u200B"
+   },
+   "4943176738805484221": {
+      "message": "upravit"
+   },
+   "4956678140555659175": {
+      "message": "Backspace"
+   },
+   "4957674814179289955": {
+      "message": "P\u0159ej\u00EDt na dal\u0161\u00ED/p\u0159edchoz\u00ED polo\u017Eku seznamu"
+   },
+   "4998023803364239731": {
+      "message": "V\u00FDb\u011Br slo\u017Eky na Disku se nezda\u0159il."
+   },
+   "4998757387516632837": {
+      "message": "Zobrazen\u00E9 v\u00FDsledky je mo\u017En\u00E9 op\u011Btovn\u011B pou\u017E\u00EDvat s \u00FApravami."
+   },
+   "5023525794410110078": {
+      "message": "P\u0159id\u00E1n\u00ED textu k fotce"
+   },
+   "5055418092354683641": {
+      "message": "Patkov\u00E1"
+   },
+   "5096751700090310607": {
+      "message": "\u017D\u00E1dn\u00E9 fotky."
+   },
+   "509815948423424872": {
+      "message": "Navigace"
+   },
+   "5099245668405591445": {
+      "message": "Hledat"
+   },
+   "5124522868502261563": {
+      "message": "Tabulky"
+   },
+   "5129218019779162494": {
+      "message": "Dokument Google"
+   },
+   "5180989337128758117": {
+      "message": "lev\u00E1 z\u00E1vorka"
+   },
+   "5197718200713913936": {
+      "message": "C++"
+   },
+   "5204391636475413312": {
+      "message": "Ulo\u017Eit"
+   },
+   "5213974294317036409": {
+      "message": "{numPages,plural, =0{}=1{1 str\u00E1nka}few{# str\u00E1nky}other{# str\u00E1nek}}"
+   },
+   "5217641707432141671": {
+      "message": "Jejda! Do\u0161lo k chyb\u011B."
+   },
+   "5226470917948786938": {
+      "message": "Abecedn\u011B"
+   },
+   "5238003680997310998": {
+      "message": "V\u00EDce"
+   },
+   "5275493935807628890": {
+      "message": "Na t\u00E9to adrese nelze obr\u00E1zek naj\u00EDt."
+   },
+   "5288037028604092288": {
+      "message": "XPS"
+   },
+   "5299648222246616124": {
+      "message": "obr\u00E1cen\u00FD apostrof"
+   },
+   "5304869088141363028": {
+      "message": "Vybran\u00E9 fotky"
+   },
+   "5316658541831864803": {
+      "message": "Omlouv\u00E1me se. Zobrazen\u00ED tohoto typu dokumentu nen\u00ED podporov\u00E1no."
+   },
+   "5336801339221383042": {
+      "message": "JavaScript"
+   },
+   "5353129315502554762": {
+      "message": "Kask\u00E1dov\u00FD styl"
+   },
+   "5372160981898991853": {
+      "message": "Publisher"
+   },
+   "5394142149034044812": {
+      "message": "P\u0159ipojeno"
+   },
+   "5403830377590414208": {
+      "message": "B\u00EDl\u00E9"
+   },
+   "5408091115193390231": {
+      "message": "AutoCAD"
+   },
+   "5438481737351808090": {
+      "message": "Odpoledne ($1\u200B)"
+   },
+   "5438584181753813038": {
+      "message": "Otev\u0159\u00EDt ve v\u00FDchoz\u00ED aplikaci"
+   },
+   "5465323999933375616": {
+      "message": "Dos\u00E1hli jste limitu rychlosti p\u0159ipojen\u00ED pro prohl\u00ED\u017Een\u00ED nebo stahov\u00E1n\u00ED soubor\u016F, kter\u00E9 nejsou ve form\u00E1tu Dokument\u016F Google."
+   },
+   "5482872484546230111": {
+      "message": "Hledat knihy"
+   },
+   "5500117709595533163": {
+      "message": "Zadejte dotaz do pole v\u00FD\u0161e a vyhledejte elektronick\u00E9 knihy ve slu\u017Eb\u011B Knihy Google."
+   },
+   "5506081914878474195": {
+      "message": "Ulo\u017Eeno na Disk"
+   },
+   "5514516347328112388": {
+      "message": "M\u016F\u017Eete tak\u00E9 kliknout $2\u200Bsem$1\u200B a zkusit st\u00E1hnout p\u016Fvodn\u00ED dokument."
+   },
+   "5555182241047709329": {
+      "message": "Vyberte m\u00EDsto"
+   },
+   "5571842632470308750": {
+      "message": "V\u0161echny typy"
+   },
+   "5581253128331595228": {
+      "message": "N\u00E1zev"
+   },
+   "5598649706113950710": {
+      "message": "Editor"
+   },
+   "5598877389451818095": {
+      "message": "Otev\u0159\u00EDt pomoc\u00ED aplikace"
+   },
+   "5631086126416409232": {
+      "message": "Modr\u00E1"
+   },
+   "564165666160590723": {
+      "message": "Windows Media Player"
+   },
+   "5660422479531064559": {
+      "message": "\u017D\u00E1dn\u00E9 formul\u00E1\u0159e."
+   },
+   "5672358806532843305": {
+      "message": "Zobrazuje se $1\u200B."
+   },
+   "5675154446465700699": {
+      "message": "Soubory PDF"
+   },
+   "568072913338360182": {
+      "message": "HTML"
+   },
+   "5706242163161626046": {
+      "message": "Jsou podporov\u00E1ny tyto typy soubor\u016F: $1\u200B"
+   },
+   "5714240424645614611": {
+      "message": "Bal\u00ED\u010Dek Android"
+   },
+   "5728640851616538925": {
+      "message": "Zelen\u00E1"
+   },
+   "5744491383087191878": {
+      "message": "V\u00FD\u0161e zadan\u00E1 adresa obr\u00E1zku je neplatn\u00E1 nebo ji nelze na\u010D\u00EDst."
+   },
+   "5747728324987383020": {
+      "message": "Obli\u010Dej"
+   },
+   "5753428288354311204": {
+      "message": "Nahr\u00E1t dal\u0161\u00ED"
+   },
+   "575497620414830649": {
+      "message": " \u2013 p\u0159esunout do:"
+   },
+   "5774680835260150889": {
+      "message": "N\u00E1zev"
+   },
+   "5785010887521443923": {
+      "message": "Odebrat"
+   },
+   "5842536098490298653": {
+      "message": "Nebyla nalezena \u017E\u00E1dn\u00E1 p\u00EDsma."
+   },
+   "5877526626743756786": {
+      "message": "Zp\u011Btn\u00E1 vazba"
+   },
+   "5879988349590045594": {
+      "message": "K otev\u0159en\u00ED dokumentu $1\u200B mus\u00EDte zn\u00E1t heslo. Zadejte pros\u00EDm heslo."
+   },
+   "5971400924847413790": {
+      "message": "Nebo m\u016F\u017Eete zobrazit $2\u200Bprost\u00FD k\u00F3d HTML$1\u200B (automatick\u00E9 p\u0159esm\u011Brov\u00E1n\u00ED)."
+   },
+   "5975031149676029214": {
+      "message": "V\u0161ichni"
+   },
+   "5976369213680241300": {
+      "message": "Hledat obr\u00E1zky"
+   },
+   "5980081664136280513": {
+      "message": "Zelen\u00E9"
+   },
+   "5984398071085567332": {
+      "message": "Dynamick\u00E9 tabulky Google"
+   },
+   "60305871484579258": {
+      "message": "Alt"
+   },
+   "6043068172993241858": {
+      "message": "V tomto kruhu nikdo nen\u00ED."
+   },
+   "6044366909115009874": {
+      "message": "P\u0159ejmenov\u00E1n\u00ED se nezda\u0159ilo. Zkuste to pros\u00EDm znovu pozd\u011Bji."
+   },
+   "604883455412617728": {
+      "message": "Hledan\u00E9mu v\u00FDrazu neodpov\u00EDdaj\u00ED \u017E\u00E1dn\u00E9 kontakty."
+   },
+   "6064654062949366878": {
+      "message": "P\u0159ehr\u00E1t"
+   },
+   "6070475007374165567": {
+      "message": "Ukl\u00E1d\u00E1n\u00ED..."
+   },
+   "6083907478347891151": {
+      "message": "Typ"
+   },
+   "6105333058393639868": {
+      "message": "P\u0159i p\u0159esouv\u00E1n\u00ED p\u0159\u00EDlohy do vybran\u00E9 slo\u017Eky na Disku Google do\u0161lo k chyb\u011B."
+   },
+   "6112815042442423467": {
+      "message": "Vyhled\u00E1vac\u00EDmu dotazu \u2013 $3\u200B$2\u200B$1\u200B \u2013 neodpov\u00EDdaj\u00ED \u017E\u00E1dn\u00E9 pozn\u00E1mky."
+   },
+   "6113237889871930608": {
+      "message": "Pr\u00E1zdn\u00E1 pozn\u00E1mka"
+   },
+   "6122643025527543706": {
+      "message": "Ctrl"
+   },
+   "6125026684392468184": {
+      "message": "Tisk"
+   },
+   "6131822680770571276": {
+      "message": "PowerPoint"
+   },
+   "6148792237718135476": {
+      "message": "Povolit"
+   },
+   "6175043905327075444": {
+      "message": "D\u0159\u00EDve vybran\u00E9"
+   },
+   "6186290899408627510": {
+      "message": "Enter"
+   },
+   "6189891414154673003": {
+      "message": "Moje mapy"
+   },
+   "6203260615455347677": {
+      "message": "Numbers"
+   },
+   "6223207695466118454": {
+      "message": "YouTube"
+   },
+   "623118860067088424": {
+      "message": "Videa"
+   },
+   "6231401379881217113": {
+      "message": "Insert"
+   },
+   "6236247353949345852": {
+      "message": "Zapnout zvuk"
+   },
+   "6244042389101116716": {
+      "message": "N\u00E1hled nen\u00ED k dispozici. K dispozici jsou aplikace."
+   },
+   "6252254957484336670": {
+      "message": "P\u0159edchoz\u00ED"
+   },
+   "6253076263700695984": {
+      "message": "Chyba ov\u011B\u0159en\u00ED. Na\u010Dt\u011Bte pros\u00EDm znovu."
+   },
+   "6267063643272327592": {
+      "message": "Zkuste to pros\u00EDm znovu pozd\u011Bji."
+   },
+   "6290462446987396446": {
+      "message": "Textov\u00E9 dokumenty"
+   },
+   "6324768448533022780": {
+      "message": "$1\u200B $2\u200B"
+   },
+   "6333496730738019575": {
+      "message": "Na\u010D\u00EDt\u00E1n\u00ED..."
+   },
+   "634900089121611600": {
+      "message": "\u017D\u00E1dn\u00E1 videa."
+   },
+   "6362170008350775214": {
+      "message": "P\u0159ipomenut\u00ED v m\u00EDst\u011B $1\u200B"
+   },
+   "6373188185119337610": {
+      "message": "N\u00E1zev"
+   },
+   "6376739025584042564": {
+      "message": "O\u0159\u00EDznut\u00ED fotografie"
+   },
+   "6386587519843563719": {
+      "message": "Bin\u00E1rn\u00ED soubor"
+   },
+   "6436479735235889890": {
+      "message": "P\u0159ipomenut\u00ED $1\u200B v $2\u200B"
+   },
+   "6459405233858728718": {
+      "message": "Prezentace Google"
+   },
+   "6466736813846482957": {
+      "message": "P\u0159edchoz\u00ED"
+   },
+   "6479216014938929613": {
+      "message": "V noci ($1\u200B)"
+   },
+   "6488225756782357866": {
+      "message": "Zv\u00FDrazn\u011Bn\u00FD obr\u00E1zek byl nalezen Vyhled\u00E1v\u00E1n\u00EDm obr\u00E1zk\u016F Google na t\u00E9to str\u00E1nce:"
+   },
+   "6499224007473661191": {
+      "message": "Ukl\u00E1d\u00E1n\u00ED na Disk"
+   },
+   "6516256764288947999": {
+      "message": "Ozna\u010Den\u00ED lid\u00ED"
+   },
+   "6522917155620379865": {
+      "message": "St\u00E1hnout"
+   },
+   "6524849072392100692": {
+      "message": "Slo\u017Eka Disku Google"
+   },
+   "6570921376519753466": {
+      "message": "Nadpisov\u00E1"
+   },
+   "6582388186847564929": {
+      "message": "Smazat pozn\u00E1mku/seznam"
+   },
+   "6588176324871799870": {
+      "message": "Google Apps Script"
+   },
+   "6602430002978098812": {
+      "message": "Rukopisn\u00E1"
+   },
+   "6614046405230762587": {
+      "message": "Nebyly nalezeny \u017E\u00E1dn\u00E9 kontakty."
+   },
+   "6622304228074863427": {
+      "message": "Aplikace"
+   },
+   "6644861766016503644": {
+      "message": "Je nutn\u00E9 zadat heslo"
+   },
+   "6650837823238391202": {
+      "message": "Dal\u0161\u00ED"
+   },
+   "6656998321236273120": {
+      "message": "Textov\u00E9 dokumenty"
+   },
+   "666311703374681171": {
+      "message": "Obr\u00E1zky a videa"
+   },
+   "6666820082708870349": {
+      "message": "Odebrat"
+   },
+   "6707173584987026005": {
+      "message": "Dnes"
+   },
+   "6709984792949009238": {
+      "message": "Naposledy otev\u0159eno mnou"
+   },
+   "6741759391888465238": {
+      "message": "Ukl\u00E1d\u00E1n\u00ED na Disk \u2013 p\u0159esunout do:"
+   },
+   "6757218172402086688": {
+      "message": "Vyhledat pozn\u00E1mky..."
+   },
+   "6780628488957834429": {
+      "message": "Oran\u017Eov\u00E1"
+   },
+   "6784073265197389491": {
+      "message": "Dal\u0161\u00ED informace"
+   },
+   "6818286476757207074": {
+      "message": "Vyb\u00EDrejte pouze obr\u00E1zky, u kter\u00FDch jste si ov\u011B\u0159ili, \u017Ee jste opr\u00E1vn\u011Bni je pou\u017E\u00EDvat."
+   },
+   "682070933835616121": {
+      "message": "\u017D\u00E1dn\u00E9 tabulky."
+   },
+   "6822338149422461362": {
+      "message": "Disk Google"
+   },
+   "6893687445500687349": {
+      "message": "Str\u00E1nky"
+   },
+   "6905021988981026920": {
+      "message": "Vyhled\u00E1v\u00E1n\u00ED vide\u00ED"
+   },
+   "6926055840246960182": {
+      "message": "Zobrazit v\u0161echny polo\u017Eky"
+   },
+   "6929958461954697067": {
+      "message": "Fotky s v\u00E1mi"
+   },
+   "6940998537415516791": {
+      "message": "v"
+   },
+   "6962388230676571914": {
+      "message": "N\u00E1hled nen\u00ED k dispozici."
+   },
+   "6966117577694636785": {
+      "message": "Maxim\u00E1ln\u00ED velikost souboru: $1\u200B MB."
+   },
+   "6970167488058122005": {
+      "message": "autor nezn\u00E1m\u00FD"
+   },
+   "6976414863987386971": {
+      "message": "Formul\u00E1\u0159e"
+   },
+   "7004919150329996187": {
+      "message": "V tomto kruhu nebyli nalezeni \u017E\u00E1dn\u00ED odpov\u00EDdaj\u00EDc\u00ED lid\u00E9."
+   },
+   "7054631817922169541": {
+      "message": "Google Keep obsahuje neulo\u017Een\u00E9 zm\u011Bny. Chcete str\u00E1nku opustit a zm\u011Bny zahodit?"
+   },
+   "705833829394544221": {
+      "message": "Zobrazit na Disku"
+   },
+   "7084991134824194740": {
+      "message": "P\u0159ipomenout"
+   },
+   "7092062731478679314": {
+      "message": "Nebyly nalezeny \u017E\u00E1dn\u00E9 kruhy."
+   },
+   "7116394962547236971": {
+      "message": "Umo\u017Enit slu\u017Eb\u011B Google Keep zobrazovat ozn\u00E1men\u00ED?"
+   },
+   "7117183622067702162": {
+      "message": "D\u00EDky Disku Google u\u017E nikdy nebudete muset odeslat jedinou p\u0159\u00EDlohu e-mailem. Sta\u010D\u00ED poslat odkaz na soubor, kter\u00FD jste ulo\u017Eili na Disk Google. Ka\u017Ed\u00FD tak bude m\u00EDt automaticky p\u0159\u00EDstup k t\u00E9mu\u017E souboru ve stejn\u00E9 verzi."
+   },
+   "713754035716193665": {
+      "message": "Nov\u00FD seznam"
+   },
+   "7146242673022399081": {
+      "message": "Text"
+   },
+   "7151987668860086450": {
+      "message": "Vyhled\u00E1v\u00E1n\u00ED na webu"
+   },
+   "7161134329606048317": {
+      "message": "Zav\u0159\u00EDt"
+   },
+   "7177591028189992523": {
+      "message": "P\u0159esunout"
+   },
+   "7188024175807042621": {
+      "message": "Polo\u017Eka seznamu..."
+   },
+   "7188754206068648188": {
+      "message": "Data odd\u011Blen\u00E1 \u010D\u00E1rkami"
+   },
+   "7206429144039020706": {
+      "message": "Na\u010Dten\u00ED dal\u0161\u00EDch str\u00E1nek se nezda\u0159ilo."
+   },
+   "7225837680381806920": {
+      "message": "Ve\u010Der ($1\u200B)"
+   },
+   "722702934847795304": {
+      "message": "Project"
+   },
+   "7236199858216720905": {
+      "message": "Mapy"
+   },
+   "7257381023528410292": {
+      "message": "Smazat"
+   },
+   "7259352906118493156": {
+      "message": "\u017D\u00E1dn\u00E9 weby."
+   },
+   "7310311230493556740": {
+      "message": "Adresa URL"
+   },
+   "7326565093670055435": {
+      "message": "Navrhovan\u00E9 aplikace"
+   },
+   "7330303214598808380": {
+      "message": "\u017D\u00E1dn\u00E9 archivovan\u00E9 pozn\u00E1mky"
+   },
+   "7339696241980105410": {
+      "message": "Vybran\u00E9 video ji\u017E neexistuje. Je mo\u017En\u00E9, \u017Ee ho vlastn\u00EDk odstranil."
+   },
+   "734478884582426793": {
+      "message": "Komprimovan\u00FD soubor"
+   },
+   "7357017164339332230": {
+      "message": "Tyto obr\u00E1zky lze tak\u00E9 zobrazit a sd\u00EDlet ve $2\u200BWebov\u00FDch albech Picasa$1\u200B, bezplatn\u00E9 slu\u017Eb\u011B Googlu pro hostov\u00E1n\u00ED fotografi\u00ED."
+   },
+   "7364571366369083618": {
+      "message": "Video"
+   },
+   "7367958022583310325": {
+      "message": "Prezentace OpenOffice"
+   },
+   "7377239345926788722": {
+      "message": "Akce"
+   },
+   "7380785991026002613": {
+      "message": "Zobrazen\u00E9 v\u00FDsledky je mo\u017En\u00E9 op\u011Btovn\u011B pou\u017E\u00EDvat."
+   },
+   "7383706174467122149": {
+      "message": "Pozn\u00E1mka smaz\u00E1na"
+   },
+   "7393771571081973549": {
+      "message": "C"
+   },
+   "740507516967994591": {
+      "message": "Otev\u0159\u00EDt"
+   },
+   "7422452809590461532": {
+      "message": "\u010Cerven\u00E1"
+   },
+   "7426603384368095928": {
+      "message": "Na\u010Dt\u011Bte pros\u00EDm str\u00E1nku znovu, abyste se op\u011Bt p\u0159ihl\u00E1sili a mohli pokra\u010Dovat v pr\u00E1ci."
+   },
+   "7428490253130883654": {
+      "message": "Naj\u00EDt v dokumentu"
+   },
+   "7429084719905985261": {
+      "message": "Objective C"
+   },
+   "7432956605646331928": {
+      "message": "SQL"
+   },
+   "7451573821837395189": {
+      "message": "Polo\u017Eka byla p\u0159id\u00E1na na $2\u200Bv\u00E1\u0161 Disk$1\u200B."
+   },
+   "7488945223835574498": {
+      "message": "PostScript"
+   },
+   "7491217001453921549": {
+      "message": "V\u0161echny dokumenty"
+   },
+   "7492710087472140422": {
+      "message": "Dal\u0161\u00ED informace"
+   },
+   "7493919863870655172": {
+      "message": "Webov\u00E1 kamera"
+   },
+   "7500786109708143683": {
+      "message": "Zvuk byl smaz\u00E1n"
+   },
+   "7501027876827009022": {
+      "message": "Zobrazen\u00E9 v\u00FDsledky je mo\u017En\u00E9 op\u011Btovn\u011B pou\u017E\u00EDvat ke komer\u010Dn\u00EDm \u00FA\u010Del\u016Fm."
+   },
+   "754562894809764325": {
+      "message": "Otev\u0159\u00EDt pomoc\u00ED aplikace"
+   },
+   "7546994163355383999": {
+      "message": "V\u0161echny pozn\u00E1mky ulo\u017Eeny"
+   },
+   "7559208209275370228": {
+      "message": "Naposledy upraveno mnou"
+   },
+   "7561401550697263017": {
+      "message": "Na\u010D\u00EDt\u00E1 se $1\u200B."
+   },
+   "7561835096421626440": {
+      "message": "Zav\u0159\u00EDt vyhled\u00E1vac\u00ED li\u0161tu"
+   },
+   "7602870977118971161": {
+      "message": "Znovu na\u010D\u00EDst"
+   },
+   "7614241747607201251": {
+      "message": "P\u0159i zobrazov\u00E1n\u00ED polo\u017Eky $1\u200B do\u0161lo k chyb\u011B."
+   },
+   "7616903319374696418": {
+      "message": "Ulo\u017Eit na Disk"
+   },
+   "761925792744044896": {
+      "message": "Nastavit jako profilovou fotku"
+   },
+   "7621335927565458184": {
+      "message": "Pozn\u00E1mka..."
+   },
+   "7621429484880737652": {
+      "message": "Zav\u0159\u00EDt"
+   },
+   "7664490637734113846": {
+      "message": "P\u0159ipojit dal\u0161\u00ED aplikace"
+   },
+   "7692525489619342577": {
+      "message": "Zav\u0159\u00EDt"
+   },
+   "7715735412192018288": {
+      "message": "N\u00E1pov\u011Bda"
+   },
+   "7734578122414851725": {
+      "message": "PHP"
+   },
+   "7745005220197261896": {
+      "message": "Vyhled\u00E1v\u00E1n\u00ED knih"
+   },
+   "776065748745885880": {
+      "message": "Mezern\u00EDk"
+   },
+   "7770982082843341533": {
+      "message": "V t\u00E9to slo\u017Ece nejsou \u017E\u00E1dn\u00E9 polo\u017Eky."
+   },
+   "779472474101127362": {
+      "message": "Po\u0159\u00EDdit sn\u00EDmek"
+   },
+   "7820417126206702946": {
+      "message": "Zobrazen\u00E9 v\u00FDsledky jsou k dispozici pouze pro osobn\u00ED nebo komer\u010Dn\u00ED vyu\u017Eit\u00ED na Disku Google a nesm\u00ED b\u00FDt \u0161\u00ED\u0159eny ani prod\u00E1v\u00E1ny nez\u00E1visle."
+   },
+   "7822364282298323175": {
+      "message": "Seznam byl smaz\u00E1n"
+   },
+   "7830513726270865588": {
+      "message": "Kalend\u00E1\u0159"
+   },
+   "7841219948388691455": {
+      "message": "Dal\u0161\u00ED"
+   },
+   "7852396628465259068": {
+      "message": "Profilov\u00E1 fotka"
+   },
+   "7889351669453500220": {
+      "message": "Nepoda\u0159ilo se na\u010D\u00EDst dal\u0161\u00ED str\u00E1nky, zkou\u0161\u00EDme to znovu."
+   },
+   "7895643887742936844": {
+      "message": "st\u0159edn\u00EDk"
+   },
+   "7899833760457194273": {
+      "message": "Vyhled\u00E1v\u00E1n\u00ED obr\u00E1zk\u016F"
+   },
+   "7899913952063063825": {
+      "message": "Obr\u00E1zek byl smaz\u00E1n"
+   },
+   "7910518224461588465": {
+      "message": "\u017Dlut\u00E9"
+   },
+   "7914160041381019861": {
+      "message": "Omlouv\u00E1me se, n\u00E1hled nen\u00ED k dispozici."
+   },
+   "794202635102531782": {
+      "message": "Tento soubor lze otev\u0159\u00EDt nebo upravit pomoc\u00ED t\u011Bchto aplikac\u00ED"
+   },
+   "7945839336462142841": {
+      "message": "$1\u200B $2\u200B"
+   },
+   "7948723884189309228": {
+      "message": "Tento soubor nelze nahr\u00E1t."
+   },
+   "7953603850004320936": {
+      "message": "N\u00E1hled nen\u00ED k dispozici."
+   },
+   "7960528690514646841": {
+      "message": "{moreCount,plural, =0{unused plural form}=1{+ 1 dal\u0161\u00ED}few{+ {moreCount} dal\u0161\u00ED}other{+ {moreCount} dal\u0161\u00EDch}}"
+   },
+   "7962728344554282160": {
+      "message": "P\u0159ibl\u00ED\u017Eit"
+   },
+   "7973635145070803181": {
+      "message": "Nahr\u00E1v\u00E1n\u00ED fotek"
+   },
+   "7987180255015869513": {
+      "message": "Nebo sem vlo\u017Ete webovou adresu:"
+   },
+   "8016231262233952856": {
+      "message": "\u0160edozelen\u00E9"
+   },
+   "8023466614826324314": {
+      "message": "Fotky budou sd\u00EDleny se \u0161irok\u00FDm publikem."
+   },
+   "8043514121228710092": {
+      "message": "P\u0159idat obr\u00E1zek"
+   },
+   "8081927474846706026": {
+      "message": "\u017D\u00E1dn\u00E9 n\u00E1kresy."
+   },
+   "8087751641867346064": {
+      "message": "Dokument OpenOffice"
+   },
+   "809927418535001543": {
+      "message": "P\u0159idat pozn\u00E1mku"
+   },
+   "8100558294600077150": {
+      "message": "Vyhled\u00E1v\u00E1n\u00ED blog\u016F"
+   },
+   "8106780183458743723": {
+      "message": "Fotoalba"
+   },
+   "8112699352770418817": {
+      "message": "Nebyly nalezeny \u017E\u00E1dn\u00E9 knihy."
+   },
+   "8126700207146858047": {
+      "message": "P\u0159ejmenovat dokument"
+   },
+   "8172945196588870035": {
+      "message": "Ud\u00E1losti"
+   },
+   "8192378456655629049": {
+      "message": "Zpracov\u00E1n\u00ED videa..."
+   },
+   "8193991135666622583": {
+      "message": "Keep"
+   },
+   "821942580510564685": {
+      "message": "Pokud chcete dokument zobrazit, zadejte heslo"
+   },
+   "8265105267499407070": {
+      "message": "P\u0159ehr\u00E1t"
+   },
+   "8267458240960831780": {
+      "message": "Ov\u011B\u0159ov\u00E1n\u00ED..."
+   },
+   "8281141013543828574": {
+      "message": "Obr\u00E1zek Raw"
+   },
+   "8281678863271800533": {
+      "message": "Filtr obr\u00E1zk\u016F"
+   },
+   "8283103456188558313": {
+      "message": "Prezentace"
+   },
+   "829373983432978641": {
+      "message": "Tuto str\u00E1nku nelze na\u010D\u00EDst."
+   },
+   "8299047746309466797": {
+      "message": "Vstoupili jste do prohl\u00ED\u017Ee\u010De"
+   },
+   "8324195080917648153": {
+      "message": "Video se sem nevejde. Zv\u011Bt\u0161ete pros\u00EDm trochu okno prohl\u00ED\u017Ee\u010De."
+   },
+   "8337582740675387693": {
+      "message": "Java"
+   },
+   "8342684858400436871": {
+      "message": "Tabul\u00E1tor"
+   },
+   "834835979652266872": {
+      "message": "$1\u200B z $2\u200B"
+   },
+   "8379952094517631162": {
+      "message": "Ne"
+   },
+   "838638321086949683": {
+      "message": "Fotobanka"
+   },
+   "8402951605166442545": {
+      "message": "N\u00E1hled nen\u00ED k dispozici."
+   },
+   "8408756681779291666": {
+      "message": "Vyhledat pozn\u00E1mky"
+   },
+   "8412684147928483084": {
+      "message": "\u010Cern\u00E9"
+   },
+   "8435544675017330861": {
+      "message": "Va\u0161emu vyhled\u00E1v\u00E1n\u00ED neodpov\u00EDd\u00E1 \u017E\u00E1dn\u00E1 polo\u017Eka."
+   },
+   "8436817383042650304": {
+      "message": "Caps-Lock"
+   },
+   "8451184312655705174": {
+      "message": "Je-li va\u0161e adresa spr\u00E1vn\u00E1, uvid\u00EDte zde n\u00E1hled. Zobrazen\u00ED v\u011Bt\u0161\u00EDch obr\u00E1zk\u016F m\u016F\u017Ee n\u011Bkolik minut trvat."
+   },
+   "8467894483369467251": {
+      "message": "Flash"
+   },
+   "8506198918368329269": {
+      "message": "Zobrazen\u00E9 v\u00FDsledky je mo\u017En\u00E9 op\u011Btovn\u011B pou\u017E\u00EDvat s \u00FApravami ke komer\u010Dn\u00EDm \u00FA\u010Del\u016Fm."
+   },
+   "8571315158566081191": {
+      "message": "\u017D\u00E1dn\u00E9 tabulky."
+   },
+   "8586521576836841032": {
+      "message": "Je n\u00E1m l\u00EDto, ale do\u0161lo k chyb\u011B, zkou\u0161\u00EDme to znovu."
+   },
+   "8596257056433048992": {
+      "message": "V\u00EDt\u00E1 v\u00E1s"
+   },
+   "8621067185485606452": {
+      "message": "ECMAScript"
+   },
+   "863955692838281739": {
+      "message": "Zav\u0159\u00EDt"
+   },
+   "8660016472468563221": {
+      "message": "dvojte\u010Dka"
+   },
+   "8663507590720636709": {
+      "message": "$1\u200B +$2\u200B dal\u0161\u00ED(ch)"
+   },
+   "8666643061920113075": {
+      "message": "{VIEWER_GENDER,select, female{Sem vlo\u017Ete adresu URL obr\u00E1zku:}male{Sem vlo\u017Ete adresu URL obr\u00E1zku:}other{Sem vlo\u017Ete adresu URL obr\u00E1zku:}}"
+   },
+   "8674222789100049233": {
+      "message": "Zav\u0159\u00EDt"
+   },
+   "8677820266582418177": {
+      "message": "Je n\u00E1m l\u00EDto, ale do\u0161lo k chyb\u011B."
+   },
+   "8709611758728645225": {
+      "message": "Pg-Down"
+   },
+   "873811949056724870": {
+      "message": "Pozn\u00E1mka vytvo\u0159ena."
+   },
+   "8759520888087120926": {
+      "message": "\u017D\u00E1dn\u00E9 skripty."
+   },
+   "8775097441636640256": {
+      "message": "$2\u200B \u2013 $1\u200B"
+   },
+   "8780212274435014958": {
+      "message": "Kruhy"
+   },
+   "8781837301864053001": {
+      "message": "Form\u00E1tovan\u00FD text"
+   },
+   "8798805450232120940": {
+      "message": "Dal\u0161\u00ED p\u0159ipojen\u00E9 aplikace"
+   },
+   "8813101408630252335": {
+      "message": "$1\u200B s"
+   },
+   "8820281478062782578": {
+      "message": "Hledat"
+   },
+   "8822326207328431952": {
+      "message": "Nahr\u00E1v\u00E1n\u00ED obr\u00E1zk\u016F nen\u00ED k dispozici"
+   },
+   "8850238112725591771": {
+      "message": "zkratka $1\u200B"
+   },
+   "8884900765322249670": {
+      "message": "Seznamov\u00E9 zobrazen\u00ED"
+   },
+   "8889019648958415451": {
+      "message": "Nezn\u00E1m\u00FD soubor"
+   },
+   "8916237870980173557": {
+      "message": "P\u0159ipojov\u00E1n\u00ED..."
+   },
+   "8919660666733306860": {
+      "message": "Obr\u00E1zek"
+   },
+   "8979615310931291676": {
+      "message": "Upraveno $1\u200B"
+   },
+   "8986044948621891903": {
+      "message": "Zadejte dotaz do pole v\u00FD\u0161e a vyhledejte v\u00FDsledky na webu pomoc\u00ED Vyhled\u00E1v\u00E1n\u00ED Google."
+   },
+   "8989303741319824749": {
+      "message": "P\u0159edchoz\u00ED"
+   },
+   "901615442107785480": {
+      "message": "Archivovat pozn\u00E1mku/seznam"
+   },
+   "9028041601596584772": {
+      "message": "M\u00EDsto"
+   },
+   "9058308423774656474": {
+      "message": "Hangul Word Processor"
+   },
+   "9083935734710258396": {
+      "message": "Zam\u00EDtnout"
+   },
+   "911586799466052745": {
+      "message": "N\u00E1kres OpenOffice"
+   },
+   "9130962320402467249": {
+      "message": "Fotografie z fotobanky"
+   },
+   "9146716987301178362": {
+      "message": "Do\u0161lo k chyb\u011B. Opakujte pros\u00EDm na\u010Dten\u00ED."
+   },
+   "916773043895242978": {
+      "message": "V\u00FD\u0161e zadan\u00E1 adresa obr\u00E1zku je neplatn\u00E1 nebo ji nelze na\u010D\u00EDst. Zadejte pros\u00EDm spr\u00E1vnou adresu obr\u00E1zku."
+   },
+   "9173629944963872598": {
+      "message": "Nebyly nalezeny \u017E\u00E1dn\u00E9 ud\u00E1losti."
+   },
+   "9182500445937900938": {
+      "message": "Zav\u0159\u00EDt"
+   },
+   "9195941533351099011": {
+      "message": "Nahr\u00E1v\u00E1n\u00ED dokumentu $1\u200B z $2\u200B"
+   },
+   "9210545340040914022": {
+      "message": "$2\u200BNahr\u00E1n\u00ED obr\u00E1zku se nezda\u0159ilo.$1\u200B"
+   },
+   "9222674328467536367": {
+      "message": "$2\u200B \u2013 polo\u017Eek: $1\u200B"
+   },
+   "940276535015195877": {
+      "message": "\u017D\u00E1dn\u00E9 slo\u017Eky."
+   },
+   "947120104987708134": {
+      "message": "Z\u00E1sady ochrany soukrom\u00ED"
+   },
+   "951963820437151566": {
+      "message": "Weby Google"
+   },
+   "963611681085757795": {
+      "message": "Je n\u00E1m l\u00EDto, ale zobrazen\u00ED dokumentu nyn\u00ED nelze vygenerovat."
+   },
+   "964957642315661588": {
+      "message": "Str\u00E1nku se nepoda\u0159ilo na\u010D\u00EDst. Zkou\u0161\u00EDme to znovu..."
+   },
+   "96556988207614774": {
+      "message": "Kalend\u00E1\u0159e"
+   },
+   "973644925431533602": {
+      "message": "Smazat"
+   },
+   "974042541427403929": {
+      "message": "Modr\u00E9"
+   },
+   "975416671454410602": {
+      "message": "$2\u200BZkusit znovu$1\u200B"
+   },
+   "980395722421409371": {
+      "message": "Nebyly nalezeny \u017E\u00E1dn\u00E9 mapy."
+   },
+   "982187142411651629": {
+      "message": "Zav\u0159\u00EDt"
+   },
+   "985197728509875956": {
+      "message": "Chemick\u00FD model"
+   },
+   "996381410993745580": {
+      "message": "Photoshop"
+   },
+   "998727788921602971": {
+      "message": "Videa"
+   },
+   "appDesc": {
+      "description": "App description",
+      "message": "Rychle zaznamenejte sv\u00E9 n\u00E1pady a m\u011Bjte k nim snadn\u00FD p\u0159\u00EDstup odkudkoli"
+   },
+   "appName": {
+      "description": "App name.",
+      "message": "Google Keep"
+   }
+}

@@ -1,0 +1,26 @@
+{
+   "ext_description": {
+      "message": "Geef automatisch voorbeelden weer van pdf-bestanden, PowerPoint-presentaties en andere documenten met Google Documenten-viewer."
+   },
+   "ext_name": {
+      "message": "Docs PDF/PowerPoint Viewer (van Google)"
+   },
+   "google_docs_viewer": {
+      "message": "Google Documenten-viewer"
+   },
+   "locale": {
+      "message": "nl"
+   },
+   "open_in_incognito_window": {
+      "message": "Bestand weergeven in incognitovenster"
+   },
+   "open_in_new_tab": {
+      "message": "Bestand weergeven in nieuw tabblad"
+   },
+   "open_in_new_window": {
+      "message": "Bestand weergeven in nieuw venster"
+   },
+   "save_in_docs": {
+      "message": "Opslaan in Google Documenten"
+   }
+}

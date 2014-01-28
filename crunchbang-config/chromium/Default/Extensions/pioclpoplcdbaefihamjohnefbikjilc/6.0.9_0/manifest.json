@@ -1,0 +1,58 @@
+{
+   "author": "Evernote",
+   "background": {
+      "page": "background.html",
+      "persistent": true
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "images/web-clipper-19x19.png",
+         "38": "images/web-clipper-19x19@2x.png"
+      },
+      "default_title": "__MSG_BrowserActionTitle__"
+   },
+   "content_scripts": [ {
+      "css": [ "content/chrome_fonts.css", "css/contentpreview.css", "content/clip_result/iframe.css", "content/clip_result/variable_iframe.css", "content/feature_tooltip/feature_tooltip_check.css", "css/coordinator.css", "css/variable_coordinator.css" ],
+      "js": [ "third_party/port.js", "js/common/Browser.js", "js/common/Log.js", "js/GlobalUtils.js", "content/ContentVeil.js", "content/PageInfo.js", "content/gmail_clipper/GmailTypes.js", "content/gmail_clipper/GmailClipper.js", "content/Preview.js", "third_party/jquery-1.8.0.min.js", "content/makeJQueryAvailableForClearly.js", "content/HtmlSerializer.js", "content/Clipper.js", "content/simSearch.js", "js/common/UUID.js", "content/UINames.js", "content/ClipResultCoordinator.js", "content/feedback_form/FeedbackFormCoordinator.js", "clearly/js/detect.js", "clearly/js/next.js", "clearly/js/highlight.js", "clearly/js/reformat.js", "content/Coordinator.js", "content/init.js", "content/evernote.js", "content/feature_tooltip/feature_tooltip_check.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_start"
+   }, {
+      "js": [ "content/pdf_tooltip/PdfTooltipCheck.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_end"
+   }, {
+      "all_frames": true,
+      "js": [ "third_party/port.js", "js/common/Browser.js", "content/frame_loader.js", "third_party/jquery-1.8.0.min.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_end"
+   }, {
+      "js": [ "content/preparePage.js", "skitch/js/skitch.js", "content/scriptsInjected.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_idle"
+   }, {
+      "js": [ "third_party/port.js", "js/common/Browser.js", "js/common/Log.js", "js/GlobalUtils.js", "content/fleLoader.js" ],
+      "matches": [ "*://www.evernote.com/*webclipper/whats_new/*", "*://stage-corp.evernote.com/*webclipper/whats_new/*", "*://stage.evernote.com/*webclipper/whats_new/*", "*://evernote.com/*webclipper/whats_new/*", "*://www.yinxiang.com/webclipper/whats_new/*", "*://yinxiang.com/webclipper/whats_new/*", "*://stage-china.evernote.com/*webclipper/whats_new/*" ],
+      "run_at": "document_idle"
+   }, {
+      "css": [ "content/chrome_fonts.css", "content/fle/flemarkup.css" ],
+      "matches": [ "*://www.evernote.com/*webclipper/whats_new/*", "*://stage-corp.evernote.com/*webclipper/whats_new/*", "*://stage.evernote.com/*webclipper/whats_new/*", "*://evernote.com/*webclipper/whats_new/*", "*://www.yinxiang.com/webclipper/whats_new/*", "*://yinxiang.com/webclipper/whats_new/*", "*://stage-china.evernote.com/*webclipper/whats_new/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_ExtensionDescription__",
+   "icons": {
+      "128": "Icon.png",
+      "16": "images/icon-16x16.png",
+      "48": "images/web-clipper-48x48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDagHdvA7LfpgVcEBFjt6ADW0PMXRJpeSnRsjAJWdapZYbS2LAIMB5lftI0ZjGZyyH2obL2coYBgcULJkidtZ8YIX9yP5tbB7mh1RzHj2oNfXBlh2yzJm/4/QELGmHhOy3S6x/2102Zo+Q7AgBtPN5RPX1X2FJbasBT02O4DvvRcwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "12",
+   "name": "__MSG_ExtensionName__",
+   "options_page": "options.html",
+   "permissions": [ "unlimitedStorage", "contextMenus", "cookies", "tabs", "notifications", "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "6.0.9",
+   "web_accessible_resources": [ "clearly/css/base__newsprint.css", "clearly/css/base__night_owl.css", "clearly/css/base__notable.css", "clearly/css/style.css", "clearly/images/highlight--blue.png", "clearly/images/highlight--blue@2x.png", "clearly/images/highlight--cursor-dark.png", "clearly/images/highlight--cursor.png", "clearly/images/highlight--delete-sprite.png", "clearly/images/highlight--delete-sprite@2x.png", "clearly/images/highlight--yellow.png", "clearly/images/highlight--yellow@2x.png", "clearly/images/loading--background.png", "clearly/images/loading--background@2x.png", "clearly/images/loading--big.gif", "clearly/images/loading--big@2x.gif", "css/contentpreview.css", "css/daumsearchhelper.css", "css/evernote.css", "css/logviewer.css", "css/notelist.css", "css/notifications.css", "css/options.css", "css/popup.css", "css/searchhelper.css", "css/tabbedview.css", "css/yandexrusearchhelper.css", "fonts/caecilialtstd-roman-webfont.woff", "images/arrow-down.png", "images/arrow-down@2x.png", "images/arrow-down-black.png", "images/arrow-down-black@2x.png", "images/arrow-popover-top.png", "images/arrow-popover-top@2x.png", "images/arrow-up-light.png", "images/arrow-up-light@2x.png", "images/arrow-up.png", "images/arrow-up@2x.png", "images/arrow-right.png", "images/arrow-right@2x.png", "images/article.png", "images/article@2x.png", "images/article-active.png", "images/article-active@2x.png", "images/article-contract.png", "images/article-contract@2x.png", "images/article-expand.png", "images/article-expand@2x.png", "images/clearly.png", "images/clearly@2x.png", "images/clipper.png", "images/clipper@2x.png", "images/close.png", "images/close@2x.png", "images/close-hover.png", "images/close-hover@2x.png", "images/full_page.png", "images/full_page@2x.png", "images/full_page-active.png", "images/full_page-active@2x.png", "images/gmail_msg_selected.png", "images/gmail_msg_selected@2x.png", "images/go-arrow-icon.png", "images/go-arrow-icon@2x.png", "images/head_shoulders.png", "images/head_shoulders@2x.png", "images/icon_error.png", "images/icon_error@2x.png", "images/light_head_shoulders.png", "images/light_head_shoulders@2x.png", "images/light_notebook.png", "images/light_notebook@2x.png", "images/loading.gif", "images/loading@2x.gif", "images/new_feature_backdrop.png", "images/new_feature_backdrop@2x.png", "images/new_feature_dismiss.png", "images/new_feature_dismiss@2x.png", "images/new_feature_dismiss_dark.png", "images/new_feature_dismiss_dark@2x.png", "images/new_feature_dismiss_dark_hover.png", "images/new_feature_dismiss_dark_hover@2x.png", "images/nudge-icons/nudge-icon-arrow-down.png", "images/nudge-icons/nudge-icon-arrow-down@2x.png", "images/nudge-icons/nudge-icon-arrow-lr.png", "images/nudge-icons/nudge-icon-arrow-lr@2x.png", "images/nudge-icons/nudge-icon-arrow-up.png", "images/nudge-icons/nudge-icon-arrow-up@2x.png", "images/nudge-icons/nudge-icon-return.png", "images/nudge-icons/nudge-icon-return@2x.png", "images/pdf.png", "images/pdf@2x.png", "images/pdf-active.png", "images/pdf-active@2x.png", "images/pdf_close_btn.png", "images/pdf_close_btn@2x.png", "images/question-mark.png", "images/question-mark@2x.png", "images/searchLogo.png", "images/searchLogo@2x.png", "images/selection.png", "images/selection@2x.png", "images/selection-active.png", "images/selection-active@2x.png", "images/share.png", "images/share@2x.png", "images/share-press.png", "images/share-press@2x.png", "images/simsearch_close_btn_normal.png", "images/simsearch_close_btn_normal@2x.png", "images/simsearch_close_btn_pressed.png", "images/simsearch_close_btn_pressed@2x.png", "images/simsearch_header_repeat_x.png", "images/simsearch_header_repeat_x@2x.png", "images/simsearch_logo.png", "images/simsearch_logo@2x.png", "images/simsearch_logo_china.png", "images/simsearch_logo_china@2x.png", "images/simsearch_shadow.png", "images/simsearch_shadow@2x.png", "images/split-shadow.png", "images/split-shadow@2x.png", "images/sync.png", "images/sync@2x.png", "images/tooltip_arrow.png", "images/tooltip_arrow@2x.png", "images/url.png", "images/url@2x.png", "images/url-active.png", "images/url-active@2x.png", "images/warning.png", "images/warning@2x.png", "images/web-clipper-19x19.png", "images/web-clipper-19x19@2x.png", "images/web-clipper-sign-in-19x19.png", "images/web-clipper-sign-in-19x19@2x.png", "images/web-clipper-logo-china.png", "images/web-clipper-logo-china@2x.png", "images/web-clipper-logo.png", "images/web-clipper-logo@2x.png", "images/wc6-update-19x19.png", "images/wc6-update-19x19@2x.png", "js/common/Browser.js", "js/GlobalUtils.js", "content/auth_tools/login.css", "content/auth_tools/login.html", "content/auth_tools/login.js", "content/auth_tools/registration.css", "content/auth_tools/registration.html", "content/auth_tools/registration.js", "content/auth_tools/two_factor.css", "content/auth_tools/two_factor.html", "content/auth_tools/two_factor.js", "content/user_tools/user_tools.css", "content/user_tools/user_tools.html", "content/user_tools/user_tools.js", "content/clip_result/clip_result.css", "content/clip_result/clip_result.html", "content/clip_result/ClipResult.js", "content/clip_result/iframe.css", "content/clip_result/NoteSnippets.js", "content/clip_result/small_snippet.css", "content/feedback_form/feedback_form.html", "content/filing_tools/filing_tools.html", "content/filing_tools/filing_tools.js", "content/filing_tools/filing_tools.css", "content/global_tools/global_tools.html", "content/global_tools/global_tools.js", "content/global_tools/global_tools.css", "content/pdf_tooltip/pdf_tooltip.html", "content/pdf_tooltip/pdf_tooltip.css", "content/pdf_tooltip/pdf_tooltip.js", "content/release_notes/shortcuts.html", "content/share_tools/email_sharing.html", "content/share_tools/share_tools.html", "content/sim_search_results.css", "content/sim_search_results.js", "content/sim_search_results.html", "content/HtmlSerializer.js", "content/frame.js", "content/frame_loader.js", "options.html", "skitch/sounds/snap.wav", "third_party/jquery-1.8.0.min.js", "third_party/port.js", "content/fle/fle.html", "content/fle/fle.js", "content/fle/fle.css", "content/fle/flemarkup.css", "content/fle/flemarkup.html", "fonts/GothamSSm-Medium.otf", "fonts/GothamSSm-Bold.otf" ]
+}

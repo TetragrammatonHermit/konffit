@@ -1,0 +1,67 @@
+<html>
+<head>
+<meta name="title" content="<Add title for QR-Code Tag Image here>" />
+<link rel="stylesheet" type="text/css" href="main.css" />
+<script type="text/javascript" charset="utf-8" src="jquery-1.4.2.js"></script>
+<script language="javascript" src="utils.js"></script>
+<script type="text/javascript" charset="utf-8">
+
+function genericOnClick(info, tab) {
+	if (typeof info.linkUrl != "undefined")
+	{
+		debugPrint("info.linkUrl: " + info.linkUrl);
+		localStorage["cur_tab_url"] = info.linkUrl;
+	} else if (typeof info.selectionText != "undefined")
+	{
+		var re = new RegExp( '^(?:(?:\\+?1\\s*(?:[.-]\\s*)?)?(?:\\(\\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\\s*\\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\\s*(?:[.-]\\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\\s*(?:[.-]\\s*)?([0-9]{4})(?:\\s*(?:#|x\\.?|ext\\.?|extension)\\s*(\\d+))?$');
+
+		localStorage["cur_tab_url"] = info.selectionText;
+		debugPrint("info.selectionText: " + info.selectionText);	
+		if (localStorage["cur_tab_url"].match(re) && localStorage["disablePhonePrefix"] == "false") {
+			localStorage["cur_tab_url"] = 'tel:' + localStorage["cur_tab_url"];
+			debugPrint("info.linkUrl: " + localStorage["cur_tab_url"]);
+		}
+	} else if (typeof info.srcUrl != "undefined")
+	{
+		debugPrint("info.srcUrl: " + info.srcUrl);
+		localStorage["cur_tab_url"] = info.srcUrl;
+	} else if (typeof info.pageUrl  != "undefined")
+	{
+		debugPrint("info.pageUrl : " + info.pageUrl );
+		localStorage["cur_tab_url"] = info.pageUrl;
+	} else
+	{
+		debugPrint("ERROR:" + JSON.stringify(info));
+		return;
+	}
+	
+	
+	chrome.windows.getCurrent(function(winInstance) 
+	{ 
+		chrome.tabs.getSelected(winInstance.id, function(tabInstance) 
+		{
+			// function called from a context menu click, need for a custom dialog displaying QR code
+			var mainURL = chrome.extension.getURL('main.html');
+			chrome.tabs.create({"windowId": winInstance.id, "index": tabInstance.index+1, "url": mainURL, "selected": true});
+		});
+	});	
+	
+	
+	// function called from a context menu click, need for a custom dialog displaying QR code
+	//var mainURL = chrome.extension.getURL('main.html');
+	//chrome.windows.create({"url": mainURL, "type": 'popup'});
+}
+
+// Create a context menu item to so user can generate QR code for a link, selection or image or current
+// page url, in that order if user right clicked hovering several of the alternatives
+var titleStr = "Create QR-Code for this...";
+var id = chrome.contextMenus.create({"title": titleStr, "contexts": ["all"], "onclick": genericOnClick});
+
+</script>
+
+</head>
+
+<body>
+</body>
+</html>
+	

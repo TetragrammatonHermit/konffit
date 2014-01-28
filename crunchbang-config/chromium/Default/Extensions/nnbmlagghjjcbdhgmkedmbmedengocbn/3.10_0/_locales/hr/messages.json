@@ -1,0 +1,26 @@
+{
+   "ext_description": {
+      "message": "Automatski pregledi PDF-ova, PowerPoint prezentacija i drugih dokumenata u pregledniku Google dokumenata."
+   },
+   "ext_name": {
+      "message": "Docs PDF/PowerPoint Viewer (od Googlea)"
+   },
+   "google_docs_viewer": {
+      "message": "Preglednik Google dokumenata"
+   },
+   "locale": {
+      "message": "hr"
+   },
+   "open_in_incognito_window": {
+      "message": "Prika\u017Ei datoteku u anonimnom prozoru"
+   },
+   "open_in_new_tab": {
+      "message": "Prika\u017Ei datoteku na novoj kartici"
+   },
+   "open_in_new_window": {
+      "message": "Prika\u017Ei datoteku u novom prozoru"
+   },
+   "save_in_docs": {
+      "message": "Spremi u Google dokumente"
+   }
+}

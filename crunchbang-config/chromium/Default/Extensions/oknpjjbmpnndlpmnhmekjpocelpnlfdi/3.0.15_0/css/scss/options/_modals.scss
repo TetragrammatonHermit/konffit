@@ -1,0 +1,108 @@
+.overlay {
+-webkit-box-align: center;
+-webkit-box-orient: vertical;
+-webkit-box-pack: center;
+-webkit-transition: opacity .2s;
+background-color: rgba(255, 255, 255, 0.75);
+bottom: 0;
+display: -webkit-box;
+left: 0;
+overflow: auto;
+padding: 20px;
+position: fixed;
+right: 0;
+top: 0;
+z-index: 5;
+opacity: 1;
+
+&.transparent {
+opacity: 0;
+
+.page {
+-webkit-transform: scale(0.99) translateY(-20px);
+}
+}
+
+.page {
+-webkit-border-radius: 3px;
+-webkit-box-orient: vertical;
+-webkit-transition: 200ms -webkit-transform;
+background: white;
+box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);
+color: #333;
+display: -webkit-box;
+min-width: 400px;
+padding: 0;
+position: relative;
+overflow: hidden;
+
+@-webkit-keyframes pulse {
+0% {
+-webkit-transform: scale(1);
+}
+40% {
+-webkit-transform: scale(1.02);
+}
+60% {
+-webkit-transform: scale(1.02);
+}
+100% {
+-webkit-transform: scale(1);
+}
+}
+
+&.pulse {
+-webkit-animation-duration: 180ms;
+-webkit-animation-iteration-count: 1;
+-webkit-animation-name: pulse;
+-webkit-animation-timing-function: ease-in-out;
+}
+
+h1 {
+-webkit-padding-end: 24px;
+-webkit-user-select: none;
+color: #333;
+font-size: 120%;
+margin: 0;
+padding: 14px 17px 14px;
+text-shadow: white 0 1px 2px;
+}
+ul li {
+padding: 5px 0;
+}
+.content-area {
+-webkit-box-flex: 1;
+overflow: auto;
+padding: 6px 17px 6px;
+}
+.close-button {
+background-image: url('chrome://resources/images/x.png');
+background-position: center;
+background-repeat: no-repeat;
+height: 24px;
+position: absolute;
+right: 10px;
+top: 10px;
+width: 24px;
+}
+.action-area {
+-webkit-box-align: center;
+-webkit-box-orient: horizontal;
+-webkit-box-pack: end;
+display: -webkit-box;
+padding: 14px 17px;
+}
+.action-area-right {
+display: -webkit-box;
+}
+.button-strip {
+-webkit-box-orient: horizontal;
+display: -webkit-box;
+
+button {
+-webkit-margin-start: 10px;
+display: block;
+}
+}
+}
+}

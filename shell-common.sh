@@ -9,6 +9,10 @@ alias cl="clear"
 
 alias bitch,=sudo
 
+alias et='emacsclient -t'
+alias e='emacsclient -c'
+alias em='emacsclient -c -n'
+
 #CD's
 alias cdd="cd ~/Desktop/"
 alias cddo="cd ~/Documents/"
@@ -26,8 +30,8 @@ alias yaf="yo angular:filter"
 alias yad="yo angular:directive"
 
 # Google translate (https://github.com/soimort/google-translate-cli)
-alias te="trs {fi=en} " # To English
-alias tf="trs {en=fi} " # To Finnish
+#alias te="trs {fi=en} " # To English
+#alias tf="trs {en=fi} " # To Finnish
 
 # Paste last output
 zmodload -i zsh/parameter

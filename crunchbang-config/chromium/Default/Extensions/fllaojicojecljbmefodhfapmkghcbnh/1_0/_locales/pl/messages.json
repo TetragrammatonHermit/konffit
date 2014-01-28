@@ -1,0 +1,8 @@
+{
+   "gaoptout_description": {
+      "message": "Instruuje skrypt JavaScript (ga.js) us\u0142ugi Google Analytics, aby nie przysy\u0142a\u0142 informacji do us\u0142ugi Google Analytics."
+   },
+   "gaoptout_name": {
+      "message": "Dodatek Google Analytics Opt-out firmy Google"
+   }
+}

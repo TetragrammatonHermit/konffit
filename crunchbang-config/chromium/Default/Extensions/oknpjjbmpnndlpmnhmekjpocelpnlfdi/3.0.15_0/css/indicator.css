@@ -1,0 +1,414 @@
+/* line 14, scss/modules/_reset.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address,
+del, dfn, em, img, q,
+small, strike, strong, sub, sup,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 23, scss/modules/_reset.scss */
+sub {
+  font-size: 80%;
+  vertical-align: sub;
+}
+
+/* line 28, scss/modules/_reset.scss */
+sup {
+  font-size: 80%;
+  vertical-align: super;
+}
+
+/* line 33, scss/modules/_reset.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 38, scss/modules/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 42, scss/modules/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 46, scss/modules/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 50, scss/modules/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 56, scss/modules/_reset.scss */
+blockquote:before,
+blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 61, scss/modules/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 66, scss/modules/_reset.scss */
+i, em, mark {
+  font-style: italic;
+}
+
+/* line 71, scss/modules/_reset.scss */
+h1, h2, h3, h4, h5, h6,
+b, strong, mark {
+  font-weight: 600;
+}
+
+/* line 75, scss/modules/_reset.scss */
+.hidden {
+  display: none;
+}
+
+/* line 79, scss/modules/_reset.scss */
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+
+/* line 1, scss/modules/_btns.scss */
+.cancel, .confirm {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0 inset;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  padding: 0.6em 0 0.5em 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+/* line 19, scss/modules/_btns.scss */
+.working.cancel, .working.confirm {
+  cursor: default;
+}
+
+/* line 24, scss/modules/_btns.scss */
+.cancel {
+  background-color: #e3e3e3;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #f6f6f6), color-stop(100%, #e0e0e0));
+  background: -webkit-linear-gradient(#f6f6f6 50%, #e0e0e0);
+  background: -moz-linear-gradient(#f6f6f6 50%, #e0e0e0);
+  background: -o-linear-gradient(#f6f6f6 50%, #e0e0e0);
+  background: linear-gradient(#f6f6f6 50%, #e0e0e0);
+  border-color: #c9c9c9;
+  box-shadow: white 0 1px 0 inset;
+  color: #353535;
+}
+/* line 33, scss/modules/_btns.scss */
+.cancel:hover, .cancel:focus {
+  background-color: #dbdbdb;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #f1f1f1), color-stop(100%, #dbdbdb));
+  background: -webkit-linear-gradient(#f1f1f1 50%, #dbdbdb);
+  background: -moz-linear-gradient(#f1f1f1 50%, #dbdbdb);
+  background: -o-linear-gradient(#f1f1f1 50%, #dbdbdb);
+  background: linear-gradient(#f1f1f1 50%, #dbdbdb);
+  border-color: #c4c4c4;
+}
+/* line 39, scss/modules/_btns.scss */
+.cancel:focus {
+  box-shadow: 0 0 2px rgba(0, 209, 248, 0.7);
+  outline: none;
+}
+/* line 45, scss/modules/_btns.scss */
+.cancel:active, .working.cancel {
+  background-color: #d1d1d1;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dbdbdb), color-stop(50%, #eeeeee));
+  background: -webkit-linear-gradient(#dbdbdb, #eeeeee 50%);
+  background: -moz-linear-gradient(#dbdbdb, #eeeeee 50%);
+  background: -o-linear-gradient(#dbdbdb, #eeeeee 50%);
+  background: linear-gradient(#dbdbdb, #eeeeee 50%);
+}
+
+/* line 52, scss/modules/_btns.scss */
+.confirm {
+  background-color: #618313;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #748313), color-stop(100%, #5d6d0c));
+  background: -webkit-linear-gradient(#748313 50%, #5d6d0c);
+  background: -moz-linear-gradient(#748313 50%, #5d6d0c);
+  background: -o-linear-gradient(#748313 50%, #5d6d0c);
+  background: linear-gradient(#748313 50%, #5d6d0c);
+  border-color: #41680a;
+  box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0 inset;
+  color: #fbfbfa;
+}
+/* line 62, scss/modules/_btns.scss */
+.confirm:hover, .confirm:focus {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #707f12), color-stop(100%, #55640b));
+  background: -webkit-linear-gradient(#707f12 50%, #55640b);
+  background: -moz-linear-gradient(#707f12 50%, #55640b);
+  background: -o-linear-gradient(#707f12 50%, #55640b);
+  background: linear-gradient(#707f12 50%, #55640b);
+}
+/* line 69, scss/modules/_btns.scss */
+.confirm:active, .working.confirm {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5d6d0c), color-stop(40%, #707f12));
+  background: -webkit-linear-gradient(#5d6d0c, #707f12 40%);
+  background: -moz-linear-gradient(#5d6d0c, #707f12 40%);
+  background: -o-linear-gradient(#5d6d0c, #707f12 40%);
+  background: linear-gradient(#5d6d0c, #707f12 40%);
+}
+
+/* line 1, scss/indicator/_general.scss */
+body {
+  font-family: Palatino, Georgia, "Times New Roman", serif;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+/* line 11, scss/indicator/_general.scss */
+.indicator {
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.8), 0 3px 5px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  border-top: 0;
+  border-radius: 0 0 6px 6px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #f1f1f1;
+  height: 110px;
+  margin: 0 auto;
+  opacity: 1;
+  position: relative;
+  top: 0;
+  -webkit-transition-property: top, width, height;
+  -moz-transition-property: top, width, height;
+  -o-transition-property: top, width, height;
+  transition-property: top, width, height;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  width: 140px;
+}
+/* line 28, scss/indicator/_general.scss */
+.indicator.hidden {
+  display: block;
+  top: -10em;
+}
+/* line 34, scss/indicator/_general.scss */
+.indicator[data-action=rootUrlWarning], .indicator[data-action=error] {
+  height: 260px;
+  width: 310px;
+}
+/* line 38, scss/indicator/_general.scss */
+.indicator[data-action=rootUrlWarning].hidden, .indicator[data-action=error].hidden {
+  top: -18em;
+}
+/* line 43, scss/indicator/_general.scss */
+.indicator > div:not(.loader) {
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  opacity: 0;
+  padding-top: 0.8em;
+  position: absolute;
+  top: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  width: 100%;
+  z-index: 1;
+}
+/* line 57, scss/indicator/_general.scss */
+.indicator .blacklist-error {
+  padding-top: 1.6em;
+}
+/* line 61, scss/indicator/_general.scss */
+.indicator .timeout-error {
+  padding-top: 0.7em;
+}
+/* line 69, scss/indicator/_general.scss */
+.indicator[data-action=readNow] .read-now, .indicator[data-action=readLater] .read-later, .indicator[data-action=sendToKindle] .send-to-kindle, .indicator[data-action=rootUrlWarning] .root-url, .indicator[data-action=error] .error-msg {
+  opacity: 1;
+  z-index: 2;
+}
+/* line 81, scss/indicator/_general.scss */
+.indicator.ready .working, .indicator.ready .loader, .indicator[data-action=error] .working, .indicator[data-action=error] .loader, .indicator[data-action=rootUrlWarning] .loader,
+.indicator .ready,
+.indicator .blacklist-error,
+.indicator .timeout-error {
+  display: none;
+}
+/* line 86, scss/indicator/_general.scss */
+.indicator[data-status=blacklisted] .blacklist-error {
+  display: block;
+  z-index: 10;
+}
+/* line 91, scss/indicator/_general.scss */
+.indicator[data-status=blacklisted] div.standard-error {
+  display: none;
+  z-index: 1;
+}
+/* line 96, scss/indicator/_general.scss */
+.indicator[data-status=blacklisted] .timeout-error {
+  display: none;
+  z-index: 2;
+}
+/* line 103, scss/indicator/_general.scss */
+.indicator[data-status=timeout] .timeout-error {
+  display: block;
+  z-index: 10;
+}
+/* line 108, scss/indicator/_general.scss */
+.indicator[data-status=timeout] div.standard-error {
+  display: none;
+  z-index: 1;
+}
+/* line 113, scss/indicator/_general.scss */
+.indicator[data-status=timeout] .blacklist-error {
+  display: none;
+  z-index: 2;
+}
+/* line 120, scss/indicator/_general.scss */
+.indicator.ready .ready {
+  display: block;
+}
+/* line 124, scss/indicator/_general.scss */
+.indicator h1 {
+  background: transparent url('../images/indicator-couch@2x.png') no-repeat center top;
+  background-size: 70px 52px;
+  font-size: 0.9em;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  line-height: 1.3;
+  padding: 60px 0.1em 0 0.1em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 black;
+}
+/* line 136, scss/indicator/_general.scss */
+.indicator p {
+  color: #e6e6e6;
+  font-size: 0.9em;
+  line-height: 1.5;
+  padding: 0.5em 0;
+}
+
+/* line 144, scss/indicator/_general.scss */
+.loader {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 2px;
+  bottom: 6px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  height: 3px;
+  left: 6px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: absolute;
+  width: 126px;
+}
+/* line 156, scss/indicator/_general.scss */
+.loader b {
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(235, 235, 235, 0)), color-stop(100%, #ebebeb));
+  background: -webkit-linear-gradient(left, rgba(235, 235, 235, 0), #ebebeb);
+  background: -moz-linear-gradient(left, rgba(235, 235, 235, 0), #ebebeb);
+  background: -o-linear-gradient(left, rgba(235, 235, 235, 0), #ebebeb);
+  background: linear-gradient(left, rgba(235, 235, 235, 0), #ebebeb);
+  border-radius: 6px;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.4);
+  display: block;
+  left: -120%;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+/* line 167, scss/indicator/_general.scss */
+.loader.animate b {
+  -webkit-animation: loader 1.1s linear infinite;
+  animation: loader 1s infinite;
+}
+
+@-webkit-keyframes loader {
+  /* line 174, scss/indicator/_general.scss */
+  to {
+    left: 120%;
+  }
+}
+
+@keyframes loader {
+  /* line 174, scss/indicator/_general.scss */
+  to {
+    left: 120%;
+  }
+}
+
+/* line 188, scss/indicator/_general.scss */
+.root-url,
+.error-msg {
+  padding: 0.9em;
+}
+
+/* line 194, scss/indicator/_general.scss */
+.root-url h1,
+.error-msg h1 {
+  border-bottom: 1px solid rgba(241, 241, 241, 0.4);
+  margin-bottom: 0.4em;
+  padding-bottom: 0.5em;
+}
+
+/* line 201, scss/indicator/_general.scss */
+.controls {
+  text-align: center;
+}
+/* line 204, scss/indicator/_general.scss */
+.controls button {
+  border: 0;
+  display: inline-block;
+  font-family: Palatino, Georgia, "Times New Roman", serif;
+  font-size: 0.8em;
+}
+
+/* line 212, scss/indicator/_general.scss */
+.confirm {
+  width: 70%;
+}
+
+/* line 217, scss/indicator/_general.scss */
+.cancel {
+  width: 28%;
+}

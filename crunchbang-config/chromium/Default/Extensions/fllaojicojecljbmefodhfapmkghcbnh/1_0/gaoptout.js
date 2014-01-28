@@ -1,0 +1,1 @@
+/* Copyright 2010 Google Inc. All Rights Reserved. http://tools.google.com/dlpage/gaoptout/intl/en/eula_text.html */ (function(){var a='window["_gaUserPrefs"] = { ioo : function() { return true; } }',b=document.createElement("script");b.type="text/javascript";b.innerText=a;document.documentElement.insertBefore(b);})()

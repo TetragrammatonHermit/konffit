@@ -1,0 +1,7 @@
+.content-container {
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #e7e7e7;
+    @include box-sizing("border-box");
+    position: relative;
+}

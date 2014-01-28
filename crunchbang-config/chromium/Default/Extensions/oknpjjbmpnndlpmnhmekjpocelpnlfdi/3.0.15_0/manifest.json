@@ -1,0 +1,34 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "js/libs/jquery/jquery-1.9.1.js", "js/libs/rdb/rdb.js", "js/event.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "images/extension-icons/19.png",
+         "38": "images/extension-icons/38.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "Read comfortably"
+   },
+   "content_scripts": [ {
+      "js": [ "js/libs/keanu/keanu-0.3.js", "js/content.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "Readability is a web and mobile app that zaps clutter and saves web articles in a comfortable reading view.",
+   "icons": {
+      "128": "images/extension-icons/128.png",
+      "16": "images/extension-icons/16.png",
+      "32": "images/extension-icons/32.png",
+      "48": "images/extension-icons/48.png",
+      "96": "images/extension-icons/96.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDZXKRdTKIIuqK1YTXTSQiVWDH9sMBdrEK4cPVpiDNZV0CpX8Mi8zgM9sZ32sB9LDEwtBQKu1rNxA+9X0whOKIHg6UyvtBOMTmhGrX9thkle5+qXW3FEWYy3jSKk0PO9j9TrUjGZXgP+nndG/vYd+X9Nz99BAcZaG8YXaD3EI0AfQIDAQAB",
+   "manifest_version": 2,
+   "name": "Readability",
+   "options_page": "options.html",
+   "permissions": [ "tabs", "contextMenus", "storage", "cookies", "http://*/*", "https://*/*", "http://*.readability.com/", "https://*.readability.com/", "webRequest", "webRequestBlocking" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.0.15",
+   "web_accessible_resources": [ "popup.html", "indicator.html" ]
+}

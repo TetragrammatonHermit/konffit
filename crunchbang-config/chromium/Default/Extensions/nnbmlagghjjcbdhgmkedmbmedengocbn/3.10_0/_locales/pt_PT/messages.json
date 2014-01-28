@@ -1,0 +1,26 @@
+{
+   "ext_description": {
+      "message": "Efetua automaticamente a pr\u00E9-visualiza\u00E7\u00E3o de ficheiros em pdf, apresenta\u00E7\u00F5es em PowerPoint e outros documentos no Visualizador do Google Docs."
+   },
+   "ext_name": {
+      "message": "Docs PDF/PowerPoint Viewer (do Google)"
+   },
+   "google_docs_viewer": {
+      "message": "Visualizador do Google Docs"
+   },
+   "locale": {
+      "message": "pt-PT"
+   },
+   "open_in_incognito_window": {
+      "message": "Ver Ficheiro numa Janela de Navega\u00E7\u00E3o An\u00F3nima"
+   },
+   "open_in_new_tab": {
+      "message": "Ver Ficheiro num Novo Separador"
+   },
+   "open_in_new_window": {
+      "message": "Ver Ficheiro numa Nova Janela"
+   },
+   "save_in_docs": {
+      "message": "Guardar no Google Docs"
+   }
+}

@@ -1,0 +1,275 @@
+#urlHeader, #url, #shareButtons, #linkSwitcher {
+  display: none;
+}
+body.doneSharing #urlHeader, body.doneSharing #url, body.doneSharing #shareButtons {
+  display: block;
+}
+body.doneSharing.urlCopied #copiedConfirmation {
+  display: block;
+}
+body.dualLinks #linkSwitcher {
+  display: inline-block;
+}
+body.doneSharing #status, body.doneSharing #title {
+  display: none;
+}
+body.error #errorTitle, body.error #errorDetails, body.error #upgrade {
+  display: block;
+}
+body.error #status, body.error #title, body.error #urlHeader, body.error #url,
+body.error #copiedConfirmation, body.error #shareButtons, body.error #linkSwitcher {
+  display: none;
+}
+body.nearQuota #dismissMessage {
+  display: inline-block;
+}
+body.nearQuota #upgrade {
+  display: inline-block;
+  float: right;
+}
+body.error.cannotUpgrade #upgrade {
+  display: none;
+}
+body.error.cannotUpgrade #dismissDialog {
+  display: block;
+}
+
+#main {
+  padding: 18px;
+  width: 254px;
+}
+
+#status {
+  font-family: "GothamBold", Helvetica, Arial, sans-serif;
+  margin-bottom: 8px;
+  text-align: center;
+}
+#status span {
+  display: inline-block;
+  vertical-align: middle;
+}
+#status .icon {
+  background-image: url(../../images/sync.gif);
+  background-size: 20px 20px;
+  height: 20px;
+  width: 20px;
+}
+
+#title {
+  background-image: url(../../images/title.png);
+  background-size: 15px 15px;
+  font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+  line-height: 16px;
+  min-height: 16px;
+  max-height: 32px;
+  overflow: hidden;
+  padding-left: 29px;
+  position: relative;
+  word-break: break-word;
+}
+#title.overflow:after {
+  bottom: 0;
+  content: "...";
+  position: absolute;
+  right: 0;
+}
+
+/* done saving and sharing note */
+#urlHeader {
+  font-family: "GothamBold", Helvetica, Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+#url {
+  background-color: transparent;
+  border: 1px solid #C0C7CC;
+  border-radius: 3px;
+  font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+  height: 24px;
+  margin-bottom: 12px;
+  outline: none;
+  padding: 0 7px;
+  width: 100%;
+}
+
+.button {
+  border: 1px solid #26B064;
+  border-radius: 3px;
+  color: #26B064;
+  cursor: pointer;
+  display: block;
+  font-family: "GothamBold", Helvetica, Arial, sans-serif;
+  line-height: 24px;
+  padding: 0 10px;
+}
+.button:hover, .button:active {
+  background-color: #26B064;
+  color: white;
+}
+
+#linkSwitcher {
+  background-color: #6D7880;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  font-family: "GothamBold", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 24px;
+  margin-bottom: 6px;
+  padding: 0 12px;
+}
+
+#copiedConfirmation {
+  background-image: url(../../images/url-copied.png);
+  background-position: 0 50%;
+  background-size: 13px 11px;
+  display: none;
+  font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+  line-height: 26px;
+  margin-bottom: 16px;
+  padding-left: 20px;
+}
+
+.shareButton {
+  cursor: pointer;
+  display: inline-block;
+}
+#facebook {
+  background-image: url(../../images/facebook.png);
+  background-size: 8px 15px;
+  height: 15px;
+  width: 23px;
+}
+#twitter {
+  background-image: url(../../images/twitter.png);
+  background-size: 14px 12px;
+  height: 12px;
+  width: 29px;
+}
+body.china #facebook, body.china #twitter {
+  display: none;
+}
+#weibo {
+  background-image: url(../../images/weibo.png);
+  background-size: 20px 16px;
+  display: none;
+  height: 16px;
+  margin-right: 13px;
+  width: 20px;
+}
+body.china #weibo {
+  display: inline-block;
+}
+#linkedin {
+  background-image: url(../../images/linkedin.png);
+  background-size: 13px 13px;
+  height: 13px;
+  width: 28px;
+}
+#email {
+  background-image: url(../../images/email.png);
+  background-size: 16px 10px;
+  height: 10px;
+  position: relative;
+  width: 16px;
+}
+#email.error:before, #email.error:after {
+  position: absolute;
+}
+#email.error:before {
+  background-color: #6D7880;
+  border: 1px solid #FAFAFA;
+  border-radius: 2px;
+  bottom: 18px;
+  box-shadow: 0 3px 3px 0 rgba(25, 31, 36, 0.3);
+  color: #FAFAFA;
+  content: attr(data-error);
+  font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+  left: -71px;
+  padding: 3px 6px;
+  width: 142px;
+}
+#email.error:after {
+  background-image: url(../../images/sharing_error_arrow.png);
+  background-size: 12px 6px;
+  bottom: 13px;
+  content: "";
+  height: 6px;
+  left: 2px;
+  width: 12px;
+}
+
+#errorTitle, #errorDetails, #upgrade {
+  display: none;
+}
+#errorTitle, #upgrade {
+  font-family: "GothamBold", Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+#errorTitle {
+  margin-bottom: 15px;
+}
+#errorTitle span {
+  line-height: 16px;
+  position: relative;
+}
+#errorTitle span:before {
+  background-image: url(../../images/error-clip.png);
+  background-size: 16px 16px;
+  content: "";
+  height: 16px;
+  left: -24px;
+  position: absolute;
+  width: 16px;
+}
+#errorDetails {
+  font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+  margin-bottom: 15px;
+}
+#dismissMessage {
+  border: 1px solid #6D7880;
+  color: #6D7880;
+  display: none;
+}
+#dismissMessage:hover, #dismissMessage:active {
+  background-color: #6D7880;
+  color: white;
+}
+#dismissDialog {
+  display: none;
+  text-align: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) {
+  #status .icon {
+    background-image: url(../../images/sync@2x.gif);
+  }
+  #title {
+    background-image: url(../../images/title@2x.png);
+  }
+  #copiedConfirmation {
+    background-image: url(../../images/url-copied@2x.png);
+  }
+  #facebook {
+    background-image: url(../../images/facebook@2x.png);
+  }
+  #twitter {
+    background-image: url(../../images/twitter@2x.png);
+  }
+  #weibo {
+    background-image: url(../../images/weibo@2x.png);
+  }
+  #linkedin {
+    background-image: url(../../images/linkedin@2x.png);
+  }
+  #email {
+    background-image: url(../../images/email@2x.png);
+  }
+  #email.error:after {
+    background-image: url(../../images/sharing_error_arrow@2x.png);
+  }
+  #errorTitle span:before {
+    background-image: url(../../images/error-clip@2x.png);
+  }
+}

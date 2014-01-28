@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css"></link>
+    <link rel="stylesheet" type="text/css" href="small_snippet.css"></link>
+    <link rel="stylesheet" type="text/css" href="date_picker.css"></link>
+    <link rel="stylesheet" type="text/css" href="clip_result.css"></link>
+    <script type="text/javascript" src="../../third_party/port.js"></script>
+    <script type="text/javascript" src="../../js/opera.js"></script>
+    <script type="text/javascript" src="../../js/yandex.js"></script>
+    <script type="text/javascript" src="../../js/common/Browser.js"></script>
+    <script type="text/javascript" src="../../js/GlobalUtils.js"></script>
+    <script src="../../js/common/Log.js" type="text/javascript"></script>
+    <script type="text/javascript" src="NoteSnippets.js"></script>
+    <script type="text/javascript" src="DatePicker.js"></script>
+    <script type="text/javascript" src="../UINames.js"></script>
+    <script type="text/javascript" src="../MessagePortPrep.js"></script>
+    <script type="text/javascript" src="ClipResult.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <div id="icon"></div>
+        <div id="reminders"></div>
+        <div id="remindersSetter">
+          <div id="noDate">
+            <div message="reminderAdded" class="reminderHeader"></div>
+            <div id="addDate" message="addDate" class="reminderButton"></div>
+          </div>
+          <div id="hasDate">
+            <div message="notifyMe" class="reminderHeader"></div>
+            <div id="tomorrow" message="tomorrow" class="reminderButton"></div>
+            <div id="nextWeek" message="nextWeek" class="reminderButton"></div>
+            <div id="date"></div>
+            <div id="datePicker"></div>
+          </div>
+        </div>
+        <div id="text" message="contentclipper_clipping_no_title"></div>
+      </div>
+      <div id="edit" message="openInEvernote"></div><!--
+      --><div id="notebook"></div>
+      <div id="smart">
+        <div id="tabs">
+          <div class="tab" message="relatedNotes" id="relatedNotes"></div><!--
+          --><div class="tab" id="sameSiteNotes"></div><!--
+          --><div class="tab" message="tips" id="tips"></div>
+        </div>
+        <div id="smartPanel" class="pinch">
+          <div id="relatedNotesContainer"></div><!--
+          --><div id="sameSiteNotesContainer"></div><!--
+          --><div id="tipsContainer">
+            <div id="ratingsPrompt">
+              <div class="tipLogo" message="ratingPromptHeader"></div>
+              <div class="tipDetails" message="ratingPromptBody"></div>
+              <div class="tipButtons">
+                <a class="tipButton" message="rateNow" target="_blank" id="rateNow" href="https://chrome.google.com/webstore/detail/evernote-web-clipper/pioclpoplcdbaefihamjohnefbikjilc/reviews"></a>
+                <div>
+                  <div class="tipLink" message="sendFeedback" id="sendFeedback"></div>
+                  <div class="tipLink" message="noThanks" id="closeRatingsPrompt"></div>
+                </div>
+              </div>
+            </div>
+            <div id="referralTip">
+              <div class="tipLogo" message="referralTipHeader"></div>
+              <div class="tipDetails" message="referralTipBody"></div>
+              <div class="tipButtons">
+                <a class="tipButton" message="referralTipCTA" target="_blank" id="referralCTA"></a>
+              </div>
+            </div>
+            <div id="nearQuotaTip">
+              <div class="tipLogo" message="nearQuota"></div>
+              <div class="tipDetails" message="foodTip"></div>
+              <div class="tipButtons">
+                <div class="tipButton upgradable nearQuota"></div>
+              </div>
+            </div>
+            <div id="skitchTip">
+              <div class="tipLogo"></div>
+              <div class="tipDetails" message="skitchTip"></div>
+              <div class="tipButtons">
+                <a class="tipButton" message="getSkitch" target="_blank"></a>
+              </div>
+            </div>
+            <div id="foodTip">
+              <div class="tipLogo"></div>
+              <div class="tipDetails" message="foodTip"></div>
+              <div class="tipButtons">
+                <a id="iosFood" class="tipButton" message="foodiOS" target="_blank" href="https://itunes.apple.com/us/app/evernote-food/id481893372?mt=8"></a>
+                <a id="androidFood" class="tipButton" message="foodAndroid" target="_blank" href="https://play.google.com/store/apps/details?id=com.evernote.food&hl=en"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="close" message="Close"></div>
+      <!-- Error states -->
+      <div id="errorTitle"></div>
+      <div id="errorDetails"></div>
+      <div id="errorButton"></div>
+    </div>
+  </body>
+</html>

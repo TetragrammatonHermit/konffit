@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><title>QR-Code Tag Extension Options</title>
+<link rel="stylesheet" type="text/css" href="main.css" />
+<script type="text/javascript" charset="utf-8" src="jquery-1.4.2.js"></script>
+<script language="javascript" src="json2.js"></script>
+<script type="text/javascript">
+
+function previewImageSize(prevImgSize)
+{
+	//var img = document.getElementById("imgPrev");
+	// Remove previous preview image
+	var previewSpanEl = document.getElementById("imgPrev");
+	while(previewSpanEl.hasChildNodes()) previewSpanEl.removeChild(previewSpanEl.firstChild);
+	
+	var img = document.createElement("img");
+	img.width = prevImgSize;
+	img.height = prevImgSize;
+	img.src = "http://chart.apis.google.com/chart?cht=qr&chl=http://www.chromeextensions.org/utilities/qr-code-tag/&chs=" + prevImgSize + "x" + prevImgSize												;
+	img.alt = "Preview of selected image size";
+	previewSpanEl.appendChild(img);
+}
+
+function displayStatusMesage(curStatusMessage)
+{
+	document.getElementById("statusMess").innerHTML = curStatusMessage;
+	setTimeout(function() {
+		document.getElementById("statusMess").innerHTML = "";
+	}, 3000);
+}
+
+function save_options() {
+	var curStatusMessage = "";
+	var imgSizeSel = document.getElementsByName("imgSizeInput");
+	var selImgSize = 0;
+	if(imgSizeSel)
+	{
+		for (x=0; x < imgSizeSel.length; x++) 
+		{
+			if ( imgSizeSel[x].checked )
+				selImgSize = imgSizeSel[x].value;
+		}
+	}
+	
+	if (selImgSize != 0)
+	{
+		// Image size selection is made, now check that bit.ly login and api key entered and valid
+		
+		var checkValElement = document.getElementById("shortenURL");
+		var loginVal = "";
+		var keyVal = "";
+		var pMessage = "";
+		if (checkValElement)
+		{
+			localStorage["shorten_url"] = checkValElement.checked;
+			if (checkValElement.checked == true)
+			{
+				var loginVal = document.getElementById("bitly_login").value;
+				var keyVal = document.getElementById("bitly_api_key").value;
+				if (loginVal != "" && keyVal != "")
+				{
+					var validateURL = 'http://api.bit.ly/v3/validate?x_login=chromeqrextension&x_apiKey=R_71591712d33c0330647dbddec27c805f&apiKey='+keyVal+'&login='+loginVal+'&format=json';
+					$.get(validateURL, function(data, textStatus) 
+					{
+				
+						var bitly = JSON.parse(data);
+				
+						if (bitly.status_code != 200 || bitly.data.valid == 0)
+							curStatusMessage = 'Failed to validate login and api key.';
+						else
+						{
+							localStorage["favorite_image_size"] = selImgSize;
+					
+							localStorage["bitly_login"] = loginVal;
+							localStorage["bitly_api_key"] = keyVal;
+					
+							curStatusMessage = "Options Saved.";
+									
+						}
+						
+						displayStatusMesage(curStatusMessage);
+					}, 'text');
+				}
+				else
+					curStatusMessage = "Please enter your bit.ly login and api key.";				
+			}
+			else
+			{
+				localStorage["favorite_image_size"] = selImgSize;
+				
+				curStatusMessage = "Options Saved.";
+			}
+		}				
+	}
+	else	
+		curStatusMessage = "Please select an image size.";
+	
+	var phonePrefixVal = document.getElementById("phonePrefix").checked;
+	localStorage["disablePhonePrefix"] = phonePrefixVal;
+
+	displayStatusMesage(curStatusMessage);
+}
+
+// Restores select box state to saved value from localStorage.
+function restore_options() 
+{
+	document.getElementById("statusMess").innerHTML = "";
+	if (localStorage["shorten_url"] == "true")
+		document.getElementById("shortenURL").checked = true;
+		
+	var strLogin = localStorage["bitly_login"];
+	var strAPIKey = localStorage["bitly_api_key"];
+	if (strLogin && strAPIKey)
+	{
+		// Set login/apikey even if text fields are greyed out	
+			document.getElementById("bitly_login").value = strLogin; 
+			document.getElementById("bitly_api_key").value = strAPIKey;
+	}
+
+	SetVisibility(document.getElementById("shortenURL"));		
+		
+	var preferedImgSize = localStorage["favorite_image_size"];
+	if (!preferedImgSize) 
+	{
+		previewImageSize(200);
+		return;
+	}
+
+	var imgSizeSel = document.getElementsByName("imgSizeInput");
+	var curSelVal = 0;
+	if (imgSizeSel)
+	{
+		for (x=0; x < imgSizeSel.length; x++) 
+		{
+			curSelVal = imgSizeSel[x].value
+			if (imgSizeSel[x].value == preferedImgSize) 
+			{
+				imgSizeSel[x].checked = "true";
+				previewImageSize(curSelVal);
+				break;
+			}
+		}
+	}
+
+	if (localStorage["disablePhonePrefix"] == "true")
+		document.getElementById("phonePrefix").checked =  true;
+	else
+		document.getElementById("phonePrefix").checked = false;
+}
+
+function SetVisibility(chkBox) { 
+	if ( chkBox.checked == true) 
+	{ 
+		document.getElementById("bitly_login").disabled = false;
+		document.getElementById("bitly_api_key").disabled = false;
+	} 
+	else 
+	{ 
+		document.getElementById("bitly_login").disabled = true;
+		document.getElementById("bitly_api_key").disabled = true;
+	} 
+} 
+
+
+</script>
+</head>
+
+<body onload="restore_options();">
+<div id="content">
+	<span id="bitlySettings">
+		<input type=checkbox id="shortenURL" onclick="SetVisibility(this);" size="38"><p id="bitlyInputHeader">Shorten long URLs</p><br /><br />
+		<p id="bitlyHeader">bit.ly login</p><br/>
+		<div class="bitly_login"><input type="text" value="" id="bitly_login" /></div> 
+		<p id="bitlyHeader">bit.ly API key</p><br/>
+		<span class="bitly_api_key"><input type="text" value="" id="bitly_api_key" /></span><br/>
+		<span class="needHelp"><a href="http://bit.ly/a/your_api_key" target="_blank">Look up your login and api key.</a></span>		
+		<br/><br/>
+		<p id="bitlyInputHeader">Select size of QR image:</p><br />
+		<input type="radio" name="imgSizeInput" value="120" onclick="previewImageSize(120)">Small<br />
+		<input type="radio" name="imgSizeInput" value="160" onclick="previewImageSize(160)">Medium<br />
+		<input type="radio" name="imgSizeInput" value="200" onclick="previewImageSize(200)">Large<br />
+		<input type="radio" name="imgSizeInput" value="260" onclick="previewImageSize(260)">Extra Large<br />
+		<br/>
+		<span title="Weather to add 'Tel:' to QR code generated for a selection that correspond to a (US) phone number. That way, Android devices can add option dial the number directly."><input type="checkbox" id="phonePrefix" >Disable phone number prefix (Tel:)<br /></span>
+		<span><button onclick="save_options()">Save</button><span id="statusMess"> </span></span>
+	</span>
+	<span>
+		<span><p id="sizePreviewHeader">Size preview:</p><span id="imgPrev"></span></span>
+	</span>
+</div>
+</body>
+</html>

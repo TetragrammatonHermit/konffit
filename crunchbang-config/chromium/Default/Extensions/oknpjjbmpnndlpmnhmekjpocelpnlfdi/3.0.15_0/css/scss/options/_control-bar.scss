@@ -1,0 +1,19 @@
+.controls {
+    -webkit-padding-end: 3px;
+    -webkit-padding-start: 4px;
+    -webkit-transition: padding 100ms, height 100ms, opacity 100ms;
+    border-bottom: 1px solid #EEE;
+    display: -webkit-box;
+    overflow: hidden;
+    padding: 13px 0;
+    position: relative;
+
+    .text {
+        display: inline-block;
+        margin-top: 4px;
+    }
+
+    .spacer {
+        -webkit-box-flex: 1;
+    }
+}

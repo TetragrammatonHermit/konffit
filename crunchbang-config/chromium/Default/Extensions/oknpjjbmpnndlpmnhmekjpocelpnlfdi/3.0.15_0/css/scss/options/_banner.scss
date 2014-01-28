@@ -1,0 +1,32 @@
+[role="banner"] {
+    margin: 0 auto;
+    max-width: 880px;
+    padding: 1.1em 1.8em 0.5em 1.8em;
+
+    .logo {
+        display: inline-block;
+        @include serif;
+        height: 23px;
+        padding: 0;
+        margin: 0;
+
+        span {
+            display: inline-block;
+            font-size: 0.7em;
+        }
+    }
+
+    .logo a {
+        background: transparent image-url("readability-logo-small-size@2x.png") no-repeat left bottom;
+        -webkit-background-size: 117px 22px;
+        display: inline-block;
+        text-indent: -200em;
+        width: 117px;
+    }
+
+    .user-controls {
+        display: inline-block;
+        float: right;
+        padding-top: 0.4em;
+    }
+}

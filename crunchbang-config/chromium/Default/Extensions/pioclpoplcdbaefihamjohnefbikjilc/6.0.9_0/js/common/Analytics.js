@@ -1,0 +1,2 @@
+var stage=/stage/.test((new BootstrapInfo).get("serviceHost")),_gaq=_gaq||[];stage?_gaq.push(["_setAccount","UA-42214871-2"]):_gaq.push(["_setAccount","UA-42214871-1"]);(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="https://ssl.google-analytics.com/ga.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();
+var Analytics={trackEvent:function(a,b,d,e,c){var f=stage?1:100;0==parseInt(a)%f&&(c||(c=0),_gaq.push(["_trackEvent",b,d,e,c,!0]))}};

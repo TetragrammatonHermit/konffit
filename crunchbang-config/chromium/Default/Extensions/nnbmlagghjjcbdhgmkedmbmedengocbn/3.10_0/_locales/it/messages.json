@@ -1,0 +1,26 @@
+{
+   "ext_description": {
+      "message": "Visualizza automaticamente l'anteprima di file PDF, presentazioni PowerPoint e altri documenti nel Visualizzatore di Google Documenti."
+   },
+   "ext_name": {
+      "message": "Visualizzatore di file PDF/PowerPoint di Google Documenti (di Google)"
+   },
+   "google_docs_viewer": {
+      "message": "Visualizzatore di Google Documenti"
+   },
+   "locale": {
+      "message": "it"
+   },
+   "open_in_incognito_window": {
+      "message": "Visualizza file in finestra di navigazione in incognito"
+   },
+   "open_in_new_tab": {
+      "message": "Visualizza file in nuova scheda"
+   },
+   "open_in_new_window": {
+      "message": "Visualizza file in nuova finestra"
+   },
+   "save_in_docs": {
+      "message": "Salva in Google Documenti"
+   }
+}

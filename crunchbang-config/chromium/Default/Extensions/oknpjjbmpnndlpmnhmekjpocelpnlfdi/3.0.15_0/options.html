@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Readability Options</title>
+        <link rel="icon" type="image/x-icon" href="/images/extension-icons/32.png">
+        <link href="/css/options.css" rel="stylesheet">
+        <script data-main="/js/options.js" src="/js/libs/require/require-2.1.1.js"></script>
+    </head>
+    <body>
+        <header role="banner">
+            <div class="update-notification hidden">Option saved</div>
+            <h1 class="logo">
+                <a href="http://www.readability.com">
+                    Readability
+                </a>
+                <span><i>for</i> Chrome</span>
+            </h1>
+            <div class="user-controls">
+                <span class="authed hidden">
+                    Logged in as <a href="" class="user" target="_blank"></a> • <a href="" class="logout">Logout</a>
+                </span>
+
+                <span class="unauthed hidden">
+                    <a href="" class="login" target="_blank">Log in</a> | <a href="" class="signup" target="_blank">Sign up</a>
+                </span>
+            </div>
+        </header>
+
+        <div class="container">
+            <nav role="navigation">
+                <ul>
+                    <li class="selected">
+                        <a href="#defaults">Defaults</a>
+                    </li>
+                    <li>
+                        <a href="#keyboard-shortcuts">Keyboard shortcuts</a>
+                    </li>
+                    <li>
+                        <a href="#kindle-settings">Kindle settings</a>
+                    </li>
+                    <li>
+                        <a href="#help">Help</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div role="main">
+                <section id="defaults" class="selected">
+                    <header class="section-header">
+                        <h1>Defaults</h1>
+                    </header>
+
+                    <div class="content">
+                        <section class="browser-icon">
+                            <h3>Browser Icon Style:</h3>
+                            <div class="radio">
+                                <label>
+                                    <img src="images/opt-icon-red.jpg" width="149" height="97">
+                                    <span>
+                                        <input type="radio" name="icon" value="red">
+                                        Red
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <img src="images/opt-icon-grey.jpg" width="149" height="97">
+                                    <span>
+                                        <input type="radio" name="icon" value="grey">
+                                        Grey
+                                    </span>
+                                </label>
+                            </div>
+                        </section>
+                        <section class="read-later">
+                            <h3>On Read Later:</h3>
+                            <div class="checkbox">
+                                <label class="prompt-tags">
+                                    <img src="images/opt-tags-prompt.jpg" width="259" height="151">
+                                    <span>
+                                        <input type="checkbox" name="prompt-tags" checked>
+                                        Prompt to add tags
+                                    </span>
+                                </label>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <section id="keyboard-shortcuts">
+                    <header class="section-header">
+                        <h1>Keyboard Shortcuts</h1>
+                    </header>
+
+                    <div class="content">
+                        <section>
+                            <div class="command-container">
+                                <span class="command-description">Read Now</span>
+                                <span class="command-shortcut-container clearable">
+                                    <span class="command-shortcut"
+                                        data-command-name="rdb.shortcut.readNow"
+                                        data-shortcut=""
+                                        data-shortcut-text=""
+                                        data-set-text="Type a shortcut"
+                                        data-empty-text="Not set">
+                                        Not set
+                                    </span>
+                                    <span class="command-clear">&times;</span>
+                                </span>
+                            </div>
+                            <div class="command-container">
+                                <span class="command-description">Read Later</span>
+                                <span class="command-shortcut-container clearable">
+                                    <span class="command-shortcut"
+                                        data-command-name="rdb.shortcut.readLater"
+                                        data-shortcut=""
+                                        data-shortcut-text=""
+                                        data-set-text="Type a shortcut"
+                                        data-empty-text="Not set">
+                                        Not set
+                                    </span>
+                                    <span class="command-clear">&times;</span>
+                                </span>
+                            </div>
+                            <div class="command-container">
+                                <span class="command-description">Send to Kindle</span>
+                                <span class="command-shortcut-container clearable">
+                                    <span class="command-shortcut"
+                                        data-command-name="rdb.shortcut.sendToKindle"
+                                        data-shortcut=""
+                                        data-shortcut-text=""
+                                        data-set-text="Type a shortcut"
+                                        data-empty-text="Not set">
+                                        Not set
+                                    </span>
+                                    <span class="command-clear">&times;</span>
+                                </span>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <section id="kindle-settings">
+                    <header class="section-header">
+                        <h1>Kindle Settings</h1>
+                    </header>
+
+                    <div class="content kindle">
+                        <div class="instructions">
+                            <p>
+                                First, add <b>kindle@readability.com</b> to your Kindle
+                                <a href="https://www.amazon.com/gp/digital/fiona/manage?ie=UTF8&*Version*=1&*entries*=0&#pdocSettings" target="_blank">approved email list</a>.
+                            </p>
+                        </div>
+                        <form class="kindle-form form" action="" novalidate>
+                            <fieldset>
+                                <div>
+                                    <b class="field-msg error hidden" data-error="general">We ran into an error sending to your Kindle. Mind trying again?</b>
+                                    <div class="single-input-container kindle-email-addr">
+                                        <input type="text" name="username" placeholder="Kindle email address" autocomplete="off"
+                                            autocorrect="off" autocapitalize="off">
+
+                                        <span>
+                                            <select name="domain">
+                                                <option value="@kindle.com">@kindle.com</option>
+                                                <option value="@free.kindle.com">@free.kindle.com</option>
+                                                <option value="@kindle.cn">@kindle.cn</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                    <b class="field-msg error hidden" data-error="required">Please fill in this field.</b>
+                                </div>
+                                <div class="form-controls">
+                                    <input type="submit" value="Update Kindle Address">
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </section>
+
+                <section id="help">
+                    <header>
+                        <header class="section-header">
+                            <h1>Get In Touch</h1>
+                        </header>
+                    </header>
+                    <div class="content">
+                        <section>
+                            <div class="app-version">
+                                <img src="" alt="Readability">
+                                <h3>Readability for Chrome</h3>
+                                Version <span></span>
+                            </div>
+                            <p>
+                                Having trouble? Have a suggestion? Just want to chat? Try us at any of the following:
+                            </p>
+                            <ul class="contact-list">
+                                <li>
+                                    <a href="http://www.twitter.com/readability">@readability on Twitter</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:support@readability.com">support@readability.com</a>
+                                </li>
+                                <li>
+                                    <a href="http://readability.com/contact" target="_blank">Good ol' contact form</a>
+                                </li>
+                                <li>
+                                    <a href="http://help.readability.com/" target="_blank">Help site</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

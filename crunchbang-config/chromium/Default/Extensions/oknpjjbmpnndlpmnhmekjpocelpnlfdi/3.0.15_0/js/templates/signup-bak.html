@@ -1,0 +1,51 @@
+<!-- We're going to implement the full form to sign up in the future, don't feel
+     like rewriting all of this, or leaving it in the template for prying eyes. -->
+<h1 class="sign-up-heading">Sign Up</h1>
+<div class="content-container">
+    <div class="working-cover hidden">
+        <div class="loading-indicator">
+            Loading...
+        </div>
+    </div>
+    <form method="post" class="form" action="">
+        <fieldset>
+            <div>
+                <label for="signup-username">Username:</label>
+                <input id="signup-username" name="username" type="text"
+                    spellcheck="false" autocapitalize="off" autocorrect="off"
+                    required pattern="^\w+$" placeholder="Letters, numbers, and “_” only">
+                <b class="error hidden">&nbsp;</b>
+                <b class="confirmation hidden">✔ That username is available</b>
+            </div>
+            <div>
+                <label for="signup-email">Email address:</label>
+                <input id="signup-email" name="email" type="email"
+                    spellcheck="false" autocapitalize="off" required>
+                <b class="error hidden">&nbsp;</b>
+                <b class="info hidden">&nbsp;</b>
+            </div>
+            <div>
+                <label for="signup-password">Password:</label>
+                <input id="signup-password" name="password" type="password" required placeholder="At least 6 characters long">
+                <b class="error hidden">&nbsp;</b>
+            </div>
+            <div class="form-controls">
+                <input class="cancel" type="button" value="Cancel">
+                <input type="submit" value="Sign Up">
+
+                <p class="note">
+                    By Signing Up, I agree to the
+                    <br><a class="tos-link" href="https://www.readability.com/about/terms/" target="_blank">
+                        Terms of Service &raquo;
+                    </a>
+                </p>
+            </div>
+
+        </fieldset>
+        <footer class="form-footer">
+            <p>
+                Already have an account? <a href="#" class="login">Log in</a>
+            </p>
+        </footer>
+    </form>
+</div>

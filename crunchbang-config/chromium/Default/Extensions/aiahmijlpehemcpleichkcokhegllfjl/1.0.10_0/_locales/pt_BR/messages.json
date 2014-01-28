@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "The description of the application, displayed in the web store.",
+      "message": "Aprenda ingl\u00EAs, espanhol, franc\u00EAs e alem\u00E3o de gra\u00E7a"
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "Duolingo"
+   }
+}

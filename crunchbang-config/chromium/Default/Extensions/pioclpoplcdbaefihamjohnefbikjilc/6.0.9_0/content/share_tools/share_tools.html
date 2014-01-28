@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <link href="../../css/common.css" rel="stylesheet"></link>
+    <link rel="stylesheet" type="text/css" href="../../content/auxiliary.css"></link>
+    <link href="share_tools.css" rel="stylesheet"></link>
+    <script src="../../third_party/port.js" type="text/javascript"></script>
+    <script src="../../js/opera.js" type="text/javascript"></script>
+    <script src="../../js/yandex.js" type="text/javascript"></script>
+    <script src="../../js/common/Browser.js" type="text/javascript"></script>
+    <script src="../../js/GlobalUtils.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../../js/common/Log.js"></script>
+    <script type="text/javascript" src="../../thrift/gen/Limits_types.js"></script>
+    <script type="text/javascript" src="../UINames.js"></script>
+    <script type="text/javascript" src="../MessagePortPrep.js"></script>
+    <script src="share_tools.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="status">
+        <span class="icon"></span>
+        <span class="text" message="savingClip"></span>
+      </div>
+      <div id="title"></div>
+      <div id="urlHeader" message="evernoteLink"></div>
+      <input id="url" readonly />
+      <div id="linkSwitcher" linkType="source" message="switchToEvernoteLink"></div>
+      <div id="copiedConfirmation" message="urlCopied"></div>
+      <div id="shareButtons">
+        <div class="shareButton" id="facebook"></div><!--
+        --><div class="shareButton" id="twitter"></div><!--
+        --><div class="shareButton" id="weibo"></div><!--
+        --><div class="shareButton" id="linkedin"></div><!--
+        --><div class="shareButton" id="email"></div>
+      </div>
+      <div id="errorTitle"><span></span></div>
+      <div id="errorDetails"></div>
+      <div class="button" id="dismissMessage" message="notNow"></div>
+      <a class="button" id="upgrade" target="_blank"></a>
+      <div class="button" id="dismissDialog" message="ok"></div>
+    </div>
+  </body>
+</html>

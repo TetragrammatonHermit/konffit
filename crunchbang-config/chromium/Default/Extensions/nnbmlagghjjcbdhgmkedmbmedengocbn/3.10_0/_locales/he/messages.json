@@ -1,0 +1,26 @@
+{
+   "ext_description": {
+      "message": "\u05DE\u05E6\u05D9\u05D2 \u05D1\u05D0\u05D5\u05E4\u05DF \u05D0\u05D5\u05D8\u05D5\u05DE\u05D8\u05D9 \u05EA\u05E6\u05D5\u05D2\u05D4 \u05DE\u05E7\u05D3\u05D9\u05DE\u05D4 \u05E9\u05DC \u05E7\u05D5\u05D1\u05E6\u05D9 pdf, \u05DE\u05E6\u05D2\u05D5\u05EA PowerPoint \u05D5\u05DE\u05E1\u05DE\u05DB\u05D9\u05DD \u05D0\u05D7\u05E8\u05D9\u05DD \u05D1-Google Docs Viewer."
+   },
+   "ext_name": {
+      "message": "Docs PDF/PowerPoint Viewer (\u05DE\u05D0\u05EA Google)"
+   },
+   "google_docs_viewer": {
+      "message": "\u05DE\u05E6\u05D9\u05D2 Google Docs"
+   },
+   "locale": {
+      "message": "iw"
+   },
+   "open_in_incognito_window": {
+      "message": "\u05D4\u05E6\u05D2 \u05E7\u05D5\u05D1\u05E5 \u05D1\u05D7\u05DC\u05D5\u05DF \u05D2\u05DC\u05D9\u05E9\u05D4 \u05D1\u05E1\u05EA\u05E8"
+   },
+   "open_in_new_tab": {
+      "message": "\u05D4\u05E6\u05D2 \u05E7\u05D5\u05D1\u05E5 \u05D1\u05DB\u05E8\u05D8\u05D9\u05E1\u05D9\u05D9\u05D4 \u05D7\u05D3\u05E9\u05D4"
+   },
+   "open_in_new_window": {
+      "message": "\u05D4\u05E6\u05D2 \u05E7\u05D5\u05D1\u05E5 \u05D1\u05D7\u05DC\u05D5\u05DF \u05D7\u05D3\u05E9"
+   },
+   "save_in_docs": {
+      "message": "\u05E9\u05DE\u05D5\u05E8 \u05D1-Google Docs"
+   }
+}

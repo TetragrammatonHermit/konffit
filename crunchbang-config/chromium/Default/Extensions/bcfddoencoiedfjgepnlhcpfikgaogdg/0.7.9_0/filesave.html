@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Save the QR-Code Tag image to disk</title>
+<link rel="stylesheet" type="text/css" href="main.css" />
+<script language="javascript" src="utils.js"></script>
+<script type="text/javascript">
+
+function displayQRCode()
+{
+	var qrURL = getQRImageURL(localStorage["cur_tab_url"]);
+	var qrImg = document.createElement("img");
+	qrImg.src = qrURL;
+	qrImg.alt = "QR Tag for current URL open in your web browser or selected object";
+	document.body.appendChild(qrImg);
+}	
+</script>
+
+<body onload="displayQRCode();">
+	<h1>Right click on QR-Code tag image and select "Save Image As.."</h1>
+</body>
+</html>

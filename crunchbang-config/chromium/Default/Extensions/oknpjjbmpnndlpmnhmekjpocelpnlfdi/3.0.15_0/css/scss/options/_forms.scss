@@ -1,0 +1,47 @@
+.kindle {
+    .instructions {
+        font-size: 1.1em;
+    }
+}
+
+.form-controls {
+    padding-top: 0.5em;
+}
+
+.form {
+    position: relative;
+
+    fieldset {
+        border: 0;
+        display: block;
+        padding: 0;
+    }
+}
+
+.kindle-email-addr {
+    padding: 0.2em 0;
+}
+
+.field-msg {
+    border-radius: 0 0 3px 3px;
+    @include box-sizing("border-box");
+    color: #000;
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0.4em 0.5em;
+
+    &.hidden {
+        display: none;
+    }
+
+    &.info {
+        background-color: #effafe;
+    }
+
+    &.error {
+        background-color: #fff6a8;
+    }
+}

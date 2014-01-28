@@ -1,0 +1,80 @@
+.highlightable {
+    li {
+        position: relative;
+        padding: 2px 0;
+
+        &:hover > a:not(.action),
+        a:not(.action):focus {
+            background-color: #F0F6FE;
+            color: #555;
+        }
+
+        &:hover > .action {
+            opacity: 0.7;
+        }
+
+        a {
+            padding: 5px;
+            display: block;
+            position: relative;
+            z-index: 0;
+        }
+
+        dt {
+            font-size: 105%;
+            margin-bottom: 3px;
+        }
+
+        dd {
+            color: #999;
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: 10px;
+            margin-top: 3px;
+        }
+
+        .action {
+            -webkit-appearance: none;
+            -webkit-transition: opacity 150ms;
+            background: #8AAAED;
+            border: none;
+            border-radius: 2px;
+            color: white;
+            opacity: 0;
+            margin-top: 0;
+            font-size: 10px;
+            padding: 1px 6px;
+            position: absolute;
+            top: 8px;
+            right: 32px;
+            -webkit-transition: 150ms opacity;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .highlightable {
+            -webkit-margin-start: 30px;
+        }
+    }
+
+    &.editable {
+        .delete {
+            position: absolute;
+            top: 7px;
+            right: 5px;
+        }
+
+        li:hover > .delete {
+            opacity: 1;
+        }
+    }
+}
+
+.match {
+    background: #f2f37b;
+    display: inline-block;
+    margin: 0 1px;
+}

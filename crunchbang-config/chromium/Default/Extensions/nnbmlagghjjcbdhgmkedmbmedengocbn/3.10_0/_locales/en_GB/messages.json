@@ -1,0 +1,26 @@
+{
+   "ext_description": {
+      "message": "Automatically previews pdfs, powerpoint presentations, and other documents in Google Docs Viewer."
+   },
+   "ext_name": {
+      "message": "Docs PDF/PowerPoint Viewer (by Google)"
+   },
+   "google_docs_viewer": {
+      "message": "Google Docs Viewer"
+   },
+   "locale": {
+      "message": "en-GB"
+   },
+   "open_in_incognito_window": {
+      "message": "View File in Incognito Window"
+   },
+   "open_in_new_tab": {
+      "message": "View File in New Tab"
+   },
+   "open_in_new_window": {
+      "message": "View File in New Window"
+   },
+   "save_in_docs": {
+      "message": "Save in Google Docs"
+   }
+}

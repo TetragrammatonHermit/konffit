@@ -52,6 +52,8 @@
                             yasnippet
                             angular-snippets
                                         ; language modes
+                            sclang-extensions
+                            sclang-snippets
                             csharp-mode
                             applescript-mode
                                         ;web

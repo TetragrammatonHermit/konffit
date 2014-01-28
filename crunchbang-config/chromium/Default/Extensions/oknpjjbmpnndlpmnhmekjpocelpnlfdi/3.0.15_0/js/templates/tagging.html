@@ -1,0 +1,27 @@
+<div class="content">
+    <h1>Add Tags</h1>
+    <ul class="tags-list hidden"></ul>
+    <form class="tags-add-form form" action="/{{bookmark_id}}" data-bookmark-id="{{bookmark_id}}">
+        <fieldset>
+            <div class="single-input-container">
+                <input type="text" name="tags" autocomplete="off"
+                    autocorrect="off" autocapitalize="off">
+                <b class="field-msg info">Comma-separated, spaces are OK.</b>
+                <b class="field-msg error hidden" data-error="bookmark_limit">This article has reached the tag limit.</b>
+                <b class="field-msg error hidden" data-error="request_limit">Only 20 tags are allowed at a time.</b>
+                <b class="field-msg error hidden" data-error="user_limit">You've reached our per-user tag limit.</b>
+                <b class="field-msg error hidden" data-error="general">We ran into an error adding tags. Mind trying again?</b>
+                <b class="field-msg error hidden" data-error="invalid">Looks like you have an invalid tag. Mind trying again?</b>
+                <b class="field-msg error hidden" data-error="required">Please fill in this field.</b>
+            </div>
+            <div class="form-controls">
+                <input class="cancel" type="button" value="Cancel">
+                <input type="submit" class="tags-add-submit"
+                    data-stat="addon-chrome-tagging-add_submit" value="Add">
+            </div>
+        </fieldset>
+    </form>
+</div>
+<div class="closing-msg hidden">
+    Closing in <b>0</b>
+</div>

@@ -1,0 +1,26 @@
+{
+   "ext_description": {
+      "message": "T\u1EF1 \u0111\u1ED9ng xem tr\u01B0\u1EDBc pdf, b\u1EA3n tr\u00ECnh b\u00E0y powerpoint v\u00E0 c\u00E1c t\u00E0i li\u1EC7u kh\u00E1c trong Tr\u00ECnh xem Google Documents."
+   },
+   "ext_name": {
+      "message": "Tr\u00ECnh xem PDF/PowerPoint trong Documents (c\u1EE7a Google)"
+   },
+   "google_docs_viewer": {
+      "message": "Tr\u00ECnh xem Google Documents"
+   },
+   "locale": {
+      "message": "vi"
+   },
+   "open_in_incognito_window": {
+      "message": "Xem t\u1EC7p trong c\u1EEDa s\u1ED5 \u1EA9n danh"
+   },
+   "open_in_new_tab": {
+      "message": "Xem t\u1EC7p trong tab m\u1EDBi"
+   },
+   "open_in_new_window": {
+      "message": "Xem t\u1EC7p trong c\u1EEDa s\u1ED5 m\u1EDBi"
+   },
+   "save_in_docs": {
+      "message": "L\u01B0u trong Google Documents"
+   }
+}

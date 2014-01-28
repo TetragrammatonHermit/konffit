@@ -1,0 +1,268 @@
+// Keep it generic in here. If you have a specific, or one-way style
+// need for a form add a class or an id (id only if you have to)
+@mixin input-placeholder {
+    color: #b8b8b8;
+}
+
+:-moz-input-placeholder {
+    @include input-placeholder;
+}
+
+::-webkit-input-placeholder {
+    @include input-placeholder;
+}
+
+::input-placeholder {
+    @include input-placeholder;
+}
+
+[data-view=login],
+[data-view=signup] {
+    .container {
+        width: 22.857em;
+    }
+}
+
+.log-in-heading,
+.sign-up-heading,
+.readability-logo {
+    background: transparent image-url("signup-login-heading@2x.png") no-repeat;
+    @include background-size("98px 44px");
+    height: 22px;
+    overflow: hidden;
+    text-indent: -100em;
+    width: 100%;
+}
+
+.log-in-heading {
+    background-position: 48% -22px;
+}
+
+.sign-up-heading {
+    background-position: 48% top;
+}
+
+// This is a real bonehead way of not saving another image, probably gonna regret it.
+.readability-logo {
+    background-position: 0 -20px;
+    margin: 0 auto;
+    width: 34px;
+}
+
+.form-container {
+    padding: 1em 0;
+}
+
+// Am I dumb? lots of containers.
+.form-container .content-container {
+    margin: 0.7em auto 0 auto;
+    width: 92%;
+}
+
+.form {
+    position: relative;
+    z-index: 2;
+
+    fieldset {
+        display: block;
+        padding: 0.4em 1.6em;
+    }
+
+    div {
+        padding-bottom: 1.2em;
+
+        &:first-child:not(.msg):not(.single-input-container) {
+            padding-top: 1em;
+        }
+    }
+
+    label {
+        display: block;
+        font-size: 0.95em;
+        margin-bottom: 0.1em;
+        text-indent: 1px;
+
+        a {
+            color: lighten(#707065, 20);
+            float: right;
+            font-size: 0.9em;
+            margin: 0.1em 0.2em 0 0;
+            text-decoration: none;
+
+            &:hover,
+            &:focus {
+                color: #707065;
+            }
+        }
+    }
+
+    [type="text"],
+    [type="email"],
+    [type="password"] {
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        @include box-sizing("border-box");
+        @include serif;
+        font-size: 1em;
+        margin: 0;
+        padding: 0.6em 0.5em;
+        @include transition-property("border-color");
+        @include transition-duration(0.1s);
+        width: 100%;
+
+        &:focus {
+            border-color: darken(#ccc, 10);
+            box-shadow: 0 0 2px rgba(#1accfc, 0.7);
+            outline: none;
+        }
+    }
+
+    .cancel,
+    [type="submit"] {
+        @extend %grey-button;
+        display: inline-block;
+        @include serif;
+        font-size: 0.9em;
+    }
+
+    .cancel {
+        width: 35%;
+    }
+
+    [type="submit"] {
+        width: 62%;
+    }
+
+    .note {
+        color: #666;
+        font-size: 0.9em;
+        font-style: italic;
+        padding-top: 0.8em;
+    }
+
+    a {
+        color: #9c0001;
+        text-decoration: underline;
+
+        &:hover,
+        &:focus {
+            color: #cd0001;
+            text-decoration: none;
+        }
+    }
+
+    .tos-link {
+        color: #3a3a35;
+
+        &:hover {
+            color: #000;
+        }
+    }
+
+    p {
+        line-height: 1.4;
+        padding-top: 0.6em;
+    }
+}
+
+.field-msg {
+    border-radius: 0 0 3px 3px;
+    @include box-sizing("border-box");
+    color: #000;
+    display: block;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 0 auto;
+    padding: 0.4em 0.5em;
+    width: 99%;
+
+    &.hidden {
+        display: none;
+    }
+
+    &.info {
+        background-color: #effafe;
+    }
+
+    &.error {
+        background-color: #fff6a8;
+    }
+}
+
+.method-separator {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    color: darken(#e7e7e7, 45);
+    font-size: 0.95em;
+    font-style: italic;
+    font-weight: normal;
+    margin: 0 auto 1em auto;
+    padding: 0.5em 0;
+    text-align: center;
+    width: 95%;
+}
+
+.form .signup-btn {
+    @extend %grey-button;
+    color: #353535;
+    font-size: 0.9em;
+    padding: 0.8em 0.4em 0.6em 0.4em;
+    text-decoration: none;
+
+    &:hover {
+        color: #353535;
+    }
+}
+
+.form .social-method {
+    padding: 1em 1.55em 0.5em 1.55em;
+
+    .facebook-connect-btn {
+        @extend %facebook-connect-btn;
+        font-size: 0.9em;
+    }
+}
+
+[data-view=signup] {
+    fieldset {
+        padding-bottom: 0;
+    }
+
+    .method-separator {
+        background-color: #eee;
+        border: 0;
+        height: 1px;
+        margin: 0.5em auto 1.5em auto;
+        padding: 0;
+        position: relative;
+
+        span {
+            background-color: #fff;
+            display: inline-block;
+            padding: 0.3em;
+            position: relative;
+            top: -0.8em;
+        }
+    }
+}
+
+.form-controls {
+    text-align: center;
+}
+
+.form-footer {
+    background-color: #fbfbfb;
+    border-top: 1px solid darken(#eee, 5);
+    color: lighten(#333, 20%);
+    display: block;
+    font-size: 0.9em;
+    line-height: 1;
+    overflow: hidden;
+    padding: 0.9em 1.4em;
+    text-align: center;
+
+    p {
+        padding-top: 0;
+    }
+}

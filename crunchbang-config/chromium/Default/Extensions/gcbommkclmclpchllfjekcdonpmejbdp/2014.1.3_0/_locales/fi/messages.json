@@ -1,0 +1,26 @@
+{
+   "about_ext_description": {
+      "message": "Salaa Web! K\u00E4yt\u00E4 automaattisesti HTTPS-suojausta useilla sivustoilla."
+   },
+   "about_ext_name": {
+      "message": "HTTPS Everywhere"
+   },
+   "chrome_experimental_rules": {
+      "message": "Kokeelliset s\u00E4\u00E4nn\u00F6t"
+   },
+   "chrome_experimental_rules_description": {
+      "message": "Saattavat aiheuttaa varoituksia tai rikkoutumisia. Oletusarvoisesti poissa p\u00E4\u00E4lt\u00E4."
+   },
+   "chrome_stable_rules": {
+      "message": "Vakaat s\u00E4\u00E4nn\u00F6t"
+   },
+   "chrome_stable_rules_description": {
+      "message": "Pakota n\u00E4iden sivustojen yhteydet \u003Ca href=\"https://fi.wikipedia.org/wiki/TLS\" title=\"Wikipedia-artikkeli salauksesta\" target=\"_blank\" tabindex=\"-1\"\u003Esalatuiksi\u003C/a\u003E:"
+   },
+   "chrome_what_is_this": {
+      "message": "Mik\u00E4 t\u00E4m\u00E4 on?"
+   },
+   "chrome_what_is_this_title": {
+      "message": "HTTPS Everywhere -sivusto"
+   }
+}

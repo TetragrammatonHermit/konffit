@@ -1,0 +1,18 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://chrome.voodoofriends.com/"
+      },
+      "urls": [ "http://chrome.voodoofriends.com/" ]
+   },
+   "description": " Help the Voodoo Friends in their quest for yarn, and achieve 3-starred scores in each of the fun and challenging levels.",
+   "icons": {
+      "128": "128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDeyqbd+VjR/2pBPsDVMI8gic+aRWEWF07nglJJOghhV6OVu2l/ucOwZSN9HwVQtSte5Uct/dezo440EvKkc6jFZ2WWfxdT37uAVO5noi8xVBPbfIrQ+Gj7TthToO8fP181z8aQR7vkgguoX9AzBWEriN+ySYghR4x9q01mu0CILQIDAQAB",
+   "manifest_version": 2,
+   "name": "Voodoo Friends",
+   "permissions": [  ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}

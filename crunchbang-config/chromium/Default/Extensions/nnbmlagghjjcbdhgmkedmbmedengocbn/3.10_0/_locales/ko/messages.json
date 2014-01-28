@@ -1,0 +1,26 @@
+{
+   "ext_description": {
+      "message": "PDF \uD30C\uC77C, PowerPoint \uD504\uB9AC\uC820\uD14C\uC774\uC158 \uBC0F \uAE30\uD0C0 \uBB38\uC11C\uB97C Google \uBB38\uC11C\uB3C4\uAD6C \uBDF0\uC5B4\uC5D0\uC11C \uC790\uB3D9\uC73C\uB85C \uBBF8\uB9AC\uBCF4\uAE30\uD569\uB2C8\uB2E4."
+   },
+   "ext_name": {
+      "message": "\uBB38\uC11C\uB3C4\uAD6C PDF/PowerPoint \uBDF0\uC5B4(Google \uC81C\uACF5)"
+   },
+   "google_docs_viewer": {
+      "message": "Google \uBB38\uC11C\uB3C4\uAD6C \uBDF0\uC5B4"
+   },
+   "locale": {
+      "message": "ko"
+   },
+   "open_in_incognito_window": {
+      "message": "\uC2DC\uD06C\uB9BF \uCC3D\uC5D0\uC11C \uD30C\uC77C \uBCF4\uAE30"
+   },
+   "open_in_new_tab": {
+      "message": "\uC0C8 \uD0ED\uC5D0\uC11C \uD30C\uC77C \uBCF4\uAE30"
+   },
+   "open_in_new_window": {
+      "message": "\uC0C8 \uCC3D\uC5D0\uC11C \uD30C\uC77C \uBCF4\uAE30"
+   },
+   "save_in_docs": {
+      "message": "Google \uBB38\uC11C\uB3C4\uAD6C\uC5D0 \uC800\uC7A5"
+   }
+}

@@ -1,8 +1,0 @@
-{
-   "gaoptout_description": {
-      "message": "Indique au fichier Javascript Google\u00A0Analytics (ga.js) de ne pas envoyer d'informations \u00E0 Google\u00A0Analytics."
-   },
-   "gaoptout_name": {
-      "message": "D\u00E9sactivation de Google\u00A0Analytics"
-   }
-}

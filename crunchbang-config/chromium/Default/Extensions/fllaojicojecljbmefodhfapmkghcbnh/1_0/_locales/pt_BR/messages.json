@@ -1,8 +1,0 @@
-{
-   "gaoptout_description": {
-      "message": "Diz ao JavaScript do Google Analytics (ga.js) para n\u00E3o enviar informa\u00E7\u00F5es para o Google Analytics."
-   },
-   "gaoptout_name": {
-      "message": "Add-on para desativa\u00E7\u00E3o do Google Analytics"
-   }
-}

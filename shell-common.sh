@@ -13,6 +13,8 @@ alias et='emacsclient -t'
 alias e='emacsclient -c'
 alias em='emacsclient -c -n'
 
+alias serve="python -m SimpleHTTPServer 3333"
+
 #CD's
 alias cdd="cd ~/Desktop/"
 alias cddo="cd ~/Documents/"

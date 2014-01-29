@@ -19,8 +19,8 @@
       x-select-enable-clipboard t)
 
 (disable-theme 'zenburn)
-;(load-theme 'solarized-dark t)
-(load-theme 'solarized-light t)
+(load-theme 'solarized-dark t)
+;(load-theme 'solarized-light t)
 ;(load-theme 'zenburn t)
 (set-face-attribute 'default nil :font "DejaVu Sans Mono-9")
 ; Disable bleep at fail

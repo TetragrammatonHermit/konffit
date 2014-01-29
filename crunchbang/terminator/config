@@ -33,7 +33,7 @@
     show_titlebar = False
     color_scheme = custom
     font = DejaVu Sans Mono Bold 10
-    background_color = "#2e3436"
+    background_color = "#131313"
     cursor_blink = False
     scrollback_infinite = True
 [layouts]

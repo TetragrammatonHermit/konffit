@@ -33,6 +33,9 @@
 ; Magit use current window (use emacsclient of current installation)
 (set-variable 'magit-emacsclient-executable "/usr/bin/emacs24/bin/emacsclient")
 
+(setq browse-url-browser-function 'browse-url-generic
+      browse-url-generic-program "chromium-browser")
+
 ;; Set transparency of emacs
 (defun transparency (value)
   "Set the transparency of the frame window.  VALUE = 0-100."

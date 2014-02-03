@@ -33,6 +33,11 @@
 ; Magit use current window (use emacsclient of current installation)
 (set-variable 'magit-emacsclient-executable "/usr/bin/emacs24/bin/emacsclient")
 
+; Setup emerge as mergetool
+(setq emerge-diff-options "--ignore-all-space")
+
+
+; Use Chromium as 'default' browser
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "chromium-browser")
 

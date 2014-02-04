@@ -41,7 +41,6 @@
                             htmlize
                             google-translate
                                         ;icicles ;(flexible buffer autocomplete)
-                            color-theme-solarized
                             smex
                                         ;autocomplete-mode
                             auto-complete
@@ -57,13 +56,12 @@
                             csharp-mode
                             applescript-mode
                                         ;web
-                            js-comint
                             emmet-mode
+                            js3-mode
                             js2-mode
                             js2-refactor
                             web-beautify
                             skewer-mode
-                            impatient-mode
                             ))
 
 ;;; emacs-packages.el ends here

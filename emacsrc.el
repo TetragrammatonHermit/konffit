@@ -37,6 +37,7 @@
 (setq emerge-diff-options "--ignore-all-space")
 
 
+
 ; Use Chromium as 'default' browser
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "chromium-browser")
@@ -50,14 +51,15 @@
 
 (smartparens-global-mode +1)
 (key-chord-mode 1)
+;(setq key-chord-two-keys-delay 0.00125)
 (setq prelude-flyspell nil)             ; Disable spell checking
 (setq prelude-guru nil)
                                         ; Disable whitespace-mode
 (setq prelude-whitespace nil)
 
 (require 'google-translate)
-(global-set-key "\C-xt" 'google-translate-at-point)
-(global-set-key "\C-xT" 'google-translate-at-point-reverse)
+(global-set-key (kbd "C-x t") 'google-translate-at-point)
+(global-set-key (kbd "C-x T") 'google-translate-at-point-reverse)
 (setq google-translate-enable-ido-completition t)
 (setq google-translate-default-target-language '"en")
 (setq google-translate-default-source-language '"fi")
@@ -72,20 +74,24 @@
 (ido-mode t)
 (global-set-key (kbd "M-x") nil)
 (global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "C-\"") 'er/expand-region)
+
+
 
 ;;; Keybindings
 ;;(key-chord-mode 1)
 
 ; Prelude stole some default keybindings
 (key-chord-define-global "uu" nil)
-(key-chord-define-global "zz" 'undo-tree-visualize)
+;(key-chord-define-global "zz" 'undo-tree-visualize)
 (key-chord-define-global "yy" nil)
-(key-chord-define-global "jl" nil)
+;(key-chord-define-global "jl" nil)
 (key-chord-define-global "vv" 'browse-kill-ring)
-(global-set-key (kbd "\C-c c") 'comment-or-uncomment-region)
+(global-set-key (kbd "C-c c") 'comment-or-uncomment-region)
+(global-set-key (kbd "C-\"") 'expand-region)
 
                                         ; to transpose words backwards without having to type the negative argument
-(global-set-key (kbd "M-T") "\C-u\ -1\ \M-t")
+;(global-set-key (kbd "M-T") "C-u\ -1\ \M-t") TODO
 
 
 (global-set-key (kbd "M-§") 'other-frame)
@@ -97,8 +103,8 @@
 (key-chord-define-global "jj" 'ace-jump-char-mode)
 
 (key-chord-define-global "kl" 'iy-go-to-char)
-(key-chord-define-global "km" 'iy-go-to-char-backward)
-(global-set-key (kbd "\C-å") 'iy-go-to-char-continue)
+(key-chord-define-global "ds" 'iy-go-to-char-backward)
+(global-set-key (kbd "C-å") 'iy-go-to-char-continue)
 
 
 ; Autocomplete
@@ -149,7 +155,7 @@
 (global-set-key (kbd "C-<") 'mc/edit-beginnings-of-lines)
 
 ; Copy current buffer path to clipboard
-(define-key prelude-mode-map (kbd "\C-c w") 'prelude-copy-file-name-to-clipboard)
+(define-key prelude-mode-map (kbd "C-c w") 'prelude-copy-file-name-to-clipboard)
 
 ;;; Dired
 ;; allow dired to be able to delete or copy a whole dir.
@@ -174,11 +180,15 @@
   )
 
 ;;; Org-mode
-(global-set-key "\C-x\C-o" 'org-capture)
-(global-set-key "\C-x\C-a" 'org-agenda)
+(global-set-key (kbd "C-x C-o") 'org-capture)
+(global-set-key (kbd "C-x C-a") 'org-agenda)
 ;(global-set-key "\C-c\C-cl" 'org-store-link)
 ;(global-set-key "\C-c\C-cb " 'org-iswitchb)
-(setq org-default-notes-file  "~/notes/notetoself.org")
+(setq org-default-notes-file  "~/notes/todo.org")
+
+                                        ;; Set todo item states
+(setq org-todo-keywords
+      '((sequence "TODO(t)" "WAIT(w)" "|" "DONE(d)")))
 
 (add-hook 'org-mode-hook
           (lambda ()
@@ -208,7 +218,17 @@
 
 ;; HTML
 ; Emmet
-(setq sgml-basic-offset 4)
+;(setq sgml-basic-offset 4)
+;(setq tab-width 4) not used 
+
+(add-hook 'html-mode-hook
+          (lambda()
+            (setq sgml-basic-offset 4)
+            t))
+
+(defadvice sgml-delete-tag (after reindent-buffer activate)
+  (prelude-cleanup-buffer))
+
 (add-hook 'sgml-mode-hook 'emmet-mode)
 (add-hook 'sgml-mode-hook
           (lambda ()
@@ -228,24 +248,17 @@
 (setq emmet-move-cursor-between-quotes t)
 
 ;; Javascript
-(setq js-indent-level 4)
-(setq-default js2-basic-offset 4)
-(add-to-list 'auto-mode-alist (cons (rx ".js" eos) 'js2-mode))
+;(setq js-indent-level 4)
+;(setq-default js2-basic-offset 4)
+;(add-to-list 'auto-mode-alist (cons (rx ".js" eos) 'js2-mode))
 
-(setq inferior-js-program-command "node")
-(add-hook 'js2-mode-hook '(lambda () 
-                            (local-set-key "\C-x\C-e" 
-                                           'js-send-last-sexp)
-                            (local-set-key "\C-\M-x" 
-                                           'js-send-last-sexp)
-                            ;(local-unset-key "\C-c e")
-                            (local-set-key "\C-c\C-b" 
-                                          'js-send-buffer)
-                            ;(local-set-key "\C-c\C-b" 
-                            ;               'js-send-buffer-and-go)
-                            (local-set-key "\C-cl" 
-                                           'js-load-file-and-go)
-                            ))
+;; (custom-set-variables
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(js3-expr-indent-offset 2)
+;;  '(js3-paren-indent-offset 2)
+;;  '(js3-square-indent-offset 2)
+;;  '(js3-curly-indent-offset 2))
 
 ;; Lisp
 (setq inferior-lisp-program "/usr/local/bin/clisp")
@@ -261,7 +274,7 @@
   (save-buffer)
   (shell-command "chrome-reload")
   )
-(define-key global-map "\C-xr" 'save-and-reload)
+(define-key global-map (kbd "C-x r") 'save-and-reload)
 
 (defun vi-open-line-above ()
   "Insert a newline above the current line and put point at beginning."
@@ -291,7 +304,7 @@
     (with-current-buffer buf
       (narrow-to-region start end))
     (switch-to-buffer buf)))
-(global-set-key (kbd "\C-c b") 'narrow-to-region-indirect)
+(global-set-key (kbd "C-c b") 'narrow-to-region-indirect)
 
 
 (provide 'emacsrc)

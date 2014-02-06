@@ -18,24 +18,42 @@
       mac-command-modifier 'meta
       x-select-enable-clipboard t)
 
-(disable-theme 'zenburn)
-(load-theme 'solarized-dark t)
-;(load-theme 'solarized-light t)
-;(load-theme 'zenburn t)
-(set-face-attribute 'default nil :font "DejaVu Sans Mono-9")
-; Disable bleep at fail
-(setq ring-bell-function 'ignore)
-
-; Nicer mousewheel scrolling
+;; Nicer mousewheel scrolling
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
 (setq mouse-wheel-progressive-speed nil)
+
+
+(defun toggle-mode-line () "toggles the modeline on and off"
+       (interactive) 
+       (setq mode-line-format
+             (if (equal mode-line-format nil)
+                 (default-value 'mode-line-format)) )
+       (redraw-display))
+(global-set-key [m-f12] 'toggle-mode-line)
+
+
+
+;; Theming
+(disable-theme 'zenburn)
+(load-theme 'solarized-light t)
+
+;; Keybindings for day/night themes
+(global-set-key [H-end] '(lambda () (interactive)(load-theme 'solarized-dark)))
+(global-set-key [H-home] '(lambda () (interactive)(load-theme 'solarized-light)))
+
+(set-face-attribute 'default nil :font "DejaVu Sans Mono-9")
+
+                                        ; Disable bleep at fail
+(setq ring-bell-function 'ignore)
+(set-default 'cursor-type 'bar)
+(blink-cursor-mode t)
+
 
 ; Magit use current window (use emacsclient of current installation)
 (set-variable 'magit-emacsclient-executable "/usr/bin/emacs24/bin/emacsclient")
 
 ; Setup emerge as mergetool
 (setq emerge-diff-options "--ignore-all-space")
-
 
 
 ; Use Chromium as 'default' browser
@@ -47,7 +65,7 @@
   "Set the transparency of the frame window.  VALUE = 0-100."
   (interactive "nTransparency Value 0 - 100 opaque:")
   (set-frame-parameter (selected-frame) 'alpha value))
-(transparency 94)
+(transparency 90)
 
 (smartparens-global-mode +1)
 (key-chord-mode 1)
@@ -74,12 +92,8 @@
 (ido-mode t)
 (global-set-key (kbd "M-x") nil)
 (global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "C-\"") 'er/expand-region)
 
 
-
-;;; Keybindings
-;;(key-chord-mode 1)
 
 ; Prelude stole some default keybindings
 (key-chord-define-global "uu" nil)
@@ -88,13 +102,13 @@
 ;(key-chord-define-global "jl" nil)
 (key-chord-define-global "vv" 'browse-kill-ring)
 (global-set-key (kbd "C-c c") 'comment-or-uncomment-region)
-(global-set-key (kbd "C-\"") 'expand-region)
+(global-set-key (kbd "C-\"") 'er/expand-region)
 
-                                        ; to transpose words backwards without having to type the negative argument
-;(global-set-key (kbd "M-T") "C-u\ -1\ \M-t") TODO
-
+;; to transpose words backwards without having to type the negative argument
+;; (global-set-key (kbd "M-T") "C-u\ -1\ \M-t") 
 
 (global-set-key (kbd "M-§") 'other-frame)
+
 
 ; Ace-jump
 (key-chord-define-global "hh" 'ace-jump-mode-pop-mark)
@@ -118,6 +132,7 @@
 (setq ac-auto-start 2)
 (setq ac-ignore-case nil)
 
+
 ; Change yasnippet binding
 (require 'yasnippet)
 (yas-global-mode t)
@@ -140,7 +155,7 @@
   (interactive)
   (let ((file-name (dired-get-file-for-visit)))
     (if (file-exists-p file-name)
-        (call-process "/usr/bin/thunar" nil 0 nil file-name)))) ;TODO: check that this works
+        (call-process "/usr/bin/thunar" nil 0 nil file-name))))
 
 (add-hook 'dired-mode-hook
           '(lambda ()
@@ -179,6 +194,7 @@
   (message "%s copied to clipboard" (current-kill 0))
   )
 
+
 ;;; Org-mode
 (global-set-key (kbd "C-x C-o") 'org-capture)
 (global-set-key (kbd "C-x C-a") 'org-agenda)
@@ -186,7 +202,7 @@
 ;(global-set-key "\C-c\C-cb " 'org-iswitchb)
 (setq org-default-notes-file  "~/notes/todo.org")
 
-                                        ;; Set todo item states
+;; Set todo item states
 (setq org-todo-keywords
       '((sequence "TODO(t)" "WAIT(w)" "|" "DONE(d)")))
 
@@ -196,15 +212,15 @@
             (visual-line-mode t)
             
             (add-to-list 'org-modules 'habits)
+            ;;(local-unset-key "<C-M-down>")
+            ;;(local-set-key "<C-M-down>" 'org-move-subtree-down)
+            ;;(local-unset-key "<C-M-up>")
+            ;;(local-set-key "<C-M-up>" 'org-move-subtree-up)
             )
           t)
-;            (local-unset-key "<C-M-down>")
-;            (local-set-key "<C-M-down>" 'org-move-subtree-down)
-;            (local-unset-key "<C-M-up>")
-;            (local-set-key "<C-M-up>" 'org-move-subtree-up)
-;; Add nice colours to src blocks
 
-;; fontify code in code blocks
+
+;; Add syntax highlight to src blocks
 (setq org-src-fontify-natively t)
 
 (defface org-block-background
@@ -252,13 +268,15 @@
 ;(setq-default js2-basic-offset 4)
 ;(add-to-list 'auto-mode-alist (cons (rx ".js" eos) 'js2-mode))
 
-;; (custom-set-variables
-;;  ;; Your init file should contain only one such instance.
-;;  ;; If there is more than one, they won't work right.
-;;  '(js3-expr-indent-offset 2)
-;;  '(js3-paren-indent-offset 2)
-;;  '(js3-square-indent-offset 2)
-;;  '(js3-curly-indent-offset 2))
+(custom-set-variables
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ ;'(js3-lazy-commas t)
+ ;'(js3-lazy-operators t)
+ '(js3-expr-indent-offset 0)
+ '(js3-paren-indent-offset -2)
+ '(js3-square-indent-offset 2)
+ '(js3-curly-indent-offset 2))
 
 ;; Lisp
 (setq inferior-lisp-program "/usr/local/bin/clisp")

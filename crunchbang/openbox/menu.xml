@@ -1,11 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<openbox_menu xmlns="http://openbox.org/"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://openbox.org/
-                file:///usr/share/openbox/menu.xsd">
-
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
 	<menu id="root-menu" label="Openbox 3">
+		<menu id="root-menu-61921" label="Display">
+			<item label="Laptop only">
+				<action name="Execute">
+					<command>/home/jasalt/.screenlayout/Laptop-screen-only.sh</command>
+				</action>
+			</item>
+			<item label="Work 1080p">
+				<action name="Execute">
+					<command>/home/jasalt/.screenlayout/VgaOnTop.sh</command>
+				</action>
+			</item>
+			<item label="Kotinäyttö">
+				<action name="Execute">
+					<command>/home/jasalt/.screenlayout/Vgahome.sh</command>
+				</action>
+			</item>
+		</menu>
+		<separator/>
 		<item label="Run Program">
 			<action name="Execute">
 				<command>
@@ -51,14 +64,14 @@
 		</item>
 		<separator/>
 		<menu id="accessories" label="Accessories">
-		    <item label="Catfish File Search">
+			<item label="Catfish File Search">
 				<action name="Execute">
 					<command>
 						catfish
 					</command>
 				</action>
 			</item>
-		    <item label="Archive Manager">
+			<item label="Archive Manager">
 				<action name="Execute">
 					<command>
 						file-roller
@@ -107,14 +120,14 @@
 					</command>
 				</action>
 			</item>
-		    <item label="Viewnior Image Viewer">
+			<item label="Viewnior Image Viewer">
 				<action name="Execute">
 					<command>
 						viewnior
 					</command>
 				</action>
 			</item>
-		    <menu id="graphicsScreenshots" label="Take Screenshot">
+			<menu id="graphicsScreenshots" label="Take Screenshot">
 				<item label="Screenshooter">
 					<action name="Execute">
 						<command>
@@ -154,7 +167,7 @@
 			</menu>
 		</menu>
 		<menu id="multimedia" label="Multimedia">
-		    <item label="VLC Media Player">
+			<item label="VLC Media Player">
 				<action name="Execute">
 					<command>
 						vlc
@@ -177,7 +190,7 @@
 			</item>
 		</menu>
 		<menu id="network" label="Network">
-		    <menu execute="cb-x-www-browser-pipemenu" id="wwwbrowsers" label="WWW Browsers"/>
+			<menu execute="cb-x-www-browser-pipemenu" id="wwwbrowsers" label="WWW Browsers"/>
 			<item label="gFTP Client">
 				<action name="Execute">
 					<command>
@@ -212,8 +225,8 @@
 			<menu execute="cb-dropbox-pipemenu" id="dropbox" label="Dropbox"/>
 		</menu>
 		<menu id="office" label="Office">
-		    <menu id="libreoffice" label="LibreOffice" execute="cb-libreoffice-pipemenu" />
-		    <item label="Google Docs">
+			<menu execute="cb-libreoffice-pipemenu" id="libreoffice" label="LibreOffice"/>
+			<item label="Google Docs">
 				<action name="Execute">
 					<command>
 						x-www-browser https://drive.google.com/
@@ -274,7 +287,7 @@
 				<item label="man page">
 					<action name="Execute">
 						<command>
-							terminator --command="man conky"
+							terminator --command=&quot;man conky&quot;
 						</command>
 					</action>
 				</item>
@@ -298,7 +311,7 @@
 				<item label="man page">
 					<action name="Execute">
 						<command>
-							terminator --command="man dmenu"
+							terminator --command=&quot;man dmenu&quot;
 						</command>
 					</action>
 				</item>
@@ -315,7 +328,7 @@
 				<item label="man page">
 					<action name="Execute">
 						<command>
-							terminator --command="man gmrun"
+							terminator --command=&quot;man gmrun&quot;
 						</command>
 					</action>
 				</item>
@@ -384,7 +397,7 @@
 				<item label="man page">
 					<action name="Execute">
 						<command>
-							terminator --command="man terminator_config"
+							terminator --command=&quot;man terminator_config&quot;
 						</command>
 					</action>
 				</item>
@@ -397,7 +410,7 @@
 						</command>
 					</action>
 				</item>
-                <item label="Restart tint2">
+				<item label="Restart tint2">
 					<action name="Execute">
 						<command>
 							tint2restart
@@ -408,7 +421,7 @@
 				<item label="man page">
 					<action name="Execute">
 						<command>
-							terminator --command="man tint2"
+							terminator --command=&quot;man tint2&quot;
 						</command>
 					</action>
 				</item>
@@ -421,21 +434,21 @@
 				</item>
 			</menu>
 			<menu id="DisplaySettings" label="Display Settings">
-			    <item label="ARandR Screen Layout Editor">
-				    <action name="Execute">
-					    <command>
+				<item label="ARandR Screen Layout Editor">
+					<action name="Execute">
+						<command>
 						    arandr
 					    </command>
-				    </action>
-			    </item>
-			    <separator label="Help?"/>
-			    <item label="man xrandr">
-				    <action name="Execute">
-					    <command>
-						    terminator --command="man xrandr"
+					</action>
+				</item>
+				<separator label="Help?"/>
+				<item label="man xrandr">
+					<action name="Execute">
+						<command>
+						    terminator --command=&quot;man xrandr&quot;
 					    </command>
-				    </action>
-			    </item>
+					</action>
+				</item>
 			</menu>
 			<menu id="Notifications" label="Notifications">
 				<item label="settings">
@@ -447,7 +460,7 @@
 			<item label="Edit Default Applications">
 				<action name="Execute">
 					<command>
-						terminator --command="sudo update-alternatives --all"
+						terminator --command=&quot;sudo update-alternatives --all&quot;
 					</command>
 				</action>
 			</item>
@@ -481,8 +494,8 @@
 			</item>
 		</menu>
 		<menu id="system" label="System">
-		    <menu execute="cb-printing-pipemenu" id="PrintingPipeMenu" label="Printers"/>
-		    <item label="GParted">
+			<menu execute="cb-printing-pipemenu" id="PrintingPipeMenu" label="Printers"/>
+			<item label="GParted">
 				<action name="Execute">
 					<command>
 						gksudo gparted

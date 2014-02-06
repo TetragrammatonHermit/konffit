@@ -23,7 +23,7 @@
   [[default]]
     scrollbar_position = hidden
     palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
-    background_darkness = 0.83
+    background_darkness = 0.68
     scrollback_lines = 5000
     background_type = transparent
     use_system_font = False
@@ -31,16 +31,17 @@
     foreground_color = "#d8d8d8"
     scroll_on_output = False
     show_titlebar = False
+    cursor_shape = ibeam
     color_scheme = custom
     font = DejaVu Sans Mono Bold 10
     background_color = "#131313"
-    cursor_blink = False
     scrollback_infinite = True
 [layouts]
   [[default]]
     [[[child1]]]
       type = Terminal
       parent = window0
+      profile = default
     [[[window0]]]
       type = Window
       parent = ""

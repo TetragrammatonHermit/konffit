@@ -27,14 +27,16 @@
     scrollback_lines = 5000
     background_type = transparent
     use_system_font = False
-    cursor_color = "#d8d8d8"
+    cursor_color = "#ffffff"
     foreground_color = "#d8d8d8"
     scroll_on_output = False
+    icon_bell = False
     show_titlebar = False
     cursor_shape = ibeam
     color_scheme = custom
     font = DejaVu Sans Mono Bold 10
     background_color = "#131313"
+    cursor_blink = False
     scrollback_infinite = True
 [layouts]
   [[default]]

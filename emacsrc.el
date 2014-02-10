@@ -29,25 +29,27 @@
              (if (equal mode-line-format nil)
                  (default-value 'mode-line-format)) )
        (redraw-display))
-(global-set-key [m-f12] 'toggle-mode-line)
+(global-set-key [M-f12] 'toggle-mode-line)
 
 
 
 ;; Theming
+(set-face-attribute 'default nil :font "DejaVu Sans Mono-9")
 (disable-theme 'zenburn)
 (load-theme 'solarized-light t)
+(set-cursor-color "#ffffff") 
+(set-default 'cursor-type 'bar)
 
 ;; Keybindings for day/night themes
-(global-set-key [H-end] '(lambda () (interactive)(load-theme 'solarized-dark)))
-(global-set-key [H-home] '(lambda () (interactive)(load-theme 'solarized-light)))
+(global-set-key [H-end] '(lambda () (interactive)
+                           (load-theme 'solarized-dark)
+                           (set-cursor-color "white")))
+(global-set-key [H-home] '(lambda () (interactive)
+                            (load-theme 'solarized-light)
+                            (set-cursor-color "black")))
 
-(set-face-attribute 'default nil :font "DejaVu Sans Mono-9")
-
-                                        ; Disable bleep at fail
+;; Disable bleep at fail
 (setq ring-bell-function 'ignore)
-(set-default 'cursor-type 'bar)
-(blink-cursor-mode t)
-
 
 ; Magit use current window (use emacsclient of current installation)
 (set-variable 'magit-emacsclient-executable "/usr/bin/emacs24/bin/emacsclient")
@@ -145,6 +147,7 @@
 (setq yas-snippet-dirs (append yas-snippet-dirs
                                '("~/konffit/yasnippets")))
 
+(setq projectile-enable-caching t)
 
 (require 'dired-details)
 (dired-details-install)
@@ -196,7 +199,7 @@
 
 
 ;;; Org-mode
-(global-set-key (kbd "C-x C-o") 'org-capture)
+(global-set-key (kbd "C-x a") 'org-capture)
 (global-set-key (kbd "C-x C-a") 'org-agenda)
 ;(global-set-key "\C-c\C-cl" 'org-store-link)
 ;(global-set-key "\C-c\C-cb " 'org-iswitchb)

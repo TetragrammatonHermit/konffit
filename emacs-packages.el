@@ -40,6 +40,7 @@
                             slime
                             htmlize
                             google-translate
+                            gnuplot-mode
                                         ;icicles ;(flexible buffer autocomplete)
                             smex
                                         ;autocomplete-mode

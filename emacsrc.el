@@ -37,7 +37,7 @@
 (set-face-attribute 'default nil :font "DejaVu Sans Mono-9")
 (disable-theme 'zenburn)
 (load-theme 'solarized-light t)
-(set-cursor-color "#ffffff") 
+(set-cursor-color "black") 
 (set-default 'cursor-type 'bar)
 
 ;; Keybindings for day/night themes
@@ -119,8 +119,8 @@
 (key-chord-define-global "jj" 'ace-jump-char-mode)
 
 (key-chord-define-global "kl" 'iy-go-to-char)
+;(key-chord-define-global "dd" 'iy-go-to-char-kill-region) 
 (key-chord-define-global "ds" 'iy-go-to-char-backward)
-(global-set-key (kbd "C-å") 'iy-go-to-char-continue)
 
 
 ; Autocomplete
@@ -170,6 +170,7 @@
 (key-chord-define-global "jg" 'mc/mark-all-like-this)
 (global-unset-key (kbd "M-<down-mouse-1>"))
 (global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)
+(global-set-key (kbd "H-<mouse-1>") 'mc/add-cursor-on-click)
 (global-set-key (kbd "C-<") 'mc/edit-beginnings-of-lines)
 
 ; Copy current buffer path to clipboard
@@ -205,6 +206,9 @@
 ;(global-set-key "\C-c\C-cb " 'org-iswitchb)
 (setq org-default-notes-file  "~/notes/todo.org")
 
+;(setq org-ctrl-k-protect-subtree t)
+(setq org-catch-invisible-edits 'show)
+
 ;; Set todo item states
 (setq org-todo-keywords
       '((sequence "TODO(t)" "WAIT(w)" "|" "DONE(d)")))
@@ -214,13 +218,15 @@
             (org-indent-mode t)
             (visual-line-mode t)
             
-            (add-to-list 'org-modules 'habits)
+            ;(add-to-list 'org-modules 'habits)
+            (local-set-key "\M-\C-g" 'org-plot/gnuplot)
             ;;(local-unset-key "<C-M-down>")
             ;;(local-set-key "<C-M-down>" 'org-move-subtree-down)
             ;;(local-unset-key "<C-M-up>")
             ;;(local-set-key "<C-M-up>" 'org-move-subtree-up)
             )
           t)
+
 
 
 ;; Add syntax highlight to src blocks

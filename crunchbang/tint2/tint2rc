@@ -58,7 +58,7 @@ border_color = #888888 20
 
 # Panel
 panel_monitor = all
-panel_position = center left vertical
+panel_position = center right vertical
 #panel_position = top center horizontal
 panel_items = TSC
 panel_size = 100% 42

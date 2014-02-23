@@ -148,7 +148,7 @@
 ;; Add custom snippets
 
 (setq yas-snippet-dirs (append yas-snippet-dirs
-                               '("~/konffit/yasnippets")))
+                               '("~/konffit/emacs/yasnippets")))
 
 (setq projectile-enable-caching t)
 

@@ -17,11 +17,15 @@ alias o="open ." # Open current folder in Finder
 alias sano="say -v Mikko" # Say something in Finnish
 alias kello="date \"+Kello on %H %M\" | sano"
 
+#CD's
+alias cdd="cd ~/Desktop/"
+alias cddo="cd ~/Documents/"
+
 # Start emacs server
-alias emacs="/usr/local/Cellar/emacs/24.3/bin/emacs"
+# alias emacs="/usr/local/Cellar/emacs/24.3/bin/emacs"
 # Wait for close
-alias ecw="/usr/local/Cellar/emacs/24.3/bin/emacsclient -c $*"
+# alias ecw="/usr/local/Cellar/emacs/24.3/bin/emacsclient -c $*"
 # Don't wait
-alias  ec="/usr/local/Cellar/emacs/24.3/bin/emacsclient --no-wait $*"
+# alias  ec="/usr/local/Cellar/emacs/24.3/bin/emacsclient --no-wait $*"
 # Emacs in terminal
-alias ect='/usr/local/Cellar/emacs/24.3/bin/emacsclient -t -a \"\" $*'
+# alias ect='/usr/local/Cellar/emacs/24.3/bin/emacsclient -t -a \"\" $*'

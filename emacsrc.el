@@ -55,7 +55,7 @@
 (set-language-environment "UTF-8")
 
 ; Magit use current window (use emacsclient of current installation)
-(set-variable 'magit-emacsclient-executable "/usr/bin/emacs24/bin/emacsclient")
+(set-variable 'magit-emacsclient-executable "/usr/local/bin/emacsclient")
 
 ; Setup emerge as mergetool
 (setq emerge-diff-options "--ignore-all-space")

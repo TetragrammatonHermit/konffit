@@ -17,6 +17,11 @@
 					<command>/home/jasalt/.screenlayout/Vgahome.sh</command>
 				</action>
 			</item>
+			<item label="Projector-1024">
+				<action name="Execute">
+					<command>/home/jasalt/.screenlayout/projector-1024.sh</command>
+				</action>
+			</item>
 		</menu>
 		<separator/>
 		<item label="Run Program">

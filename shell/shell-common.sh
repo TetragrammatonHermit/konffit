@@ -11,6 +11,9 @@ alias j="autojump"
 
 alias gf="git commit -am  'Quick commit' && git push"
 
+export EDITOR='emacsclient -c -n'
+export EDITOR=$EDITOR
+
 ## Emacsclient bindings
 # terminal
 alias et='emacsclient -t'

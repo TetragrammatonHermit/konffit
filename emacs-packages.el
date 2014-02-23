@@ -41,6 +41,7 @@
                             htmlize
                             google-translate
                             gnuplot-mode
+                            color-theme-sanityinc-solarized
                                         ;icicles ;(flexible buffer autocomplete)
                             smex
                                         ;autocomplete-mode
@@ -52,6 +53,7 @@
                             yasnippet
                             angular-snippets
                                         ; language modes
+                            arduino-mode
                             sclang-extensions
                             sclang-snippets
                             csharp-mode

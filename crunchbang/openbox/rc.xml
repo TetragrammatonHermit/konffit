@@ -23,16 +23,16 @@
        mouse into it, also raise the window -->
   </focus>
   <placement>
-    <policy>Smart</policy>
+    <policy>UnderMouse</policy>
     <!-- 'Smart' or 'UnderMouse' -->
     <center>yes</center>
     <!-- whether to place windows in the center of the free area found or
        the top left corner -->
-    <monitor>Any</monitor>
+    <monitor>Mouse</monitor>
     <!-- with Smart placement on a multi-monitor system, try to place new windows
          on: 'Any' - any monitor, 'Mouse' - where the mouse is, 'Active' - where
          the active window is, 'Primary' - only on the primary monitor -->
-    <primaryMonitor>1</primaryMonitor>
+    <primaryMonitor>Mouse</primaryMonitor>
     <!-- The monitor where Openbox should place popup dialogs such as the
          focus cycling popup, or the desktop switch popup.  It can be an index
          from 1, specifying a particular monitor.  Or it can be one of the
@@ -40,7 +40,7 @@
                     'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Simple</name>
+    <name>Onyx</name>
     <titleLayout>CMILN</titleLayout>
     <!--
       avaible characters are NDSLIMC, each can occur at most once.
@@ -130,13 +130,13 @@
       <name>3</name>
       <name>4</name>
     </names>
-    <popupTime>875</popupTime>
+    <popupTime>0</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
          desktops.  Set this to 0 to disable the popup. -->
   </desktops>
   <resize>
     <drawContents>yes</drawContents>
-    <popupShow>Nonpixel</popupShow>
+    <popupShow>NonPixel</popupShow>
     <!-- 'Always', 'Never', or 'Nonpixel' (xterms and such) -->
     <popupPosition>Center</popupPosition>
     <!-- 'Center' or 'Top' -->
@@ -182,10 +182,16 @@
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings for desktop switching -->
     <keybind key="H-W-A-d">
-      <action name="GoToDesktop"><to>left</to><wrap>no</wrap></action>
+      <action name="GoToDesktop">
+        <to>left</to>
+        <wrap>no</wrap>
+      </action>
     </keybind>
     <keybind key="H-W-A-f">
-      <action name="GoToDesktop"><to>right</to><wrap>no</wrap></action>
+      <action name="GoToDesktop">
+        <to>right</to>
+        <wrap>no</wrap>
+      </action>
     </keybind>
     <!-- <keybind key="C-A-Up"> -->
     <!--   <action name="GoToDesktop"><to>up</to><wrap>no</wrap></action> -->
@@ -193,14 +199,18 @@
     <!-- <keybind key="C-A-Down"> -->
     <!--   <action name="GoToDesktop"><to>down</to><wrap>no</wrap></action> -->
     <!-- </keybind> -->
-
     <keybind key="H-W-A-S-d">
-      <action name="SendToDesktop"><to>left</to><wrap>no</wrap></action>
+      <action name="SendToDesktop">
+        <to>left</to>
+        <wrap>no</wrap>
+      </action>
     </keybind>
     <keybind key="H-W-A-S-f">
-      <action name="SendToDesktop"><to>right</to><wrap>no</wrap></action>
+      <action name="SendToDesktop">
+        <to>right</to>
+        <wrap>no</wrap>
+      </action>
     </keybind>
-
     <!-- <keybind key="S-A-Up"> -->
     <!--   <action name="SendToDesktop"><to>up</to><wrap>no</wrap></action> -->
     <!-- </keybind> -->
@@ -327,7 +337,8 @@
           <enabled>true</enabled>
           <name>dmenu-bind</name>
         </startupnotify>
-        <command>~/.config/dmenu/dmenu-bind.sh</command>
+        <command>dmenu_run</command>
+        <!-- <command>~/.config/dmenu/dmenu-bind.sh</command> -->
       </action>
     </keybind>
     <keybind key="A-F3">
@@ -336,7 +347,7 @@
           <enabled>true</enabled>
           <name>dmenu-bind</name>
         </startupnotify>
-        <command>~/.config/dmenu/dmenu-bind.sh</command>
+        <command>dmenu_run</command>
       </action>
     </keybind>
     <keybind key="W-f">
@@ -535,7 +546,7 @@
         <action name="Move"/>
       </mousebind>
       <mousebind button="Left" action="DoubleClick">
-        <action name="ToggleMaximize"/>
+        <action xmlns="http://openbox.org/3.4/rc" name="ToggleMaximize"/>
       </mousebind>
       <mousebind button="Middle" action="Press">
         <action name="Lower"/>
@@ -951,9 +962,9 @@
     <application name="terminator">
       <decor>no</decor>
     </application>
-    <application name="thunar">
-      <decor>no</decor>
-    </application>
+    <!-- <application name="thunar"> -->
+    <!--   <decor>no</decor> -->
+    <!-- </application> -->
     <application name="gmessage">
       <decor>no</decor>
       <shade>no</shade>

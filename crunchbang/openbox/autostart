@@ -70,8 +70,8 @@ xset b off &
 ##(sleep 120s && cb-fortune) &
 
 ## Run the conky
-##conky -q &
+conky -q &
 
 
 # Omia #
-/home/jasalt/konffit/crunchbang/jarkkostartup.sh &
+#/home/jasalt/konffit/crunchbang/jarkkostartup.sh &

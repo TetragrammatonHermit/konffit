@@ -23,7 +23,7 @@
 (setq mouse-wheel-progressive-speed nil)
 
 
-(defun toggle-mode-line () "toggles the modeline on and off"
+(defun toggle-mode-line () ; "toggles the modeline on and off"
        (interactive) 
        (setq mode-line-format
              (if (equal mode-line-format nil)
@@ -36,6 +36,7 @@
 ;; Theming
 (set-face-attribute 'default nil :font "DejaVu Sans Mono-9")
 (disable-theme 'zenburn)
+
 (load-theme 'solarized-light t)
 (set-cursor-color "black") 
 (set-default 'cursor-type 'bar)
@@ -50,6 +51,8 @@
 
 ;; Disable bleep at fail
 (setq ring-bell-function 'ignore)
+
+(set-language-environment "UTF-8")
 
 ; Magit use current window (use emacsclient of current installation)
 (set-variable 'magit-emacsclient-executable "/usr/bin/emacs24/bin/emacsclient")
@@ -119,7 +122,7 @@
 (key-chord-define-global "jj" 'ace-jump-char-mode)
 
 (key-chord-define-global "kl" 'iy-go-to-char)
-;(key-chord-define-global "dd" 'iy-go-to-char-kill-region) 
+;(key-chord-define-global "dd" 'iy-go-to-char-kill-region) ;
 (key-chord-define-global "ds" 'iy-go-to-char-backward)
 
 
@@ -332,6 +335,10 @@
       (narrow-to-region start end))
     (switch-to-buffer buf)))
 (global-set-key (kbd "C-c b") 'narrow-to-region-indirect)
+
+;; Cedet
+
+
 
 
 (provide 'emacsrc)

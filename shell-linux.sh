@@ -1,1 +1,2 @@
-alias o="thunar `pwd`" # Open current folder in file manager
+alias o="thunar ." # Open current folder in file manager
+alias adep="apt-cache depends"

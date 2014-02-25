@@ -122,6 +122,7 @@
 (key-chord-define-global "jj" 'ace-jump-char-mode)
 
 (key-chord-define-global "kl" 'iy-go-to-char)
+(key-chord-define-global "kd" 'mc/edit-lines)
 ;(key-chord-define-global "dd" 'iy-go-to-char-kill-region) ;
 (key-chord-define-global "ds" 'iy-go-to-char-backward)
 
@@ -148,7 +149,7 @@
 ;; Add custom snippets
 
 (setq yas-snippet-dirs (append yas-snippet-dirs
-                               '("~/konffit/yasnippets")))
+                               '("~/konffit/emacs/yasnippets")))
 
 (setq projectile-enable-caching t)
 

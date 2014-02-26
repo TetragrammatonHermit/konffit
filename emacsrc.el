@@ -62,8 +62,13 @@
 
 
 ; Use Chromium as 'default' browser
-(setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "chromium-browser")
+;; (setq browse-url-browser-function 'browse-url-generic
+;;       browse-url-generic-program "chromium-browser")
+
+;; Use conkeror as default browser
+(setq browse-url-generic-program (executable-find "conkeror"))
+(setq browse-url-browser-function 'browse-url-generic)
+
 
 ;; Set transparency of emacs
 (defun transparency (value)
@@ -116,7 +121,7 @@
 
 
 ; Ace-jump
-(key-chord-define-global "hh" 'ace-jump-mode-pop-mark)
+(key-chord-define-global "hh" 'pop-to-mark-command)
 (key-chord-define-global "jk" 'ace-jump-word-mode)
 
 (key-chord-define-global "jj" 'ace-jump-char-mode)

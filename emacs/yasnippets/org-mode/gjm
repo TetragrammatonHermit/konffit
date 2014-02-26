@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Gauss's & Jordan's method for linear equation solving
+# key: gjm
+# --
+| a | b | c | = |   | oper |
+|---+---+---+---+---+------|
+| $0  |   |   |   |   |      |

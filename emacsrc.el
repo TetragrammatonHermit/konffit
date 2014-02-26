@@ -127,9 +127,12 @@
 (key-chord-define-global "jj" 'ace-jump-char-mode)
 
 (key-chord-define-global "kl" 'iy-go-to-char)
-(key-chord-define-global "kd" 'mc/edit-lines)
-;(key-chord-define-global "dd" 'iy-go-to-char-kill-region) ;
 (key-chord-define-global "ds" 'iy-go-to-char-backward)
+(setq iy-go-to-char-kill-ring-save t)
+
+(key-chord-define-global "kd" 'mc/edit-lines)
+
+;(key-chord-define-global "ff" 'iy-go-to-char-kill-region) TODO howto
 
 
 ; Autocomplete
@@ -181,11 +184,10 @@
 ;; Multiple cursors
 (key-chord-define-global "jn" 'mc/mark-more-like-this-extended)
 (key-chord-define-global "jt" 'mc/mark-sgml-tag-pair)
-(key-chord-define-global "jg" 'mc/mark-all-like-this)
 (global-unset-key (kbd "M-<down-mouse-1>"))
 (global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)
 (global-set-key (kbd "H-<mouse-1>") 'mc/add-cursor-on-click)
-(global-set-key (kbd "C-<") 'mc/edit-beginnings-of-lines)
+
 
 ; Copy current buffer path to clipboard
 (define-key prelude-mode-map (kbd "C-c w") 'prelude-copy-file-name-to-clipboard)

@@ -40,7 +40,7 @@
                     'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Onyx</name>
+    <name>waldorf</name>
     <titleLayout>CMILN</titleLayout>
     <!--
       avaible characters are NDSLIMC, each can occur at most once.
@@ -957,6 +957,12 @@
       <decor>no</decor>
     </application>
     <application name="emacs">
+      <decor>no</decor>
+    </application>
+    <application name="zathura">
+      <decor>no</decor>
+    </application>
+    <application name="conkeror">
       <decor>no</decor>
     </application>
     <application name="terminator">

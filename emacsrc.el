@@ -119,13 +119,12 @@
 
 (global-set-key (kbd "M-§") 'other-frame)
 
+;; Pop marks faster                                     
+(setq set-mark-command-repeat-pop 't)
 
-; Ace-jump
 (key-chord-define-global "hh" 'pop-to-mark-command)
 (key-chord-define-global "jk" 'ace-jump-word-mode)
-
 (key-chord-define-global "jj" 'ace-jump-char-mode)
-
 (key-chord-define-global "kl" 'iy-go-to-char)
 (key-chord-define-global "ds" 'iy-go-to-char-backward)
 (setq iy-go-to-char-kill-ring-save t)

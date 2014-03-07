@@ -41,7 +41,10 @@
                             htmlize
                             google-translate
                             gnuplot-mode
-                            color-theme-sanityinc-solarized
+                            ;color-theme-sanityinc-solarized
+                            guide-key
+                            visual-regexp
+                            visual-regexp-steroids
                                         ;icicles ;(flexible buffer autocomplete)
                             smex
                                         ;autocomplete-mode

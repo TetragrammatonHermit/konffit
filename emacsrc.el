@@ -11,9 +11,9 @@
 (unless (server-running-p) (server-start))
 
 (x-focus-frame nil)
-; Disable scroll bars
+                                        ; Disable scroll bars
 (scroll-bar-mode -1)
-; Make OSX special characters work
+                                        ; Make OSX special characters work
 (setq mac-option-modifier 'nil
       mac-command-modifier 'meta
       x-select-enable-clipboard t)
@@ -24,11 +24,11 @@
 
 
 (defun toggle-mode-line () ; "toggles the modeline on and off"
-       (interactive) 
-       (setq mode-line-format
-             (if (equal mode-line-format nil)
-                 (default-value 'mode-line-format)) )
-       (redraw-display))
+  (interactive)
+  (setq mode-line-format
+        (if (equal mode-line-format nil)
+            (default-value 'mode-line-format)) )
+  (redraw-display))
 (global-set-key [M-f12] 'toggle-mode-line)
 
 
@@ -38,7 +38,7 @@
 (disable-theme 'zenburn)
 
 (load-theme 'solarized-light t)
-(set-cursor-color "black") 
+(set-cursor-color "black")
 (set-default 'cursor-type 'bar)
 
 ;; Keybindings for day/night themes
@@ -54,20 +54,20 @@
 
 (set-language-environment "UTF-8")
 
-; Magit use current window (use emacsclient of current installation)
+                                        ; Magit use current window (use emacsclient of current installation)
 (set-variable 'magit-emacsclient-executable "/usr/local/bin/emacsclient")
 
-; Setup emerge as mergetool
+                                        ; Setup emerge as mergetool
 (setq emerge-diff-options "--ignore-all-space")
 
 
-; Use Chromium as 'default' browser
-;; (setq browse-url-browser-function 'browse-url-generic
-;;       browse-url-generic-program "chromium-browser")
+                                        ; Use Chromium as 'default' browser
+(setq browse-url-browser-function 'browse-url-generic
+      browse-url-generic-program "chromium-browser")
 
 ;; Use conkeror as default browser
-(setq browse-url-generic-program (executable-find "conkeror"))
-(setq browse-url-browser-function 'browse-url-generic)
+;;(setq browse-url-generic-program (executable-find "conkeror"))
+;;(setq browse-url-browser-function 'browse-url-generic)
 
 
 ;; Set transparency of emacs
@@ -79,7 +79,7 @@
 
 (smartparens-global-mode +1)
 (key-chord-mode 1)
-;(setq key-chord-two-keys-delay 0.00125)
+                                        ;(setq key-chord-two-keys-delay 0.00125)
 (setq prelude-flyspell nil)             ; Disable spell checking
 (setq prelude-guru nil)
                                         ; Disable whitespace-mode
@@ -105,21 +105,21 @@
 
 
 
-; Prelude stole some default keybindings
+                                        ; Prelude stole some default keybindings
 (key-chord-define-global "uu" nil)
-;(key-chord-define-global "zz" 'undo-tree-visualize)
+                                        ;(key-chord-define-global "zz" 'undo-tree-visualize)
 (key-chord-define-global "yy" nil)
-;(key-chord-define-global "jl" nil)
+                                        ;(key-chord-define-global "jl" nil)
 (key-chord-define-global "vv" 'browse-kill-ring)
 (global-set-key (kbd "C-c c") 'comment-or-uncomment-region)
 (global-set-key (kbd "C-\"") 'er/expand-region)
 
 ;; to transpose words backwards without having to type the negative argument
-;; (global-set-key (kbd "M-T") "C-u\ -1\ \M-t") 
+;; (global-set-key (kbd "M-T") "C-u\ -1\ \M-t")
 
 (global-set-key (kbd "M-§") 'other-frame)
 
-;; Pop marks faster                                     
+;; Pop marks faster
 (setq set-mark-command-repeat-pop 't)
 
 (key-chord-define-global "hh" 'pop-to-mark-command)
@@ -131,12 +131,12 @@
 
 (key-chord-define-global "kd" 'mc/edit-lines)
 
-;(key-chord-define-global "ff" 'iy-go-to-char-kill-region) TODO howto
+                                        ;(key-chord-define-global "ff" 'iy-go-to-char-kill-region) TODO howto
 
 
-; Autocomplete
-;(global-auto-complete-mode t)
-;(add-to-list 'ac-dictionary-directories "~/notes/ac-dict")
+                                        ; Autocomplete
+                                        ;(global-auto-complete-mode t)
+                                        ;(add-to-list 'ac-dictionary-directories "~/notes/ac-dict")
 (require 'auto-complete-config)
 (ac-config-default)
 (setq ac-menu-height 9)
@@ -146,7 +146,7 @@
 (setq ac-ignore-case nil)
 
 
-; Change yasnippet binding
+                                        ; Change yasnippet binding
 (require 'yasnippet)
 (yas-global-mode t)
 (define-key yas-minor-mode-map (kbd "<tab>") nil)
@@ -179,6 +179,17 @@
 (global-set-key [(mouse-3)] 'acme-search-forward)
 (global-set-key [(shift mouse-3)] 'acme-search-backward)
 
+;; Guide key https://github.com/kbkbkbkb1/guide-key
+(setq guide-key/guide-key-sequence '("C-x 4"))
+(guide-key-mode 1)  ; Enable guide-key-mode
+
+;; Visual regexp
+(define-key global-map (kbd "C-c C-r") 'vr/replace)
+(define-key global-map (kbd "C-c C-q") 'vr/query-replace)
+(define-key global-map (kbd "C-c m") 'vr/mc-mark)
+;; to use visual-regexp-steroids's isearch instead of the built-in regexp isearch,s also include the following lines:
+;(define-key esc-map (kbd "C-r") 'vr/isearch-backward) ;; C-M-r
+;(define-key esc-map (kbd "C-s") 'vr/isearch-forward) ;; C-M-s
 
 ;; Multiple cursors
 (key-chord-define-global "jn" 'mc/mark-more-like-this-extended)
@@ -188,7 +199,7 @@
 (global-set-key (kbd "H-<mouse-1>") 'mc/add-cursor-on-click)
 
 
-; Copy current buffer path to clipboard
+                                        ; Copy current buffer path to clipboard
 (define-key prelude-mode-map (kbd "C-c w") 'prelude-copy-file-name-to-clipboard)
 
 ;;; Dired
@@ -217,11 +228,11 @@
 ;;; Org-mode
 (global-set-key (kbd "C-x a") 'org-capture)
 (global-set-key (kbd "C-x C-a") 'org-agenda)
-;(global-set-key "\C-c\C-cl" 'org-store-link)
-;(global-set-key "\C-c\C-cb " 'org-iswitchb)
+                                        ;(global-set-key "\C-c\C-cl" 'org-store-link)
+                                        ;(global-set-key "\C-c\C-cb " 'org-iswitchb)
 (setq org-default-notes-file  "~/notes/todo.org")
 
-;(setq org-ctrl-k-protect-subtree t)
+                                        ;(setq org-ctrl-k-protect-subtree t)
 (setq org-catch-invisible-edits 'show)
 
 ;; Set todo item states
@@ -232,8 +243,8 @@
           (lambda ()
             (org-indent-mode t)
             (visual-line-mode t)
-            
-            ;(add-to-list 'org-modules 'habits)
+
+                                        ;(add-to-list 'org-modules 'habits)
             (local-set-key "\M-\C-g" 'org-plot/gnuplot)
             ;;(local-unset-key "<C-M-down>")
             ;;(local-set-key "<C-M-down>" 'org-move-subtree-down)
@@ -252,14 +263,14 @@
   "Face used for the source block background.")
 
 ;;; Python
-; Elpy
+                                        ; Elpy
 (elpy-enable)
 
 
 ;; HTML
-; Emmet
-;(setq sgml-basic-offset 4)
-;(setq tab-width 4) not used 
+                                        ; Emmet
+                                        ;(setq sgml-basic-offset 4)
+                                        ;(setq tab-width 4) not used
 
 (add-hook 'html-mode-hook
           (lambda()
@@ -280,7 +291,7 @@
   '(define-key emmet-mode-keymap (kbd "C-j") nil))
                                         ; Indent spaces.
 
-(add-hook 'emmet-mode-hook (lambda () 
+(add-hook 'emmet-mode-hook (lambda ()
                              (setq emmet-indentation 4)
                              (local-set-key (kbd "<backtab>") 'emmet-expand-line)))
 
@@ -288,15 +299,15 @@
 (setq emmet-move-cursor-between-quotes t)
 
 ;; Javascript
-;(setq js-indent-level 4)
-;(setq-default js2-basic-offset 4)
-;(add-to-list 'auto-mode-alist (cons (rx ".js" eos) 'js2-mode))
+                                        ;(setq js-indent-level 4)
+                                        ;(setq-default js2-basic-offset 4)
+                                        ;(add-to-list 'auto-mode-alist (cons (rx ".js" eos) 'js2-mode))
 
 (custom-set-variables
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- ;'(js3-lazy-commas t)
- ;'(js3-lazy-operators t)
+                                        ;'(js3-lazy-commas t)
+                                        ;'(js3-lazy-operators t)
  '(js3-expr-indent-offset 0)
  '(js3-paren-indent-offset -2)
  '(js3-square-indent-offset 2)
@@ -306,16 +317,16 @@
 (setq inferior-lisp-program "/usr/local/bin/clisp")
 
 ;;; Other
-; Latex
+                                        ; Latex
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
 (setq reftex-plug-into-AUCTeX t)
 (setq-default ispell-program-name "aspell")
 
 ;;;;; Custom functions
 (defun save-and-reload () "Save and reload browser." (interactive)
-  (save-buffer)
-  (shell-command "chrome-reload")
-  )
+       (save-buffer)
+       (shell-command "chrome-reload")
+       )
 (define-key global-map (kbd "C-x r") 'save-and-reload)
 
 (defun vi-open-line-above ()

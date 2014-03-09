@@ -40,7 +40,7 @@
                     'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Onyx</name>
+    <name>waldorf</name>
     <titleLayout>CMILN</titleLayout>
     <!--
       avaible characters are NDSLIMC, each can occur at most once.

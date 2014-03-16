@@ -73,7 +73,7 @@ panel_background_id = 1
 autohide = 1
 autohide_show_timeout = 0.3
 autohide_hide_timeout = 1.0
-autohide_height = 2
+autohide_height = 1
 strut_policy = none
 
 # Taskbar

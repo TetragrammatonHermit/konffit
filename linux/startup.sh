@@ -11,3 +11,5 @@ sudo ifconfig eth0 down
 # Set xmodmap
 xmodmap /home/jasalt/konffit/linux/Xmodmap
 
+sudo ifconfig eth0 down
+sudo iwconfig wlan0 txpower 1 

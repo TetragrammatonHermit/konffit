@@ -4,13 +4,12 @@
 ;;; Code:
 
 ;; Prelude modules
-(require 'prelude-helm)
 (require 'prelude-c)
 (require 'prelude-common-lisp)
 (require 'prelude-css)
 (require 'prelude-emacs-lisp)
 (require 'prelude-erc)
-(require 'prelude-haskell)
+;;(require 'prelude-haskell)
 (require 'prelude-js)
 (require 'prelude-key-chord)
 (require 'prelude-latex)
@@ -33,6 +32,7 @@
                                         ;general
                             key-chord
                             ecb
+                            
                             dired-details
                             multiple-cursors
                             iy-go-to-char
@@ -41,6 +41,7 @@
                             htmlize
                             google-translate
                             gnuplot-mode
+                            window-numbering
                             ;color-theme-sanityinc-solarized
                             guide-key
                             visual-regexp
@@ -52,6 +53,10 @@
                             ac-slime
                             ac-emmet
                             ac-js2
+                            ;; Sync Google Calendar
+                            request
+                            gntp
+                            org-gcal
                                         ; yasnippet
                             yasnippet
                             angular-snippets
@@ -61,6 +66,8 @@
                             sclang-snippets
                             csharp-mode
                             applescript-mode
+                                        ; haskell
+                            scion
                                         ;web
                             emmet-mode
                             js3-mode

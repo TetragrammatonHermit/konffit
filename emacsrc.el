@@ -316,6 +316,11 @@
 ;; Lisp
 (setq inferior-lisp-program "/usr/local/bin/clisp")
 
+;; Haskell
+(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
+
 ;;; Other
                                         ; Latex
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)

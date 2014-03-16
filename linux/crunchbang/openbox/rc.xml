@@ -413,6 +413,24 @@
         <command>terminator --command="htop"</command>
       </action>
     </keybind>
+    <keybind key="W-p">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>powertop</name>
+        </startupnotify>
+        <command>terminator --command="sudo powertop"</command>
+      </action>
+    </keybind>
+    <keybind key="W-i">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>irssi</name>
+        </startupnotify>
+        <command>terminator --command="ssh jatasalt@halava.cc.jyu.fi -t 'screen -rd'"</command>
+      </action>
+    </keybind>
     <keybind key="W-v">
       <action name="Execute">
         <startupnotify>

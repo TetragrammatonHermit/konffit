@@ -3,22 +3,16 @@
   title_inactive_bg_color = "#000000"
 [keybindings]
   cycle_prev = None
-  toggle_zoom = None
+  switch_to_tab_6 = <Alt>6
+  switch_to_tab_7 = <Alt>7
+  switch_to_tab_4 = <Alt>4
+  switch_to_tab_5 = <Alt>5
+  switch_to_tab_2 = <Alt>2
+  switch_to_tab_3 = <Alt>3
+  switch_to_tab_1 = <Alt>1
   cycle_next = None
-  switch_to_tab_3 = <Hyper>3
-  next_tab = <Primary><Shift>n
-  go_prev = None
-  prev_tab = <Primary><Shift>p
-  switch_to_tab_6 = <Primary>6
-  switch_to_tab_4 = <Hyper>4
-  switch_to_tab_5 = <Hyper>5
-  switch_to_tab_2 = <Hyper>2
-  ungroup_all = None
-  switch_to_tab_1 = <Hyper>1
-  ungroup_tab = None
-  go_next = None
-  hide_window = None
-  toggle_scrollbar = None
+  switch_to_tab_8 = <Alt>8
+  switch_to_tab_9 = <Alt>9
 [profiles]
   [[default]]
     scrollbar_position = hidden

@@ -22,6 +22,8 @@
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
 (setq mouse-wheel-progressive-speed nil)
 
+;; Change "tabs" like in chromium / sublimetext etc
+(window-numbering-mode t)
 
 (defun toggle-mode-line () ; "toggles the modeline on and off"
   (interactive)

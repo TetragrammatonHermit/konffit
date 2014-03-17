@@ -241,6 +241,14 @@
 (setq org-todo-keywords
       '((sequence "TODO(t)" "WAIT(w)" "|" "DONE(d)")))
 
+;; TODO: set ax-tiddly.el?
+;; (setq org-export-backends (quote (
+;;                                   tiddly
+;;                                   ascii
+;;                                   html
+;;                                   latex
+;;                                   odt)))
+
 (add-hook 'org-mode-hook
           (lambda ()
             (org-indent-mode t)
@@ -305,15 +313,11 @@
                                         ;(setq-default js2-basic-offset 4)
                                         ;(add-to-list 'auto-mode-alist (cons (rx ".js" eos) 'js2-mode))
 
-(custom-set-variables
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
-                                        ;'(js3-lazy-commas t)
-                                        ;'(js3-lazy-operators t)
- '(js3-expr-indent-offset 0)
- '(js3-paren-indent-offset -2)
- '(js3-square-indent-offset 2)
- '(js3-curly-indent-offset 2))
+(setq js3-expr-indent-offset 0)
+(setq js3-paren-indent-offset -2)
+(setq js3-square-indent-offset 2)
+(setq js3-curly-indent-offset 2)
+(setq js3-enter-indents-newline 1)
 
 ;; Lisp
 (setq inferior-lisp-program "/usr/local/bin/clisp")

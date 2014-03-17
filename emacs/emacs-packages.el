@@ -61,6 +61,7 @@
                             yasnippet
                             angular-snippets
                                         ; language modes
+                            tracwiki-mode
                             arduino-mode
                             sclang-extensions
                             sclang-snippets

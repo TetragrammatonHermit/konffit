@@ -440,6 +440,15 @@
         <command>pavucontrol</command>
       </action>
     </keybind>
+    <keybind key="W-b">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>VirtualBox</name>
+        </startupnotify>
+        <command>virtualbox</command>
+      </action>
+    </keybind>
     <keybind key="W-x">
       <action name="Execute">
         <startupnotify>

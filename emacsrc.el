@@ -370,10 +370,21 @@
     (switch-to-buffer buf)))
 (global-set-key (kbd "C-c b") 'narrow-to-region-indirect)
 
-;; Cedet
-
-
-
+;; Hide compilation buffer eg after sass scss compilation on file save
+(defun bury-compile-buffer-if-successful (buffer string)
+  "Bury a compilation buffer if succeeded without warnings "
+  (if (and
+       (string-match "compilation" (buffer-name buffer))
+       (string-match "finished" string)
+       (not
+        (with-current-buffer buffer
+          (search-forward "warning" nil t))))
+      (run-with-timer 1 nil
+                      (lambda (buf)
+                        (bury-buffer buf)
+                        (switch-to-prev-buffer (get-buffer-window buf) 'kill))
+                      buffer)))
+(add-hook 'compilation-finish-functions 'bury-compile-buffer-if-successful)
 
 (provide 'emacsrc)
 

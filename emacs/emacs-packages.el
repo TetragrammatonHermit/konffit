@@ -42,10 +42,11 @@
                             google-translate
                             gnuplot-mode
                             window-numbering
-                            ;color-theme-sanityinc-solarized
                             guide-key
                             visual-regexp
                             visual-regexp-steroids
+                            monokai-theme
+                            solarized-theme
                                         ;icicles ;(flexible buffer autocomplete)
                             smex
                                         ;autocomplete-mode

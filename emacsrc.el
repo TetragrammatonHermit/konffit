@@ -48,7 +48,7 @@
                            (load-theme 'solarized-dark)
                            (set-cursor-color "white")))
 (global-set-key [H-home] '(lambda () (interactive)
-                            (load-theme 'solarized-light)
+                            (load-theme 'monokai)
                             (set-cursor-color "black")))
 
 ;; Disable bleep at fail

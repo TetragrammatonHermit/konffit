@@ -422,6 +422,15 @@
         <command>terminator --command="sudo powertop"</command>
       </action>
     </keybind>
+    <keybind key="W-g">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>GPick</name>
+        </startupnotify>
+        <command>gpick</command>
+      </action>
+    </keybind>
     <keybind key="W-i">
       <action name="Execute">
         <startupnotify>

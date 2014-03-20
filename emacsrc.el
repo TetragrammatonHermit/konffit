@@ -45,10 +45,12 @@
 
 ;; Keybindings for day/night themes
 (global-set-key [H-end] '(lambda () (interactive)
-                           (load-theme 'solarized-dark)
+                           (disable-theme 'solarized-light)
+                           (load-theme 'monokai)
                            (set-cursor-color "white")))
 (global-set-key [H-home] '(lambda () (interactive)
-                            (load-theme 'monokai)
+                            (disable-theme 'monokai)
+                            (load-theme 'solarized-light)
                             (set-cursor-color "black")))
 
 ;; Disable bleep at fail

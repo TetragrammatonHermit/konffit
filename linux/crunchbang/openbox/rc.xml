@@ -431,6 +431,15 @@
         <command>gpick</command>
       </action>
     </keybind>
+    <keybind key="W-u">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>KRuler</name>
+        </startupnotify>
+        <command>kruler</command>
+      </action>
+    </keybind>
     <keybind key="W-i">
       <action name="Execute">
         <startupnotify>

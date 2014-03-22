@@ -33,7 +33,9 @@
   (redraw-display))
 (global-set-key [M-f12] 'toggle-mode-line)
 
-
+; Make scratch-buffer more convenient
+(setq initial-scratch-message "")
+(setq initial-major-mode 'text-mode)
 
 ;; Theming
 (set-face-attribute 'default nil :font "DejaVu Sans Mono-9")

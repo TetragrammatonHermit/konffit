@@ -69,7 +69,8 @@
                             csharp-mode
                             applescript-mode
                                         ; haskell
-                            scion
+                            ghc
+                            ghci-completion
                                         ;web
                             emmet-mode
                             js3-mode

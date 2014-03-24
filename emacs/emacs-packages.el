@@ -47,6 +47,7 @@
                             visual-regexp-steroids
                             monokai-theme
                             solarized-theme
+                            flycheck
                                         ;icicles ;(flexible buffer autocomplete)
                             smex
                                         ;autocomplete-mode
@@ -69,8 +70,9 @@
                             csharp-mode
                             applescript-mode
                                         ; haskell
-                            ghc
-                            ghci-completion
+                            flycheck-hdevtools
+                            haskell-mode
+                         ;   ghci-completion
                                         ;web
                             emmet-mode
                             js3-mode

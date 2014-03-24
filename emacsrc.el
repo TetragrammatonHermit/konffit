@@ -231,6 +231,9 @@
   )
 
 
+(global-flycheck-mode t)
+
+
 ;;; Org-mode
 (global-set-key (kbd "C-x a") 'org-capture)
 (global-set-key (kbd "C-x C-a") 'org-agenda)
@@ -327,11 +330,24 @@
 (setq inferior-lisp-program "/usr/local/bin/clisp")
 
 ;; Haskell
-(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
-(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
-(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-unicode-input-method)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-doc)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
 
+;; Set tag browser
+(add-hook 'haskell-mode-hook 'turn-on-haskell-decl-scan)
+(add-hook 'haskell-mode-hook 'imenu-add-menubar-index)
+;;x(add-hook 'haskell-mode-hook flycheck-mode)
+
+;; (add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
+
+;; (speedbar-add-supported-extension ".hs")
+; setup ghc-mod
+;; (autoload 'ghc-init "ghc" nil t)
+;; (add-hook 'haskell-mode-hook (lambda () (ghc-init)))
 ;;; Other
+
+(eval-after-load 'flycheck '(require 'flycheck-hdevtools))
                                         ; Latex
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
 (setq reftex-plug-into-AUCTeX t)

@@ -1,0 +1,3 @@
+* Use terminal emacsclient as default git editor
+git config --global core.editor 'emacsclient -t -a=\"\"'
+

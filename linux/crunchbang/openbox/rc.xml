@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
-    <strength>15</strength>
-    <screen_edge_strength>20</screen_edge_strength>
+    <strength>25</strength>
+    <screen_edge_strength>25</screen_edge_strength>
   </resistance>
   <focus>
     <focusNew>yes</focusNew>
@@ -41,7 +41,7 @@
   </placement>
   <theme>
     <name>waldorf</name>
-    <titleLayout>CMILN</titleLayout>
+    <titleLayout>CINLDS</titleLayout>
     <!--
       avaible characters are NDSLIMC, each can occur at most once.
       N: window icon

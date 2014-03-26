@@ -38,7 +38,7 @@
 (setq initial-major-mode 'text-mode)
 
 ;; Theming
-(set-face-attribute 'default nil :font "DejaVu Sans Mono-9")
+(set-face-attribute 'default nil :font "DejaVu Sans Mono-10")
 (disable-theme 'zenburn)
 
 (load-theme 'solarized-light t)
@@ -48,6 +48,7 @@
 ;; Keybindings for day/night themes
 (global-set-key [H-end] '(lambda () (interactive)
                            (disable-theme 'solarized-light)
+                           (disable-theme 'solarized-dark)
                            (load-theme 'monokai)
                            (set-cursor-color "white")))
 (global-set-key [H-home] '(lambda () (interactive)
@@ -61,7 +62,7 @@
 (set-language-environment "UTF-8")
 
                                         ; Magit use current window (use emacsclient of current installation)
-(set-variable 'magit-emacsclient-executable "/usr/local/bin/emacsclient")
+(set-variable 'magit-emacsclient-executable "/usr/sbin/emacsclient")
 
                                         ; Setup emerge as mergetool
 (setq emerge-diff-options "--ignore-all-space")
@@ -324,7 +325,21 @@
 (setq js3-paren-indent-offset -2)
 (setq js3-square-indent-offset 2)
 (setq js3-curly-indent-offset 2)
-(setq js3-enter-indents-newline 1)
+(setq js3-enter-indents-newline t)
+
+;; JS2-Mode with ac
+;;TODO js2mode indent fix http://feeding.cloud.geek.nz/posts/proper-indentation-of-javascript-files/
+(add-hook 'js2-mode-hook 'ac-js2-mode)
+(define-key js2-mode-map [(return)] 'newline-and-indent)
+(define-key js2-mode-map [(backspace)] 'c-electric-backspace)
+;; (define-key js2-mode-map [("C-c c")] 
+;;   '(lambda()
+;;      (interactive)
+;;      (insert "/* -----[ ")
+;;      (save-excursion
+;;        (insert " ]----- */"))
+;;      ))
+
 
 ;; Lisp
 (setq inferior-lisp-program "/usr/local/bin/clisp")

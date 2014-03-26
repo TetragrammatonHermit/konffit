@@ -4,10 +4,10 @@
 # http://crunchbang.org/forums/viewtopic.php?id=14453
 
 # Set trackpoint
-sudo /home/jasalt/konffit/linux/setmouse.sh
+sudo /home/jasal/konffit/linux/setmouse.sh
 
 # Set xmodmap
-xmodmap /home/jasalt/konffit/linux/Xmodmap
+xmodmap /home/jasal/konffit/linux/Xmodmap
 
-sudo ifconfig eth0 down
-sudo iwconfig wlan0 txpower 1 
+#sudo ifconfig eth0 down
+sudo iwconfig wlp3s0 txpower 1

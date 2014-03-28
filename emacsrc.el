@@ -38,7 +38,7 @@
 (setq initial-major-mode 'text-mode)
 
 ;; Theming
-(set-face-attribute 'default nil :font "DejaVu Sans Mono-10")
+(set-face-attribute 'default nil :font "DejaVu Sans Mono-13")
 (disable-theme 'zenburn)
 
 (load-theme 'solarized-light t)
@@ -332,7 +332,7 @@
 (add-hook 'js2-mode-hook 'ac-js2-mode)
 (define-key js2-mode-map [(return)] 'newline-and-indent)
 (define-key js2-mode-map [(backspace)] 'c-electric-backspace)
-;; (define-key js2-mode-map [("C-c c")] 
+;; (define-key js2-mode-map [("C-c c")]
 ;;   '(lambda()
 ;;      (interactive)
 ;;      (insert "/* -----[ ")

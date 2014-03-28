@@ -14,7 +14,6 @@
 (require 'prelude-key-chord)
 (require 'prelude-latex)
 (require 'prelude-lisp)
-(require 'prelude-org)
 (require 'prelude-perl)
 (require 'prelude-python)
 (require 'prelude-scheme)
@@ -28,45 +27,43 @@
 (package-initialize)
 
                                         ; currently disabled: scad-mode
-(prelude-require-packages '(elpy
-                                        ;general
+(prelude-require-packages '(
+                            elpy
+                            ;;             ;general
                             key-chord
-                            ecb
-                            
+
                             dired-details
                             multiple-cursors
                             iy-go-to-char
-                            ;ido-better-flex
-                            slime
-                            htmlize
+                            ; ;ido-better-flex
+                            ; htmlize
                             google-translate
-                            gnuplot-mode
+                            ; gnuplot-mode
                             window-numbering
-                            guide-key
-                            visual-regexp
-                            visual-regexp-steroids
-                            monokai-theme
-                            solarized-theme
+                            ; ;;guide-key
+                            ; visual-regexp
+                            ; visual-regexp-steroids
                             flycheck
                                         ;icicles ;(flexible buffer autocomplete)
-                            smex
+                            ;smex
                                         ;autocomplete-mode
                             auto-complete
-                            ac-slime
                             ac-emmet
                             ac-js2
-                            ;; Sync Google Calendar
-                            request
-                            gntp
-                            org-gcal
+                            ; Sync Google Calendar
+                            ;request
+                            ;gntp
+                            ;org-gcal
                                         ; yasnippet
                             yasnippet
                             angular-snippets
                                         ; language modes
-                            tracwiki-mode
-                            arduino-mode
-                            sclang-extensions
-                            sclang-snippets
+                            ;tracwiki-mode
+                            ;; todo: not working arduino-mode
+                            ;; ac-slime
+                            ;;sclang-extensions
+                            ;;sclang-snippets
+                            
                             csharp-mode
                             applescript-mode
                                         ; haskell
@@ -75,8 +72,8 @@
                          ;   ghci-completion
                                         ;web
                             emmet-mode
-                            js3-mode
                             js2-mode
+                            ac-js2
                             js2-refactor
                             web-beautify
                             skewer-mode

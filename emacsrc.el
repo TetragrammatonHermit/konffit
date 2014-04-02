@@ -38,7 +38,14 @@
 (setq initial-major-mode 'text-mode)
 
 ;; Theming
-(set-face-attribute 'default nil :font "DejaVu Sans Mono-10")
+(set-face-attribute 'default nil :font "Ubuntu Mono-10")
+
+(defun my-buffer-face-mode-ubuntu ()
+  "Sets a fixed width (monospace) font in current buffer"
+  (interactive)
+  (setq buffer-face-mode-face '(:family "Ubuntu"))
+  (buffer-face-mode))
+;; (set-face-attribute 'default nil :font "DejaVu Sans Mono-10")
 (disable-theme 'zenburn)
 
 (load-theme 'solarized-light t)
@@ -70,7 +77,7 @@
 
                                         ; Use Chromium as 'default' browser
 (setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "chromium-browser")
+      browse-url-generic-program "chromium")
 
 ;; Use conkeror as default browser
 ;;(setq browse-url-generic-program (executable-find "conkeror"))
@@ -82,7 +89,7 @@
   "Set the transparency of the frame window.  VALUE = 0-100."
   (interactive "nTransparency Value 0 - 100 opaque:")
   (set-frame-parameter (selected-frame) 'alpha value))
-(transparency 90)
+;(transparency 90)
 
 (smartparens-global-mode +1)
 (key-chord-mode 1)
@@ -99,7 +106,6 @@
 (setq google-translate-default-target-language '"en")
 (setq google-translate-default-source-language '"fi")
 (set-face-attribute 'google-translate-translation-face nil :height 2)
-
 
 ;; Minibuffer autocompletition with ido-mode and sme
 ;; http://www.masteringemacs.org/articles/2010/10/10/introduction-to-ido-mode/
@@ -317,21 +323,36 @@
 (setq emmet-move-cursor-between-quotes t)
 
 ;; Javascript
-                                        ;(setq js-indent-level 4)
-                                        ;(setq-default js2-basic-offset 4)
-                                        ;(add-to-list 'auto-mode-alist (cons (rx ".js" eos) 'js2-mode))
 
-(setq js3-expr-indent-offset 0)
-(setq js3-paren-indent-offset -2)
-(setq js3-square-indent-offset 2)
-(setq js3-curly-indent-offset 2)
-(setq js3-enter-indents-newline t)
+;; (setq js3-expr-indent-offset 0)
+;; (setq js3-paren-indent-offset -2)
+;; (setq js3-square-indent-offset 2)
+;; (setq js3-curly-indent-offset 2)
+;; (setq js3-enter-indents-newline t)
 
-;; JS2-Mode with ac
+;; js2-mode with autocomplete
 ;;TODO js2mode indent fix http://feeding.cloud.geek.nz/posts/proper-indentation-of-javascript-files/
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
+(defun my-js2-mode-hook ()
+"Custom keybindings for js2-mode"
+  (define-key js2-mode-map [(meta control \;)] 
+    '(lambda()
+       (interactive)
+       (insert "/* -----[ ")
+       (save-excursion
+         (insert " ]----- */"))
+       ))
+  (define-key js2-mode-map [(return)] 'newline-and-indent)
+  (define-key js2-mode-map [(backspace)] 'c-electric-backspace)
+  (define-key js2-mode-map [(control d)] 'c-electric-delete-forward)
+  (message "My JS2 hook"))
+
+(add-hook 'js2-mode-hook 'my-js2-mode-hook)
 (add-hook 'js2-mode-hook 'ac-js2-mode)
-(define-key js2-mode-map [(return)] 'newline-and-indent)
-(define-key js2-mode-map [(backspace)] 'c-electric-backspace)
+
+;(define-key js2-mode-map [(backspace)] 'c-electric-backspace)
+
 ;; (define-key js2-mode-map [("C-c c")] 
 ;;   '(lambda()
 ;;      (interactive)
@@ -387,6 +408,7 @@
        )
 (define-key global-map (kbd "C-x r") 'save-and-reload)
 
+
 (defun vi-open-line-above ()
   "Insert a newline above the current line and put point at beginning."
   (interactive)
@@ -419,7 +441,7 @@
 
 ;; Hide compilation buffer eg after sass scss compilation on file save
 (defun bury-compile-buffer-if-successful (buffer string)
-  "Bury a compilation buffer if succeeded without warnings "
+  "Bury a compilation buffer if succeeded without warnings."
   (if (and
        (string-match "compilation" (buffer-name buffer))
        (string-match "finished" string)

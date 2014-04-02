@@ -4,7 +4,7 @@
 ;;; Code:
 
 ;;;; General
-
+(princ "ladataan emacsrc")
 ;; Start daemon
 (load "server")
 

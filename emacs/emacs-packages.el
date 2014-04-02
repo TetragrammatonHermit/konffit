@@ -72,10 +72,10 @@
                                         ; haskell
                             flycheck-hdevtools
                             haskell-mode
-                         ;   ghci-completion
+                                        ;ghci-completion
                                         ;web
                             emmet-mode
-                            js3-mode
+                            ;js3-mode
                             js2-mode
                             js2-refactor
                             web-beautify

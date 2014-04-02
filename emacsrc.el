@@ -38,6 +38,7 @@
 (setq initial-major-mode 'text-mode)
 
 ;; Theming
+<<<<<<< HEAD
 (set-face-attribute 'default nil :font "Ubuntu Mono-10")
 
 (defun my-buffer-face-mode-ubuntu ()
@@ -46,6 +47,9 @@
   (setq buffer-face-mode-face '(:family "Ubuntu"))
   (buffer-face-mode))
 ;; (set-face-attribute 'default nil :font "DejaVu Sans Mono-10")
+=======
+(set-face-attribute 'default nil :font "DejaVu Sans Mono-13")
+>>>>>>> bea4ad619e7815b06cdd129edddce5e15360b9b2
 (disable-theme 'zenburn)
 
 (load-theme 'solarized-light t)
@@ -350,10 +354,16 @@
 
 (add-hook 'js2-mode-hook 'my-js2-mode-hook)
 (add-hook 'js2-mode-hook 'ac-js2-mode)
+<<<<<<< HEAD
 
 ;(define-key js2-mode-map [(backspace)] 'c-electric-backspace)
 
 ;; (define-key js2-mode-map [("C-c c")] 
+=======
+(define-key js2-mode-map [(return)] 'newline-and-indent)
+(define-key js2-mode-map [(backspace)] 'c-electric-backspace)
+;; (define-key js2-mode-map [("C-c c")]
+>>>>>>> bea4ad619e7815b06cdd129edddce5e15360b9b2
 ;;   '(lambda()
 ;;      (interactive)
 ;;      (insert "/* -----[ ")

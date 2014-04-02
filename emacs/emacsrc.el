@@ -24,7 +24,7 @@
 
 
 (defun toggle-mode-line () ; "toggles the modeline on and off"
-       (interactive) 
+       (interactive)
        (setq mode-line-format
              (if (equal mode-line-format nil)
                  (default-value 'mode-line-format)) )
@@ -34,11 +34,11 @@
 
 
 ;; Theming
-(set-face-attribute 'default nil :font "DejaVu Sans Mono-9")
+(set-face-attribute 'default nil :font "DejaVu Sans Mono-13")
 (disable-theme 'zenburn)
 
 (load-theme 'solarized-light t)
-(set-cursor-color "black") 
+(set-cursor-color "black")
 (set-default 'cursor-type 'bar)
 
 ;; Keybindings for day/night themes
@@ -70,7 +70,7 @@
   "Set the transparency of the frame window.  VALUE = 0-100."
   (interactive "nTransparency Value 0 - 100 opaque:")
   (set-frame-parameter (selected-frame) 'alpha value))
-(transparency 90)
+;(transparency 90)
 
 (smartparens-global-mode +1)
 (key-chord-mode 1)
@@ -110,7 +110,7 @@
 (global-set-key (kbd "C-\"") 'er/expand-region)
 
 ;; to transpose words backwards without having to type the negative argument
-;; (global-set-key (kbd "M-T") "C-u\ -1\ \M-t") 
+;; (global-set-key (kbd "M-T") "C-u\ -1\ \M-t")
 
 (global-set-key (kbd "M-§") 'other-frame)
 
@@ -220,7 +220,7 @@
           (lambda ()
             (org-indent-mode t)
             (visual-line-mode t)
-            
+
             ;(add-to-list 'org-modules 'habits)
             (local-set-key "\M-\C-g" 'org-plot/gnuplot)
             ;;(local-unset-key "<C-M-down>")
@@ -247,7 +247,7 @@
 ;; HTML
 ; Emmet
 ;(setq sgml-basic-offset 4)
-;(setq tab-width 4) not used 
+;(setq tab-width 4) not used
 
 (add-hook 'html-mode-hook
           (lambda()
@@ -268,7 +268,7 @@
   '(define-key emmet-mode-keymap (kbd "C-j") nil))
                                         ; Indent spaces.
 
-(add-hook 'emmet-mode-hook (lambda () 
+(add-hook 'emmet-mode-hook (lambda ()
                              (setq emmet-indentation 4)
                              (local-set-key (kbd "<backtab>") 'emmet-expand-line)))
 
@@ -279,6 +279,23 @@
 ;(setq js-indent-level 4)
 ;(setq-default js2-basic-offset 4)
 ;(add-to-list 'auto-mode-alist (cons (rx ".js" eos) 'js2-mode))
+
+(defun my-js2-mode-hook ()
+  (define-key js2-mode-map [(meta control |)] 'cperl-lineup)
+  (define-key js2-mode-map [(meta control \;)] 
+    '(lambda()
+       (interactive)
+       (insert "/* -----[ ")
+       (save-excursion
+         (insert " ]----- */"))
+       ))
+  (define-key js2-mode-map [(return)] 'newline-and-indent)
+  ;; (define-key js2-mode-map [(backspace)] 'c-electric-backspace)
+  ;; (define-key js2-mode-map [(control d)] 'c-electric-delete-forward)
+  (message "My JS2 hook"))
+
+(add-hook 'js2-mode-hook 'my-js2-mode-hook)
+(add-hook 'js2-mode-hook 'ac-js2-mode)
 
 (custom-set-variables
  ;; Your init file should contain only one such instance.

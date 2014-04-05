@@ -26,12 +26,10 @@
                "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
-                                        ; currently disabled: scad-mode
 (prelude-require-packages '(
-                            elpy
-                            ;;             ;general
-                            key-chord
 
+                            key-chord
+                            writeroom-mode
                             dired-details
                             multiple-cursors
                             iy-go-to-char
@@ -50,7 +48,8 @@
                             auto-complete
                             ac-emmet
                             ac-js2
-                            ; Sync Google Calendar
+
+                            ; Sync Google Calendar TODO
                             ;request
                             ;gntp
                             ;org-gcal
@@ -58,6 +57,7 @@
                             yasnippet
                             angular-snippets
                                         ; language modes
+                            elpy
                             ;tracwiki-mode
                             ;; todo: not working arduino-mode
                             ;; ac-slime
@@ -77,6 +77,8 @@
                             js2-refactor
                             web-beautify
                             skewer-mode
+
+                                        ;scad-mode
                             ))
 
 ;;; emacs-packages.el ends here

@@ -31,7 +31,7 @@
     show_titlebar = False
     cursor_shape = ibeam
     color_scheme = custom
-    font = Ubuntu Mono 11
+    font = Droid Sans Mono 10
     background_color = "#131313"
     cursor_blink = False
     scrollback_infinite = True

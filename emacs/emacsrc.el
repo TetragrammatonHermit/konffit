@@ -1,20 +1,23 @@
 ;;; custom --- config
 ;;; Commentary:
-;;  This is a bad example of an emacs configuration file, because I haven't had time to structure and comment it properly.
+;; This is a bad example of an Emacs configuration file.
+;; I haven't had time to structure and comment it properly.
 ;;; Code:
+
 
 ;;;; General
 
-
-;; Start daemon
+;; Start daemon at start TODO: run this on system startup throught systemd etc
 (load "server")
-
 (unless (server-running-p) (server-start))
 
+
 (x-focus-frame nil)
-                                        ; Disable scroll bars
+
+;; Disable scroll bars
 (scroll-bar-mode -1)
-                                        ; Make OSX special characters work
+
+;; Make OSX special characters work with alt, set cmd to meta.
 (setq mac-option-modifier 'nil
       mac-command-modifier 'meta
       x-select-enable-clipboard t)
@@ -26,8 +29,9 @@
 ;; Change "tabs" like in chromium / sublimetext etc
 (window-numbering-mode t)
 
-(defun toggle-mode-line () ; "toggles the modeline on and off"
+(defun toggle-mode-line () 
   (interactive)
+"toggles the modeline on and off"
   (setq mode-line-format
         (if (equal mode-line-format nil)
             (default-value 'mode-line-format)) )
@@ -40,12 +44,12 @@
 
 ;; Theming
 (defun buffer-face-variable-width () ;;TODO: call on writeroom hook
-  "Sets a non fixed width font in current buffer"
+  "Set a non fixed width font in current buffer."
   (interactive)
   (setq buffer-face-mode-face '(:family "Droid Sans") )
   (buffer-face-mode))
 (defun buffer-face-monospaced ()
-  "Sets a non fixed width font in current buffer"
+  "Set a non fixed width font in current buffer."
   (interactive)
   (setq buffer-face-mode-face '(:family "Droid Sans Mono") )
   (buffer-face-mode))
@@ -73,16 +77,17 @@
 ;; Disable bleep at fail
 (setq ring-bell-function 'ignore)
 
+;; Default to UTF-8
 (set-language-environment "UTF-8")
 
-                                        ; Magit use current window (use emacsclient of current installation)
+;; Magit use current window (use emacsclient of current installation)
 (set-variable 'magit-emacsclient-executable "/usr/sbin/emacsclient")
 
-                                        ; Setup emerge as mergetool
+;; Setup emerge as mergetool
 (setq emerge-diff-options "--ignore-all-space")
 
 
-                                        ; Use Chromium as 'default' browser
+;; Use Chromium as 'default' browser
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "chromium")
 
@@ -91,20 +96,22 @@
 ;;(setq browse-url-browser-function 'browse-url-generic)
 
 
-;; Set transparency of emacs
 (defun transparency (value)
   "Set the transparency of the frame window.  VALUE = 0-100."
   (interactive "nTransparency Value 0 - 100 opaque:")
   (set-frame-parameter (selected-frame) 'alpha value))
+
+;; Set transparency of Emacs window
 ;(transparency 90)
 
 (smartparens-global-mode +1)
-(key-chord-mode 1)
-                                        ;(setq key-chord-two-keys-delay 0.00125)
+
+
 (setq prelude-flyspell nil)             ; Disable spell checking
 (setq prelude-guru nil)
                                         ; Disable whitespace-mode
 (setq prelude-whitespace nil)
+
 
 (require 'google-translate)
 (global-set-key (kbd "C-x t") 'google-translate-at-point)
@@ -124,23 +131,13 @@
 (global-set-key (kbd "M-x") 'smex)
 
 
-
-                                        ; Prelude stole some default keybindings
+(key-chord-mode 1) 
+;; Unmap dumb Prelude keybindings
 (key-chord-define-global "uu" nil)
-                                        ;(key-chord-define-global "zz" 'undo-tree-visualize)
 (key-chord-define-global "yy" nil)
                                         ;(key-chord-define-global "jl" nil)
 (key-chord-define-global "vv" 'browse-kill-ring)
-(global-set-key (kbd "C-c c") 'comment-or-uncomment-region)
-(global-set-key (kbd "C-\"") 'er/expand-region)
 
-;; to transpose words backwards without having to type the negative argument
-;; (global-set-key (kbd "M-T") "C-u\ -1\ \M-t")
-
-(global-set-key (kbd "M-§") 'other-frame)
-
-;; Pop marks faster
-(setq set-mark-command-repeat-pop 't)
 
 (key-chord-define-global "hh" 'pop-to-mark-command)
 (key-chord-define-global "jk" 'ace-jump-word-mode)
@@ -150,13 +147,24 @@
 (setq iy-go-to-char-kill-ring-save t)
 
 (key-chord-define-global "kd" 'mc/edit-lines)
+                                        
 
-                                        ;(key-chord-define-global "ff" 'iy-go-to-char-kill-region) TODO howto
+(global-set-key (kbd "C-c c") 'comment-or-uncomment-region)
+(global-set-key (kbd "C-c SPC") 'er/expand-region)
 
+;; to transpose words backwards without having to type the negative argument
+;; (global-set-key (kbd "M-T") "C-u\ -1\ \M-t")
 
-                                        ; Autocomplete
-                                        ;(global-auto-complete-mode t)
-                                        ;(add-to-list 'ac-dictionary-directories "~/notes/ac-dict")
+(global-set-key (kbd "M-§") 'other-frame)
+
+;; Pop marks faster with just space
+(setq set-mark-command-repeat-pop 't)
+
+;; Autocomplete
+
+;;(global-auto-complete-mode t)
+;;(add-to-list 'ac-dictionary-directories "~/notes/ac-dict") 
+
 (require 'auto-complete-config)
 (ac-config-default)
 (setq ac-menu-height 9)
@@ -165,37 +173,22 @@
 (setq ac-auto-start 2)
 (setq ac-ignore-case nil)
 
-
-                                        ; Change yasnippet binding
+;; Change yasnippet binding
 (require 'yasnippet)
 (yas-global-mode t)
 (define-key yas-minor-mode-map (kbd "<tab>") nil)
 (define-key yas-minor-mode-map (kbd "TAB") nil)
 (define-key yas-minor-mode-map (kbd "C-<tab>") 'yas-expand)
 (setq yas-prompt-functions '(yas-ido-prompt))
-;; Add custom snippets
 
+;; Add custom snippets
 (setq yas-snippet-dirs (append yas-snippet-dirs
                                '("~/konffit/emacs/yasnippets")))
 
+;; Set projectile to create a cache 
 (setq projectile-enable-caching t)
 
-(require 'dired-details)
-(dired-details-install)
-(setq-default dired-details-hidden-string "")
-
-(defun dired-open-mac ()
-  "Open file from dired buffer with OSX default program."
-  (interactive)
-  (let ((file-name (dired-get-file-for-visit)))
-    (if (file-exists-p file-name)
-        (call-process "/usr/bin/thunar" nil 0 nil file-name))))
-
-(add-hook 'dired-mode-hook
-          '(lambda ()
-             (define-key dired-mode-map "o" 'dired-open-mac)))
-
-;; Acme search
+;; Acme-like mouse right-click search
 (global-set-key [(mouse-3)] 'acme-search-forward)
 (global-set-key [(shift mouse-3)] 'acme-search-backward)
 
@@ -207,9 +200,6 @@
 (define-key global-map (kbd "C-c C-r") 'vr/replace)
 (define-key global-map (kbd "C-c C-q") 'vr/query-replace)
 (define-key global-map (kbd "C-c m") 'vr/mc-mark)
-;; to use visual-regexp-steroids's isearch instead of the built-in regexp isearch,s also include the following lines:
-;(define-key esc-map (kbd "C-r") 'vr/isearch-backward) ;; C-M-r
-;(define-key esc-map (kbd "C-s") 'vr/isearch-forward) ;; C-M-s
 
 ;; Multiple cursors
 (key-chord-define-global "jn" 'mc/mark-more-like-this-extended)
@@ -218,16 +208,32 @@
 (global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)
 (global-set-key (kbd "H-<mouse-1>") 'mc/add-cursor-on-click)
 
-
-                                        ; Copy current buffer path to clipboard
+;; Copy current buffer path to clipboard
 (define-key prelude-mode-map (kbd "C-c w") 'prelude-copy-file-name-to-clipboard)
 
 ;;; Dired
 ;; allow dired to be able to delete or copy a whole dir.
 (setq dired-recursive-copies (quote always)) ; “always” means no asking
 (setq dired-recursive-deletes (quote top)) ; “top” means ask once
+
 ;; Use split window as default copy/rename target
+;; Works nicely with tramp as a sftp file manager.
 (setq dired-dwim-target t)
+
+(require 'dired-details)
+(dired-details-install)
+(setq-default dired-details-hidden-string "")
+
+(defun dired-open-thunar ()
+  "Path file from dired buffer with thunar."
+  (interactive)
+  (let ((file-name (dired-get-file-for-visit)))
+    (if (file-exists-p file-name)
+        (call-process "/usr/bin/thunar" nil 0 nil file-name))))
+
+(add-hook 'dired-mode-hook
+          '(lambda ()
+             (define-key dired-mode-map "o" 'dired-open-thunar)))
 
 ;; {{ copy the file-name/full-path in dired buffer into clipboard
 ;; `w` => copy file name
@@ -249,13 +255,12 @@
 
 
 ;;; Org-mode
-(global-set-key (kbd "C-x a") 'org-capture)
+(global-set-key (kbd "C-C C-a") 'org-capture)
 (global-set-key (kbd "C-x C-a") 'org-agenda)
                                         ;(global-set-key "\C-c\C-cl" 'org-store-link)
                                         ;(global-set-key "\C-c\C-cb " 'org-iswitchb)
 (setq org-default-notes-file  "~/notes/todo.org")
 
-                                        ;(setq org-ctrl-k-protect-subtree t)
 (setq org-catch-invisible-edits 'show)
 
 ;; Set todo item states
@@ -274,9 +279,7 @@
           (lambda ()
             (org-indent-mode t)
             (visual-line-mode t)
-
-                                        ;(add-to-list 'org-modules 'habits)
-            (local-set-key "\M-\C-g" 'org-plot/gnuplot)
+            ;;(local-set-key "\M-\C-g" 'org-plot/gnuplot)
             ;;(local-unset-key "<C-M-down>")
             ;;(local-set-key "<C-M-down>" 'org-move-subtree-down)
             ;;(local-unset-key "<C-M-up>")
@@ -287,19 +290,12 @@
 ;; Add syntax highlight to src blocks
 (setq org-src-fontify-natively t)
 
-(defface org-block-background
-  '((t (:background "#EBEBEB")))
-  "Face used for the source block background.")
 
 ;;; Python
-                                        ; Elpy
 (elpy-enable)
 
 
 ;; HTML
-                                        ; Emmet
-                                        ;(setq sgml-basic-offset 4)
-                                        ;(setq tab-width 4) not used
 
 (add-hook 'html-mode-hook
           (lambda()
@@ -309,23 +305,36 @@
 (defadvice sgml-delete-tag (after reindent-buffer activate)
   (prelude-cleanup-buffer))
 
-(add-hook 'sgml-mode-hook 'emmet-mode)
+;; Emmet
+;(add-hook 'sgml-mode-hook 'emmet-mode)
 (add-hook 'sgml-mode-hook
           (lambda ()
             (progn
               (emmet-mode)
               )))
 (add-hook 'css-mode-hook  'emmet-mode)
+
 (eval-after-load "emmet-mode"
   '(define-key emmet-mode-keymap (kbd "C-j") nil))
-                                        ; Indent spaces.
 
 (add-hook 'emmet-mode-hook (lambda ()
                              (setq emmet-indentation 4)
                              (local-set-key (kbd "<backtab>") 'emmet-expand-line)))
 
-
 (setq emmet-move-cursor-between-quotes t)
+
+(defun unhtml (start end)
+  (interactive "r")
+  (save-excursion
+    (save-restriction
+      (narrow-to-region start end)
+      (goto-char (point-min))
+      (replace-string "&" "&amp;")
+      (goto-char (point-min))
+      (replace-string "<" "&lt;")
+      (goto-char (point-min))
+      (replace-string ">" "&gt;")
+      )))
 
 ;; Javascript
 
@@ -402,13 +411,6 @@
 (setq reftex-plug-into-AUCTeX t)
 (setq-default ispell-program-name "aspell")
 
-;;;;; Custom functions
-(defun save-and-reload () "Save and reload browser." (interactive)
-       (save-buffer)
-       (shell-command "chrome-reload")
-       )
-(define-key global-map (kbd "C-x r") 'save-and-reload)
-
 
 (defun vi-open-line-above ()
   "Insert a newline above the current line and put point at beginning."
@@ -442,7 +444,7 @@
 
 ;; Hide compilation buffer eg after sass scss compilation on file save
 (defun bury-compile-buffer-if-successful (buffer string)
-  "Bury a compilation buffer if succeeded without warnings."
+  "Bury a compilation BUFFER if succeeded without warnings."
   (if (and
        (string-match "compilation" (buffer-name buffer))
        (string-match "finished" string)

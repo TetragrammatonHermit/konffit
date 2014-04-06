@@ -33,6 +33,7 @@
                             dired-details
                             multiple-cursors
                             iy-go-to-char
+                            htmlize
                             ; ;ido-better-flex
                             ; htmlize
                             google-translate

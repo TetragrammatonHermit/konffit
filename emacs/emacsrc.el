@@ -77,6 +77,8 @@
 ;; Disable bleep at fail
 (setq ring-bell-function 'ignore)
 
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 ;; Default to UTF-8
 (set-language-environment "UTF-8")
 
@@ -123,12 +125,22 @@
 
 ;; Minibuffer autocompletition with ido-mode and sme
 ;; http://www.masteringemacs.org/articles/2010/10/10/introduction-to-ido-mode/
-(setq ido-enable-flex-matching t)
-(setq ido-everywhere t)
-(setq ido-use-filename-at-point 'guess)
-(ido-mode t)
-(global-set-key (kbd "M-x") nil)
-(global-set-key (kbd "M-x") 'smex)
+;;(setq ido-enable-flex-matching t)
+;;(setq ido-everywhere t)
+;;(setq ido-use-filename-at-point 'guess)
+;;(ido-mode t)
+;;(setq ido-file-extensions-order '(".org" ".tex"))
+(require 'lacarte)
+(global-set-key [menu] 'lacarte-execute-command)
+(global-set-key [?\M-`] 'lacarte-execute-command) ;replace orig. command
+(require 'fuzzy-match)
+
+(require 'icicles)
+(icy-mode 1)
+
+
+;; (global-set-key (kbd "M-x") nil)
+;; (global-set-key (kbd "M-x") 'smex)
 
 
 (key-chord-mode 1) 
@@ -231,9 +243,35 @@
     (if (file-exists-p file-name)
         (call-process "/usr/bin/thunar" nil 0 nil file-name))))
 
+(defun dired-open-in-external-app ()
+  "Open the current file or dired marked files in external app."
+  (interactive)
+  (let ( doIt
+         (myFileList
+          (cond
+           ((string-equal major-mode "dired-mode") (dired-get-marked-files))
+           (t (list (buffer-file-name))) ) ) )
+
+    (setq doIt (if (<= (length myFileList) 5)
+                   t
+                 (y-or-n-p "Open more than 5 files?") ) )
+
+    (when doIt
+      (cond
+       ((string-equal system-type "windows-nt")
+        (mapc (lambda (fPath) (w32-shell-execute "open" (replace-regexp-in-string "/" "\\" fPath t t)) ) myFileList)
+        )
+       ((string-equal system-type "darwin")
+        (mapc (lambda (fPath) (shell-command (format "open \"%s\"" fPath)) )  myFileList) )
+       ((string-equal system-type "gnu/linux")
+        (mapc (lambda (fPath) (let ((process-connection-type nil)) (start-process "" nil "xdg-open" fPath)) ) myFileList) ) ) ) ) )
+
 (add-hook 'dired-mode-hook
           '(lambda ()
-             (define-key dired-mode-map "o" 'dired-open-thunar)))
+             (define-key dired-mode-map "o" 'dired-open-in-external-app)))
+
+
+
 
 ;; {{ copy the file-name/full-path in dired buffer into clipboard
 ;; `w` => copy file name
@@ -254,7 +292,21 @@
 (global-flycheck-mode t)
 
 
+
 ;;; Org-mode
+
+;; Add week numbers to calendar
+(copy-face font-lock-constant-face 'calendar-iso-week-face)
+(set-face-attribute 'calendar-iso-week-face nil
+                    :height 0.7)
+(setq calendar-intermonth-text
+      '(propertize
+        (format "%2d"
+                (car
+                 (calendar-iso-from-absolute
+                  (calendar-absolute-from-gregorian (list month day year)))))
+        'font-lock-face 'calendar-iso-week-face))
+
 (global-set-key (kbd "C-C C-a") 'org-capture)
 (global-set-key (kbd "C-x C-a") 'org-agenda)
                                         ;(global-set-key "\C-c\C-cl" 'org-store-link)
@@ -268,17 +320,18 @@
       '((sequence "TODO(t)" "WAIT(w)" "|" "DONE(d)")))
 
 ;; TODO: set ax-tiddly.el?
-;; (setq org-export-backends (quote (
-;;                                   tiddly
-;;                                   ascii
-;;                                   html
-;;                                   latex
-;;                                   odt)))
+
 
 (add-hook 'org-mode-hook
           (lambda ()
             (org-indent-mode t)
             (visual-line-mode t)
+            (setq org-export-backends (quote (
+                                              md
+                                              ascii
+                                              html
+                                        ;latex
+                                              odt)))
             ;;(local-set-key "\M-\C-g" 'org-plot/gnuplot)
             ;;(local-unset-key "<C-M-down>")
             ;;(local-set-key "<C-M-down>" 'org-move-subtree-down)
@@ -292,8 +345,21 @@
 
 
 ;;; Python
+(require 'elpy)
 (elpy-enable)
+;(elpy-enable) TODO: fix
 
+(elpy-use-ipython)
+(setq jedi:complete-on-dot t)
+
+(add-hook 'python-mode-hook
+          (lambda ()
+            (abbrev-mode 1)
+            (auto-fill-mode 1)
+            (linum-mode 1)
+            (jedi:setup)
+            (if (eq window-system 'x)
+                (font-lock-mode 1))))
 
 ;; HTML
 
@@ -457,6 +523,18 @@
                         (switch-to-prev-buffer (get-buffer-window buf) 'kill))
                       buffer)))
 (add-hook 'compilation-finish-functions 'bury-compile-buffer-if-successful)
+
+
+;;"Quickly show 2 buffers next to eachother. TODO: fix
+(defun horizontal-split ()
+  (interactive "P")
+  (delete-other-windows)
+  (split-window-right)
+  (next-buffer)
+  (other-window)
+  )
+
+(define-key global-map (kbd "C-x 6") (lambda () (interactive) (horizontal-split)))
 
 (provide 'emacsrc)
 

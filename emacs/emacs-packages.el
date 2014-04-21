@@ -43,7 +43,9 @@
                             ; visual-regexp
                             ; visual-regexp-steroids
                             flycheck
-                                        ;icicles ;(flexible buffer autocomplete)
+                            icicles
+                            lacarte
+                            fuzzy-match
                             ;smex
                                         ;autocomplete-mode
                             auto-complete
@@ -59,6 +61,7 @@
                             angular-snippets
                                         ; language modes
                             elpy
+                            jedi
                             ;tracwiki-mode
                             ;; todo: not working arduino-mode
                             ;; ac-slime

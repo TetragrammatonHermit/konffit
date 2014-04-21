@@ -155,7 +155,7 @@
 (key-chord-define-global "jk" 'ace-jump-word-mode)
 (key-chord-define-global "jj" 'ace-jump-char-mode)
 (key-chord-define-global "kl" 'iy-go-to-char)
-(key-chord-define-global "ds" 'iy-go-to-char-backward)
+(key-chord-define-global "df" 'iy-go-to-char-backward)
 (setq iy-go-to-char-kill-ring-save t)
 
 (key-chord-define-global "kd" 'mc/edit-lines)

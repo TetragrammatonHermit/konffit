@@ -204,10 +204,6 @@
 (global-set-key [(mouse-3)] 'acme-search-forward)
 (global-set-key [(shift mouse-3)] 'acme-search-backward)
 
-;; Guide key https://github.com/kbkbkbkb1/guide-key
-(setq guide-key/guide-key-sequence '("C-x 4"))
-(guide-key-mode 1)  ; Enable guide-key-mode
-
 ;; Visual regexp
 (define-key global-map (kbd "C-c C-r") 'vr/replace)
 (define-key global-map (kbd "C-c C-q") 'vr/query-replace)
@@ -292,9 +288,6 @@
 (global-flycheck-mode t)
 
 
-
-;;; Org-mode
-
 ;; Add week numbers to calendar
 (copy-face font-lock-constant-face 'calendar-iso-week-face)
 (set-face-attribute 'calendar-iso-week-face nil
@@ -306,6 +299,13 @@
                  (calendar-iso-from-absolute
                   (calendar-absolute-from-gregorian (list month day year)))))
         'font-lock-face 'calendar-iso-week-face))
+
+;; Set week to start on monday
+(setq calendar-week-start-day 1)
+
+;;; Org-mode
+
+
 
 (global-set-key (kbd "C-C C-a") 'org-capture)
 (global-set-key (kbd "C-x C-a") 'org-agenda)

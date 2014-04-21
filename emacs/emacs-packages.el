@@ -39,7 +39,6 @@
                             google-translate
                             ; gnuplot-mode
                             window-numbering
-                            ; ;;guide-key
                             ; visual-regexp
                             ; visual-regexp-steroids
                             flycheck

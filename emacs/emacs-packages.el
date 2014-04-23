@@ -77,6 +77,9 @@
                             js2-refactor
                             web-beautify
                             skewer-mode
+                                        ;statistics
+                            ess
+                            
                             ))
 
 ;;; emacs-packages.el ends here

@@ -27,7 +27,7 @@
 (package-initialize)
 
 (prelude-require-packages '(
-
+                            suomalainen-kalenteri
                             key-chord
                             writeroom-mode
                             dired-details
@@ -50,7 +50,6 @@
                             auto-complete
                             ac-emmet
                             ac-js2
-
                             ; Sync Google Calendar TODO
                             ;request
                             ;gntp

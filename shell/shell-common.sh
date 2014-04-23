@@ -7,7 +7,7 @@ alias myip="ifconfig wlan0"
 
 alias bitch,=sudo
 
-alias j="autojump"
+#alias j="autojump"
 
 alias gf="git commit -am  'Quick commit' && git push"
 

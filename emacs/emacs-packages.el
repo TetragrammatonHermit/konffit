@@ -65,7 +65,6 @@
                             ;; ac-slime
                             ;;sclang-extensions
                             ;;sclang-snippets
-                            
                             csharp-mode
                             applescript-mode
                                         ; haskell
@@ -79,6 +78,8 @@
                             js2-refactor
                             web-beautify
                             skewer-mode
+                                        ;statistics
+                            ess
 
                                         ;scad-mode
                             ))

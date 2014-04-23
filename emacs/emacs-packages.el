@@ -26,31 +26,32 @@
                "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
-                                        ; currently disabled: scad-mode
 (prelude-require-packages '(
-                            elpy
-                            ;;             ;general
-                            key-chord
 
+                            key-chord
+                            writeroom-mode
                             dired-details
                             multiple-cursors
                             iy-go-to-char
+                            htmlize
                             ; ;ido-better-flex
                             ; htmlize
                             google-translate
                             ; gnuplot-mode
                             window-numbering
-                            ; ;;guide-key
                             ; visual-regexp
                             ; visual-regexp-steroids
                             flycheck
-                                        ;icicles ;(flexible buffer autocomplete)
+                            icicles
+                            lacarte
+                            fuzzy-match
                             ;smex
                                         ;autocomplete-mode
                             auto-complete
                             ac-emmet
                             ac-js2
-                            ; Sync Google Calendar
+
+                            ; Sync Google Calendar TODO
                             ;request
                             ;gntp
                             ;org-gcal
@@ -58,18 +59,19 @@
                             yasnippet
                             angular-snippets
                                         ; language modes
+                            elpy
+                            jedi
                             ;tracwiki-mode
                             ;; todo: not working arduino-mode
                             ;; ac-slime
                             ;;sclang-extensions
                             ;;sclang-snippets
-                            
                             csharp-mode
                             applescript-mode
                                         ; haskell
                             flycheck-hdevtools
                             haskell-mode
-                         ;   ghci-completion
+                                        ;ghci-completion
                                         ;web
                             emmet-mode
                             js2-mode
@@ -79,7 +81,8 @@
                             skewer-mode
                                         ;statistics
                             ess
-                            
+
+                                        ;scad-mode
                             ))
 
 ;;; emacs-packages.el ends here

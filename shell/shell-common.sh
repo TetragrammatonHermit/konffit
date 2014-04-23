@@ -22,7 +22,7 @@ alias e='emacsclient -c'
 # gui client without waiting
 alias em='emacsclient -c -n'
 
-alias serve="python -m SimpleHTTPServer 3333"
+alias serve="python2 -m SimpleHTTPServer 3333"
 
 # Google translate (https://github.com/soimort/google-translate-cli)
 alias te="trs {fi=en} " # To English

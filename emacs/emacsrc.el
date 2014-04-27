@@ -152,9 +152,9 @@
 
 
 (key-chord-define-global "hh" 'pop-to-mark-command)
-(key-chord-define-global "jk" 'ace-jump-word-mode)
+(key-chord-define-global "kl" 'ace-jump-word-mode)
 (key-chord-define-global "jj" 'ace-jump-char-mode)
-(key-chord-define-global "kl" 'iy-go-to-char)
+(key-chord-define-global "jk" 'iy-go-to-char)
 (key-chord-define-global "df" 'iy-go-to-char-backward)
 (setq iy-go-to-char-kill-ring-save t)
 
@@ -311,9 +311,30 @@
 (global-set-key (kbd "C-x C-a") 'org-agenda)
                                         ;(global-set-key "\C-c\C-cl" 'org-store-link)
                                         ;(global-set-key "\C-c\C-cb " 'org-iswitchb)
+
 (setq org-default-notes-file  "~/notes/todo.org")
 
 (setq org-catch-invisible-edits 'show)
+
+(setq org-capture-templates
+      '(("t" "Todo" entry (file+headline "~/notes/todo.org" "Tasks")
+         "* TODO %?\n  %i\n")
+        ("s" "Shout to Twitter / Blog" entry (file+headline "~/notes/todo.org" "Shouts")
+         "* TODO %?\n  %i\n")
+        ("i" "Idea" entry (file+headline "~/notes/todo.org" "Ideas")
+         "* %?\n  %i\n")
+        ("u" "Usuko task" entry (file+headline "~/notes/usuko.org" "Tasks / Todo")
+         "* TODO %?\n  %i\n ")
+        ("t" "Tweaks to OS" entry (file+headline "~/notes/todo.org" "OS Tweak") "* %?\n  %i\n")
+        ("b" "Buy" entry (file+headline "~/notes/todo.org" "Tasks")
+         "* TODO Osta %?\n  %i\n")
+        ("ö" "Random temp note to scratch outline" entry (file+headline "~/notes/todo.org" "Scratch")
+         "* %?\n  %i\n")
+        ("a" "Appointment" entry (file+headline "~/notes/todo.org" "Appointments") "* TODO %?\n  %i\n")
+        ("m" "Song" item (file+headline "~/notes/music.org" "New music")
+         "%?\n  %i\n")
+        ("j" "Journal" entry (file+datetree "~/notes/notetoself.org")
+         "* %?\nEntered on %U\n  %i\n")))
 
 ;; Set todo item states
 (setq org-todo-keywords
@@ -326,6 +347,10 @@
           (lambda ()
             (org-indent-mode t)
             (visual-line-mode t)
+            (local-set-key "<H-down>" 'org-move-subtree-down)
+            (local-set-key "<H-up>" 'org-move-subtree-up)
+            ;;(org-shiftmetaright)
+            ;;(org-shiftmetaright)
             (setq org-export-backends (quote (
                                               md
                                               ascii

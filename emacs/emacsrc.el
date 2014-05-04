@@ -154,16 +154,19 @@
   t)
 (eval-after-load "ace-jump-mode"
   '(ace-jump-mode-enable-mark-sync))
+
+(eval-after-load "ace-jump-mode"
+  '(add-to-list 'mc/cursor-specific-vars 'iy-go-to-char-start-pos)
+)
+
 (define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
 
 (require 'iy-go-to-char)
 (key-chord-define-global "jj" 'iy-go-to-char)
-(key-chord-define-global "ff" 'iy-go-to-char-backward)
+(key-chord-define-global "dd" 'iy-go-to-char-backward)
 (global-set-key (kbd "C-c .") 'iy-go-to-or-up-to-continue)
 (global-set-key (kbd "C-c ,") 'iy-go-to-or-up-to-continue-backward)
 (setq iy-go-to-char-kill-ring-save t)
-;(add-to-list 'mc/cursor-specific-vars 'iy-go-to-char-start-pos) ;;TODO: after mc load
-
 
 
 (key-chord-define-global "kd" 'mc/edit-lines)
@@ -312,9 +315,10 @@
 
 
 ;;; Email
-(autoload 'wl "wl" "Wanderlust" t)
-(autoload 'wl-other-frame "wl" "Wanderlust on new frame." t)
-(autoload 'wl-draft "wl-draft" "Write draft with Wanderlust." t)
+(load-file "~/.wl")
+;; (autoload 'wl "wl" "Wanderlust" t)
+;; (autoload 'wl-other-frame "wl" "Wanderlust on new frame." t)
+;; (autoload 'wl-draft "wl-draft" "Write draft with Wanderlust." t)
 
 
 ;;; Org-mode

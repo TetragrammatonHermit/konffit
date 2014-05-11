@@ -34,6 +34,8 @@
                             multiple-cursors
                             iy-go-to-char
                             htmlize
+                            edit-server
+                            ; el-get
                             ; ;ido-better-flex
                             ; htmlize
                             google-translate

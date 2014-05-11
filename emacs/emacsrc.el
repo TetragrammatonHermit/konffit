@@ -5,63 +5,26 @@
 ;;; Code:
 
 
-;;;; General
-
 ;; Start daemon at start TODO: run this on system startup throught systemd etc
 (load "server")
 (unless (server-running-p) (server-start))
 
-
-(x-focus-frame nil)
-
-;; Disable scroll bars
-(scroll-bar-mode -1)
-
-;; Make OSX special characters work with alt, set cmd to meta.
-(setq mac-option-modifier 'nil
-      mac-command-modifier 'meta
-      x-select-enable-clipboard t)
-
-;; Nicer mousewheel scrolling
-(setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
-(setq mouse-wheel-progressive-speed nil)
-
-;; Change "tabs" like in chromium / sublimetext etc
-(window-numbering-mode t)
-
-(defun toggle-mode-line () 
-  (interactive)
-"toggles the modeline on and off"
-  (setq mode-line-format
-        (if (equal mode-line-format nil)
-            (default-value 'mode-line-format)) )
-  (redraw-display))
-(global-set-key [M-f12] 'toggle-mode-line)
-
-; Make scratch-buffer more convenient
-(setq initial-scratch-message "")
-(setq initial-major-mode 'text-mode)
+;; Magit use current window
+(set-variable 'magit-emacsclient-executable "/usr/sbin/emacsclient")
 
 ;; Theming
-(defun buffer-face-variable-width () ;;TODO: call on writeroom hook
-  "Set a non fixed width font in current buffer."
-  (interactive)
-  (setq buffer-face-mode-face '(:family "Droid Sans") )
-  (buffer-face-mode))
-(defun buffer-face-monospaced ()
-  "Set a non fixed width font in current buffer."
-  (interactive)
-  (setq buffer-face-mode-face '(:family "Droid Sans Mono") )
-  (buffer-face-mode))
 
 (set-face-attribute 'default nil :font "Droid Sans Mono-10")
-(disable-theme 'zenburn)
+                                        
+(disable-theme 'zenburn) ;; Disable prelude default theme and other behaviour
+(setq prelude-flyspell nil)
+(setq prelude-guru nil)
+(setq prelude-whitespace nil)
 
-
-;(load-theme 'solarized-light t)
 (load-theme 'monokai)
-(set-cursor-color "white")
+
 (set-default 'cursor-type 'bar)
+(set-cursor-color "white")
 
 ;; Keybindings for day/night themes
 (global-set-key [H-end] '(lambda () (interactive)
@@ -74,20 +37,53 @@
                             (load-theme 'solarized-light)
                             (set-cursor-color "black")))
 
+(defun transparency (value)
+  "Set the transparency of the frame window.  VALUE = 0-100."
+  (interactive "nTransparency Value 0 - 100 opaque:")
+  (set-frame-parameter (selected-frame) 'alpha value))
+
+(defun buffer-face-variable-width () ;;TODO: call on writeroom hook
+  "Set a non fixed width font in current buffer."
+  (interactive)
+  (setq buffer-face-mode-face '(:family "Droid Sans") )
+  (buffer-face-mode))
+(defun buffer-face-monospaced ()
+  "Set a non fixed width font in current buffer."
+  (interactive)
+  (setq buffer-face-mode-face '(:family "Droid Sans Mono") )
+  (buffer-face-mode))
+
+;; Disable scroll bars
+(scroll-bar-mode -1)
+
+(x-focus-frame nil)
+
+;; Change frames like chromium tabs
+(window-numbering-mode t)
+
 ;; Disable bleep at fail
 (setq ring-bell-function 'ignore)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+;; Make OSX special characters work with alt, set cmd to meta.
+(setq mac-option-modifier 'nil
+      mac-command-modifier 'meta
+      x-select-enable-clipboard t)
+
+;; Nicer mousewheel scrolling
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
+(setq mouse-wheel-progressive-speed nil)
+
+; Make scratch-buffer more convenient
+(setq initial-scratch-message "")
+(setq initial-major-mode 'org-mode)
+
 ;; Default to UTF-8
 (set-language-environment "UTF-8")
 
-;; Magit use current window (use emacsclient of current installation)
-(set-variable 'magit-emacsclient-executable "/usr/sbin/emacsclient")
-
 ;; Setup emerge as mergetool
 (setq emerge-diff-options "--ignore-all-space")
-
 
 ;; Use Chromium as 'default' browser
 (setq browse-url-browser-function 'browse-url-generic
@@ -97,77 +93,97 @@
 ;;(setq browse-url-generic-program (executable-find "conkeror"))
 ;;(setq browse-url-browser-function 'browse-url-generic)
 
-
-(defun transparency (value)
-  "Set the transparency of the frame window.  VALUE = 0-100."
-  (interactive "nTransparency Value 0 - 100 opaque:")
-  (set-frame-parameter (selected-frame) 'alpha value))
-
-;; Set transparency of Emacs window
-;(transparency 90)
-
 (smartparens-global-mode +1)
 
-
-(setq prelude-flyspell nil)             ; Disable spell checking
-(setq prelude-guru nil)
-                                        ; Disable whitespace-mode
-(setq prelude-whitespace nil)
-
-
 (require 'google-translate)
+(require 'google-translate-default-ui)
 (global-set-key (kbd "C-x t") 'google-translate-at-point)
 (global-set-key (kbd "C-x T") 'google-translate-at-point-reverse)
-(setq google-translate-enable-ido-completition t)
+(setq google-translate-enable-ido-completion 't) ;;todo
+(setq google-translate-show-phonetic 't)
 (setq google-translate-default-target-language '"en")
 (setq google-translate-default-source-language '"fi")
 (set-face-attribute 'google-translate-translation-face nil :height 2)
 
-;; Minibuffer autocompletition with ido-mode and sme
+
+;; Minibuffer autocompletition with ido-mode and smex
 ;; http://www.masteringemacs.org/articles/2010/10/10/introduction-to-ido-mode/
-;;(setq ido-enable-flex-matching t)
-;;(setq ido-everywhere t)
-;;(setq ido-use-filename-at-point 'guess)
-;;(ido-mode t)
-;;(setq ido-file-extensions-order '(".org" ".tex"))
-(require 'lacarte)
-(global-set-key [menu] 'lacarte-execute-command)
-(global-set-key [?\M-`] 'lacarte-execute-command) ;replace orig. command
-(require 'fuzzy-match)
-
-(require 'icicles)
-(icy-mode 1)
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(setq ido-use-filename-at-point 'guess)
+(ido-mode t)
+(setq ido-file-extensions-order '(".org" ".tex"))
 
 
-;; (global-set-key (kbd "M-x") nil)
-;; (global-set-key (kbd "M-x") 'smex)
+;;; Ido replacement
+;; (require 'icicles)
+;; (icy-mode 1)
 
+;; (require 'lacarte)
+;; (global-set-key [menu] 'lacarte-execute-command)
+;; (global-set-key [?\M-`] 'lacarte-execute-command) ;replace orig. command
+;; (require 'fuzzy-match)
+;;;
+
+
+(global-set-key (kbd "M-§") 'other-frame)
+
+(global-set-key (kbd "M-x") nil)
+(global-set-key (kbd "M-x") 'smex)  ;; Fuzzy command autocomplete
 
 (key-chord-mode 1) 
 ;; Unmap dumb Prelude keybindings
 (key-chord-define-global "uu" nil)
 (key-chord-define-global "yy" nil)
-                                        ;(key-chord-define-global "jl" nil)
-(key-chord-define-global "vv" 'browse-kill-ring)
 
+(key-chord-define-global "jf" 'ace-jump-word-mode)
+(key-chord-define-global "öa" 'ace-jump-char-mode)
+(setq ace-jump-mode-scope 'frame) ;; Jump only inside current frame
+(setq ace-jump-mode-case-fold 'nil) ;; Case sensitived
 
-(key-chord-define-global "hh" 'pop-to-mark-command)
-(key-chord-define-global "jk" 'ace-jump-word-mode)
-(key-chord-define-global "jj" 'ace-jump-char-mode)
-(key-chord-define-global "kl" 'iy-go-to-char)
-(key-chord-define-global "df" 'iy-go-to-char-backward)
+;;TODO ace-jump-mode-pop-mark
+;;TODO ace-jump-enable-mark-sync
+
+;; 
+;; enable a more powerful jump back function from ace jump modef
+;;
+(autoload
+  'ace-jump-mode-pop-mark
+  "ace-jump-mode"
+  "Ace jump back:-)"
+  t)
+(eval-after-load "ace-jump-mode"
+  '(ace-jump-mode-enable-mark-sync))
+
+(eval-after-load "ace-jump-mode"
+  '(add-to-list 'mc/cursor-specific-vars 'iy-go-to-char-start-pos)
+)
+
+(define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
+
+(require 'iy-go-to-char)
+(key-chord-define-global "jj" 'iy-go-to-char)
+(key-chord-define-global "dd" 'iy-go-to-char-backward)
+(global-set-key (kbd "C-c .") 'iy-go-to-or-up-to-continue)
+(global-set-key (kbd "C-c ,") 'iy-go-to-or-up-to-continue-backward)
 (setq iy-go-to-char-kill-ring-save t)
 
+
 (key-chord-define-global "kd" 'mc/edit-lines)
-                                        
 
 (global-set-key (kbd "C-c c") 'comment-or-uncomment-region)
 (global-set-key (kbd "C-c SPC") 'er/expand-region)
+;; Multiple cursors
+(key-chord-define-global "jn" 'mc/mark-more-like-this-extended)
+(key-chord-define-global "jt" 'mc/mark-sgml-tag-pair)
+(global-unset-key (kbd "M-<down-mouse-1>"))
+(global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)
+(global-set-key (kbd "H-<mouse-1>") 'mc/add-cursor-on-click)
 
 ;; to transpose words backwards without having to type the negative argument
 ;; (global-set-key (kbd "M-T") "C-u\ -1\ \M-t")
 
-(global-set-key (kbd "M-§") 'other-frame)
+
 
 ;; Pop marks faster with just space
 (setq set-mark-command-repeat-pop 't)
@@ -209,12 +225,6 @@
 (define-key global-map (kbd "C-c C-q") 'vr/query-replace)
 (define-key global-map (kbd "C-c m") 'vr/mc-mark)
 
-;; Multiple cursors
-(key-chord-define-global "jn" 'mc/mark-more-like-this-extended)
-(key-chord-define-global "jt" 'mc/mark-sgml-tag-pair)
-(global-unset-key (kbd "M-<down-mouse-1>"))
-(global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)
-(global-set-key (kbd "H-<mouse-1>") 'mc/add-cursor-on-click)
 
 ;; Copy current buffer path to clipboard
 (define-key prelude-mode-map (kbd "C-c w") 'prelude-copy-file-name-to-clipboard)
@@ -303,29 +313,58 @@
 ;; Set week to start on monday
 (setq calendar-week-start-day 1)
 
+
+;;; Email
+(load-file "~/.wl")
+;; (autoload 'wl "wl" "Wanderlust" t)
+;; (autoload 'wl-other-frame "wl" "Wanderlust on new frame." t)
+;; (autoload 'wl-draft "wl-draft" "Write draft with Wanderlust." t)
+
+
 ;;; Org-mode
 
+(global-set-key (kbd "H-c") 'org-capture)
+(global-set-key (kbd "H-a") 'org-agenda)
+;;(global-set-key "\C-c\C-cl" 'org-store-link)
+;;(global-set-key "\C-c\C-cb " 'org-iswitchb)
 
-
-(global-set-key (kbd "C-C C-a") 'org-capture)
-(global-set-key (kbd "C-x C-a") 'org-agenda)
-                                        ;(global-set-key "\C-c\C-cl" 'org-store-link)
-                                        ;(global-set-key "\C-c\C-cb " 'org-iswitchb)
 (setq org-default-notes-file  "~/notes/todo.org")
 
 (setq org-catch-invisible-edits 'show)
+
+(setq org-capture-templates
+      '(("t" "Task / Chore" entry (file+headline "~/notes/todo.org" "Tasks")
+         "* TODO %?\n  %i\n")
+        ("w" "Shout to Twitter / Blog" entry (file+headline "~/notes/todo.org" "Shouts")
+         "* TODO %?\n  %i\n")
+        ("i" "Idea" entry (file+headline "~/notes/todo.org" "Ideas")
+         "* %?\n  %i\n")
+        ("u" "Usuko task" entry (file+headline "~/notes/usuko.org" "Tasks / Todo")
+         "* TODO %?\n  %i\n ")
+        ("o" "Tweaks to OS" entry (file+headline "~/notes/todo.org" "OS Tweak") "* %?\n  %i\n")
+        ("b" "Buy" entry (file+headline "~/notes/todo.org" "Tasks")
+         "* TODO Osta %?\n  %i\n")
+        ("ö" "Random temp note to scratch outline" entry (file+headline "~/notes/todo.org" "Scratch")
+         "* %?\n  %i\n")
+        ("m" "Meeting / Appointment" entry (file+headline "~/notes/todo.org" "Appointments") "* TODO %?\n  %i\n")
+        ("s" "Song" item (file+headline "~/notes/music.org" "New music")
+         "%?\n  %i\n")
+        ("j" "Journal entry" entry (file+datetree "~/notes/notetoself.org")
+         "* %?\nEntered on %U\n  %i\n")
+        ("d" "Dream" entry (file+headline "~/notes/notetoself.org" "Dreams") "* %U\n  %i\n%?")))
 
 ;; Set todo item states
 (setq org-todo-keywords
       '((sequence "TODO(t)" "WAIT(w)" "|" "DONE(d)")))
 
-;; TODO: set ax-tiddly.el?
-
-
 (add-hook 'org-mode-hook
           (lambda ()
             (org-indent-mode t)
             (visual-line-mode t)
+            (local-set-key "<H-down>" 'org-move-subtree-down)
+            (local-set-key "<H-up>" 'org-move-subtree-up)
+            ;;(org-shiftmetaright)
+            ;;(org-shiftmetaright)
             (setq org-export-backends (quote (
                                               md
                                               ascii
@@ -525,16 +564,16 @@
 (add-hook 'compilation-finish-functions 'bury-compile-buffer-if-successful)
 
 
-;;"Quickly show 2 buffers next to eachother. TODO: fix
-(defun horizontal-split ()
-  (interactive "P")
-  (delete-other-windows)
-  (split-window-right)
-  (next-buffer)
-  (other-window)
-  )
+;; ;;"Quickly show 2 buffers next to eachother. TODO: fix
+;; (defun horizontal-split ()
+;;   (interactive "P")
+;;   (delete-other-windows)
+;;   (split-window-right)
+;;   (next-buffer)
+;;   (other-window)
+;;   )
 
-(define-key global-map (kbd "C-x 6") (lambda () (interactive) (horizontal-split)))
+;; (define-key global-map (kbd "C-x 6") (lambda () (interactive) (horizontal-split)))
 
 (provide 'emacsrc)
 

@@ -9,8 +9,12 @@
 (load "server")
 (unless (server-running-p) (server-start))
 
+;; Edit server
+(require 'edit-server)
+(edit-server-start)
+
 ;; Magit use current window
-(set-variable 'magit-emacsclient-executable "/usr/sbin/emacsclient")
+(set-variable 'magit-emacsclient-executable "/usr/bin/emacsclient")
 
 ;; Theming
 
@@ -41,6 +45,8 @@
   "Set the transparency of the frame window.  VALUE = 0-100."
   (interactive "nTransparency Value 0 - 100 opaque:")
   (set-frame-parameter (selected-frame) 'alpha value))
+
+(transparency 96)
 
 (defun buffer-face-variable-width () ;;TODO: call on writeroom hook
   "Set a non fixed width font in current buffer."
@@ -87,7 +93,7 @@
 
 ;; Use Chromium as 'default' browser
 (setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "chromium")
+      browse-url-generic-program "x-www-browser")
 
 ;; Use conkeror as default browser
 ;;(setq browse-url-generic-program (executable-find "conkeror"))
@@ -155,15 +161,15 @@
 (eval-after-load "ace-jump-mode"
   '(ace-jump-mode-enable-mark-sync))
 
-(eval-after-load "ace-jump-mode"
-  '(add-to-list 'mc/cursor-specific-vars 'iy-go-to-char-start-pos)
-)
+;; (eval-after-load "ace-jump-mode"
+;;   '(add-to-list 'mc/cursor-specific-vars 'iy-go-to-char-start-pos)
+;; )
 
 (define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
 
 (require 'iy-go-to-char)
 (key-chord-define-global "jj" 'iy-go-to-char)
-(key-chord-define-global "dd" 'iy-go-to-char-backward)
+(key-chord-define-global "hh" 'iy-go-to-char-backward)
 (global-set-key (kbd "C-c .") 'iy-go-to-or-up-to-continue)
 (global-set-key (kbd "C-c ,") 'iy-go-to-or-up-to-continue-backward)
 (setq iy-go-to-char-kill-ring-save t)
@@ -214,7 +220,13 @@
                                '("~/konffit/emacs/yasnippets")))
 
 ;; Set projectile to create a cache 
+(setq projectile-enable-require 'projectile)
 (setq projectile-enable-caching t)
+;; ignore svn projects
+(setq projectile-globally-ignored-directories (append '(".svn") projectile-globally-ignored-directories))
+(setq projectile-globally-ignored-files (append '("*.svn-base" "*.o" "*.pyc") projectile-globally-ignored-files))
+(setq projectile-use-native-indexing t)
+(projectile-global-mode)
 
 ;; Acme-like mouse right-click search
 (global-set-key [(mouse-3)] 'acme-search-forward)
@@ -315,7 +327,7 @@
 
 
 ;;; Email
-(load-file "~/.wl")
+;;(load-file "~/.wl")
 ;; (autoload 'wl "wl" "Wanderlust" t)
 ;; (autoload 'wl-other-frame "wl" "Wanderlust on new frame." t)
 ;; (autoload 'wl-draft "wl-draft" "Write draft with Wanderlust." t)
@@ -323,8 +335,12 @@
 
 ;;; Org-mode
 
+
+
 (global-set-key (kbd "H-c") 'org-capture)
 (global-set-key (kbd "H-a") 'org-agenda)
+
+
 ;;(global-set-key "\C-c\C-cl" 'org-store-link)
 ;;(global-set-key "\C-c\C-cb " 'org-iswitchb)
 
@@ -357,30 +373,33 @@
 (setq org-todo-keywords
       '((sequence "TODO(t)" "WAIT(w)" "|" "DONE(d)")))
 
-(add-hook 'org-mode-hook
-          (lambda ()
-            (org-indent-mode t)
-            (visual-line-mode t)
-            (local-set-key "<H-down>" 'org-move-subtree-down)
-            (local-set-key "<H-up>" 'org-move-subtree-up)
-            ;;(org-shiftmetaright)
-            ;;(org-shiftmetaright)
-            (setq org-export-backends (quote (
-                                              md
-                                              ascii
-                                              html
-                                        ;latex
-                                              odt)))
-            ;;(local-set-key "\M-\C-g" 'org-plot/gnuplot)
-            ;;(local-unset-key "<C-M-down>")
-            ;;(local-set-key "<C-M-down>" 'org-move-subtree-down)
-            ;;(local-unset-key "<C-M-up>")
-            ;;(local-set-key "<C-M-up>" 'org-move-subtree-up)
-            )
-          t)
 
-;; Add syntax highlight to src blocks
-(setq org-src-fontify-natively t)
+;; (global-unset-key (kbd "<M-S-up>"))
+;; (global-unset-key (kbd "<C-S-up>"))
+;; (global-set-key (kbd "<M-S-up>") '(message "fuu"))
+;; http://ergoemacs.org/emacs/emacs_set_keys_for_major_mode.html
+(defun own-org-mode-hook ()
+  "Modify keymaps and settings used by `org-mode'."
+
+  (local-set-key (kbd "<H-up>") 'org-move-subtree-up) 
+  (local-set-key (kbd "<H-down>") 'org-move-subtree-down) 
+  
+  
+  ;; setup
+  (org-indent-mode t)
+  (visual-line-mode t)
+  ;; Add syntax highlight to src blocks
+  (setq org-src-fontify-natively t)
+
+  (setq org-export-backends (quote (
+                                    md
+                                    ascii
+                                    html
+                                        ;latex
+                                    odt)))
+  )
+;; Enable hook when org-mode starts
+(add-hook 'org-mode-hook 'own-org-mode-hook)
 
 
 ;;; Python
@@ -534,6 +553,7 @@
   (newline-and-indent))
 
 (global-set-key (kbd "C-o") 'vi-open-line-below)
+
 (global-set-key (kbd "C-S-o") 'vi-open-line-above)
 
 ;; http://demonastery.org/2013/04/emacs-narrow-to-region-indirect/
@@ -545,7 +565,7 @@
     (with-current-buffer buf
       (narrow-to-region start end))
     (switch-to-buffer buf)))
-(global-set-key (kbd "C-c b") 'narrow-to-region-indirect)
+;;(global-set-key (kbd "C-c b") 'narrow-to-region-indirect)
 
 ;; Hide compilation buffer eg after sass scss compilation on file save
 (defun bury-compile-buffer-if-successful (buffer string)

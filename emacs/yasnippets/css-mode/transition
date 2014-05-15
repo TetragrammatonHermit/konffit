@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name : CSS3 Transition
+# key : trans
+# --
+-webkit-transition: $1s all linear;
+-moz-transition: $1s all linear;
+-ms-transition: $1s all linear;
+-o-transition: $1s all linear;
+transition: $1s all linear;

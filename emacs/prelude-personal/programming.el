@@ -1,0 +1,200 @@
+;; Setup programming and markup language modes
+
+(prelude-require-packages '(yasnippet
+                            auto-complete
+                            ;angular-snippets
+                            elpy
+                            jedi
+                            emmet-mode
+                            ;ac-emmet
+                            ;csharp-mode
+                            js2-mode
+                            ac-js2
+                            ;js2-refactor
+                            ;web-beautify
+                            ;skewer-mode
+                            ;skewer-reload-stylesheets
+                            ;ac-js2
+                            ))
+                            
+
+;; Change yasnippet binding
+(require 'yasnippet)
+(yas-global-mode t)
+(define-key yas-minor-mode-map (kbd "<tab>") nil)
+(define-key yas-minor-mode-map (kbd "TAB") nil)
+(define-key yas-minor-mode-map (kbd "C-<tab>") 'yas-expand)
+(setq yas-prompt-functions '(yas-ido-prompt))
+(setq yas-snippet-dirs (append yas-snippet-dirs
+                               '("~/konffit/emacs/yasnippets")))
+
+;;(global-flycheck-mode t)
+
+(require 'auto-complete-config)
+;; Autocomplete-mode
+;;(global-auto-complete-mode t)
+;;(add-to-list 'ac-dictionary-directories "~/notes/ac-dict") 
+(ac-config-default)
+(setq ac-menu-height 9)
+(setq ac-source-yasnippet 'nil)
+
+(setq ac-auto-start 2)
+(setq ac-ignore-case nil)
+
+;;; advice for whitespace-mode conflict
+(defvar my-prev-whitespace-mode nil)
+(make-variable-buffer-local 'my-prev-whitespace-mode)
+
+(defadvice popup-draw (before my-turn-off-whitespace)
+  "Turn off whitespace mode before showing autocomplete box"
+  (make-local-variable 'my-prev-whitespace-mode)
+  (if whitespace-mode
+      (progn
+        (setq my-prev-whitespace-mode t)
+        (whitespace-mode -1))
+    (setq my-prev-whitespace-mode nil)))
+
+(defadvice popup-delete (after my-restore-whitespace)
+  "Restore previous whitespace mode when deleting autocomplete box"
+  (if my-prev-whitespace-mode
+      (whitespace-mode 1)))
+
+(ad-activate 'popup-draw)
+(ad-activate 'popup-delete)
+
+
+;;; Python
+(require 'elpy)
+(elpy-enable)
+;(elpy-enable) TODO: fix
+
+(elpy-use-ipython)
+(setq jedi:complete-on-dot t)
+
+(add-hook 'python-mode-hook
+          (lambda ()
+            (abbrev-mode 1)
+            (auto-fill-mode 1)
+            (linum-mode 1)
+            (whitespace-mode)
+            (jedi:setup)
+            (if (eq window-system 'x)
+                (font-lock-mode 1))))
+
+;; HTML
+(add-hook 'html-mode-hook
+          (lambda()
+            (setq sgml-basic-offset 4)
+            t))
+
+;; Reindent after deleting tags
+(defadvice sgml-delete-tag (after reindent-buffer activate)
+  (prelude-cleanup-buffer))
+
+;; Emmet
+;(add-hook 'sgml-mode-hook 'emmet-mode)
+(add-hook 'sgml-mode-hook
+          (lambda ()
+            (progn
+              (emmet-mode)
+              )))
+(add-hook 'css-mode-hook  'emmet-mode)
+
+(eval-after-load "emmet-mode"
+  '(define-key emmet-mode-keymap (kbd "C-j") nil))
+
+(add-hook 'emmet-mode-hook (lambda ()
+                             (setq emmet-indentation 4)
+                             (local-set-key (kbd "<backtab>") 'emmet-expand-line)))
+
+(setq emmet-move-cursor-between-quotes t)
+
+(defun unhtml (start end)
+  (interactive "r")
+  (save-excursion
+    (save-restriction
+      (narrow-to-region start end)
+      (goto-char (point-min))
+      (replace-string "&" "&amp;")
+      (goto-char (point-min))
+      (replace-string "<" "&lt;")
+      (goto-char (point-min))
+      (replace-string ">" "&gt;")
+      )))
+
+
+;; Javascript
+
+;; js2-mode with autocomplete
+(require 'js2-mode)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+(defun my-js2-mode-hook ()
+"Custom keybindings for js2-mode"
+  (define-key js2-mode-map [(meta control \;)] 
+    '(lambda()
+       (interactive)
+       (insert "/* -----[ ")
+       (save-excursion
+         (insert " ]----- */"))
+       ))
+  (define-key js2-mode-map [(return)] 'newline-and-indent)
+  (define-key js2-mode-map [(backspace)] 'c-electric-backspace)
+  (define-key js2-mode-map [(control d)] 'c-electric-delete-forward)
+  (message "My JS2 hook"))
+
+(add-hook 'js2-mode-hook 'my-js2-mode-hook)
+(add-hook 'js2-mode-hook 'ac-js2-mode)
+
+;(define-key js2-mode-map [(backspace)] 'c-electric-backspace)
+
+;; (define-key js2-mode-map [("C-c c")] 
+(define-key js2-mode-map [(return)] 'newline-and-indent)
+(define-key js2-mode-map [(backspace)] 'c-electric-backspace)
+;; (define-key js2-mode-map [("C-c c")]
+;;   '(lambda()
+;;      (interactive)
+;;      (insert "/* -----[ ")
+;;      (save-excursion
+;;        (insert " ]----- */"))
+;;      ))
+
+
+;; Lisp
+;(setq inferior-lisp-program "/usr/local/bin/clisp")
+
+;; Haskell
+;;(add-hook 'haskell-mode-hook 'turn-on-haskell-unicode-input-method)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-doc)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
+
+;; Set tag browser
+(add-hook 'haskell-mode-hook 'turn-on-haskell-decl-scan)
+(add-hook 'haskell-mode-hook 'imenu-add-menubar-index)
+
+(eval-after-load 'flycheck '(require 'flycheck-hdevtools))
+
+;;Set REPL
+;; (eval-after-load "haskell-mode"
+;;   '(progn
+;;      (define-key haskell-mode-map (kbd "C-x C-d") nil)
+;;      (define-key haskell-mode-map (kbd "C-c C-z") 'haskell-interactive-switch)
+;;      (define-key haskell-mode-map (kbd "C-c C-l") 'haskell-process-load-file)
+;;      (define-key haskell-mode-map (kbd "C-c C-b") 'haskell-interactive-switch)
+;;      (define-key haskell-mode-map (kbd "C-c C-t") 'haskell-process-do-type)
+;;      (define-key haskell-mode-map (kbd "C-c C-i") 'haskell-process-do-info)
+;;      (define-key haskell-mode-map (kbd "C-c M-.") nil)
+;;      (define-key haskell-mode-map (kbd "C-c C-d") nil)))
+
+;; (add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
+
+;; (speedbar-add-supported-extension ".hs")
+; setup ghc-mod
+;; (autoload 'ghc-init "ghc" nil t)
+;; (add-hook 'haskell-mode-hook (lambda () (ghc-init)))
+;;; Other
+
+;; Latex
+
+;;(add-hook 'LaTeX-mode-hook 'turn-on-reftex)
+;;(setq reftex-plug-into-AUCTeX t)
+;;(setq-default ispell-program-name "aspell")

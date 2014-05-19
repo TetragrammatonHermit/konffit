@@ -14,21 +14,7 @@
 (define-key global-map (kbd "C-c m") 'vr/mc-mark)
 
 
-(defun vi-open-line-above ()
-  "Insert a newline above the current line and put point at beginning."
-  (interactive)
-  (unless (bolp)
-    (beginning-of-line))
-  (newline)
-  (forward-line -1)
-  (indent-according-to-mode))
 
-(defun vi-open-line-below ()
-  "Insert a newline below the current line and put point at beginning."
-  (interactive)
-  (unless (eolp)
-    (end-of-line))
-  (newline-and-indent))
 
                                         ;(global-set-key (kbd "C-o") 'vi-open-line-below)
                                         ;(global-set-key (kbd "C-S-o") 'vi-open-line-above)

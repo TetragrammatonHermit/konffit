@@ -101,6 +101,27 @@
   '(ace-jump-mode-enable-mark-sync))
 
 (define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
+
+;; Vim-ish C-o binding
+(defun vi-open-line-above ()
+  "Insert a newline above the current line and put point at beginning."
+  (interactive)
+  (unless (bolp)
+    (beginning-of-line))
+  (newline)
+  (forward-line -1)
+  (indent-according-to-mode))
+(define-key global-map (kbd "C-S-o") 'vi-open-line-above)
+
+(defun vi-open-line-below ()
+  "Insert a newline below the current line and put point at beginning."
+  (interactive)
+  (unless (eolp)
+    (end-of-line))
+  (newline-and-indent))
+(define-key global-map (kbd "C-o") 'vi-open-line-below)
+
+
 (smartparens-global-mode +1)
 
 (require 'key-chord)
@@ -108,6 +129,7 @@
 
 (key-chord-mode +1)
 
+(key-chord-define-global "fj" 'ace-jump-word-mode)
 (key-chord-define-global "jj" 'iy-go-to-char)
 (key-chord-define-global "hh" 'iy-go-to-char-backward)
 (global-set-key (kbd "C-c .") 'iy-go-to-or-up-to-continue)

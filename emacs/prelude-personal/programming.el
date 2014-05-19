@@ -2,21 +2,21 @@
 
 (prelude-require-packages '(yasnippet
                             auto-complete
-                            ;angular-snippets
+                                        ;angular-snippets
                             elpy
                             jedi
                             emmet-mode
-                            ;ac-emmet
-                            ;csharp-mode
+                                        ;ac-emmet
+                                        ;csharp-mode
                             js2-mode
                             ac-js2
-                            ;js2-refactor
-                            ;web-beautify
-                            ;skewer-mode
-                            ;skewer-reload-stylesheets
-                            ;ac-js2
+                                        ;js2-refactor
+                                        ;web-beautify
+                                        ;skewer-mode
+                                        ;skewer-reload-stylesheets
+                                        ;ac-js2
                             ))
-                            
+
 
 ;; Change yasnippet binding
 (require 'yasnippet)
@@ -33,7 +33,7 @@
 (require 'auto-complete-config)
 ;; Autocomplete-mode
 ;;(global-auto-complete-mode t)
-;;(add-to-list 'ac-dictionary-directories "~/notes/ac-dict") 
+;;(add-to-list 'ac-dictionary-directories "~/notes/ac-dict")
 (ac-config-default)
 (setq ac-menu-height 9)
 (setq ac-source-yasnippet 'nil)
@@ -66,7 +66,7 @@
 ;;; Python
 (require 'elpy)
 (elpy-enable)
-;(elpy-enable) TODO: fix
+                                        ;(elpy-enable) TODO: fix
 
 (elpy-use-ipython)
 (setq jedi:complete-on-dot t)
@@ -92,7 +92,7 @@
   (prelude-cleanup-buffer))
 
 ;; Emmet
-;(add-hook 'sgml-mode-hook 'emmet-mode)
+                                        ;(add-hook 'sgml-mode-hook 'emmet-mode)
 (add-hook 'sgml-mode-hook
           (lambda ()
             (progn
@@ -128,39 +128,20 @@
 ;; js2-mode with autocomplete
 (require 'js2-mode)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
 (defun my-js2-mode-hook ()
-"Custom keybindings for js2-mode"
-  (define-key js2-mode-map [(meta control \;)] 
-    '(lambda()
-       (interactive)
-       (insert "/* -----[ ")
-       (save-excursion
-         (insert " ]----- */"))
-       ))
   (define-key js2-mode-map [(return)] 'newline-and-indent)
   (define-key js2-mode-map [(backspace)] 'c-electric-backspace)
   (define-key js2-mode-map [(control d)] 'c-electric-delete-forward)
+  (whitespace-mode +1)  
   (message "My JS2 hook"))
 
 (add-hook 'js2-mode-hook 'my-js2-mode-hook)
 (add-hook 'js2-mode-hook 'ac-js2-mode)
 
-;(define-key js2-mode-map [(backspace)] 'c-electric-backspace)
-
-;; (define-key js2-mode-map [("C-c c")] 
-(define-key js2-mode-map [(return)] 'newline-and-indent)
-(define-key js2-mode-map [(backspace)] 'c-electric-backspace)
-;; (define-key js2-mode-map [("C-c c")]
-;;   '(lambda()
-;;      (interactive)
-;;      (insert "/* -----[ ")
-;;      (save-excursion
-;;        (insert " ]----- */"))
-;;      ))
-
 
 ;; Lisp
-;(setq inferior-lisp-program "/usr/local/bin/clisp")
+                                        ;(setq inferior-lisp-program "/usr/local/bin/clisp")
 
 ;; Haskell
 ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-unicode-input-method)
@@ -188,7 +169,7 @@
 ;; (add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
 
 ;; (speedbar-add-supported-extension ".hs")
-; setup ghc-mod
+                                        ; setup ghc-mod
 ;; (autoload 'ghc-init "ghc" nil t)
 ;; (add-hook 'haskell-mode-hook (lambda () (ghc-init)))
 ;;; Other

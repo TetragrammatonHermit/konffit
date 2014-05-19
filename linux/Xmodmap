@@ -1,4 +1,4 @@
-!Turn CapsLock into Control, and LeftControl into Hyper
+! Turn CapsLock into Control for ergonomic, and LeftControl into additional Hyper-modifier.
 
 clear      lock 
 clear   control
@@ -16,5 +16,6 @@ add        mod3 = Hyper_L
 add        mod4 = Super_L Super_R
 add        mod5 = Mode_switch ISO_Level3_Shift
 
-!Reverse wheel scroll
+! Reverse/"natural" mouse scroll
+
 pointer = 1 2 3 5 4 7 6 8 9 10 11 12

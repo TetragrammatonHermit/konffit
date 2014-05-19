@@ -167,6 +167,8 @@
 (setq projectile-globally-ignored-directories (append '(".svn") projectile-globally-ignored-directories))
 (setq projectile-globally-ignored-files (append '("*.svn-base" "*.o" "*.pyc") projectile-globally-ignored-files))
 (setq projectile-use-native-indexing t)
+(setq projectile-svn-command "find . -type f -print0")
+
 (projectile-global-mode)
 
 (set-variable 'magit-emacsclient-executable "/usr/bin/emacsclient") ; Magit use current window

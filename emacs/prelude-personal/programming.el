@@ -14,9 +14,9 @@
                                         ;web-beautify
                                         ;skewer-mode
                                         ;skewer-reload-stylesheets
-                                        ;ac-js2
+                            flycheck
                             ))
-
+;; http://flycheck.readthedocs.org/en/latest/guide/quickstart.html
 
 ;; Change yasnippet binding
 (require 'yasnippet)
@@ -139,7 +139,13 @@
 (add-hook 'js2-mode-hook 'my-js2-mode-hook)
 (add-hook 'js2-mode-hook 'ac-js2-mode)
 
-
+;; Shell
+(require 'flymake-shell)
+(defun my-shell-mode-hook ()
+  (whitespace-mode +1)
+  (flycheck-mode)
+  (message "My shell-mode hook"))
+(add-hook 'sh-mode-hook 'my-shell-mode-hook)
 ;; Lisp
                                         ;(setq inferior-lisp-program "/usr/local/bin/clisp")
 
@@ -152,7 +158,7 @@
 (add-hook 'haskell-mode-hook 'turn-on-haskell-decl-scan)
 (add-hook 'haskell-mode-hook 'imenu-add-menubar-index)
 
-(eval-after-load 'flycheck '(require 'flycheck-hdevtools))
+;(eval-after-load 'flycheck '(require 'flycheck-hdevtools))
 
 ;;Set REPL
 ;; (eval-after-load "haskell-mode"

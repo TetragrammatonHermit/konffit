@@ -14,6 +14,8 @@
                             dired-details
                             smex
                             edit-server
+                            evil
+                            solarized-theme
                             ))
 
 ;; Default to UTF-8
@@ -21,14 +23,17 @@
 
 (set-face-attribute 'default nil :font "Droid Sans Mono-10")
 
-(set-default 'cursor-type 'bar)
+;(set-default 'cursor-type 'bar)
 (set-cursor-color "white")
+(global-hl-line-mode -1)
 
 (scroll-bar-mode -1)  ; Disable scroll bar
 
 (setq visible-bell 1)
 
 (window-numbering-mode t) ; Change windows like chromium tabs
+
+(disable-theme 'zenburn) ; Disable prelude default theme
 
 ;; Keybindings for day/night themes
 (global-set-key [H-end] '(lambda () (interactive)
@@ -102,26 +107,6 @@
 
 (define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
 
-;; Vim-ish C-o binding
-(defun vi-open-line-above ()
-  "Insert a newline above the current line and put point at beginning."
-  (interactive)
-  (unless (bolp)
-    (beginning-of-line))
-  (newline)
-  (forward-line -1)
-  (indent-according-to-mode))
-(define-key global-map (kbd "C-S-o") 'vi-open-line-above)
-
-(defun vi-open-line-below ()
-  "Insert a newline below the current line and put point at beginning."
-  (interactive)
-  (unless (eolp)
-    (end-of-line))
-  (newline-and-indent))
-(define-key global-map (kbd "C-o") 'vi-open-line-below)
-
-
 (smartparens-global-mode +1)
 
 (require 'key-chord)
@@ -141,6 +126,7 @@
 
 ;; Multiple cursors
 (key-chord-define-global "jn" 'mc/mark-more-like-this-extended)
+(key-chord-define-global "jm" 'mc/mark-all-like-this)
 (key-chord-define-global "jt" 'mc/mark-sgml-tag-pair)
 (key-chord-define-global "kd" 'mc/edit-lines)
 

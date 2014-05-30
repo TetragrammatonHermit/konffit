@@ -2,19 +2,25 @@
 
 (prelude-require-packages '(yasnippet
                             auto-complete
-                                        ;angular-snippets
+                            flycheck
+
+                            angular-snippets
+
                             elpy
                             jedi
                             emmet-mode
-                                        ;ac-emmet
+                            ac-emmet
                                         ;csharp-mode
                             js2-mode
                             ac-js2
                                         ;js2-refactor
                                         ;web-beautify
-                                        ;skewer-mode
+                            skewer-mode
                                         ;skewer-reload-stylesheets
-                            flycheck
+
+                                        ; utils
+                            s
+                            dash
                             ))
 ;; http://flycheck.readthedocs.org/en/latest/guide/quickstart.html
 
@@ -81,10 +87,11 @@
             (if (eq window-system 'x)
                 (font-lock-mode 1))))
 
+;;;; Webdev
 ;; HTML
 (add-hook 'html-mode-hook
           (lambda()
-            (setq sgml-basic-offset 4)
+            (setq sgml-basic-offset 2)
             t))
 
 ;; Reindent after deleting tags
@@ -92,22 +99,23 @@
   (prelude-cleanup-buffer))
 
 ;; Emmet
-                                        ;(add-hook 'sgml-mode-hook 'emmet-mode)
-(add-hook 'sgml-mode-hook
-          (lambda ()
-            (progn
-              (emmet-mode)
-              )))
+(require 'emmet-mode)
+(add-hook 'sgml-mode-hook 'emmet-mode)
 (add-hook 'css-mode-hook  'emmet-mode)
 
 (eval-after-load "emmet-mode"
   '(define-key emmet-mode-keymap (kbd "C-j") nil))
 
 (add-hook 'emmet-mode-hook (lambda ()
-                             (setq emmet-indentation 4)
+                             (setq emmet-indentation 2)
                              (local-set-key (kbd "<backtab>") 'emmet-expand-line)))
-
+ `
 (setq emmet-move-cursor-between-quotes t)
+
+(require 'ac-emmet)
+(add-hook 'sgml-mode-hook 'ac-emmet-html-setup)
+(add-hook 'css-mode-hook 'ac-emmet-css-setup)
+
 
 (defun unhtml (start end)
   (interactive "r")
@@ -133,13 +141,22 @@
   (define-key js2-mode-map [(return)] 'newline-and-indent)
   (define-key js2-mode-map [(backspace)] 'c-electric-backspace)
   (define-key js2-mode-map [(control d)] 'c-electric-delete-forward)
-  (whitespace-mode +1)  
+  (whitespace-mode +1)
   (message "My JS2 hook"))
 
 (add-hook 'js2-mode-hook 'my-js2-mode-hook)
 (add-hook 'js2-mode-hook 'ac-js2-mode)
 
-;; Shell
+(custom-set-variables
+ '(js2-basic-offset 4)
+ '(js2-bounce-indent-p 'nil)
+ )
+
+(add-hook 'js2-mode-hook 'skewer-mode)
+(add-hook 'css-mode-hook 'skewer-css-mode)
+(add-hook 'html-mode-hook 'skewer-html-mode)
+
+;;;; Shell
 (require 'flymake-shell)
 (defun my-shell-mode-hook ()
   (whitespace-mode +1)
@@ -158,7 +175,7 @@
 (add-hook 'haskell-mode-hook 'turn-on-haskell-decl-scan)
 (add-hook 'haskell-mode-hook 'imenu-add-menubar-index)
 
-;(eval-after-load 'flycheck '(require 'flycheck-hdevtools))
+                                        ;(eval-after-load 'flycheck '(require 'flycheck-hdevtools))
 
 ;;Set REPL
 ;; (eval-after-load "haskell-mode"

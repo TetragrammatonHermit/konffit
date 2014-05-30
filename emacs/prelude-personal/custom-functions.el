@@ -3,12 +3,12 @@
   (interactive "nTransparency Value 0 - 100 opaque:")
   (set-frame-parameter (selected-frame) 'alpha value))
 
-
 (defun buffer-face-variable-width () ;;TODO: call on writeroom hook
   "Set a non fixed width font in current buffer."
   (interactive)
   (setq buffer-face-mode-face '(:family "Droid Sans") )
   (buffer-face-mode))
+
 (defun buffer-face-monospaced ()
   "Set a non fixed width font in current buffer."
   (interactive)
@@ -93,4 +93,28 @@
                               )))
   (message "%s copied to clipboard" (current-kill 0))
   )
+
+
+
+;; Vim-ish C-o binding
+
+;; Prelude has S-RET/M-o and C-S-RET/Super-o
+;; (defun vi-open-line-above ()
+;;   "Insert a newline above the current line and put point at beginning."
+;;   (interactive)
+;;   (unless (bolp)
+;;     (beginning-of-line))
+;;   (newline)
+;;   (forward-line -1)
+;;   (indent-according-to-mode))
+;; (define-key global-map (kbd "C-S-o") 'vi-open-line-above)
+
+
+;; (defun vi-open-line-below ()
+;;   "Insert a newline below the current line and put point at beginning."
+;;   (interactive)
+;;   (unless (eolp)
+;;     (end-of-line))
+;;   (newline-and-indent))
+;; (define-key global-map (kbd "C-o") 'vi-open-line-below)
 

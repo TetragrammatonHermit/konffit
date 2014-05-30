@@ -1,0 +1,9 @@
+[Unit]
+Description=custom-startup
+# TODO: Requires=none ?
+
+# Run and exit
+Type=oneshot
+# TODO: it may need to remain after running
+RemainAfterExit=yes
+ExecStart=/home/jasal/bin/s s off -d :0

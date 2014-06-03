@@ -17,7 +17,7 @@
                                         ;web-beautify
                             skewer-mode
                                         ;skewer-reload-stylesheets
-
+                            slime
                                         ; utils
                             s
                             dash
@@ -157,14 +157,14 @@
 (add-hook 'html-mode-hook 'skewer-html-mode)
 
 ;;;; Shell
-(require 'flymake-shell)
+;;(require 'flymake-shell)
 (defun my-shell-mode-hook ()
   (whitespace-mode +1)
   (flycheck-mode)
   (message "My shell-mode hook"))
 (add-hook 'sh-mode-hook 'my-shell-mode-hook)
 ;; Lisp
-                                        ;(setq inferior-lisp-program "/usr/local/bin/clisp")
+(setq inferior-lisp-program "/usr/bin/sbcl")
 
 ;; Haskell
 ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-unicode-input-method)

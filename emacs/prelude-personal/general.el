@@ -21,7 +21,7 @@
 ;; Default to UTF-8
 (set-language-environment "UTF-8")
 
-(set-face-attribute 'default nil :font "Droid Sans Mono-10")
+;(set-face-attribute 'default nil :font "Droid Sans Mono-10")
 
 ;(set-default 'cursor-type 'bar)
 (set-cursor-color "white")
@@ -65,9 +65,9 @@
 (setq initial-scratch-message "")
 (setq initial-major-mode 'org-mode)
 
-;; Use system default browser on linux
+;; Set default browser ; TODO set OS condition
 (setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "x-www-browser")
+      browse-url-generic-program "conkeror") ;; TODO use xdg-open on linux
 
 (require 'google-translate)
 (require 'google-translate-default-ui)
@@ -141,6 +141,8 @@
 ;; Use split window as default copy/rename target
 ;; Works nicely with tramp as a sftp file manager.
 (setq dired-dwim-target t)
+
+(setq tramp-default-method "ssh")
 
 (require 'dired-details) ;; Suppress noise on dired window
 (dired-details-install)

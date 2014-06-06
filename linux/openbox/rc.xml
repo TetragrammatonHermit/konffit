@@ -222,15 +222,15 @@ cases. -->
     <keybind key="A-S-Tab">
       <action name="PreviousWindow"/>
     </keybind>
-    <keybind key="C-A-Tab">
-      <action name="NextWindow">
-        <panels>yes</panels>
-        <desktop>yes</desktop>
-      </action>
-    </keybind>
+    <!-- <keybind key="C-A-Tab"> -->
+    <!--   <action name="NextWindow"> -->
+    <!--     <panels>yes</panels> -->
+    <!--     <desktop>yes</desktop> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
     <keybind key="W-f">
       <action name="Execute">
-        <command>thunar</command>
+        <command>spacefm</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>File Manager</name>
@@ -239,16 +239,7 @@ cases. -->
     </keybind>
     <keybind key="W-w">
       <action name="Execute">
-        <command>firefox</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>Web Browser</name>
-        </startupnotify>
-      </action>
-    </keybind>
-    <keybind key="H-i">
-      <action name="Execute">
-        <command>chromium https://www.facebook.com/messages/</command>
+        <command>conkeror</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>Web Browser</name>
@@ -273,32 +264,13 @@ cases. -->
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="H-n">
-      <action name="Execute">
-        <command>chromium https://www.evernote.com/Home.action</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>Web Browser</name>
-        </startupnotify>
-      </action>
-    </keybind>
     <keybind key="W-e">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
           <name>Editor</name>
         </startupnotify>
-        <command>emacs</command>
-      </action>
-    </keybind>
-    <keybind key="H-d">
-      <!-- Run local webapp at port 3333 -->
-      <action name="Execute">
-        <command>chromium http://localhost:3333</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>Web Browser</name>
-        </startupnotify>
+        <command>emacsclient -n</command>
       </action>
     </keybind>
     <keybind key="H-s">
@@ -901,7 +873,7 @@ entry in parent menu -->
       <decor>no</decor>
     </application>
     <application name="emacs">
-      <decor>yes</decor>
+      <decor>no</decor>
     </application>
     <application name="zathura">
       <decor>no</decor>

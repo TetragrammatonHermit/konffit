@@ -21,6 +21,7 @@
                                         ; utils
                             s
                             dash
+                            conkeror-minor-mode
                             ))
 ;; http://flycheck.readthedocs.org/en/latest/guide/quickstart.html
 

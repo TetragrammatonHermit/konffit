@@ -1,3 +1,5 @@
+;; After install replace builtin org with one from elpa!
+
  ;;; Org-mode
 (global-set-key (kbd "H-c") 'org-capture)
 (global-set-key (kbd "H-a") 'org-agenda)
@@ -10,10 +12,13 @@
 
 (setq org-default-notes-file  "~/notes/todo.org")
 
+(require 'org-protocol)
+
 (setq org-capture-templates
-      '(("t" "Task / Chore" entry (file+headline "~/notes/gtd.org" "Tasks")
-         "* TODO %?\n  %i\n")
-        ("w" "Shout to Twitter / Blog" entry (file+headline "~/notes/todo.org" "Shouts")
+      '(
+        ;; Org-protocol
+        ("w" "" (file+headline "~/notes/www.org" "Notes") "* %^{Title}\n\n  Source: %u, %c\n\n  %i")
+        ("t" "Task / Chore" entry (file+headline "~/notes/gtd.org" "Tasks")
          "* TODO %?\n  %i\n")
         ("i" "Idea" entry (file+headline "~/notes/someday.org" "Ideas")
          "* %?\n  %i\n")

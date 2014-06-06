@@ -40,7 +40,7 @@ following: 'Mouse' - where the mouse is, or
 'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Just Black 2</name>
+    <name>Orion-Green</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
 available characters are NDSLIMC, each can occur at most once.
@@ -52,52 +52,55 @@ C: close
 S: shade (roll up/down)
 D: omnipresent (on all desktops).
 -->
-    <keepBorder>no</keepBorder>
+    <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>sans</name>
-      <size>8</size>
+      <name>Sans</name>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>normal</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>sans</name>
-      <size>8</size>
+      <name>Sans</name>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>normal</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>sans</name>
-      <size>9</size>
+      <name>Sans</name>
+      <size>12</size>
       <!-- font size in points -->
-      <weight>normal</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>sans</name>
-      <size>8</size>
+      <name>Sans</name>
+      <size>11</size>
       <!-- font size in points -->
-      <weight>normal</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name/>
+      <name>Sans</name>
+      <size>9</size>
+      <weight>Normal</weight>
+      <slant>Normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
       <name>Sans</name>
-      <size>8</size>
-      <weight/>
-      <slant/>
+      <size>9</size>
+      <weight>Normal</weight>
+      <slant>Normal</slant>
     </font>
   </theme>
   <desktops>
@@ -228,7 +231,7 @@ cases. -->
     <!--     <desktop>yes</desktop> -->
     <!--   </action> -->
     <!-- </keybind> -->
-    <keybind key="W-f">
+    <keybind key="H-f">
       <action name="Execute">
         <command>spacefm</command>
         <startupnotify>
@@ -237,7 +240,7 @@ cases. -->
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="W-w">
+    <keybind key="H-w">
       <action name="Execute">
         <command>conkeror</command>
         <startupnotify>
@@ -246,7 +249,7 @@ cases. -->
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="H-t">
+    <keybind key="H-W-t">
       <action name="Execute">
         <command>chromium https://twitter.com/</command>
         <startupnotify>
@@ -255,7 +258,7 @@ cases. -->
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="H-f">
+    <keybind key="H-W-f">
       <action name="Execute">
         <command>chromium https://www.dropbox.com/home</command>
         <startupnotify>
@@ -264,7 +267,7 @@ cases. -->
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="W-e">
+    <keybind key="H-e">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -276,6 +279,15 @@ cases. -->
     <keybind key="H-s">
       <action name="Execute">
         <command>chromium http://ilmatieteenlaitos.fi/saa/jyv%C3%A4skyl%C3%A4 http://ilmatieteenlaitos.fi/sade-ja-pilvialueet</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+          <name>Web Browser</name>
+        </startupnotify>
+      </action>
+    </keybind>
+    <keybind key="H-W-s">
+      <action name="Execute">
+        <command>conkeror http://www.zalama.net/euroblitz/Web/euroblitz_webpage.php</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>Web Browser</name>
@@ -309,16 +321,16 @@ cases. -->
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="H-w">
+    <keybind key="H-W-w">
       <action name="Execute">
-        <command>chromium wiki.archlinux.org</command>
+        <command>conkeror wiki.archlinux.org</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>Web Browser</name>
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="W-p">
+    <keybind key="H-p">
       <action name="Execute">
         <command>gpick</command>
         <startupnotify>
@@ -327,7 +339,7 @@ cases. -->
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="W-t">
+    <keybind key="H-t">
       <action name="Execute">
         <command>terminator</command>
         <startupnotify>
@@ -336,9 +348,9 @@ cases. -->
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="W-i">
+    <keybind key="H-i">
       <action name="Execute">
-        <command>/home/jasal/notes/bin/spawnTerminatorAndI</command>
+        <command>/home/jasalt/notes/bin/spawnTerminatorAndI</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name/>
@@ -347,7 +359,7 @@ cases. -->
     </keybind>
     <!-- <keybind key="W-p"> -->
     <!--   <action name="Execute"> -->
-    <!--     <command>/home/jasal/notes/bin/spawnTerminatorAndPl</command> -->
+    <!--     <command>/home/jasal/notes/bin/spawnTerminatorAndI</command> -->
     <!--     <startupnotify> -->
     <!--       <enabled>yes</enabled> -->
     <!--       <name>terminal</name> -->
@@ -363,7 +375,7 @@ cases. -->
     <!--     </startupnotify> -->
     <!--   </action> -->
     <!-- </keybind> -->
-    <keybind key="W-s">
+    <keybind key="C-S-Escape">
       <action name="Execute">
         <command>terminator --command="htop"</command>
         <startupnotify>
@@ -433,25 +445,25 @@ cases. -->
     <keybind key="A-W-Left">
       <action name="GrowToEdgeWest"/>
     </keybind>
-    <keybind key="W-c">
-      <action name="MoveToCenter"/>
-    </keybind>
-    <keybind key="C-S-A-a">
-      <action name="GoToDesktop">
-        <to>left</to>
-        <wrap>yes</wrap>
-      </action>
-    </keybind>
+    <!-- <keybind key="W-c"> -->
+    <!--   <action name="MoveToCenter"/> -->
+    <!-- </keybind> -->
+    <!-- <keybind key="C-S-A-a"> -->
+    <!--   <action name="GoToDesktop"> -->
+    <!--     <to>left</to> -->
+    <!--     <wrap>yes</wrap> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
     <!-- <keybind key="W-C-d"> -->
     <!--   <action name="ToggleShowDesktop"/> -->
     <!-- </keybind> -->
     <!-- Keybindings for windows -->
-    <keybind key="C-S-A-d">
-      <action name="GoToDesktop">
-        <to>right</to>
-        <wrap>yes</wrap>
-      </action>
-    </keybind>
+    <!-- <keybind key="C-S-A-d"> -->
+    <!--   <action name="GoToDesktop"> -->
+    <!--     <to>right</to> -->
+    <!--     <wrap>yes</wrap> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
     <keybind key="H-F11">
       <action name="ToggleDecorations"/>
     </keybind>

@@ -8,18 +8,18 @@
 # ID 1
 rounded = 0
 border_width = 0
-background_color = #FFFFFF 10
+background_color = #000000 100
 border_color = #212121 0
 
 # ID 2
 rounded = 1
 border_width = 0
-background_color = #AAB8A5 100
+background_color = #1A1A1A 100
 border_color = #000000 100
 
 # Panel
 panel_monitor = 1
-panel_position = bottom center horizontal
+panel_position = top center horizontal
 panel_size = 100% 40
 panel_margin = 0 0
 panel_padding = 0 0 0
@@ -63,8 +63,8 @@ task_iconified_icon_asb = 100 0 0
 task_font = sans bold 12
 task_font_color = #FFFFFF 80
 task_active_font_color = #FFFFFF 100
-task_urgent_font_color = #000000 100
-task_iconified_font_color = #000000 100
+task_urgent_font_color = #FFFFFF 100
+task_iconified_font_color = #FFFFFF 60
 font_shadow = 0
 
 # System Tray

@@ -1,0 +1,27 @@
+#(sleep 3 && /usr/bin/nm-applet --sm-disable) &
+tint2 &
+volumeicon &
+#hsetroot -fill /home/jasal/Pictures/wallpaper/paijanne2.jpg &
+#clipit &
+#conky &
+
+# Enable as required
+#compton -cCGb &
+
+#/usr/bin/synclient TouchpadOff=1 &
+#xxkb &
+#spacefm -d &
+#setxkbmap gb &
+
+xbacklight -set 70 &
+
+## Set keyboard settings - 190 ms delay and 25 cps (characters per second) repeat rate.
+## Adjust the values according to your preferances.
+xset r rate 190 25 &
+
+## Turn on/off system beep
+xset b off &
+
+redshift &
+
+xscreensaver -no-splash &

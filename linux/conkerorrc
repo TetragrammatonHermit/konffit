@@ -1,0 +1,18 @@
+// Set bigger hint numbers
+register_user_stylesheet(
+    "data:text/css," +
+        escape(
+            "@namespace url(\"http://www.w3.org/1999/xhtml\");\n" +
+            "span.__conkeror_hint {\n"+
+            "  font-size: 17px !important;\n"+
+            "  line-height: 16px !important;\n"+
+            "}"));
+
+
+// Graphical navigation buttons to modeline
+load_paths.unshift("chrome://conkeror-contrib/content/");
+require("mode-line-buttons.js");
+mode_line_add_buttons(standard_mode_line_buttons, true);
+
+// Use char-hints (like Vimium)
+hint_digits="asdfjklghweioqrupxcmzv";

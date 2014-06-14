@@ -1,4 +1,9 @@
 .DS_Store
 .test
-
 /alfred/Alfred.alfredpreferences/workflows/
+*.log*
+linux/radiotray/config.xml
+
+linux/openbox/*
+!linux/openbox/rc.xml
+!linux/openbox/autostart

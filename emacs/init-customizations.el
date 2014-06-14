@@ -1,0 +1,7 @@
+(load "~/konffit/emacs/prelude-personal/modes/acme-search.el")
+(load "~/konffit/emacs/prelude-personal/modes/xmsi-math-symbols-input.el")
+(load "~/konffit/emacs/prelude-personal/override-defaults.el")
+(load "~/konffit/emacs/prelude-personal/general.el")
+(load "~/konffit/emacs/prelude-personal/orgmode.el")
+(load "~/konffit/emacs/prelude-personal/programming.el")
+;(load "~/konffit/emacs/prelude-personal/custom-functions.el")

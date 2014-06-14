@@ -25,6 +25,10 @@ define_key(content_buffer_normal_keymap, "l", "caret-cmd_scrollRight");
 define_key(content_buffer_normal_keymap, "M-q", "unfocus");
 define_key(content_buffer_normal_keymap, "d", "follow-new-buffer-background");
 
+// Trello steals switch-to-buffer
+define_key(content_buffer_normal_keymap, "C-x C-b", "switch-to-buffer");
+
+
 // Reload conkerorrc with C-c r
 interactive("reload-config", "reload conkerorrc",
             function(I) {
@@ -37,7 +41,7 @@ define_key(default_global_keymap, "C-c r", "reload-config");
 //  Midclick opens links in new background buffers
 require("clicks-in-new-buffer.js");
 clicks_in_new_buffer_target = OPEN_NEW_BUFFER_BACKGROUND;
-clicks_in_new_buffer_button = 2;
+clicks_in_new_buffer_button = 1;
 
 // Use char-hints
 hint_digits="asdfjklghweioqrupxcmzv";
@@ -95,7 +99,7 @@ remove_hook("mode_line_hook", mode_line_adder(clock_widget));
 
 require("gmail");
 require("facebook");
-require("github");
+//require("github");
 require("twitter");
 
 

@@ -1,13 +1,13 @@
-define_webjump("dict", "http://www.google.com/search?q=%s");
-define_webjump("g", "http://www.cliki.net/admin/search?words=%s");
-define_webjump("gh", "http://www.imdb.com/find?q=%s");
-define_webjump("gm", "http://www.youtube.com/results?search_query=%s&search=Search");
-define_webjump("imdb", "http://youtube.com/profile_videos?user=%s");
-define_webjump("y","http://www.thefreedictionary.com/%s");
-define_webjump("youtu", "http://github.com/search?q=%s&type=Everything");
+define_webjump("g", "http://www.google.com/search?q=%s");
+define_webjump("gm", "https://mail.google.com/mail/u/0/");
+define_webjump("imdb", "http://www.imdb.com/find?q=%s");
+define_webjump("y", "http://www.youtube.com/results?search_query=%s&search=Search");
+define_webjump("youtu", "http://youtube.com/profile_videos?user=%s");
+define_webjump("dict","http://www.thefreedictionary.com/%s");
+define_webjump("gh", "http://github.com/search?q=%s&type=Everything");
 define_webjump("img", "http://www.google.com/images?q=%s&safe=off", $alternative = "http://www.google.com/imghp?as_q=&safe=off");
 
-define_webjump("cliki", "https://mail.google.com/mail/u/0/");
+define_webjump("cliki", "http://www.cliki.net/admin/search?words=%s");
 define_webjump("clhs",
                "http://www.xach.com/clhs?q=%s",
                $alternative = "http://www.lispworks.com/documentation/HyperSpec/Front/index.htm");
@@ -16,7 +16,7 @@ define_webjump("emacswiki",
                "&q=%s&sa=Search&siteurl=emacswiki.org%2F",
                $alternative="http://www.emacswiki.org/");
 
-// Search in current site with google //TODO
+// Search in current site with google
 define_webjump("grep", "javascript:window.location.href='http://google.com/search?q=%s+site:'+window.location.host");
 
 // Check if page is down

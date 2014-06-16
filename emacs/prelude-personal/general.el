@@ -67,7 +67,7 @@
 
 ;; Set default browser ; TODO set OS condition
 (setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "conkeror") ;; TODO use xdg-open on linux
+      browse-url-generic-program "chromium-browser") ;; TODO use xdg-open on linux
 
 (require 'google-translate)
 (require 'google-translate-default-ui)

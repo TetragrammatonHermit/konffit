@@ -1,5 +1,5 @@
 ;; After install replace builtin org with one from elpa!
-
+(setq org-agenda-files '("~/notes/gtd.org"))
  ;;; Org-mode
 (global-set-key (kbd "H-c") 'org-capture)
 (global-set-key (kbd "H-a") 'org-agenda)

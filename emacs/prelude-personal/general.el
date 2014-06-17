@@ -63,7 +63,7 @@
 
 ; Make scratch-buffer more convenient
 (setq initial-scratch-message "")
-(setq initial-major-mode 'org-mode)
+;;(setq initial-major-mode 'org-mode) ;; TODO Unset before orgmode upgrade
 
 ;; Set default browser ; TODO set OS condition
 (setq browse-url-browser-function 'browse-url-generic
@@ -181,11 +181,17 @@
 
 (projectile-global-mode)
 
-(set-variable 'magit-emacsclient-executable "/usr/bin/emacsclient") ; Magit use current window
+(cond
+ ((string-equal system-type "gnu/linux")
+  (set-variable 'magit-emacsclient-executable "/usr/bin/emacsclient") ; Magit use current window
+  )
+ ((string-equal system-type "darwin")
+  (set-variable 'magit-emacsclient-executable "/Applications/Emacs.app/Contents/MacOS/bin/emacsclient") ; Magit use current window
+  )
+ )
 
 ;; Set emerge as git mergetool
 (setq emerge-diff-options "--ignore-all-space")
-
 
 (load "server")
 (unless (server-running-p) (server-start)) ; Run emacs server

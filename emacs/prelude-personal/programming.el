@@ -13,6 +13,8 @@
                                         ;csharp-mode
                             js2-mode
                             ac-js2
+                            coffee-mode
+                            
                                         ;js2-refactor
                                         ;web-beautify
                             skewer-mode

@@ -1,8 +1,18 @@
 ;; After install replace builtin org with one from elpa!
+;(add-to-list 'load-path "/Users/jasalt/.emacs.d/org-mode/lisp")
+;(add-to-list 'load-path "/Users/jasalt/.emacs.d/org-mode/contrib/lisp") TODO breaks
+
 
  ;;; Org-mode
-(global-set-key (kbd "H-c") 'org-capture)
-(global-set-key (kbd "H-a") 'org-agenda)
+(global-set-key (kbd "C-C m") 'org-capture)
+(global-set-key (kbd "C-C a") 'org-agenda)
+
+(setq org-directory "~/notes/")
+;;(setq org-agenda-files (quote "~/notes/mobiletest.org"))
+(setq org-mobile-directory "/Volumes/DUMPSSDER/Dropbox/Apps/MobileOrg")
+(setq org-mobile-files '("~/notes/mobiletest.org" "~/notes/gtd.org"))
+(setq org-mobile-inbox-for-pull "~/notes/incoming.org")
+
 
 (setq org-use-fast-todo-selection t)
 (setq org-use-fast-tag-selection t)
@@ -11,6 +21,8 @@
 ;;(global-set-key "\C-c\C-cb " 'org-iswitchb)
 
 (setq org-default-notes-file  "~/notes/todo.org")
+
+
 
 (require 'org-protocol)
 
@@ -55,16 +67,16 @@
           (agenda "" ((org-agenda-ndays 1)
                       (org-agenda-sorting-strategy
                        (quote ((agenda time-up priority-down tag-up) )))
-                      (org-deadline-warning-days 0)
+                      (org-deadline-warning-days 5)
                       ))))
         ))
 
 
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  ;;'(auto-raise-tool-bar-buttons t t)
  ;;'(auto-resize-tool-bars t t)
  ;;'(calendar-week-start-day 1)
@@ -116,7 +128,7 @@
 
   ;; setup
   (setq org-catch-invisible-edits 'smart)
-  (org-indent-mode t)
+;;(org-indent-mode t)
   (visual-line-mode t)
 
   ;; Add syntax highlight to src blocks

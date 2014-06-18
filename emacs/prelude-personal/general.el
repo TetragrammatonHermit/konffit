@@ -181,11 +181,20 @@
 
 (projectile-global-mode)
 
-(set-variable 'magit-emacsclient-executable "/usr/bin/emacsclient") ; Magit use current window
+(cond
+ ((string-equal system-type "gnu/linux")
+  (set-variable 'magit-emacsclient-executable "/usr/bin/emacsclient") ; Magit use current window
+  )
+ ((string-equal system-type "darwin")
+  (set-variable 'magit-emacsclient-executable "/Applications/Emacs.app/Contents/MacOS/bin/emacsclient") ; Magit use current window
+  )
+ )
 
 ;; Set emerge as git mergetool
-(setq emerge-diff-options "--ignore-all-space")
+;; (setq emerge-diff-options "--ignore-all-space")
 
+;; 
+(setq ediff-make-buffers-readonly-at-startup nil)
 
 (load "server")
 (unless (server-running-p) (server-start)) ; Run emacs server

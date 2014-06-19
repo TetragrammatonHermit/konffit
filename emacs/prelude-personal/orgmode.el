@@ -1,16 +1,10 @@
 ;; After install replace builtin org with one from elpa!
+
+
 (setq org-directory "~/notes/")
+(setq org-default-notes-file  "~/notes/gtd.org")
 (setq org-agenda-files '("~/notes/gtd.org"))
-(setq org-mobile-directory "/Volumes/DUMPSSDER/Dropbox/Apps/MobileOrg")
-(setq org-mobile-files '("~/notes/mobiletest.org" "~/notes/gtd.org"))
-(setq org-mobile-inbox-for-pull "~/notes/incoming.org")
 
- ;;; Org-mode
-(global-set-key (kbd "C-C m") 'org-capture)
-(global-set-key (kbd "C-C a") 'org-agenda)
-
-(setq org-directory "~/notes/")
-;;(setq org-agenda-files (quote "~/notes/mobiletest.org"))
 (setq org-mobile-directory "/Volumes/DUMPSSDER/Dropbox/Apps/MobileOrg")
 (setq org-mobile-files '("~/notes/mobiletest.org" "~/notes/gtd.org"))
 (setq org-mobile-inbox-for-pull "~/notes/incoming.org")
@@ -18,13 +12,44 @@
 
 (setq org-use-fast-todo-selection t)
 (setq org-use-fast-tag-selection t)
+(setq org-catch-invisible-edits 'smart)
+
+;; Emacs global eybindings
+(global-set-key (kbd "C-C m") 'org-capture)
+(global-set-key (kbd "C-C a") 'org-agenda)
+
+
 
 ;;(global-set-key "\C-c\C-cl" 'org-store-link)
 ;;(global-set-key "\C-c\C-cb " 'org-iswitchb)
 
-(setq org-default-notes-file  "~/notes/todo.org")
 
 
+;; http://ergoemacs.org/emacs/emacs_set_keys_for_major_mode.html
+(defun own-org-mode-hook ()
+  "Modify keymaps and settings used by `org-mode'."
+
+  (local-set-key (kbd "<H-up>") 'org-move-subtree-up)
+  (local-set-key (kbd "<H-down>") 'org-move-subtree-down)
+
+  ;; Prefer thin cursor when writing
+  (set-default 'cursor-type 'bar)
+  
+  (visual-line-mode t)
+
+  ;; Add syntax highlight to src blocks
+  (prelude-require-package 'htmlize)
+  (setq org-src-fontify-natively t)
+
+  (setq org-export-backends (quote (
+                                    md
+                                    ascii
+                                    html
+                                    latex
+                                    odt)))
+  )
+
+(add-hook 'org-mode-hook 'own-org-mode-hook)
 
 (require 'org-protocol)
 
@@ -73,76 +98,4 @@
                       ))))
         ))
 
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- ;;'(auto-raise-tool-bar-buttons t t)
- ;;'(auto-resize-tool-bars t t)
- ;;'(calendar-week-start-day 1)
- ;;'(case-fold-search t)
- ;;'(current-language-environment "Latin-1")
- ;;'(default-input-method "latin-1-prefix")
- ;;'(make-backup-files nil)
- ;;'(normal-erase-is-backspace t)
- ;;'(org-agenda-files (quote ("c:/Charles/GTD/birthday.org" "c:/Charles/GTD/newgtd.org")))
- ;;'(org-agenda-ndays 7)
- ;;'(org-agenda-repeating-timestamp-show-all nil)
- ;;'(org-agenda-restore-windows-after-quit t)
- ;;'(org-agenda-show-all-dates t)
- ;;'(org-agenda-skip-deadline-if-done t)
- ;;'(org-agenda-skip-scheduled-if-done t)
- ;;'(org-agenda-sorting-strategy (quote ((agenda time-up priority-down tag-up) (todo tag-up))))
- ;;'(org-agenda-start-on-weekday nil)
- ;;'(org-agenda-todo-ignore-deadlines t)
- ;;'(org-agenda-todo-ignore-scheduled t)
- ;;'(org-agenda-todo-ignore-with-date t)
- ;;'(org-agenda-window-setup (quote other-window))
- ;;'(org-deadline-warning-days 7)
- ;;'(org-export-html-style "<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyles.css\">")
- ;;'(org-fast-tag-selection-single-key nil)
- ;;'(org-log-done (quote (done)))
- '(org-refile-targets (quote (("gtd.org" :maxlevel . 1) ("someday.org" :level . 2))))
- ;;'(org-reverse-note-order nil)
- ;;'(org-tags-column -78)
- ;;'(org-tags-match-list-sublevels nil)
- ;;'(org-time-stamp-rounding-minutes 5)
- ;;'(org-use-fast-todo-selection t)
- ;;'(org-use-tag-inheritance nil)
- ;;'(unify-8859-on-encoding-mode t nil (ucs-tables))
- )
-
-
-
-;;todo refile targets
-
-;; (global-unset-key (kbd "<M-S-up>"))
-;; (global-unset-key (kbd "<C-S-up>"))
-;; (global-set-key (kbd "<M-S-up>") '(message "fuu"))
-;; http://ergoemacs.org/emacs/emacs_set_keys_for_major_mode.html
-(defun own-org-mode-hook ()
-  "Modify keymaps and settings used by `org-mode'."
-
-  (local-set-key (kbd "<H-up>") 'org-move-subtree-up)
-  (local-set-key (kbd "<H-down>") 'org-move-subtree-down)
-
-  ;; setup
-  (setq org-catch-invisible-edits 'smart)
-;;(org-indent-mode t)
-  (visual-line-mode t)
-
-  ;; Add syntax highlight to src blocks
-  (prelude-require-package 'htmlize)
-  (setq org-src-fontify-natively t)
-
-  (setq org-export-backends (quote (
-                                    md
-                                    ascii
-                                    html
-                                    latex
-                                    odt)))
-  )
-;; Enable hook when org-mode starts
-(add-hook 'org-mode-hook 'own-org-mode-hook)
+(setq org-refile-targets (quote (("gtd.org" :maxlevel . 1) ("someday.org" :level . 2))))

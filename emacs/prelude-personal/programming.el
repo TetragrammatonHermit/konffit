@@ -15,6 +15,11 @@
                             ac-js2
                                         ;js2-refactor
                                         ;web-beautify
+                            ;flymake
+                            ;flymake-go
+                            go-errcheck
+                            go-snippets
+                            
                             skewer-mode
                                         ;skewer-reload-stylesheets
                             slime
@@ -166,6 +171,14 @@
 (add-hook 'sh-mode-hook 'my-shell-mode-hook)
 ;; Lisp
 (setq inferior-lisp-program "/usr/bin/sbcl")
+
+;;;; GO
+(setenv "GOPATH" "/home/jasalt/.golang/packages")
+(setenv "PATH" (concat (getenv "PATH") ":" "/home/jasalt/.golang/packages/bin"))
+(setq exec-path (append exec-path (list (expand-file-name "/home/jasalt/.golang/packages/bin"))))
+
+(add-to-list 'load-path "~/konffit/emacs/prelude-personal/modes") ;; TODO get from elpa
+(require 'go-flycheck)
 
 ;; Haskell
 ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-unicode-input-method)

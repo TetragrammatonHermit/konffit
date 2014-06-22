@@ -1,37 +1,18 @@
-# Aliases and other stuff for both osx and linux
-#
-# source from .zshrc .bash_profile or whatever
+export AWS_CONFIG_FILE=$HOME/.aws-config
 
+# Reconfigure
 alias rp="source ~/.zshrc"
-alias myip="ifconfig wlan0"
 
-alias bitch,=sudo
+# Emacsclient gui
+alias ec="emacsclient -n"
 
-#alias j="autojump"
+# Emacsclient terminal
+alias ect="emacsclient -t"
 
-alias gf="git commit -am  'Quick commit' && git push"
+alias serve="python -m SimpleHTTPServer 3333"
 
-export EDITOR='emacsclient -c -n'
-export EDITOR=$EDITOR
-
-## Emacsclient bindings
-# terminal
-alias et='emacsclient -t'
-# gui client with wait
-alias e='emacsclient -c'
-# gui client without waiting
-alias em='emacsclient -c -n'
-
-alias serve="python2 -m SimpleHTTPServer 3333"
+alias qc="git commit -a -m 'up' && git push"
 
 # Google translate (https://github.com/soimort/google-translate-cli)
 alias te="trs {fi=en} " # To English
 alias tf="trs {en=fi} " # To Finnish
-
-# Paste last output
-zmodload -i zsh/parameter
-insert-last-command-output() {
-  LBUFFER+="$(eval $history[$((HISTCMD-1))])"
-}
-zle -N insert-last-command-output
-bindkey "^V" insert-last-command-output

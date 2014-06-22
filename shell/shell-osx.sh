@@ -1,3 +1,5 @@
+source shell-common.sh
+
 alias nwk="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
 
 alias cdc="cd /Volumes/C/"
@@ -21,11 +23,3 @@ alias kello="date \"+Kello on %H %M\" | sano"
 alias cdd="cd ~/Desktop/"
 alias cddo="cd ~/Documents/"
 
-# Start emacs server
-# alias emacs="/usr/local/Cellar/emacs/24.3/bin/emacs"
-# Wait for close
-# alias ecw="/usr/local/Cellar/emacs/24.3/bin/emacsclient -c $*"
-# Don't wait
-# alias  ec="/usr/local/Cellar/emacs/24.3/bin/emacsclient --no-wait $*"
-# Emacs in terminal
-# alias ect='/usr/local/Cellar/emacs/24.3/bin/emacsclient -t -a \"\" $*'

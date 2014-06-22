@@ -25,7 +25,7 @@
 
 ;(set-default 'cursor-type 'bar)
 (set-cursor-color "white")
-(global-hl-line-mode -1)
+;(global-hl-line-mode -1)
 
 (scroll-bar-mode -1)  ; Disable scroll bar
 
@@ -34,6 +34,7 @@
 (window-numbering-mode t) ; Change windows like chromium tabs
 
 (disable-theme 'zenburn) ; Disable prelude default theme
+(load-theme 'solarized-light)
 
 ;; Keybindings for day/night themes
 (global-set-key [H-end] '(lambda () (interactive)
@@ -44,11 +45,6 @@
                             (set-cursor-color "black")))
 
 (defalias 'yes-or-no-p 'y-or-n-p) ; y means yes
-
-;; Make OSX special characters work with alt, set cmd to meta.
-(setq mac-option-modifier 'nil
-      mac-command-modifier 'meta
-      x-select-enable-clipboard t)
 
 ;; Nicer mousewheel scrolling
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
@@ -65,9 +61,27 @@
 (setq initial-scratch-message "")
 (setq initial-major-mode 'org-mode)
 
-;; Set default browser ; TODO set OS condition
-(setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "chromium-browser") ;; TODO use xdg-open on linux
+;; OS Specific stuff
+(cond
+ ;; Linux
+ ((string-equal system-type "gnu/linux")
+  ;; Default www browser
+  (setq browse-url-browser-function 'browse-url-generic
+        browse-url-generic-program "sensible-browser")  
+  ;; Magit use current window
+  (set-variable 'magit-emacsclient-executable "/usr/bin/emacsclient")
+  )
+ ;; OSX
+ ((string-equal system-type "darwin")
+  (set-variable 'magit-emacsclient-executable "/Applications/Emacs.app/Contents/MacOS/bin/emacsclient")
+  )
+ 
+ (setq browse-url-browser-function 'browse-url-generic
+       browse-url-generic-program "sensible-browser")
+ (setq mac-option-modifier 'nil
+       mac-command-modifier 'meta
+       x-select-enable-clipboard t)
+ )
 
 (require 'google-translate)
 (require 'google-translate-default-ui)
@@ -180,15 +194,6 @@
 (setq projectile-svn-command "find . -type f -print0")
 
 (projectile-global-mode)
-
-(cond
- ((string-equal system-type "gnu/linux")
-  (set-variable 'magit-emacsclient-executable "/usr/bin/emacsclient") ; Magit use current window
-  )
- ((string-equal system-type "darwin")
-  (set-variable 'magit-emacsclient-executable "/Applications/Emacs.app/Contents/MacOS/bin/emacsclient") ; Magit use current window
-  )
- )
 
 ;; Set emerge as git mergetool
 ;; (setq emerge-diff-options "--ignore-all-space")

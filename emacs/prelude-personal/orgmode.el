@@ -13,17 +13,14 @@
 (setq org-use-fast-todo-selection t)
 (setq org-use-fast-tag-selection t)
 (setq org-catch-invisible-edits 'smart)
+(setq org-indent-mode t)
 
-;; Emacs global eybindings
+;; Emacs global keybindings
 (global-set-key (kbd "C-C m") 'org-capture)
 (global-set-key (kbd "C-C a") 'org-agenda)
 
-
-
 ;;(global-set-key "\C-c\C-cl" 'org-store-link)
 ;;(global-set-key "\C-c\C-cb " 'org-iswitchb)
-
-
 
 ;; http://ergoemacs.org/emacs/emacs_set_keys_for_major_mode.html
 (defun own-org-mode-hook ()

@@ -13,7 +13,7 @@
 (setq org-use-fast-todo-selection t)
 (setq org-use-fast-tag-selection t)
 (setq org-catch-invisible-edits 'smart)
-(setq org-indent-mode t)
+
 
 ;; Emacs global keybindings
 (global-set-key (kbd "C-C m") 'org-capture)
@@ -30,9 +30,20 @@
   (local-set-key (kbd "<H-down>") 'org-move-subtree-down)
 
   ;; Prefer thin cursor when writing
-  (set-default 'cursor-type 'bar)
+  ;; (set-default 'cursor-type 'bar)
   
   (visual-line-mode t)
+  (org-indent-mode t)
+
+  (defun org-zoom-headline ()
+    ""
+    (interactive)
+    (org-tree-to-indirect-buffer)
+    (other-window -1)
+    (delete-other-windows)
+    )
+  (define-key org-mode-map (kbd "C-c z") 'org-zoom-headline)
+
 
   ;; Add syntax highlight to src blocks
   (prelude-require-package 'htmlize)
@@ -81,11 +92,13 @@
         ;; ...other commands here
         ("H" "Office and Home Lists"
          ((agenda)
-          (tags-todo "TOWN")
+          
+          (tags-todo "JYU")
+          (tags-todo "ONLINE")
           (tags-todo "HOME")
+          (tags-todo "TOWN")
           (tags-todo "PUTKILAHTI")
-          (tags-todo "PC")
-          (tags-todo "EVENING")))
+          (tags-todo "FUN")))
         ("D" "Daily Action List"
          (
           (agenda "" ((org-agenda-ndays 1)

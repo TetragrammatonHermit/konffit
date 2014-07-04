@@ -1,7 +1,7 @@
 ;;; custom --- config
 ;;; Commentary:
 ;; Customizations to editor look and feel.
-;; 
+;;
 ;;; Code:
 
 ;; Load packages
@@ -21,11 +21,11 @@
 ;; Default to UTF-8
 (set-language-environment "UTF-8")
 
-;(set-face-attribute 'default nil :font "Droid Sans Mono-10")
+;(set-default 'cursor-type 'bar) ;; thin cursor
+;(set-cursor-color "white")
 
-;(set-default 'cursor-type 'bar)
-(set-cursor-color "white")
-;(global-hl-line-mode -1)
+;;(set-default 'cursor-type t) ;; fat cursor
+;;(global-hl-line-mode -1)
 
 (scroll-bar-mode -1)  ; Disable scroll bar
 
@@ -34,7 +34,7 @@
 (window-numbering-mode t) ; Change windows like chromium tabs
 
 (disable-theme 'zenburn) ; Disable prelude default theme
-(load-theme 'solarized-light)
+;;(load-theme 'solarized-light)
 
 ;; Keybindings for day/night themes
 (global-set-key [H-end] '(lambda () (interactive)
@@ -56,8 +56,7 @@
 (global-unset-key (kbd "M-<down-mouse-1>"))
 (global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)
 (global-set-key (kbd "H-<mouse-1>") 'mc/add-cursor-on-click)
-
-; Make scratch-buffer more convenient
+                                        ; Make scratch-buffer more convenient
 (setq initial-scratch-message "")
 (setq initial-major-mode 'org-mode)
 
@@ -67,15 +66,16 @@
  ((string-equal system-type "gnu/linux")
   ;; Default www browser
   (setq browse-url-browser-function 'browse-url-generic
-        browse-url-generic-program "sensible-browser")  
+        browse-url-generic-program "sensible-browser")
   ;; Magit use current window
   (set-variable 'magit-emacsclient-executable "/usr/bin/emacsclient")
   )
+ (set-face-attribute 'default nil :font "Droid Sans Mono-10")
  ;; OSX
  ((string-equal system-type "darwin")
   (set-variable 'magit-emacsclient-executable "/Applications/Emacs.app/Contents/MacOS/bin/emacsclient")
   )
- 
+
  (setq browse-url-browser-function 'browse-url-generic
        browse-url-generic-program "sensible-browser")
  (setq mac-option-modifier 'nil
@@ -183,7 +183,7 @@
 ;; (autoload 'wl-other-frame "wl" "Wanderlust on new frame." t)
 ;; (autoload 'wl-draft "wl-draft" "Write draft with Wanderlust." t)
 
-;; Set projectile to create a cache 
+;; Set projectile to create a cache
 (setq projectile-enable-require 'projectile)
 (setq projectile-enable-caching t)
 
@@ -198,7 +198,7 @@
 ;; Set emerge as git mergetool
 ;; (setq emerge-diff-options "--ignore-all-space")
 
-;; 
+;;
 (setq ediff-make-buffers-readonly-at-startup nil)
 
 (load "server")

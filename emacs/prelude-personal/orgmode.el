@@ -32,8 +32,8 @@
   ;; Prefer thin cursor when writing
   ;; (set-default 'cursor-type 'bar)
   
-  (visual-line-mode t)
-  (org-indent-mode t)
+  ;(visual-line-mode t)
+  ;(org-indent-mode t)
 
   (defun org-zoom-headline ()
     ""

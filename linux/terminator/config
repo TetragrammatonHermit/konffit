@@ -25,13 +25,12 @@
     scrollback_lines = 5000
     use_system_font = False
     cursor_color = "#000000"
-    foreground_color = "#000000"
+    foreground_color = "#ffffff"
     scroll_on_output = False
     icon_bell = False
     show_titlebar = False
     color_scheme = custom
     font = DejaVu Sans Mono 11
-    background_color = "#ffffff"
     cursor_blink = False
     scrollback_infinite = True
 [layouts]

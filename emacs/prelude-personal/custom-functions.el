@@ -4,6 +4,7 @@
   (set-frame-parameter (selected-frame) 'alpha value))
 
 (defun buffer-face-variable-width () ;;TODO: call on writeroom hook
+
   "Set a non fixed width font in current buffer."
   (interactive)
   (setq buffer-face-mode-face '(:family "Droid Sans") )

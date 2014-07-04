@@ -8,6 +8,8 @@
 
                             elpy
                             jedi
+                            flycheck-pyflakes
+
                             emmet-mode
                             ac-emmet
                                         ;csharp-mode
@@ -169,6 +171,7 @@
   (flycheck-mode)
   (message "My shell-mode hook"))
 (add-hook 'sh-mode-hook 'my-shell-mode-hook)
+
 ;; Lisp
 (setq inferior-lisp-program "/usr/bin/sbcl")
 
@@ -178,7 +181,11 @@
 (setq exec-path (append exec-path (list (expand-file-name "/home/jasalt/.golang/packages/bin"))))
 
 (add-to-list 'load-path "~/konffit/emacs/prelude-personal/modes") ;; TODO get from elpa
-(require 'go-flycheck)
+
+;;(require 'go-flycheck)
+;;(defun my-go-hook ()
+;;  (local-set-key (kbd "RET") 'newline-and-indent))
+;;(add-hook 'go-mode-hook 'my-go-hook)
 
 ;; Haskell
 ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-unicode-input-method)

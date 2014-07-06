@@ -32,9 +32,9 @@
   ;; Prefer thin cursor when writing
   ;; (set-default 'cursor-type 'bar)
   
-  ;(visual-line-mode t)
-  ;(org-indent-mode t)
-
+  (visual-line-mode +1)
+  (org-indent-mode +1)
+    
   (defun org-zoom-headline ()
     ""
     (interactive)

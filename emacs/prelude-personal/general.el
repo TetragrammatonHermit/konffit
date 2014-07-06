@@ -21,8 +21,8 @@
 ;; Default to UTF-8
 (set-language-environment "UTF-8")
 
-;(set-default 'cursor-type 'bar) ;; thin cursor
-;(set-cursor-color "white")
+                                        ;(set-default 'cursor-type 'bar) ;; thin cursor
+                                        ;(set-cursor-color "white")
 
 ;;(set-default 'cursor-type t) ;; fat cursor
 ;;(global-hl-line-mode -1)
@@ -147,21 +147,6 @@
 ;; Copy current buffer path to clipboard
 (define-key prelude-mode-map (kbd "C-c w") 'prelude-copy-file-name-to-clipboard)
 
-;;; Dired
-;; allow dired to be able to delete or copy a whole dir.
-(setq dired-recursive-copies (quote always)) ; “always” means no asking
-(setq dired-recursive-deletes (quote top)) ; “top” means ask once
-
-;; Use split window as default copy/rename target
-;; Works nicely with tramp as a sftp file manager.
-(setq dired-dwim-target t)
-
-(setq tramp-default-method "ssh")
-
-(require 'dired-details) ;; Suppress noise on dired window
-(dired-details-install)
-(setq-default dired-details-hidden-string "")
-
 ;; Add week numbers to calendar
 (copy-face font-lock-constant-face 'calendar-iso-week-face)
 (set-face-attribute 'calendar-iso-week-face nil
@@ -206,5 +191,48 @@
 
 (require 'edit-server)
 (edit-server-start) ; Edit server chromium extension
+
+;;; Dired
+;; allow dired to be able to delete or copy a whole dir.
+(setq dired-recursive-copies (quote always)) ; “always” means no asking
+(setq dired-recursive-deletes (quote top)) ; “top” means ask once
+
+;; Use split window as default copy/rename target
+;; Works nicely with tramp as a sftp file manager.
+(setq dired-dwim-target t)
+
+(setq tramp-default-method "ssh")
+
+(require 'dired-details) ;; Suppress noise on dired window
+(dired-details-install)
+(setq-default dired-details-hidden-string "")
+
+(defun dired-open-in-external-app ()
+  "Open the current file or dired marked files in external app."
+  (interactive)
+  (let ( doIt
+         (myFileList
+          (cond
+           ((string-equal major-mode "dired-mode") (dired-get-marked-files))
+           (t (list (buffer-file-name))) ) ) )
+
+    (setq doIt (if (<= (length myFileList) 5)
+                   t
+                 (y-or-n-p "Open more than 5 files?") ) )
+
+    (when doIt
+      (cond
+       ((string-equal system-type "windows-nt")
+        (mapc (lambda (fPath) (w32-shell-execute "open" (replace-regexp-in-string "/" "\\" fPath t t)) ) myFileList)
+        )
+       ((string-equal system-type "darwin")
+        (mapc (lambda (fPath) (shell-command (format "open \"%s\"" fPath)) )  myFileList) )
+       ((string-equal system-type "gnu/linux")
+        (mapc (lambda (fPath) (let ((process-connection-type nil)) (start-process "" nil "xdg-open" fPath)) ) myFileList) ) ) ) ) )
+
+(add-hook 'dired-mode-hook
+          '(lambda ()
+             (define-key dired-mode-map "o" 'dired-open-in-external-app)))
+
 
 ;;; general.el ends here

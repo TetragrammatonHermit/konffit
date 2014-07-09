@@ -14,6 +14,7 @@
 (setq org-use-fast-tag-selection t)
 (setq org-catch-invisible-edits 'smart)
 
+(prelude-require-package 'org-trello)
 
 ;; Emacs global keybindings
 (global-set-key (kbd "C-C m") 'org-capture)
@@ -67,16 +68,12 @@
         ("w" "" (file+headline "~/notes/www.org" "Notes") "* %^{Title}\n\n  Source: %u, %c\n\n  %i")
         ("t" "Task / Chore" entry (file+headline "~/notes/gtd.org" "Tasks")
          "* TODO %?\n  %i\n")
-        ("i" "Idea" entry (file+headline "~/notes/someday.org" "Ideas")
+        ("m" "Calendar" entry (file+headline "~/notes/gtd.org" "Tasks") "* APPT %?\n  %i\n")
+        ("r" "Raw thought" entry (file+headline "~/notes/gtd.org" "Ideas")
          "* %?\n  %i\n")
-        ("u" "Usuko task" entry (file+headline "~/notes/gtd.org" "Tasks / Todo")
-         "* TODO %?\n  %i\n ")
-        ("o" "Tweaks to OS" entry (file+headline "~/notes/someday.org" "OS Tweak") "* %?\n  %i\n")
-        ("b" "Buy" entry (file+headline "~/notes/todo.org" "Tasks")
+        ("b" "Buy" entry (file+headline "~/notes/todo.org" "Task / Chore")
          "* TODO Osta %?\n  %i\n")
-        ("ö" "Random temp note to scratch outline" entry (file+headline "~/notes/todo.org" "Scratch")
-         "* %?\n  %i\n")
-        ("m" "Meeting / Appointment" entry (file+headline "~/notes/gtd.org" "Tasks") "* APPT %?\n  %i\n")
+        ("o" "Tweaks to OS" entry (file+headline "~/notes/someday.org" "OS Tweak") "* %?\n  %i\n")
         ("s" "Song" item (file+headline "~/notes/music.org" "New music")
          "%?\n  %i\n")
         ("j" "Journal entry" entry (file+datetree "~/notes/notetoself.org")

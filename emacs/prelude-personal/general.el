@@ -12,6 +12,7 @@
                             google-translate
                             writeroom-mode
                             dired-details
+                            dedicated
                             smex
                             edit-server
                             evil
@@ -29,7 +30,8 @@
 
 (scroll-bar-mode -1)  ; Disable scroll bar
 
-(setq visible-bell 1)
+;;(setq visible-bell t)
+(setq ring-bell-function 'ignore)
 
 (window-numbering-mode t) ; Change windows like chromium tabs
 
@@ -193,6 +195,8 @@
 (edit-server-start) ; Edit server chromium extension
 
 ;;; Dired
+(add-hook 'dired-mode-hook 'auto-revert-mode)
+
 ;; allow dired to be able to delete or copy a whole dir.
 (setq dired-recursive-copies (quote always)) ; “always” means no asking
 (setq dired-recursive-deletes (quote top)) ; “top” means ask once
@@ -234,5 +238,15 @@
           '(lambda ()
              (define-key dired-mode-map "o" 'dired-open-in-external-app)))
 
+(defun toggle-current-window-dedication ()
+  (interactive)
+  (let* ((window    (selected-window))
+         (dedicated (window-dedicated-p window)))
+    (set-window-dedicated-p window (not dedicated))
+    (message "Window %sdedicated to %s"
+             (if dedicated "no longer " "")
+             (buffer-name))))
+
+(global-set-key [pause] 'toggle-current-window-dedication)
 
 ;;; general.el ends here

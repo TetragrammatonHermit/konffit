@@ -17,8 +17,8 @@
 (prelude-require-package 'org-trello)
 
 ;; Emacs global keybindings
-(global-set-key (kbd "C-C m") 'org-capture)
-(global-set-key (kbd "C-C a") 'org-agenda)
+(global-set-key (kbd "H-c") 'org-capture)
+(global-set-key (kbd "H-a") 'org-agenda)
 
 ;;(global-set-key "\C-c\C-cl" 'org-store-link)
 ;;(global-set-key "\C-c\C-cb " 'org-iswitchb)

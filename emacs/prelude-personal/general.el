@@ -80,6 +80,7 @@
   (set-variable 'magit-emacsclient-executable "/Applications/Emacs.app/Contents/MacOS/bin/emacsclient")
   (setq mac-option-modifier 'nil
         mac-command-modifier 'meta
+        mac-function-modifier 'hyper
         x-select-enable-clipboard t)
   )
  )

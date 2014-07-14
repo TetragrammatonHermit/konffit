@@ -12,11 +12,13 @@
                             google-translate
                             writeroom-mode
                             dired-details
+                            dired+
                             dedicated
                             smex
                             edit-server
                             evil
                             solarized-theme
+                            revive
                             ))
 
 ;; Default to UTF-8
@@ -71,8 +73,8 @@
         browse-url-generic-program "sensible-browser")
   ;; Magit use current window
   (set-variable 'magit-emacsclient-executable "/usr/bin/emacsclient")
+  (set-face-attribute 'default nil :font "Inconsolata-10")
   )
- (set-face-attribute 'default nil :font "Droid Sans Mono-10")
  ;; OSX
  ((string-equal system-type "darwin")
   (set-variable 'magit-emacsclient-executable "/Applications/Emacs.app/Contents/MacOS/bin/emacsclient")
@@ -236,7 +238,7 @@
 
 (add-hook 'dired-mode-hook
           '(lambda ()
-             (define-key dired-mode-map "o" 'dired-open-in-external-app)))
+             (define-key dired-mode-map "0" 'dired-open-in-external-app)))
 
 (defun toggle-current-window-dedication ()
   (interactive)

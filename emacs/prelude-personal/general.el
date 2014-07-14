@@ -78,13 +78,10 @@
  ;; OSX
  ((string-equal system-type "darwin")
   (set-variable 'magit-emacsclient-executable "/Applications/Emacs.app/Contents/MacOS/bin/emacsclient")
+  (setq mac-option-modifier 'nil
+        mac-command-modifier 'meta
+        x-select-enable-clipboard t)
   )
-
- (setq browse-url-browser-function 'browse-url-generic
-       browse-url-generic-program "sensible-browser")
- (setq mac-option-modifier 'nil
-       mac-command-modifier 'meta
-       x-select-enable-clipboard t)
  )
 
 (require 'google-translate)

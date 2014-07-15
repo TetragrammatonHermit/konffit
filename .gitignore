@@ -2,7 +2,9 @@
 .test
 /alfred/Alfred.alfredpreferences/workflows/
 *.log*
-linux/radiotray/config.xml
+linux/radiotray/*
+!linux/radiotray/bookmarks.xml
+!linux/radiotray/readme.md
 
 linux/openbox/*
 !linux/openbox/rc.xml

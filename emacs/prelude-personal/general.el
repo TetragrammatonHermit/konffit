@@ -30,7 +30,8 @@
 ;;(set-default 'cursor-type t) ;; fat cursor
 ;;(global-hl-line-mode -1)
 
-(scroll-bar-mode -1)  ; Disable scroll bar
+(scroll-bar-mode -1) ; Disable scroll bars
+(horizontal-scroll-bar-mode -1)
 
 ;;(setq visible-bell t)
 (setq ring-bell-function 'ignore)

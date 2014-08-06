@@ -15,8 +15,10 @@
                                         ;csharp-mode
                             js2-mode
                             ac-js2
+                            json-mode
+                            json-reformat
                                         ;js2-refactor
-                                        ;web-beautify
+                            web-beautify
                             ;flymake
                             ;flymake-go
                             go-errcheck

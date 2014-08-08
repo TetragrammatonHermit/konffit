@@ -30,7 +30,8 @@
 ;;(set-default 'cursor-type t) ;; fat cursor
 ;;(global-hl-line-mode -1)
 
-(scroll-bar-mode -1)  ; Disable scroll bar
+(scroll-bar-mode -1) ; Disable scroll bars
+(horizontal-scroll-bar-mode -1)
 
 ;;(setq visible-bell t)
 (setq ring-bell-function 'ignore)
@@ -56,6 +57,15 @@
 ;; Acme-like mouse right-click search next occurrence
 (global-set-key [(mouse-3)] 'acme-search-forward)
 (global-set-key [(shift mouse-3)] 'acme-search-backward)
+;; Focus clicked line
+(defun focus-line (posn)
+  (interactive "e")
+  (mouse-set-point posn) ; Select mouse postition
+  (recenter 0) ; Move line to top
+  )
+(global-unset-key  [s-mouse-3])
+(global-set-key  [s-mouse-3] 'focus-line)
+
 ;; Set new cursors on mouse clicks
 (global-unset-key (kbd "M-<down-mouse-1>"))
 (global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)

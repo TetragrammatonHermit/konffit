@@ -31,7 +31,7 @@
 ;;(global-hl-line-mode -1)
 
 (scroll-bar-mode -1) ; Disable scroll bars
-(horizontal-scroll-bar-mode -1)
+
 
 ;;(setq visible-bell t)
 (setq ring-bell-function 'ignore)
@@ -78,6 +78,7 @@
 (cond
  ;; Linux
  ((string-equal system-type "gnu/linux")
+  (horizontal-scroll-bar-mode -1)  
   ;; Default www browser
   (setq browse-url-browser-function 'browse-url-generic
         browse-url-generic-program "sensible-browser")
@@ -92,6 +93,8 @@
         mac-command-modifier 'meta
         mac-function-modifier 'hyper
         x-select-enable-clipboard t)
+  (setq system-uses-terminfo nil)
+  (global-set-key (kbd "M-§") 'ns-next-frame)
   )
  )
 
@@ -259,4 +262,16 @@
 
 (global-set-key [pause] 'toggle-current-window-dedication)
 
+
 ;;; general.el ends here
+
+
+
+
+
+
+
+
+
+
+

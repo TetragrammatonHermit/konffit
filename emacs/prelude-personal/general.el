@@ -83,7 +83,8 @@
         browse-url-generic-program "sensible-browser")
   ;; Magit use current window
   (set-variable 'magit-emacsclient-executable "/usr/bin/emacsclient")
-  (set-face-attribute 'default nil :font "Inconsolata-10")
+  (set-face-attribute 'default nil :font "DejaVu Sans Mono-9")
+  ;; Inconsolata-9 DejaVu Sans Mono-9
   )
  ;; OSX
  ((string-equal system-type "darwin")

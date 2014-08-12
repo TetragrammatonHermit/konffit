@@ -142,3 +142,7 @@
   (cancel-timer my-org-mobile-sync-timer))
 
 (my-org-mobile-sync-start)
+
+(setq epa-file-select-keys nil)
+(setq epa-file-cache-passphrase-for-symmetric-encryption t)
+(setenv "GPG_AGENT_INFO" 'nil)

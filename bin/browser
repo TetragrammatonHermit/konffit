@@ -1,0 +1,38 @@
+#!/bin/bash -e
+# Usage: browser
+#        pipe html to a browser
+# Works on OSX and Linux (with xdg-open)
+# e.g.
+#  $ echo '<h1>hi mom!</h1>' | browser
+#  $ ron -5 man/rip.5.ron | browser
+
+# Installation:
+# Put to path and add execution privileges.
+# Based on https://gist.github.com/defunkt/318247
+
+if [ "$OSTYPE" = "linux-gnu" ]
+then
+    OPENAPP=xdg-open
+elif [ "$unamestr" = "FreeBSD" ]
+then
+    OPENAPP=open
+fi
+
+echo $OPENAPP
+if [ -t 0 ]; then
+    if [ -n "$1" ]; then
+        $OPENAPP $1
+    else
+        cat <<usage
+Usage: browser
+       pipe html to a browser
+
+$ echo '<h1>hi mom!</h1>' | browser
+$ ron -5 man/rip.5.ron | browser
+usage
+    fi
+else
+    f="/tmp/browser.$RANDOM.html"
+    cat /dev/stdin > $f
+    $OPENAPP $f
+fi

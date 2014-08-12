@@ -1,6 +1,6 @@
 .DS_Store
 .test
-/alfred/Alfred.alfredpreferences/workflows/
+osx/alfred/Alfred.alfredpreferences/workflows/
 *.log*
 linux/radiotray/*
 !linux/radiotray/bookmarks.xml

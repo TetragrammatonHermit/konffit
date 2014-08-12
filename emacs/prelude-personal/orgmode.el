@@ -35,8 +35,9 @@
 (defun own-org-mode-hook ()
   "Modify keymaps and settings used by `org-mode'."
 
-  (local-set-key (kbd "<H-up>") 'org-move-subtree-up)
-  (local-set-key (kbd "<H-down>") 'org-move-subtree-down)
+  (local-set-key (kbd "H-*") 'org-move-subtree-up) ; For Mac
+  (local-set-key (kbd "H-p") 'org-move-subtree-up)
+  (local-set-key (kbd "H-n") 'org-move-subtree-down)
 
   ;; Prefer thin cursor when writing
   ;; (set-default 'cursor-type 'bar)

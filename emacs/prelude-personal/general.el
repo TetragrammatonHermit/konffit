@@ -39,14 +39,16 @@
 (window-numbering-mode t) ; Change windows like chromium tabs
 
 (disable-theme 'zenburn) ; Disable prelude default theme
-;;(load-theme 'solarized-light)
+(load-theme 'solarized-light)
 
 ;; Keybindings for day/night themes
 (global-set-key [H-end] '(lambda () (interactive)
-                           (load-theme 'zenburn)
+                           (disable-theme 'solarized-light)
+                           (load-theme 'solarized-dark)
                            (set-cursor-color "white")))
 (global-set-key [H-home] '(lambda () (interactive)
-                            (disable-theme 'zenburn)
+                            (disable-theme 'solarized-dark)
+                            (load-theme 'solarized-light)
                             (set-cursor-color "black")))
 
 (defalias 'yes-or-no-p 'y-or-n-p) ; y means yes

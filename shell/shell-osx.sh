@@ -1,25 +1,16 @@
-source shell-common.sh
+# OSX Specific shell modifications
 
-alias nwk="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
+# - Add these oh-my-zsh plugins to ~/.zshrc
+# - Install autojump
+# plugins=(sudo extract osx git autojump npm python pip web-search last-working-dir)
 
-alias cdc="cd /Volumes/C/"
+source $HOME/konffit/shell/shell-common.sh
 
-alias slp="pmset sleepnow"
-alias manp="man-preview"
-alias pbc="pbcopy"
-alias pbp="pbpaste"
-alias rt="trash"
+alias o="open ."
 
-alias bi="brew install"
+alias ai="brew install"
+alias ar="brew uninstall"
+alias as="brew search"
 alias cask="brew cask"
-alias bci="brew cask install"
-
-alias o="open ." # Open current folder in Finder
-
-alias sano="say -v Mikko" # Say something in Finnish
-alias kello="date \"+Kello on %H %M\" | sano"
-
-#CD's
-alias cdd="cd ~/Desktop/"
-alias cddo="cd ~/Documents/"
-
+alias aii="brew cask install"
+alias ass="brew cask search"

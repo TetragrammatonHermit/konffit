@@ -1,6 +1,10 @@
-export AWS_CONFIG_FILE=$HOME/.aws-config
+# Common unix shell modifications
 
-# Reconfigure
+# Python Virtualenv
+alias va="source /venv/bin/activate"
+alias vd="deactivate"
+
+# Reconfigure shell
 alias rp="source ~/.zshrc"
 
 # Emacsclient gui
@@ -11,8 +15,13 @@ alias ect="emacsclient -t"
 
 alias serve="python -m SimpleHTTPServer 3333"
 
+# Quick commit
 alias qc="git commit -a -m 'up' && git push"
 
+#CD's
+alias cdd="cd ~/Desktop/"
+alias cddo="cd ~/Documents/"
+
 # Google translate (https://github.com/soimort/google-translate-cli)
-alias te="trs {fi=en} " # To English
-alias tf="trs {en=fi} " # To Finnish
+#alias te="trs {fi=en} " # To English
+#alias tf="trs {en=fi} " # To Finnish

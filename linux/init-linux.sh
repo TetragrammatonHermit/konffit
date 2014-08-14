@@ -1,11 +1,12 @@
 #!/bin/sh -f
-### Linux system startup script ###
+### Linux system startup script to setup input devices ###
+# Run as sudo to get everything working
 
 ## Keylayout
 setxkbmap -rules evdev -model evdev -layout us -variant altgr-intl
 
 ## Set modifier keys
-xmodmap /home/js/konffit/linux/Xmodmap
+xmodmap $HOME/konffit/linux/Xmodmap
 
 ## Key repeat delay and rate
 xset r rate 190 25
@@ -24,8 +25,6 @@ xset r rate 190 25
 # wheel buttons are: horiz 4,5 vert 6,7
 
 # Remap scroll emulation axes for trackpad
-xinput set-prop 13 387 7 6 5 4
-xinput set-prop 1 387 7 6 5 4
 
 xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation" 1
 xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Button" 2
@@ -37,5 +36,3 @@ xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 7 6 5 4
 
 xinput set-prop 10 "Synaptics Scrolling Distance" -100 -100
 xinput set-prop 11 "Synaptics Scrolling Distance" -100 -100
-
-# TODO load distro specific stuffs conditionally when needed

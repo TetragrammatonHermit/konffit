@@ -1,0 +1,9 @@
+* Install [[https://github.com/robbyrussell/oh-my-zsh][Oh My ZSH]] 
+wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+* Source OS specific file from ~/.zshrc & setup plugins there
+** OSX
+source ~/konffit/shell/shell-osx.sh
+** Xubuntu
+source ~/konffit/shell/shell-xubuntu.sh
+** Arch based
+source ~/konffit/shell/shell-osx.sh

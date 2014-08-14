@@ -1,0 +1,18 @@
+* Install emacs
+** Ubuntu based distros
+PPA https://launchpad.net/~ubuntu-elisp/+archive/ubuntu/ppa
+** TODO OSX
+http://struct.tumblr.com/post/46754394733/emacs-24-use-homebrew-instead-of-emacsformacosx
+** Arch Linux
+https://aur.archlinux.org/packages/emacs-git/
+* Install [[https://github.com/bbatsov/prelude][Prelude]] and setup own config
+
+cd
+
+rm -rf .emacs.d
+
+git clone https://github.com/bbatsov/prelude.git
+
+mv prelude .emacs.d
+
+ln -s $HOME/konffit/init-customizations.el $HOME/.emacs.d/personal

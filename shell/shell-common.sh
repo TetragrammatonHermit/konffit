@@ -1,7 +1,7 @@
 # Common unix shell modifications
 
 # Python Virtualenv
-alias va="source /venv/bin/activate"
+alias va="source ./venv/bin/activate"
 alias vd="deactivate"
 
 # Reconfigure shell

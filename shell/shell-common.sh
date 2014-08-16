@@ -4,6 +4,12 @@
 alias va="source ./venv/bin/activate"
 alias vd="deactivate"
 
+# Python package manager
+alias pii="pip install"
+alias pis="pip search"
+alias pir="pip uninstall"
+alias pif="pip freeze"
+
 # Reconfigure shell
 alias rp="source ~/.zshrc"
 

@@ -1,3 +1,13 @@
 [[Http://brew.sh/][Homebrew]] package manager
 
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+
+* Notes
+** Fix running lldb in xterm / via ssh login terminal
+Gives "error: initial process state wasn't stopped: exited"
+
+Add user to _developer group:
+sudo dscl . append /Groups/_developer GroupMembership `whoami`
+
+In Terminal.app run:
+/usr/sbin/DevToolsSecurity -enable on

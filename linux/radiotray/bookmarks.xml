@@ -1,19 +1,20 @@
 <bookmarks>
-<group name="root">
+  <group name="root">
     <bookmark name="Drone Zone" url="http://somafm.com/dronezone.pls"/>
-        <bookmark name="Deep Space One" url="http://somafm.com/deepspaceone130.pls"/><bookmark name="Groove Salad" url="http://somafm.com/groovesalad.pls"/>
-        <bookmark name="Beat Blender" url="http://somafm.com/beatblender.pls"/>
-        <bookmark name="cliqhop idm" url="http://somafm.com/cliqhop.pls"/>
-        <bookmark name="DNB Radio" url="http://dnbradio.com/hi.m3u"/><group name="Chill">
-        <bookmark name="181.FM" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1275050"/>
-        <bookmark name="Lounge Radio" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1288934"/>
-        <bookmark name="Secret Agent" url="http://somafm.com/secretagent.pls"/>
-        <bookmark name="Illinois Street Lounge" url="http://somafm.com/illstreet.pls"/>
-    </group>
-    <group name="Techno / Electronic">
-        <bookmark name="Space Station Soma" url="http://somafm.com/spacestation.pls"/>
-        <bookmark name="Black Rock FM" url="http://somafm.com/brfm.pls"/>
-        <bookmark name="New Dance Radio" url="http://jbstream.net/tunein.php/blackoutworm/playlist.asx"/>
-    </group>
-    </group>
+    <bookmark name="Deep Space One" url="http://somafm.com/deepspaceone130.pls"/>
+    <bookmark name="Groove Salad" url="http://somafm.com/groovesalad.pls"/>
+    <bookmark name="Beat Blender" url="http://somafm.com/beatblender.pls"/>
+    <bookmark name="cliqhop idm" url="http://somafm.com/cliqhop.pls"/>
+    <bookmark name="DNB Radio" url="http://dnbradio.com/hi.m3u"/><group name="Chill">
+    <bookmark name="181.FM" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1275050"/>
+    <bookmark name="Lounge Radio" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1288934"/>
+    <bookmark name="Secret Agent" url="http://somafm.com/secretagent.pls"/>
+    <bookmark name="Illinois Street Lounge" url="http://somafm.com/illstreet.pls"/>
+  </group>
+  <group name="Techno / Electronic">
+    <bookmark name="Space Station Soma" url="http://somafm.com/spacestation.pls"/>
+    <bookmark name="Black Rock FM" url="http://somafm.com/brfm.pls"/>
+    <bookmark name="New Dance Radio" url="http://jbstream.net/tunein.php/blackoutworm/playlist.asx"/>
+  </group>
+  </group>
 </bookmarks>

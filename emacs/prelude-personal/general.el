@@ -24,8 +24,8 @@
 ;; Default to UTF-8
 (set-language-environment "UTF-8")
 
-                                        ;(set-default 'cursor-type 'bar) ;; thin cursor
-                                        ;(set-cursor-color "white")
+(set-default 'cursor-type 'bar) ;; thin cursor
+;;(set-cursor-color "white")
 
 ;;(set-default 'cursor-type t) ;; fat cursor
 ;;(global-hl-line-mode -1)
@@ -74,7 +74,7 @@
 (global-set-key (kbd "H-<mouse-1>") 'mc/add-cursor-on-click)
                                         ; Make scratch-buffer more convenient
 (setq initial-scratch-message "")
-(setq initial-major-mode 'org-mode)
+;(setq initial-major-mode 'org-mode)
 
 ;; OS Specific stuff
 (cond
@@ -87,6 +87,7 @@
   ;; Magit use current window
   (set-variable 'magit-emacsclient-executable "/usr/bin/emacsclient")
   (set-face-attribute 'default nil :font "DejaVu Sans Mono-9")
+  ;;(set-face-attribute 'default nil :font "FreeSans-11")
   ;; Inconsolata-9 DejaVu Sans Mono-9
   )
  ;; OSX
@@ -161,6 +162,7 @@
 (key-chord-define-global "jm" 'mc/mark-all-like-this)
 (key-chord-define-global "jt" 'mc/mark-sgml-tag-pair)
 (key-chord-define-global "kd" 'mc/edit-lines)
+;; TODO add cursors to previous marks
 
 ;; Copy current buffer path to clipboard
 (define-key prelude-mode-map (kbd "C-c w") 'prelude-copy-file-name-to-clipboard)
@@ -264,6 +266,7 @@
              (buffer-name))))
 
 (global-set-key [pause] 'toggle-current-window-dedication)
+
 
 
 ;;; general.el ends here

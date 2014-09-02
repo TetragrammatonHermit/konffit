@@ -117,7 +117,7 @@
 
 
 (add-hook 'after-init-hook 'org-mobile-pull)
-(add-hook 'kill-emacs-hook 'org-mobile-push)
+;(add-hook 'kill-emacs-hook 'org-mobile-push)
 
 ;; Org-mobile auto sync when idle
 (defvar my-org-mobile-sync-timer nil)
@@ -142,7 +142,7 @@
   (interactive)
   (cancel-timer my-org-mobile-sync-timer))
 
-(my-org-mobile-sync-start)
+;;(my-org-mobile-sync-start)
 
 (setq epa-file-select-keys nil)
 (setq epa-file-cache-passphrase-for-symmetric-encryption t)

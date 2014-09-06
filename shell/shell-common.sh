@@ -28,6 +28,6 @@ alias qc="git commit -a -m 'up' && git push"
 alias cdd="cd ~/Desktop/"
 alias cddo="cd ~/Documents/"
 
-# Google translate (https://github.com/soimort/google-translate-cli)
-#alias te="trs {fi=en} " # To English
-#alias tf="trs {en=fi} " # To Finnish
+# http://www.soimort.org/translate-shell/
+alias te="trans fi:en"
+alias tf="trans en:fi"

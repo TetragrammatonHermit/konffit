@@ -115,6 +115,17 @@
 
 (setq org-refile-targets (quote (("gtd.org" :maxlevel . 1) ("someday.org" :level . 2))))
 
+;; Use link to do a quick grep for keyword
+;; Eg TODO's in codebase
+(org-add-link-type
+ "grep" 'endless/follow-grep-link)
+
+(defun endless/follow-grep-link (regexp)
+  "Run `rgrep' with REGEXP as argument."
+  (grep-compute-defaults)
+  (rgrep regexp "*" (expand-file-name "./")))
+;; TODO pass path to this eg: regex:~/something and
+;; parse string for both args
 
 (add-hook 'after-init-hook 'org-mobile-pull)
 ;(add-hook 'kill-emacs-hook 'org-mobile-push)

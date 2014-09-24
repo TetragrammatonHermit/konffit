@@ -1,0 +1,2 @@
+Simple Spark Core powered controllable high power led that simulates an annoying sunrise.
+Called from crontab with curl.

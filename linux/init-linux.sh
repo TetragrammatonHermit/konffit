@@ -34,5 +34,4 @@ xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 7 6 5 4
 # $> xinput list-props "SynPS/2 Synaptics TouchPad"
 # Synaptics Scrolling Distance (272): 100, 100
 
-xinput set-prop 10 "Synaptics Scrolling Distance" -100 -100
-xinput set-prop 11 "Synaptics Scrolling Distance" -100 -100
+xinput set-prop "SynPS/2 Synaptics TouchPad" "Synaptics Scrolling Distance" -100 -100

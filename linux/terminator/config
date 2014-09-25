@@ -2,7 +2,7 @@
   enabled_plugins = LaunchpadCodeURLHandler, LaunchpadBugURLHandler
   title_inactive_fg_color = "#bfbfbf"
   suppress_multiple_term_dialog = True
-  title_transmit_bg_color = "#000000"
+  title_transmit_bg_color = "#c8c8c8"
   tab_position = bottom
   inactive_color_offset = 1.0
   title_inactive_bg_color = "#000000"
@@ -23,10 +23,11 @@
     scrollbar_position = hidden
     palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
     background_image = None
-    background_darkness = 0.81
+    background_darkness = 0.8
     scrollback_lines = 5000
+    background_type = transparent
     use_system_font = False
-    cursor_color = "#2b71bc"
+    cursor_color = "#00dbff"
     foreground_color = "#ffffff"
     scroll_on_output = False
     icon_bell = False

@@ -44,7 +44,8 @@
   
   (visual-line-mode +1)
   (org-indent-mode +1)
-    
+  
+  (whitespace-mode -1)
   (defun org-zoom-headline ()
     ""
     (interactive)

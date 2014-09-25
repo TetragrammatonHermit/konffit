@@ -2,27 +2,31 @@
 
 (prelude-require-packages '(yasnippet
                             auto-complete
+                            company
+                            ;;ac-js2
+                            ;;ac-emmet
+                            
                             flycheck
-
-                            angular-snippets
-
+                            ;;flycheck-buffer
                             elpy
                             jedi
                             flycheck-pyflakes
-
+                            
                             emmet-mode
-                            ac-emmet
+                            
                                         ;csharp-mode
                             js2-mode
-                            ac-js2
+                            
                             json-mode
                             json-reformat
+                            angular-snippets
                                         ;js2-refactor
                             web-beautify
                             ;flymake
                             ;flymake-go
-                            go-errcheck
-                            go-snippets
+                            ;go-errcheck
+                            ;go-snippets
+                            arduino-mode
                             
                             skewer-mode
                                         ;skewer-reload-stylesheets
@@ -30,12 +34,15 @@
                                         ; utils
                             s
                             dash
-                            conkeror-minor-mode
+                            projectile-rails
+                            robe
+                            slim-mode
                             ))
 ;; http://flycheck.readthedocs.org/en/latest/guide/quickstart.html
 
+(add-hook 'after-init-hook #'global-flycheck-mode)
 ;; Change yasnippet binding
-(require 'yasnippet)
+;;(require 'yasnippet)
 (yas-global-mode t)
 (define-key yas-minor-mode-map (kbd "<tab>") nil)
 (define-key yas-minor-mode-map (kbd "TAB") nil)
@@ -46,16 +53,31 @@
 
 ;;(global-flycheck-mode t)
 
-(require 'auto-complete-config)
+;;(require 'auto-complete-config)
+(ac-config-default)
 ;; Autocomplete-mode
 ;;(global-auto-complete-mode t)
 ;;(add-to-list 'ac-dictionary-directories "~/notes/ac-dict")
-(ac-config-default)
-(setq ac-menu-height 9)
-(setq ac-source-yasnippet 'nil)
 
-(setq ac-auto-start 2)
-(setq ac-ignore-case nil)
+;;(define-key ac-mode-map (kbd "<H-tab>") 'auto-complete)
+(define-key ac-mode-map (kbd "<s-tab>") 'auto-complete)
+(define-key ac-mode-map (kbd "C-c <s-tab>") 'ac-isearch)
+(require 'company)
+(define-key company-mode-map (kbd "<s-tab>") 'company-complete) 
+
+
+
+;; (ac-config-default)
+;; (setq ac-menu-height 9)
+;; (setq ac-source-yasnippet 'nil)
+
+;; (setq ac-auto-start 2)
+;; (setq ac-ignore-case nil)
+
+;; (require 'ac-emmet)
+;; (add-hook 'sgml-mode-hook 'ac-emmet-html-setup)
+;; (add-hook 'css-mode-hook 'ac-emmet-css-setup)
+
 
 ;;; advice for whitespace-mode conflict
 (defvar my-prev-whitespace-mode nil)
@@ -80,7 +102,7 @@
 
 
 ;;; Python
-(require 'elpy)
+;;(require 'elpy)
 (elpy-enable)
                                         ;(elpy-enable) TODO: fix
 
@@ -89,13 +111,26 @@
 
 (add-hook 'python-mode-hook
           (lambda ()
+            (auto-complete-mode -1) ;; Elpy uses company
             (abbrev-mode 1)
             (auto-fill-mode 1)
-            (linum-mode 1)
+            ;(linum-mode 1)
             (whitespace-mode)
             (jedi:setup)
+            (define-key python-mode-map  (kbd "<backtab>") 'yas-expand)
             (if (eq window-system 'x)
                 (font-lock-mode 1))))
+
+;; Use flycheck with elpy instead of flymake
+(when (require 'flycheck nil t)
+  (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
+  (add-hook 'elpy-mode-hook 'flycheck-mode))
+
+;; Ruby
+(add-hook 'projectile-mode-hook 'projectile-rails-on)
+(add-hook 'ruby-mode-hook 'robe-mode)
+(add-hook 'ruby-mode-hook 'company-mode)
+(push 'company-robe company-backends)
 
 ;;;; Webdev
 ;; HTML
@@ -109,7 +144,7 @@
   (prelude-cleanup-buffer))
 
 ;; Emmet
-(require 'emmet-mode)
+;;(require 'emmet-mode)
 (add-hook 'sgml-mode-hook 'emmet-mode)
 (add-hook 'css-mode-hook  'emmet-mode)
 
@@ -122,9 +157,6 @@
  `
 (setq emmet-move-cursor-between-quotes t)
 
-(require 'ac-emmet)
-(add-hook 'sgml-mode-hook 'ac-emmet-html-setup)
-(add-hook 'css-mode-hook 'ac-emmet-css-setup)
 
 
 (defun unhtml (start end)
@@ -144,8 +176,9 @@
 ;; Javascript
 
 ;; js2-mode with autocomplete
-(require 'js2-mode)
+;;(require 'js2-mode)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.json$" . js2-mode))
 
 (defun my-js2-mode-hook ()
   (define-key js2-mode-map [(return)] 'newline-and-indent)
@@ -155,7 +188,7 @@
   (message "My JS2 hook"))
 
 (add-hook 'js2-mode-hook 'my-js2-mode-hook)
-(add-hook 'js2-mode-hook 'ac-js2-mode)
+;(add-hook 'js2-mode-hook 'ac-js2-mode)
 
 (custom-set-variables
  '(js2-basic-offset 4)

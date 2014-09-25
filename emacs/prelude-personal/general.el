@@ -9,29 +9,42 @@
                             key-chord
                             iy-go-to-char
                             multiple-cursors
-                            google-translate
+                            ;; google-translate
                             writeroom-mode
                             dired-details
                             dired+
                             dedicated
                             smex
                             edit-server
-                            evil
                             solarized-theme
-                            revive
+                            indent-guide
+                            highlight-symbol
+                            rainbow-mode
+                            hungry-delete
+                            git-timemachine
+                            gist
+                            powerline
+                            project-explorer
                             ))
+
+(indent-guide-global-mode +1)
+(set-face-background 'indent-guide-face nil)
+(set-face-foreground 'indent-guide-face "lightgray")
+(setq indent-guide-char ":")
+
+
 
 ;; Default to UTF-8
 (set-language-environment "UTF-8")
 
-(set-default 'cursor-type 'bar) ;; thin cursor
+;;(set-default 'cursor-type 'bar) ;; thin cursor
+(set-default 'cursor-type 't) ;; fat cursor
+
 ;;(set-cursor-color "white")
 
-;;(set-default 'cursor-type t) ;; fat cursor
-;;(global-hl-line-mode -1)
+(global-hl-line-mode -1)
 
 (scroll-bar-mode -1) ; Disable scroll bars
-
 
 ;;(setq visible-bell t)
 (setq ring-bell-function 'ignore)
@@ -72,21 +85,22 @@
 (global-unset-key (kbd "M-<down-mouse-1>"))
 (global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)
 (global-set-key (kbd "H-<mouse-1>") 'mc/add-cursor-on-click)
-                                        ; Make scratch-buffer more convenient
+
+;; Make scratch-buffer more convenient
 (setq initial-scratch-message "")
-;(setq initial-major-mode 'org-mode)
+                                        ;(setq initial-major-mode 'org-mode)
 
 ;; OS Specific stuff
 (cond
  ;; Linux
  ((string-equal system-type "gnu/linux")
-  (horizontal-scroll-bar-mode -1)  
+  (horizontal-scroll-bar-mode -1)
   ;; Default www browser
   (setq browse-url-browser-function 'browse-url-generic
         browse-url-generic-program "sensible-browser")
   ;; Magit use current window
   (set-variable 'magit-emacsclient-executable "/usr/bin/emacsclient")
-  (set-face-attribute 'default nil :font "DejaVu Sans Mono-9")
+  (set-face-attribute 'default nil :font "DejaVu Sans Mono-10")
   ;;(set-face-attribute 'default nil :font "FreeSans-11")
   ;; Inconsolata-9 DejaVu Sans Mono-9
   )
@@ -102,15 +116,31 @@
   )
  )
 
-(require 'google-translate)
-(require 'google-translate-default-ui)
-(global-set-key (kbd "C-x t") 'google-translate-at-point)
-(global-set-key (kbd "C-x T") 'google-translate-at-point-reverse)
-(setq google-translate-enable-ido-completion 't) ;;todo
-(setq google-translate-show-phonetic 't)
-(setq google-translate-default-target-language '"en")
-(setq google-translate-default-source-language '"fi")
-(set-face-attribute 'google-translate-translation-face nil :height 2)
+(global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)
+(global-set-key (kbd "C-c <f1>")
+                (lambda ()
+                  (interactive)
+                  (find-file "~/Dropbox/notes/gtd.org")))
+(global-set-key (kbd "C-c <f2>")
+                (lambda ()
+                  (interactive)
+                  (dired "~/dev/")))
+(global-set-key (kbd "C-c <f3>")
+                (lambda ()
+                  (interactive)
+                  (find-file "~/konffit/emacs/prelude-personal/general.el")))
+
+                                        ; Not working.
+                                        ;(require 'google-translate)
+                                        ;(require 'google-translate-default-ui)
+                                        ;(global-set-key (kbd "C-x t") 'google-translate-at-point)
+                                        ;(global-set-key (kbd "C-x T") 'google-translate-at-point-reverse)
+                                        ;(global-set-key (kbd "C-x r") 'google-translate-query-translate)
+                                        ;(setq google-translate-enable-ido-completion 't) ;;todo
+                                        ;(setq google-translate-show-phonetic 't)
+                                        ;(setq google-translate-default-target-language '"en")
+                                        ;(setq google-translate-default-source-language '"fi")
+                                        ;(set-face-attribute 'google-translate-translation-face nil :height 2)
 
 ;; Minibuffer autocompletition
 ;; http://www.masteringemacs.org/articles/2010/10/10/introduction-to-ido-mode/
@@ -150,12 +180,12 @@
 (key-chord-define-global "fj" 'ace-jump-word-mode)
 (key-chord-define-global "jj" 'iy-go-to-char)
 (key-chord-define-global "hh" 'iy-go-to-char-backward)
-(global-set-key (kbd "C-c .") 'iy-go-to-or-up-to-continue)
-(global-set-key (kbd "C-c ,") 'iy-go-to-or-up-to-continue-backward)
+                                        ;(set-key iy-go-to-char-keymap (kbd "C-c .") 'iy-go-to-or-up-to-continue)
+                                        ;(set-key iy-go-to-char-keymap (kbd "C-c ,") 'iy-go-to-or-up-to-continue-backward)
 (setq iy-go-to-char-kill-ring-save t)
 
-(global-set-key (kbd "C-c c") 'comment-or-uncomment-region)
-(global-set-key (kbd "C-c SPC") 'er/expand-region)
+;; (global-set-key (kbd "C-c C-SPC") 'comment-or-uncomment-region)
+;;(global-set-key (kbd "C-c SPC") 'er/expand-region)
 
 ;; Multiple cursors
 (key-chord-define-global "jn" 'mc/mark-more-like-this-extended)
@@ -199,6 +229,8 @@
 (setq projectile-svn-command "find . -type f -print0")
 
 (projectile-global-mode)
+
+(define-key global-map (kbd "C-x D") 'project-explorer-open)
 
 ;; Set emerge as git mergetool
 ;; (setq emerge-diff-options "--ignore-all-space")
@@ -256,6 +288,8 @@
           '(lambda ()
              (define-key dired-mode-map "0" 'dired-open-in-external-app)))
 
+
+
 (defun toggle-current-window-dedication ()
   (interactive)
   (let* ((window    (selected-window))
@@ -267,17 +301,37 @@
 
 (global-set-key [pause] 'toggle-current-window-dedication)
 
+(defun narrow-or-widen-dwim (p)
+  "If the buffer is narrowed, it widens. Otherwise, it narrows intelligently.
+Intelligently means: region, org-src-block, org-subtree, or defun,
+whichever applies first.
+Narrowing to org-src-block actually calls `org-edit-src-code'.
 
+With prefix P, don't widen, just narrow even if buffer is already
+narrowed."
+  (interactive "P")
+  (declare (interactive-only))
+  (cond ((and (buffer-narrowed-p) (not p)) (widen))
+        ((region-active-p)
+         (narrow-to-region (region-beginning) (region-end)))
+        ((derived-mode-p 'org-mode)
+         ;; `org-edit-src-code' is not a real narrowing command.
+         ;; Remove this first conditional if you don't want it.
+         (cond ((org-in-src-block-p)
+                (org-edit-src-code)
+                (delete-other-windows))
+               ((org-at-block-p)
+                (org-narrow-to-block))
+               (t (org-narrow-to-subtree))))
+        (t (narrow-to-defun))))
+
+;;(define-key endless/toggle-map "n" #'narrow-or-widen-dwim)
+;; This line actually replaces Emacs' entire narrowing keymap, that's
+;; how much I like this command. Only copy it if that's what you want.
+(define-key ctl-x-map "'" #'narrow-or-widen-dwim)
+
+
+;; TODO Split window, select prev buffer
+;; Bind c-x B
 
 ;;; general.el ends here
-
-
-
-
-
-
-
-
-
-
-

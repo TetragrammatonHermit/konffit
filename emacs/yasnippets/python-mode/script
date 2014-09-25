@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name : Script template
+# key : script
+# --
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+def main():
+    $0pass
+
+if __name__ == '__main__':
+    main()

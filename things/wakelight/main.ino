@@ -36,6 +36,13 @@ int wakeme(String stepDelay){
     analogWrite(led, ledval);
     delay(stepDelay.toInt());
   }
+  for ( ledval = 1; ledval < 255; ledval++ ){
+    delay(stepDelay.toInt());
+  }
+  for ( ledval = 255; ledval > 1; ledval-- ){
+    analogWrite(led, ledval);
+    delay(100);
+  }
 
   // TODO: blink very annoyingly for wakeup
   return 1;

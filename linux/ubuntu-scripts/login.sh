@@ -1,12 +1,13 @@
 #!/bin/bash
 # Set at Settings/Sessions and Startup/Application Autostart
-sleep 2
+terminator &
+sleep 1
 # Set input devices
 sudo $HOME/konffit/linux/init-linux.sh
 
 redshift &
 
-sleep 8
+sleep 6
 
 # Disable powerbutton led
 sudo $HOME/konffit/bin/pledoff

@@ -31,3 +31,5 @@ alias cddo="cd ~/Documents/"
 # http://www.soimort.org/translate-shell/
 alias te="trans fi:en"
 alias tf="trans en:fi"
+
+alias bfg="java -jar ~/konffit/bin/bfg-1.11.8.jar"

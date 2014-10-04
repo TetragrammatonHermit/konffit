@@ -4,3 +4,6 @@ source $HOME/konffit/shell/shell-linux.sh
 
 alias aup="sudo apt-get update"
 alias aug="sudo apt-get upgrade"
+
+alias postgre-start="sudo service postgresql start"
+alias postgre-stop="sudo service postgresql stop"

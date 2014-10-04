@@ -3,13 +3,13 @@
 ;; Location of Org files on local system
 (setq org-directory "~/Dropbox/notes/")
 (setq org-default-notes-file  "~/Dropbox/notes/gtd.org")
-(setq org-agenda-files '("~/Dropbox/notes/gtd.org"))
+;; (setq org-agenda-files '("~/Dropbox/notes/gtd.org"))
 
 ;; Org-mobile setup
-(setq org-mobile-files '("~/Dropbox/notes/gtd.org"))
-(setq org-mobile-directory "~/Dropbox/Apps/MobileOrg")
-;; File where new mobile-notes will be stored
-(setq org-mobile-inbox-for-pull "~/Dropbox/notes/mobile-incoming.org")
+;; (setq org-mobile-files '("~/Dropbox/notes/gtd.org"))
+;; (setq org-mobile-directory "~/Dropbox/Apps/MobileOrg")
+;; ;; File where new mobile-notes will be stored
+;; (setq org-mobile-inbox-for-pull "~/Dropbox/notes/mobile-incoming.org")
 
 
 (setq org-use-fast-todo-selection t)

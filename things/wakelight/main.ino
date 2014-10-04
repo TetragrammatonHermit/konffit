@@ -1,49 +1,72 @@
-int led = D0;
+// Connected to transistor base
+int ledPin = D0;
+
 
 void setup() {
   // Register API function that is called over HTTP
-  Spark.function("wakeme", wakeme);
-  Spark.function("toggle", toggle);
-  Spark.function("off", off);
-  pinMode(led, OUTPUT);
-  digitalWrite(led, LOW);
+  Spark.function("off", led_off);
+  Spark.function("on", led_on);
+  Spark.function("brightening", led_brightening);
+  Spark.function("strobo", led_strobo);
+  pinMode(ledPin, OUTPUT);
 }
+
+// 0:off
+// 1:on
+// 2:brightening
+// 3:strobo
+int ledStatus = 0;
+
+int ledVal = 5;
 
 void loop(){
-  // Empty because we wait for requests
+  switch (ledStatus) {
+  case 0:
+    ledVal = 0;
+    break;
+  case 1:
+    ledVal = 255;
+    break;
+  case 2:
+    if (ledVal < 255){
+      ledVal++;
+    }
+    delay(15000);  // Takes around 1h to 100%
+    break;
+  case 3:
+    if (ledVal > 0){
+      ledVal = 0;
+    } else {
+      ledVal = 255;
+    }
+    delay(50);
+    break;
+  default:
+    ledVal = 5;
+  }
+  delay(5);
+  analogWrite(ledPin, ledVal);
 }
 
-int toggle(String args){
-  analogWrite(led, 255);
-  delay(5000);
-  analogWrite(led, 0);
-  return 1;
-  
+int led_off(String args){
+  ledStatus = 0;
+  return ledStatus;
 }
 
-int off(String args){
-  digitalWrite(led, LOW);
-  return 1;
-  
+// TODO Args string passed cause Spark requires it?
+int led_on(String args){
+  ledStatus = 1;
+  return ledStatus;
 }
 
-int wakeme(String stepDelay){
-    // todo this runs somehow in background when calling other functions
-    // terminate it before running other stuff..
-  int ledval;
-  
-  for ( ledval = 1; ledval < 255; ledval++ ){
-    analogWrite(led, ledval);
-    delay(stepDelay.toInt());
-  }
-  for ( ledval = 1; ledval < 255; ledval++ ){
-    delay(stepDelay.toInt());
-  }
-  for ( ledval = 255; ledval > 1; ledval-- ){
-    analogWrite(led, ledval);
-    delay(100);
-  }
+int led_brightening(String args){
+  ledStatus = 2;
 
-  // TODO: blink very annoyingly for wakeup
-  return 1;
+  return ledStatus;
+}
+
+int led_strobo(String args){
+  ledStatus = 3;
+
+  return ledStatus;
 }

@@ -1,2 +1,4 @@
 Simple Spark Core powered controllable high power led that simulates an annoying sunrise.
-Called from crontab with curl.
+
+Get's initiated by Sleep as Android "45 minutes before smart period"-hook.
+https://sites.google.com/site/sleepasandroid/doc/developer-api

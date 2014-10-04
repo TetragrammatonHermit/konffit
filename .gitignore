@@ -11,3 +11,4 @@ linux/openbox/*
 !linux/openbox/autostart
 
 */venv/
+things/endpoints/venv

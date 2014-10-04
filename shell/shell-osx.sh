@@ -14,3 +14,6 @@ alias as="brew search"
 alias cask="brew cask"
 alias aii="brew cask install"
 alias ass="brew cask search"
+
+alias postgre-start="launchctl load /usr/local/opt/postgresql/homebrew.mxcl.postgresql.plist"
+alias postgre-stop="launchctl unload /usr/local/opt/postgresql/homebrew.mxcl.postgresql.plist"

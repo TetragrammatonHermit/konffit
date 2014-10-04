@@ -9,3 +9,5 @@ linux/radiotray/*
 linux/openbox/*
 !linux/openbox/rc.xml
 !linux/openbox/autostart
+
+*/venv/

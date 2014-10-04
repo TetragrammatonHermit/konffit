@@ -137,6 +137,7 @@
 (add-hook 'html-mode-hook
           (lambda()
             (setq sgml-basic-offset 2)
+            (flycheck-mode -1)
             t))
 
 ;; Reindent after deleting tags
@@ -191,8 +192,9 @@
 ;(add-hook 'js2-mode-hook 'ac-js2-mode)
 
 (custom-set-variables
- '(js2-basic-offset 4)
+ '(js2-basic-offset 2)
  '(js2-bounce-indent-p 'nil)
+ '(js2-mode-show-parse-errors 'nil)
  )
 
 (add-hook 'js2-mode-hook 'skewer-mode)

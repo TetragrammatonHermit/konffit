@@ -32,7 +32,7 @@
 (set-face-foreground 'indent-guide-face "lightgray")
 (setq indent-guide-char ":")
 
-
+(global-set-key (kbd "C-c <f11>") 'writeroom-mode)
 
 ;; Default to UTF-8
 (set-language-environment "UTF-8")
@@ -84,7 +84,6 @@
 ;; Set new cursors on mouse clicks
 (global-unset-key (kbd "M-<down-mouse-1>"))
 (global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)
-(global-set-key (kbd "H-<mouse-1>") 'mc/add-cursor-on-click)
 
 ;; Make scratch-buffer more convenient
 (setq initial-scratch-message "")
@@ -100,9 +99,9 @@
         browse-url-generic-program "sensible-browser")
   ;; Magit use current window
   (set-variable 'magit-emacsclient-executable "/usr/bin/emacsclient")
-  (set-face-attribute 'default nil :font "DejaVu Sans Mono-10")
+  (set-face-attribute 'default nil :font "Inconsolata-11")
+  ;;(set-face-attribute 'default nil :font "DejaVu Sans Mono-10")
   ;;(set-face-attribute 'default nil :font "FreeSans-11")
-  ;; Inconsolata-9 DejaVu Sans Mono-9
   )
  ;; OSX
  ((string-equal system-type "darwin")
@@ -184,7 +183,7 @@
                                         ;(set-key iy-go-to-char-keymap (kbd "C-c ,") 'iy-go-to-or-up-to-continue-backward)
 (setq iy-go-to-char-kill-ring-save t)
 
-;; (global-set-key (kbd "C-c C-SPC") 'comment-or-uncomment-region)
+(global-set-key (kbd "C-c C-SPC") 'comment-or-uncomment-region)
 ;;(global-set-key (kbd "C-c SPC") 'er/expand-region)
 
 ;; Multiple cursors
@@ -231,6 +230,8 @@
 (projectile-global-mode)
 
 (define-key global-map (kbd "C-x D") 'project-explorer-open)
+(define-key global-map (kbd "C-c p D") 'project-explorer-open)
+
 
 ;; Set emerge as git mergetool
 ;; (setq emerge-diff-options "--ignore-all-space")

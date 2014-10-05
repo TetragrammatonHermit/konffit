@@ -27,6 +27,12 @@
                             project-explorer
                             ))
 
+(setq grep-find-ignored-directories
+      '(
+        "vendor"
+        "log"
+        ))
+
 (indent-guide-global-mode +1)
 (set-face-background 'indent-guide-face nil)
 (set-face-foreground 'indent-guide-face "lightgray")

@@ -5,29 +5,29 @@
                             company
                             ;;ac-js2
                             ;;ac-emmet
-                            
+
                             flycheck
                             ;;flycheck-buffer
                             elpy
                             jedi
                             flycheck-pyflakes
-                            
+
                             emmet-mode
-                            
+
                                         ;csharp-mode
                             js2-mode
-                            
+
                             json-mode
                             json-reformat
                             angular-snippets
                                         ;js2-refactor
                             web-beautify
-                            ;flymake
-                            ;flymake-go
-                            ;go-errcheck
-                            ;go-snippets
+                                        ;flymake
+                                        ;flymake-go
+                                        ;go-errcheck
+                                        ;go-snippets
                             arduino-mode
-                            
+
                             skewer-mode
                                         ;skewer-reload-stylesheets
                             slime
@@ -36,6 +36,8 @@
                             dash
                             projectile-rails
                             robe
+                            rvm
+                            rbenv
                             slim-mode
                             ))
 ;; http://flycheck.readthedocs.org/en/latest/guide/quickstart.html
@@ -63,7 +65,7 @@
 (define-key ac-mode-map (kbd "<s-tab>") 'auto-complete)
 (define-key ac-mode-map (kbd "C-c <s-tab>") 'ac-isearch)
 (require 'company)
-(define-key company-mode-map (kbd "<s-tab>") 'company-complete) 
+(define-key company-mode-map (kbd "<s-tab>") 'company-complete)
 
 
 
@@ -114,7 +116,7 @@
             (auto-complete-mode -1) ;; Elpy uses company
             (abbrev-mode 1)
             (auto-fill-mode 1)
-            ;(linum-mode 1)
+            ;;(linum-mode 1)
             (whitespace-mode)
             (jedi:setup)
             (define-key python-mode-map  (kbd "<backtab>") 'yas-expand)
@@ -131,6 +133,12 @@
 (add-hook 'ruby-mode-hook 'robe-mode)
 (add-hook 'ruby-mode-hook 'company-mode)
 (push 'company-robe company-backends)
+
+(defun activate-this-ruby()
+  (interactive)
+  (rvm-activate-corresponding-ruby)
+  (inf-ruby-console-auto)
+  )
 
 ;;;; Webdev
 ;; HTML
@@ -155,7 +163,7 @@
 (add-hook 'emmet-mode-hook (lambda ()
                              (setq emmet-indentation 2)
                              (local-set-key (kbd "<backtab>") 'emmet-expand-line)))
- `
+`
 (setq emmet-move-cursor-between-quotes t)
 
 
@@ -189,7 +197,7 @@
   (message "My JS2 hook"))
 
 (add-hook 'js2-mode-hook 'my-js2-mode-hook)
-;(add-hook 'js2-mode-hook 'ac-js2-mode)
+                                        ;(add-hook 'js2-mode-hook 'ac-js2-mode)
 
 (custom-set-variables
  '(js2-basic-offset 2)

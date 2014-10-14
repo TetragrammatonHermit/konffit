@@ -113,7 +113,6 @@
 
 (add-hook 'python-mode-hook
           (lambda ()
-            (auto-complete-mode -1) ;; Elpy uses company
             (abbrev-mode 1)
             (auto-fill-mode 1)
             ;;(linum-mode 1)
@@ -122,6 +121,9 @@
             (define-key python-mode-map  (kbd "<backtab>") 'yas-expand)
             (if (eq window-system 'x)
                 (font-lock-mode 1))))
+
+;; Elpy uses company so disable auto-complete-mode
+(add-hook 'elpy-mode-hook (lambda () (auto-complete-mode)))
 
 ;; Use flycheck with elpy instead of flymake
 (when (require 'flycheck nil t)
@@ -133,6 +135,9 @@
 (add-hook 'ruby-mode-hook 'robe-mode)
 (add-hook 'ruby-mode-hook 'company-mode)
 (push 'company-robe company-backends)
+
+(defadvice inf-ruby-console-auto (before activate-rvm-for-robe activate)
+  (rvm-activate-corresponding-ruby))
 
 (defun activate-this-ruby()
   (interactive)

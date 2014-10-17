@@ -20,4 +20,4 @@ add        mod5 = Mode_switch
 
 ! Map "|<>" key from Finnish keylayout 
 ! Ty http://jkpl.lepovirta.org/altfin.html !
-Keycode 94 = adiaeresis odiaeresis Adiaeresis Odiaeresis
+keycode 94 = adiaeresis odiaeresis Adiaeresis Odiaeresis

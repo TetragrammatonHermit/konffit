@@ -35,3 +35,10 @@ xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 7 6 5 4
 # Synaptics Scrolling Distance (272): 100, 100
 
 xinput set-prop "SynPS/2 Synaptics TouchPad" "Synaptics Scrolling Distance" -100 -100
+
+# Coasting (Coasting Speed) sucks when using ctrl after scrolling a web-page
+
+xinput set-prop "SynPS/2 Synaptics TouchPad" 287 0 0
+
+# TODO Disable sucky clickpad (ClickPad) 
+# xinput set-prop "SynPS/2 Synaptics TouchPad" 268 0

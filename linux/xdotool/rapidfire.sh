@@ -1,5 +1,5 @@
 a=0
-while [ "$a" -lt 150 ]
+while [ "$a" -lt 250 ]
 do
     xdotool click 1
     sleep 0.01

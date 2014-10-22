@@ -8,7 +8,8 @@ alias vd="deactivate"
 alias pii="pip install"
 alias pis="pip search"
 alias pir="pip uninstall"
-alias pif="pip freeze"
+alias pif="pip freeze >> requirements.txt"
+alias pifi="pip install -r requirements.txt"
 
 # Reconfigure shell
 alias rp="source ~/.zshrc"

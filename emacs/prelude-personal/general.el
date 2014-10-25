@@ -122,7 +122,7 @@
   )
  ;; OSX
  ((string-equal system-type "darwin")
-  (set-variable 'magit-emacsclient-executable "/Applications/Emacs.app/Contents/MacOS/bin/emacsclient")
+  (set-variable 'magit-emacsclient-executable "/usr/local/bin/emacsclient")
   (setq mac-option-modifier 'nil
         mac-command-modifier 'meta
         mac-function-modifier 'hyper

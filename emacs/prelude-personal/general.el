@@ -60,6 +60,13 @@
 (disable-theme 'zenburn) ; Disable prelude default theme
 (load-theme 'solarized-light)
 
+(defun transparency (value)
+  "Set the transparency of the frame window.  VALUE = 0-100."
+  (interactive "nTransparency Value 0 - 100 opaque:")
+  (set-frame-parameter (selected-frame) 'alpha value))
+
+(transparency 94)
+
 ;; Keybindings for day/night themes
 (global-set-key [H-end] '(lambda () (interactive)
                            (disable-theme 'solarized-light)
@@ -95,6 +102,9 @@
 (setq initial-scratch-message "")
                                         ;(setq initial-major-mode 'org-mode)
 
+
+
+
 ;; OS Specific stuff
 (cond
  ;; Linux
@@ -108,6 +118,7 @@
   (set-face-attribute 'default nil :font "Inconsolata-11")
   ;;(set-face-attribute 'default nil :font "DejaVu Sans Mono-10")
   ;;(set-face-attribute 'default nil :font "FreeSans-11")
+  ;;(set-face-attribute 'default nil :font "Monaco-11")
   )
  ;; OSX
  ((string-equal system-type "darwin")
@@ -118,6 +129,7 @@
         x-select-enable-clipboard t)
   (setq system-uses-terminfo nil)
   (global-set-key (kbd "M-§") 'ns-next-frame)
+  (set-face-attribute 'default nil :font "Inconsolata-15")  ;; So high dpi
   )
  )
 

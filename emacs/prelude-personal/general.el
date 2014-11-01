@@ -31,6 +31,7 @@
       '(
         "vendor"
         "log"
+        "site-packages"
         ))
 
 (indent-guide-global-mode +1)
@@ -58,7 +59,7 @@
 (window-numbering-mode t) ; Change windows like chromium tabs
 
 (disable-theme 'zenburn) ; Disable prelude default theme
-(load-theme 'solarized-light)
+(load-theme 'solarized-light t)
 
 (defun transparency (value)
   "Set the transparency of the frame window.  VALUE = 0-100."
@@ -122,14 +123,15 @@
   )
  ;; OSX
  ((string-equal system-type "darwin")
-  (set-variable 'magit-emacsclient-executable "/Applications/Emacs.app/Contents/MacOS/bin/emacsclient")
+  (set-variable 'magit-emacsclient-executable "/usr/local/bin/emacsclient")
   (setq mac-option-modifier 'nil
         mac-command-modifier 'meta
         mac-function-modifier 'hyper
-        x-select-enable-clipboard t)
+        )
+  
   (setq system-uses-terminfo nil)
-  (global-set-key (kbd "M-§") 'ns-next-frame)
-  (set-face-attribute 'default nil :font "Inconsolata-15")  ;; So high dpi
+  (global-set-key (kbd "M-`") 'ns-next-frame)
+  (set-face-attribute 'default nil :font "Inconsolata-14")  ;; So high dpi
   )
  )
 

@@ -1,16 +1,13 @@
 ;; After install replace builtin org with one from elpa!
 
+(setq epa-file-select-keys nil)
+(setq epa-file-cache-passphrase-for-symmetric-encryption t)
+(setenv "GPG_AGENT_INFO" 'nil)
+
 ;; Location of Org files on local system
 (setq org-directory "~/Dropbox/notes/")
 (setq org-default-notes-file  "~/Dropbox/notes/gtd.org")
 ;; (setq org-agenda-files '("~/Dropbox/notes/gtd.org"))
-
-;; Org-mobile setup
-;; (setq org-mobile-files '("~/Dropbox/notes/gtd.org"))
-;; (setq org-mobile-directory "~/Dropbox/Apps/MobileOrg")
-;; ;; File where new mobile-notes will be stored
-;; (setq org-mobile-inbox-for-pull "~/Dropbox/notes/mobile-incoming.org")
-
 
 (setq org-use-fast-todo-selection t)
 (setq org-use-fast-tag-selection t)
@@ -75,21 +72,20 @@
 (setq org-capture-templates
       '(
         ;; Org-protocol
-        ("t" "Task / Chore" entry (file+headline "~/Dropbox/notes/gtd.org" "Task / Chore")
+        ("t" "TODO Item" entry (file+headline "~/Dropbox/notes/gtd.org" "tasklist")
          "* TODO %?\n  %i\n")
-        ("m" "Calendar" entry (file+headline "~/Dropbox/notes/gtd.org" "Calendar") "* APPT %?\n  %i\n")
-        ("r" "Raw thought" entry (file+headline "~/Dropbox/notes/gtd.org" "Raw thought")
+        ("c" "Calendar entry for meetings and such" entry (file+headline "~/Dropbox/notes/gtd.org" "calendar") "* APPT %?\n  %i\n")
+        ("r" "Scratch some ideas" entry (file+headline "~/Dropbox/notes/gtd.org" "scratch")
          "* %?\n  %i\n")
-        ("b" "Buy" entry (file+headline "~/Dropbox/notes/todo.org" "Task / Chore")
+        ("b" "Buy" entry (file+headline "~/Dropbox/notes/todo.org" "tasklist")
          "* TODO Osta %?\n  %i\n")
-        ("o" "Tweaks to OS" entry (file+headline "~/Dropbox/notes/someday.org" "OS Tweak") "* %?\n  %i\n")
-        ("s" "Song" item (file+headline "~/Dropbox/notes/music.org" "New music")
+        ("m" "Maintenance / Tweak task" entry (file+headline "~/Dropbox/notes/someday.org" "maintenance") "* %?\n  %i\n")
+        ("s" "New Song" item (file+headline "~/Dropbox/notes/music.org" "New music")
          "%?\n  %i\n")
         ("j" "Journal entry" entry (file+datetree "~/Dropbox/notes/notetoself.org")
-         "* %?\nEntered on %U\n  %i\n")
-        ("d" "Dream" entry (file+headline "~/Dropbox/notes/notetoself.org" "Dreams") "* %U\n  %i\n%?")))
+         "* %?\nEntered on %U\n  %i\n")))
 
-
+;;TODO make use of?
 (setq org-agenda-custom-commands
       '(("c" "Desk Work" tags "HOME" ;; (1) (2) (3) (4)
          ((org-agenda-files '("~/Dropbox/notes/gtd.org")) ;; (5)
@@ -128,6 +124,14 @@
 ;; TODO pass path to this eg: regex:~/something and
 ;; parse string for both args
 
+
+;;;; Mobile syncing (disabled)
+
+;; (setq org-mobile-files '("~/Dropbox/notes/gtd.org"))
+;; (setq org-mobile-directory "~/Dropbox/Apps/MobileOrg")
+;; ;; File where new mobile-notes will be stored
+;; (setq org-mobile-inbox-for-pull "~/Dropbox/notes/mobile-incoming.org")
+
 ;; (add-hook 'after-init-hook 'org-mobile-pull)
 ;; (add-hook 'kill-emacs-hook 'org-mobile-push)
 
@@ -155,7 +159,3 @@
   (cancel-timer my-org-mobile-sync-timer))
 
 ;;(my-org-mobile-sync-start)
-
-(setq epa-file-select-keys nil)
-(setq epa-file-cache-passphrase-for-symmetric-encryption t)
-(setenv "GPG_AGENT_INFO" 'nil)

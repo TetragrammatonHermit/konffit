@@ -1,4 +1,4 @@
-#!/bin/sh -eu
+#!/bin/sh -f
 ### Linux system startup script to setup input devices ###
 # Run as sudo to get everything working
 

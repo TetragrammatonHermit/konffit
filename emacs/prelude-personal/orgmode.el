@@ -128,8 +128,8 @@
 ;; TODO pass path to this eg: regex:~/something and
 ;; parse string for both args
 
-(add-hook 'after-init-hook 'org-mobile-pull)
-;(add-hook 'kill-emacs-hook 'org-mobile-push)
+;; (add-hook 'after-init-hook 'org-mobile-pull)
+;; (add-hook 'kill-emacs-hook 'org-mobile-push)
 
 ;; Org-mobile auto sync when idle
 (defvar my-org-mobile-sync-timer nil)

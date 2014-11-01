@@ -42,7 +42,7 @@ xinput set-prop "SynPS/2 Synaptics TouchPad" "Synaptics Scrolling Distance" -100
 
 # Coasting (Coasting Speed) sucks when using ctrl after scrolling a web-page
 
-xinput set-prop "SynPS/2 Synaptics TouchPad" 287 0 0
+xinput set-prop "SynPS/2 Synaptics TouchPad" "Synaptics Coasting Speed" 0 0
 
 # TODO Disable sucky clickpad (ClickPad) 
 # xinput set-prop "SynPS/2 Synaptics TouchPad" 268 0

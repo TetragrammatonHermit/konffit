@@ -1,4 +1,4 @@
-#!/bin/sh -f
+#!/bin/sh -eu
 ### Linux system startup script to setup input devices ###
 # Run as sudo to get everything working
 
@@ -10,6 +10,10 @@ xmodmap $HOME/konffit/linux/Xmodmap
 
 ## Key repeat delay and rate
 xset r rate 190 25
+
+# Set trackpoint sensitivity and speed
+echo -n 255 > /sys/devices/platform/i8042/serio1/serio2/sensitivity
+echo -n 255 > /sys/devices/platform/i8042/serio1/serio2/speed
 
 ## Natural scrolling (vert, horiz) with trackpoint and touchpad ##
 # Written on (X)ubuntu 14.04, TP X220
